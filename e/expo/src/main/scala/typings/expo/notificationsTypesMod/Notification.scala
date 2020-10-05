@@ -4,7 +4,7 @@ import typings.expo.expoStrings.received
 import typings.expo.expoStrings.selected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Notification extends js.Object {

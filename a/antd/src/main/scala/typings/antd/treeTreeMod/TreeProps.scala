@@ -25,7 +25,7 @@ import typings.std.Element
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<rc-tree.rc-tree.TreeProps, 'prefixCls' | 'showLine'> */
 @js.native

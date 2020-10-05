@@ -3,7 +3,7 @@ package typings.expoFileSystem.fileSystemTypesMod
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined expo-file-system.expo-file-system/build/FileSystem.types.FileSystemHttpResult & {  body :string} */
 @js.native

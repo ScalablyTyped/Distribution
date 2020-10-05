@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.semanticUiReact.portalMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "Portal")
 @js.native

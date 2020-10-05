@@ -3,7 +3,7 @@ package typings.inquirer.mod.prompts
 import typings.inquirer.inquirerBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data about the successful state of a prompt.

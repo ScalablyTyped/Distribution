@@ -20,7 +20,7 @@ import typings.reactNavigationStack.vendorTypesMod.StackHeaderStyleInterpolator
 import typings.reactNavigationStack.vendorTypesMod.StackHeaderTitleProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackHeaderOptions & {headerTitle (props : react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackHeaderTitleProps): react.react.ReactNode,   layout :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Layout,   insets :react-native-safe-area-context.react-native-safe-area-context.EdgeInsets,   onGoBack :(): void | undefined,   title :string | undefined,   leftLabel :string | undefined,   scene :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Scene<react-navigation.react-navigation.NavigationRoute<react-navigation.react-navigation.NavigationParams>>,   styleInterpolator :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackHeaderStyleInterpolator} */
 @js.native

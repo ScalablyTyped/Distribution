@@ -4,7 +4,7 @@ import typings.d3Array.mod.ThresholdCountGenerator
 import typings.d3Array.mod.ThresholdNumberArrayGenerator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Contours_ extends js.Object {

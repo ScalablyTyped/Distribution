@@ -4,7 +4,7 @@ import typings.jquery.jqueryStrings.focusout
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FocusOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {

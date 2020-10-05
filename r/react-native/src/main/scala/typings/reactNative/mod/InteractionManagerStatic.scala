@@ -4,7 +4,7 @@ import typings.reactNative.anon.Cancel
 import typings.reactNative.anon.InteractionComplete
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InteractionManagerStatic extends js.Object {

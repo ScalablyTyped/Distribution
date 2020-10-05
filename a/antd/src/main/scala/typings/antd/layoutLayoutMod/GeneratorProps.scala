@@ -6,7 +6,7 @@ import typings.antd.antdStrings.main
 import typings.antd.antdStrings.section
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GeneratorProps extends js.Object {

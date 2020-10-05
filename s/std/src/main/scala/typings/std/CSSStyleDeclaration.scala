@@ -3,7 +3,7 @@ package typings.std
 import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object that is a CSS declaration block, and exposes style information and various style-related methods and properties. */
 @js.native

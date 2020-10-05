@@ -3,7 +3,7 @@ package typings.expo
 import typings.std.Console
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("expo/build/logs/RemoteConsole", JSImport.Namespace)
 @js.native

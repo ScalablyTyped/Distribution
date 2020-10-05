@@ -2,7 +2,7 @@ package typings.reactNativeVectorIcons.fontAwesome5Mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined keyof react-native-vector-icons.react-native-vector-icons/FontAwesome5.Omit<{  regular :0,   light :1,   solid :2,   brand :3}, 'regular'> */
 /* Rewritten from type alias, can be one of: 

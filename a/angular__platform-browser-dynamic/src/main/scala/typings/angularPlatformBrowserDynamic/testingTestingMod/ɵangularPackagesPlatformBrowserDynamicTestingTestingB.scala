@@ -5,7 +5,7 @@ import typings.angularCore.mod.Injector
 import typings.angularCore.testingTestingMod.ɵTestingCompilerFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/platform-browser-dynamic/testing/testing", "\u0275angular_packages_platform_browser_dynamic_testing_testing_b")
 @js.native

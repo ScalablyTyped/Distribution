@@ -2,7 +2,7 @@ package typings.std
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This Payment Request API interface enables a web page to update the details of a PaymentRequest in response to a user action. */
 @js.native

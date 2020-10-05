@@ -15,7 +15,7 @@ import typings.semanticUiReact.semanticUiReactStrings.radio
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StrictCheckboxProps extends InputHTMLAttributes[HTMLInputElement] {

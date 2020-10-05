@@ -3,7 +3,7 @@ package typings.angularRouter.mod
 import typings.angularCore.mod.ModuleWithProviders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "RouterModule")
 @js.native

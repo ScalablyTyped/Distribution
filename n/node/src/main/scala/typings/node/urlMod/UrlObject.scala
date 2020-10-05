@@ -3,7 +3,7 @@ package typings.node.urlMod
 import typings.node.querystringMod.ParsedUrlQueryInput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Input to `url.format`
 @js.native

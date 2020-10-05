@@ -6,7 +6,7 @@ import typings.electron.electronStrings.negotiate
 import typings.electron.electronStrings.ntlm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RemovePassword extends js.Object {

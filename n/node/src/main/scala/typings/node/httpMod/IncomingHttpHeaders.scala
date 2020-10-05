@@ -3,7 +3,7 @@ package typings.node.httpMod
 import typings.node.NodeJS.Dict
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // incoming headers will never contain number
 @js.native

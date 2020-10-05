@@ -13,7 +13,7 @@ import typings.electron.anon.TypeofTouchBar
 import typings.electron.anon.TypeofWebContents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AllElectron extends CommonInterface

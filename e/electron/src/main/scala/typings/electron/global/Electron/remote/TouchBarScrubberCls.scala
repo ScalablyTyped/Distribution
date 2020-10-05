@@ -4,7 +4,7 @@ import typings.electron.Electron.TouchBarScrubber
 import typings.electron.Electron.TouchBarScrubberConstructorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Electron.remote.TouchBarScrubber")
 @js.native

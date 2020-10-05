@@ -7,7 +7,7 @@ import typings.reactNative.reactNativeStrings.register
 import typings.reactNative.reactNativeStrings.registrationError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PushNotificationIOSStatic extends js.Object {

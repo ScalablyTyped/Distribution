@@ -3,7 +3,7 @@ package typings.node.fsMod.symlink
 import typings.node.fsMod.PathLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs", "symlink.__promisify__")
 @js.native

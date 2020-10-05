@@ -4,7 +4,7 @@ import typings.node.NodeJS.Immediate
 import typings.node.NodeJS.Timeout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("timers", JSImport.Namespace)
 @js.native

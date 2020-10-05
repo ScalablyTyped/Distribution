@@ -3,7 +3,7 @@ package typings.typescript.anon
 import typings.typescript.mod.CompletionEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined typescript.typescript.WithMetadata<typescript.typescript.CompletionInfo> */
 @js.native

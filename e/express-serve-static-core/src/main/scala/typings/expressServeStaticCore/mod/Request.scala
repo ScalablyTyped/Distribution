@@ -12,7 +12,7 @@ import typings.rangeParser.mod.Ranges
 import typings.rangeParser.mod.Result
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Request[P /* <: Params */, ResBody, ReqBody, ReqQuery]

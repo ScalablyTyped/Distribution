@@ -3,7 +3,7 @@ package typings.materialUi.MaterialUI.Toolbar
 import typings.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ToolbarSeparatorProps extends js.Object {

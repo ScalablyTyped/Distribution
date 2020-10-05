@@ -6,7 +6,7 @@ import typings.reactNative.mod.Picker
 import typings.reactNative.mod.PickerItemProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofPicker extends Instantiable0[Picker] {

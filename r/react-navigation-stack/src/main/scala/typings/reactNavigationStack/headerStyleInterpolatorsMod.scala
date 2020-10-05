@@ -4,7 +4,7 @@ import typings.reactNavigationStack.vendorTypesMod.StackHeaderInterpolatedStyle
 import typings.reactNavigationStack.vendorTypesMod.StackHeaderInterpolationProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-navigation-stack/lib/typescript/src/vendor/TransitionConfigs/HeaderStyleInterpolators", JSImport.Namespace)
 @js.native

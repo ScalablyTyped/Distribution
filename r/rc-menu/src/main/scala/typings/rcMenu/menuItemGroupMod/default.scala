@@ -3,7 +3,7 @@ package typings.rcMenu.menuItemGroupMod
 import typings.rcMenu.anon.Disabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-menu/es/MenuItemGroup", JSImport.Default)
 @js.native

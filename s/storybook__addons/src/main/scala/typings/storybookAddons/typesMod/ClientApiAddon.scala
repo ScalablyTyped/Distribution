@@ -5,7 +5,7 @@ import typings.storybookAddons.distMod.Addon
 import typings.storybookAddons.distMod.RenderOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClientApiAddon[StoryFnReturnType] extends Addon {

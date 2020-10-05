@@ -17,7 +17,7 @@ import typings.three.anon.RoughnessMap
 import typings.three.anon.SpecularMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/renderers/shaders/UniformsLib", "UniformsLib")
 @js.native

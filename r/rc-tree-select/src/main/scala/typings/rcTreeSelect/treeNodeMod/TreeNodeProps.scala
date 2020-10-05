@@ -4,7 +4,7 @@ import typings.rcTreeSelect.interfaceMod.Key
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<rc-tree-select.rc-tree-select/es/interface.DataNode, 'children'> */
 @js.native

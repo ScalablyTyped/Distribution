@@ -189,7 +189,7 @@ import typings.std.stdStrings.wbr
 import typings.std.stdStrings.xmp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Any web page loaded in the browser and serves as an entry point into the web page's content, which is the DOM tree. */
 @js.native

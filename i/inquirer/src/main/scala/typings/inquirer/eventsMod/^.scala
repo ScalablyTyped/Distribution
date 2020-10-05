@@ -3,7 +3,7 @@ package typings.inquirer.eventsMod
 import typings.node.readlineMod.Interface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("inquirer/lib/utils/events", JSImport.Namespace)
 @js.native

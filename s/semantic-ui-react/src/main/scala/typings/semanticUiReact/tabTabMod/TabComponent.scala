@@ -6,7 +6,7 @@ import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.tabPaneMod.TabPaneProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TabComponent extends ComponentClass[TabProps, ComponentState] {

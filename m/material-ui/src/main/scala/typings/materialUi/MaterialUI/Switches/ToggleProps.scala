@@ -8,7 +8,7 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ToggleProps extends CommonEnhancedSwitchProps[Toggle] {

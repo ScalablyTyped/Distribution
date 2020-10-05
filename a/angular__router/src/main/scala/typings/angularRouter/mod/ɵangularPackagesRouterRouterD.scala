@@ -5,7 +5,7 @@ import typings.angularCommon.mod.PathLocationStrategy
 import typings.angularCommon.mod.PlatformLocation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "\u0275angular_packages_router_router_d")
 @js.native

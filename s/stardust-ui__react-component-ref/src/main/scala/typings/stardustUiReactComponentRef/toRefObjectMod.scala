@@ -4,7 +4,7 @@ import typings.react.mod.RefObject
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@stardust-ui/react-component-ref/dist/es/toRefObject", JSImport.Namespace)
 @js.native

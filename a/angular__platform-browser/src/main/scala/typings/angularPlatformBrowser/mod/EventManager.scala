@@ -4,7 +4,7 @@ import typings.angularCore.mod.NgZone
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/platform-browser", "EventManager")
 @js.native

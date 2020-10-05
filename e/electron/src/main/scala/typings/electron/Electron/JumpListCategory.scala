@@ -6,7 +6,7 @@ import typings.electron.electronStrings.recent
 import typings.electron.electronStrings.tasks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JumpListCategory extends js.Object {

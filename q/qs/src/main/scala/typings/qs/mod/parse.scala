@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.qs.anon.IParseOptionsdecodernever
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("qs", "parse")
 @js.native

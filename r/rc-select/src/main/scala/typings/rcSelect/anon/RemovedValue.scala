@@ -3,7 +3,7 @@ package typings.rcSelect.anon
 import typings.rcSelect.generatorMod.RawValueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RemovedValue[P /* <: RawValueType | js.Object */] extends js.Object {

@@ -24,7 +24,7 @@ import typings.reactNavigation.mod.NavigationSetParamsAction
 import typings.reactNavigation.mod.NavigationToggleDrawerAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GetActionCreators extends js.Object {

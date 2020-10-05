@@ -3,7 +3,7 @@ package typings.coreJs.anon
 import typings.std.TemplateStringsArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait At extends js.Object {

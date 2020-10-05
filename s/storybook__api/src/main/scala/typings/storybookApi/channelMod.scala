@@ -6,7 +6,7 @@ import typings.storybookChannels.mod.Channel
 import typings.storybookChannels.mod.Listener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@storybook/api/dist/modules/channel", JSImport.Namespace)
 @js.native

@@ -4,7 +4,7 @@ import typings.antd.uploadInterfaceMod.UploadListType
 import typings.antd.uploadInterfaceMod.UploadType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Accept extends js.Object {

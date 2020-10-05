@@ -4,7 +4,7 @@ import typings.rcTreeSelect.interfaceMod.DefaultValueType
 import typings.rcTreeSelect.treeSelectMod.TreeSelectProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-tree-select/es/utils/warningPropsUtil", JSImport.Namespace)
 @js.native

@@ -4,7 +4,7 @@ import typings.antDesignReactSlick.mod.LazyLoadTypes
 import typings.antDesignReactSlick.mod._SwipeDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object antDesignReactSlickStrings {
   @js.native

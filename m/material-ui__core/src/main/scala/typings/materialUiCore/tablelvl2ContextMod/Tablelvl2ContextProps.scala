@@ -5,7 +5,7 @@ import typings.materialUiCore.materialUiCoreStrings.footer
 import typings.materialUiCore.materialUiCoreStrings.head
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Tablelvl2ContextProps extends js.Object {

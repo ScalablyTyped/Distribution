@@ -4,7 +4,7 @@ import typings.dayjs.anon.PartialLTstringLTSstringL
 import typings.dayjs.anon.Partialfuturestringpastst
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ILocale extends js.Object {

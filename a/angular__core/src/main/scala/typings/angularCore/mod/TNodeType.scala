@@ -8,7 +8,7 @@ import typings.angularCore.angularCoreNumbers.`4`
 import typings.angularCore.angularCoreNumbers.`5`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TNodeType corresponds to the {@link TNode} `type` property.

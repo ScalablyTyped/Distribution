@@ -5,7 +5,7 @@ import typings.rxjs.typesMod.OperatorFunction
 import typings.rxjs.typesMod.SchedulerLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators/startWith", JSImport.Namespace)
 @js.native

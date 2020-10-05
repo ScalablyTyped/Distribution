@@ -2,7 +2,7 @@ package typings.rcPicker.useValueTextsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-picker/es/hooks/useValueTexts", JSImport.Default)
 @js.native

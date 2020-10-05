@@ -5,7 +5,7 @@ import typings.expo.anon.DisplayInForeground
 import typings.std.NotificationOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LocalNotification extends js.Object {

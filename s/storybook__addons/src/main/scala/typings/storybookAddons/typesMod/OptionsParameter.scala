@@ -7,7 +7,7 @@ import typings.std.RegExp
 import typings.storybookAddons.anon.Base
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OptionsParameter

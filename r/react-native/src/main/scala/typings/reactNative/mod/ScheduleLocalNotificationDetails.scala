@@ -8,7 +8,7 @@ import typings.reactNative.reactNativeStrings.week
 import typings.reactNative.reactNativeStrings.year
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ScheduleLocalNotificationDetails extends js.Object {

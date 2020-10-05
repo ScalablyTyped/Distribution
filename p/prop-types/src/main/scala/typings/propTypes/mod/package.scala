@@ -2,7 +2,7 @@ package typings.propTypes
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
   type InferProps[V] = (typings.propTypes.mod.InferPropsInner[typings.std.Pick[V, typings.propTypes.mod.RequiredKeys[V]]]) with (typings.std.Partial[

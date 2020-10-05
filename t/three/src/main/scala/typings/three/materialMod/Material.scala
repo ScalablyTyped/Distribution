@@ -17,7 +17,7 @@ import typings.three.threeStrings.mediump
 import typings.three.webGLRendererMod.WebGLRenderer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/materials/Material", "Material")
 @js.native

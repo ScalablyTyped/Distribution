@@ -15,7 +15,7 @@ import typings.react.mod.ReactNode
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<rc-field-form.rc-field-form/es/Field.InternalFieldProps, 'name'> */
 @js.native

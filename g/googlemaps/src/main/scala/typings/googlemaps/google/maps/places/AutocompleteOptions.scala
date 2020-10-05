@@ -4,7 +4,7 @@ import typings.googlemaps.google.maps.LatLngBounds
 import typings.googlemaps.google.maps.LatLngBoundsLiteral
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AutocompleteOptions extends js.Object {

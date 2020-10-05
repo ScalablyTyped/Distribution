@@ -4,7 +4,7 @@ import typings.rxjs.subscriberMod.Subscriber
 import typings.rxjs.typesMod.PartialObserver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/util/toSubscriber", JSImport.Namespace)
 @js.native

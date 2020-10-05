@@ -23,7 +23,7 @@ import typings.angularCompiler.templateAstMod.TemplateAst
 import typings.angularCompiler.templateAstMod.TemplateAstVisitor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/template_parser/template_parser", JSImport.Namespace)
 @js.native

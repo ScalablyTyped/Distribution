@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.node.anon.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is the default "writer" value, if none is passed in the REPL options,

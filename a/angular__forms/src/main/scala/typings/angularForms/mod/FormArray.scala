@@ -3,7 +3,7 @@ package typings.angularForms.mod
 import typings.angularForms.anon.EmitEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "FormArray")
 @js.native

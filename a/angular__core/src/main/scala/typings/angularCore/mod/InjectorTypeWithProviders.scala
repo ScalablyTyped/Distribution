@@ -2,7 +2,7 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes the `InjectorDef` equivalent of a `ModuleWithProviders`, an `InjectorDefType` with an

@@ -3,7 +3,7 @@ package typings.angularCommon
 import typings.angularCommon.httpHttpMod.HttpObserve
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularCommonStrings {
   @js.native

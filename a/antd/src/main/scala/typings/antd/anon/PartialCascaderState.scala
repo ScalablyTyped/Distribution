@@ -5,7 +5,7 @@ import typings.antd.cascaderMod.CascaderProps
 import typings.antd.cascaderMod.CascaderValueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<antd.antd/lib/cascader.CascaderState> */
 @js.native

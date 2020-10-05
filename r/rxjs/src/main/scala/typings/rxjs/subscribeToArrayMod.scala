@@ -4,7 +4,7 @@ import typings.rxjs.subscriberMod.Subscriber
 import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/util/subscribeToArray", JSImport.Namespace)
 @js.native

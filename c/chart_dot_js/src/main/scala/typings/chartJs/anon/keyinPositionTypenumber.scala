@@ -2,7 +2,7 @@ package typings.chartJs.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ key in chart.js.chart.js.PositionType ]:? number} */
 @js.native

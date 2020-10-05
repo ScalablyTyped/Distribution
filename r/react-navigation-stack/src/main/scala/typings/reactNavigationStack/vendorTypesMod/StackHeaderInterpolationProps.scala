@@ -4,7 +4,7 @@ import typings.reactNavigationStack.anon.Header
 import typings.reactNavigationStack.anon.Progress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StackHeaderInterpolationProps extends js.Object {

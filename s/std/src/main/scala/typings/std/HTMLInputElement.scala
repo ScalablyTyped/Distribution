@@ -5,7 +5,7 @@ import typings.std.stdStrings.forward
 import typings.std.stdStrings.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides special properties and methods for manipulating the options, layout, and presentation of <input> elements. */
 @js.native

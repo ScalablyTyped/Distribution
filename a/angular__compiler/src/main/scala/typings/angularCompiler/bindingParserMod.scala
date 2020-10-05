@@ -18,7 +18,7 @@ import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/template_parser/binding_parser", JSImport.Namespace)
 @js.native

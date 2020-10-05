@@ -4,7 +4,7 @@ import typings.angularCommon.angularCommonTestingMod.MockPlatformLocationConfig
 import typings.angularCore.mod.InjectionToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/testing", JSImport.Namespace)
 @js.native

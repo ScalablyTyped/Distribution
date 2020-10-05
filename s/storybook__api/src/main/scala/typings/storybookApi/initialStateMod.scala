@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.storybookApi.mod.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@storybook/api/dist/initial-state", JSImport.Namespace)
 @js.native

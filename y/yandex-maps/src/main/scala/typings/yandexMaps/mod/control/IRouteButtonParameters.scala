@@ -4,7 +4,7 @@ import typings.yandexMaps.anon.AdjustMapMargin
 import typings.yandexMaps.anon.Expanded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IRouteButtonParameters extends js.Object {

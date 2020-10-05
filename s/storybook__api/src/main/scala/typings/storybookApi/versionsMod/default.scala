@@ -4,7 +4,7 @@ import typings.storybookApi.anon.ApiInit
 import typings.storybookApi.mod.Module
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@storybook/api/dist/modules/versions", JSImport.Default)
 @js.native

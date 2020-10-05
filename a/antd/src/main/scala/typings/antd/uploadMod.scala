@@ -6,7 +6,7 @@ import typings.antd.anon.FileList
 import typings.antd.uploadInterfaceMod.UploadProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/upload", JSImport.Namespace)
 @js.native

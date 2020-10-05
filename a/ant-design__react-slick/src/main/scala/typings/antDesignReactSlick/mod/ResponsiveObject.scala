@@ -3,7 +3,7 @@ package typings.antDesignReactSlick.mod
 import typings.antDesignReactSlick.antDesignReactSlickStrings.unslick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ResponsiveObject extends js.Object {

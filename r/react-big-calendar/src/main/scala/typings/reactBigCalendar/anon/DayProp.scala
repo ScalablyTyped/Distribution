@@ -8,7 +8,7 @@ import typings.reactBigCalendar.mod.stringOrDate
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DayProp[TEvent /* <: js.Object */] extends js.Object {

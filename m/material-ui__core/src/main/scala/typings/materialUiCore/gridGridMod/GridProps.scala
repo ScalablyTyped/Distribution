@@ -88,7 +88,7 @@ import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLElement> & std.Partial<std.Record<@material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoint, boolean | @material-ui/core.@material-ui/core/Grid/Grid.GridSize>>, @material-ui/core.@material-ui/core/Grid/Grid.GridClassKey, never> */
 @js.native

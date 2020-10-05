@@ -5,7 +5,7 @@ import typings.typescript.mod.SignatureHelpRetriggerCharacter
 import typings.typescript.mod.SignatureHelpTriggerCharacter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typescriptStrings {
   @js.native

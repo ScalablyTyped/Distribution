@@ -3,7 +3,7 @@ package typings.rcTrigger.popupMod
 import typings.rcTrigger.anon.PartialPopupState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-trigger/es/Popup", JSImport.Default)
 @js.native

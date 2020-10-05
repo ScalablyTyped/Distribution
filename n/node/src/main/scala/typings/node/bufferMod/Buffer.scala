@@ -11,7 +11,7 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("buffer", "Buffer")
 @js.native

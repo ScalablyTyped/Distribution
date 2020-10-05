@@ -7,7 +7,7 @@ import typings.std.Int8ArrayConstructor
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Int8Array")
 @js.native

@@ -3,7 +3,7 @@ package typings.std
 import typings.std.stdStrings.tonechange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RTCDTMFSender_ extends EventTarget {

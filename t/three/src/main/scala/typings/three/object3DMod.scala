@@ -21,7 +21,7 @@ import typings.three.vector3Mod.Vector3
 import typings.three.webGLRendererMod.WebGLRenderer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/core/Object3D", JSImport.Namespace)
 @js.native

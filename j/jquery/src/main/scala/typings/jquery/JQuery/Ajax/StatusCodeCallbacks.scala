@@ -3,7 +3,7 @@ package typings.jquery.JQuery.Ajax
 import org.scalablytyped.runtime.NumberDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // region StatusCodeCallbacks
 // #region StatusCodeCallbacks

@@ -4,7 +4,7 @@ import typings.googlemaps.google.maps.LatLng
 import typings.googlemaps.google.maps.LatLngBounds
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO add BusinessStatus https://developers.google.com/maps/documentation/javascript/reference/places-service#BusinessStatus
 @js.native

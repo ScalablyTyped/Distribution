@@ -5,7 +5,7 @@ import typings.yandexMaps.yandexMapsStrings.ifNull
 import typings.yandexMaps.yandexMapsStrings.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AutoFitToViewport extends js.Object {

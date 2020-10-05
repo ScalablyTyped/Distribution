@@ -3,7 +3,7 @@ package typings.node.utilMod
 import typings.node.NodeJS.Dict
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("util", "inspect")
 @js.native

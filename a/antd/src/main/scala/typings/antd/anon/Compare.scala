@@ -4,7 +4,7 @@ import typings.antd.tableInterfaceMod.CompareFn
 import typings.antd.tableInterfaceMod.SortOrder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Compare[RecordType] extends js.Object {

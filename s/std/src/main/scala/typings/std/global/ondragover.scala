@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Fires on the target element continuously while the user drags the object over a valid drop target.

@@ -3,7 +3,7 @@ package typings.typescript.mod
 import typings.typescript.typescriptStrings.invoked
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Signals that the user manually requested signature help.

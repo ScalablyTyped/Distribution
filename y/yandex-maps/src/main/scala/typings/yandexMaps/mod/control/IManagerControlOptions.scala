@@ -6,7 +6,7 @@ import typings.yandexMaps.yandexMapsStrings.none
 import typings.yandexMaps.yandexMapsStrings.right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IManagerControlOptions extends js.Object {

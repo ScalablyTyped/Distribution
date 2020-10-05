@@ -5,7 +5,7 @@ import typings.antd.transferListMod.TransferListProps
 import typings.antd.transferListMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofList extends Instantiable1[/* props */ TransferListProps, default] {

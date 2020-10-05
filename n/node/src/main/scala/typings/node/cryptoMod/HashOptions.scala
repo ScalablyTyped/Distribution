@@ -3,7 +3,7 @@ package typings.node.cryptoMod
 import typings.node.streamMod.TransformOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HashOptions extends TransformOptions {

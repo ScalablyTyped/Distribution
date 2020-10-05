@@ -4,7 +4,7 @@ import typings.angularCompiler.staticReflectorMod.StaticReflector
 import typings.angularCompiler.staticSymbolMod.StaticSymbol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/aot/lazy_routes", "parseLazyRoute")
 @js.native

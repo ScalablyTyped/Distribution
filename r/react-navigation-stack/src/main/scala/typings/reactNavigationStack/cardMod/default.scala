@@ -3,7 +3,7 @@ package typings.reactNavigationStack.cardMod
 import typings.reactNavigationStack.anon.GestureEnabled
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/Stack/Card", JSImport.Default)
 @js.native

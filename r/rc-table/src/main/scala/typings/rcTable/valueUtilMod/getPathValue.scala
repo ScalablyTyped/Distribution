@@ -3,7 +3,7 @@ package typings.rcTable.valueUtilMod
 import typings.rcTable.interfaceMod.DataIndex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-table/lib/utils/valueUtil", "getPathValue")
 @js.native

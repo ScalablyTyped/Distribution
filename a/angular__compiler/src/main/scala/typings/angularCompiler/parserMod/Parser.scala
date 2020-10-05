@@ -6,7 +6,7 @@ import typings.angularCompiler.interpolationConfigMod.InterpolationConfig
 import typings.angularCompiler.lexerMod.Lexer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/expression_parser/parser", "Parser")
 @js.native

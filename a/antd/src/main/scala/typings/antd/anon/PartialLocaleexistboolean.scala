@@ -9,7 +9,7 @@ import typings.antd.tableInterfaceMod.TableLocale
 import typings.antd.uploadInterfaceMod.UploadLocale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<antd.antd/lib/locale-provider.Locale> & {  exist :boolean | undefined} */
 @js.native

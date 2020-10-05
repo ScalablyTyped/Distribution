@@ -4,7 +4,7 @@ import typings.three.constantsMod.Mapping
 import typings.three.textureMod.Texture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/extras/ImageUtils", JSImport.Namespace)
 @js.native

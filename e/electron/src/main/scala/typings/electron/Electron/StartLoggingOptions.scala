@@ -5,7 +5,7 @@ import typings.electron.electronStrings.everything
 import typings.electron.electronStrings.includeSensitive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StartLoggingOptions extends js.Object {

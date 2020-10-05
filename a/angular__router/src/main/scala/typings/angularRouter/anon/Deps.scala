@@ -6,7 +6,7 @@ import typings.angularCore.mod.Injector
 import typings.angularRouter.mod.ɵangularPackagesRouterRouterH
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Deps extends js.Object {

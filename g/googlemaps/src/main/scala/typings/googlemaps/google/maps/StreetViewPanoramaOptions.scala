@@ -5,7 +5,7 @@ import typings.googlemaps.googlemapsStrings.html5
 import typings.googlemaps.googlemapsStrings.webgl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StreetViewPanoramaOptions extends js.Object {

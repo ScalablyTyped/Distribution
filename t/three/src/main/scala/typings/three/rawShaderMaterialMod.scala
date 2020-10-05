@@ -4,7 +4,7 @@ import typings.three.shaderMaterialMod.ShaderMaterial
 import typings.three.shaderMaterialMod.ShaderMaterialParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/materials/RawShaderMaterial", JSImport.Namespace)
 @js.native

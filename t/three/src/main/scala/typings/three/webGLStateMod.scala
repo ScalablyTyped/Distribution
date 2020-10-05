@@ -15,7 +15,7 @@ import typings.three.webGLCapabilitiesMod.WebGLCapabilities
 import typings.three.webGLExtensionsMod.WebGLExtensions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/renderers/webgl/WebGLState", JSImport.Namespace)
 @js.native

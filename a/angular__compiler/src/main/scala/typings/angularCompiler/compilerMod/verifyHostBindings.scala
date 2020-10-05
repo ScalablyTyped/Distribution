@@ -3,7 +3,7 @@ package typings.angularCompiler.compilerMod
 import typings.angularCompiler.viewCompilerMod.ParsedHostBindings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "verifyHostBindings")
 @js.native

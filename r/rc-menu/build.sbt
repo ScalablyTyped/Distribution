@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "rc-menu"
-version := "8.5.0-6d368b"
+version := "8.5.0-e2580e"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "3.0.2-b6fa26",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-64dc32",
-  "org.scalablytyped" %%% "rc-trigger" % "4.3.4-643eac",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20200711Z-7368c8",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13")
+  "org.scalablytyped" %%% "csstype" % "3.0.2-b0fb5c",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-f69275",
+  "org.scalablytyped" %%% "rc-trigger" % "4.3.4-c2bbb4",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200711Z-695c73",
+  "org.scalablytyped" %%% "std" % "3.9-7c0472")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -2,7 +2,7 @@ package typings.reactDom.experimentalMod.reactDomAugmentingMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // exposeConcurrentModeAPIs features
 @js.native

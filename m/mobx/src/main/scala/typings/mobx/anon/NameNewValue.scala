@@ -6,7 +6,7 @@ import typings.mobx.observableobjectMod.IObjectWillChange
 import typings.std.PropertyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NameNewValue extends IObjectWillChange {

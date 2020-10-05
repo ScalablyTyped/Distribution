@@ -6,7 +6,7 @@ import typings.googlemaps.google.maps.LatLngBoundsLiteral
 import typings.googlemaps.google.maps.LatLngLiteral
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO find source documentation
 @js.native

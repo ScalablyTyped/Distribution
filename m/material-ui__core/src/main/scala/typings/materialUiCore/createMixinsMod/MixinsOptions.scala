@@ -3,7 +3,7 @@ package typings.materialUiCore.createMixinsMod
 import typings.materialUiCore.withStylesMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<@material-ui/core.@material-ui/core/styles/createMixins.Mixins> */
 @js.native

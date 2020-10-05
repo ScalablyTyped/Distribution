@@ -4,7 +4,7 @@ import typings.rcFieldForm.rcFieldFormBooleans.`false`
 import typings.rcFieldForm.rcFieldFormBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<rc-field-form.rc-field-form/es/interface.FormInstance, 'validateFields'> & {  validateFields :rc-field-form.rc-field-form/es/interface.InternalValidateFields,   prefixName :rc-field-form.rc-field-form/es/interface.InternalNamePath | undefined,   validateTrigger :string | std.Array<string> | false | undefined, getInternalHooks (secret : string): rc-field-form.rc-field-form/es/interface.InternalHooks | null} */
 @js.native

@@ -14,7 +14,7 @@ import typings.semanticUiReact.commentMetadataMod.CommentMetadataProps
 import typings.semanticUiReact.commentTextMod.CommentTextProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CommentComponent extends FunctionComponent[CommentProps] {

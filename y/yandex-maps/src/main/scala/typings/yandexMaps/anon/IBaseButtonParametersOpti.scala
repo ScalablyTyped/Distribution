@@ -11,7 +11,7 @@ import typings.yandexMaps.yandexMapsStrings.right
 import typings.yandexMaps.yandexMapsStrings.small
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined yandex-maps.yandex-maps.control.IBaseButtonParametersOptions & {  selectOnClick :boolean | undefined,   size :'auto' | 'small' | 'medium' | 'large' | undefined} */
 @js.native

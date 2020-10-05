@@ -3,7 +3,7 @@ package typings.reactNavigation.mod
 import typings.reactNavigation.reactNavigationStrings.NavigationSlashPOP_TO_TOP
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NavigationPopToTopAction

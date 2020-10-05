@@ -7,7 +7,7 @@ import typings.electron.electronStrings.never
 import typings.electron.electronStrings.normal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NotificationConstructorOptions extends js.Object {

@@ -7,7 +7,7 @@ import typings.reactNative.reactNativeStrings.default
 import typings.reactNative.reactNativeStrings.reload
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ImageURISource extends js.Object {

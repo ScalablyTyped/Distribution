@@ -4,7 +4,7 @@ import typings.std.WebGLRenderingContext
 import typings.three.anon.Ambient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/renderers/webgl/WebGLLights", JSImport.Namespace)
 @js.native

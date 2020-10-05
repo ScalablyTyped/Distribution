@@ -6,7 +6,7 @@ import typings.rcFieldForm.anon.Max
 import typings.rcFieldForm.anon.MismatchString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-field-form/es/utils/messages", JSImport.Namespace)
 @js.native

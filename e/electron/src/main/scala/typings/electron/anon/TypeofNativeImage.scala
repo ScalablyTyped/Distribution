@@ -7,7 +7,7 @@ import typings.electron.Electron.NativeImage_
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofNativeImage extends Instantiable0[NativeImage_] {

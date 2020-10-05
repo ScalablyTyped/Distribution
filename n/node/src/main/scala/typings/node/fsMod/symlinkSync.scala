@@ -3,7 +3,7 @@ package typings.node.fsMod
 import typings.node.fsMod.symlink.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs", "symlinkSync")
 @js.native

@@ -5,7 +5,7 @@ import typings.angularCore.timingStrategyMod.TimingStrategy
 import typings.typescript.mod.TypeChecker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core/schematics/migrations/static-queries/strategies/usage_strategy/usage_strategy", JSImport.Namespace)
 @js.native

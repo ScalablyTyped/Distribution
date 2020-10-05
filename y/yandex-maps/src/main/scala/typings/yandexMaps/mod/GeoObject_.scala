@@ -4,7 +4,7 @@ import typings.yandexMaps.mod.event.Manager
 import typings.yandexMaps.mod.geoObject.Hint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yandex-maps", "GeoObject")
 @js.native

@@ -3,7 +3,7 @@ package typings.reactRouter.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait `match`[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 

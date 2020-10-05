@@ -5,7 +5,7 @@ import typings.d3Dsv.mod.DSVRowArray
 import typings.d3Dsv.mod.DSVRowString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3", "csvParse")
 @js.native

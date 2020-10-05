@@ -104,7 +104,7 @@ import typings.materialUiCore.typographyTypographyMod.Style
 import typings.materialUiCore.typographyTypographyMod.TypographyClassKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object materialUiCoreStrings {
   @js.native

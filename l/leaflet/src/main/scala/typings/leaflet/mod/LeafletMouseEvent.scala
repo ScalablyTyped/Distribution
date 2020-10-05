@@ -3,7 +3,7 @@ package typings.leaflet.mod
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.leaflet.mod.DomEvent._PropagableEvent because Already inherited */ @js.native

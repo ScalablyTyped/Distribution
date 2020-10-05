@@ -3,7 +3,7 @@ package typings.rcMenu
 import typings.rcMenu.anon.Offset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-menu/es/placements", JSImport.Namespace)
 @js.native

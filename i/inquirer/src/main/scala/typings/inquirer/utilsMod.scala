@@ -7,7 +7,7 @@ import typings.inquirer.mod.UnionToIntersection
 import typings.rxjs.mod.Observable_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("inquirer/lib/utils/utils", JSImport.Namespace)
 @js.native

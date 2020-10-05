@@ -33,7 +33,7 @@ import typings.semanticUiReact.semanticUiReactStrings.two
 import typings.semanticUiReact.stepStepMod.StepProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StrictStepGroupProps extends js.Object {

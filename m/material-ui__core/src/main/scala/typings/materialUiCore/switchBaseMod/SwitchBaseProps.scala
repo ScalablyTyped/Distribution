@@ -95,7 +95,7 @@ import typings.std.HTMLInputElement
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/IconButton.IconButtonProps, @material-ui/core.@material-ui/core/internal/SwitchBase.SwitchBaseClassKey, 'onChange' | 'value'> */
 @js.native

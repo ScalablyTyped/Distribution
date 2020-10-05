@@ -11,7 +11,7 @@ import typings.chartJs.chartJsStrings.x
 import typings.chartJs.chartJsStrings.y
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Allow extending the IteractionMode type alias
 // see https://github.com/microsoft/TypeScript/issues/28078#issuecomment-432339564

@@ -3,7 +3,7 @@ package typings.mobxReactLite.anon
 import typings.mobxReactLite.mobxReactLiteBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ForwardRef extends js.Object {

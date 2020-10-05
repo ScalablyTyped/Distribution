@@ -7,7 +7,7 @@ import typings.std.NotificationPermission
 import typings.std.NotificationPermissionCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Notification")
 @js.native

@@ -7,7 +7,7 @@ import typings.rcTree.treeMod.TreeProps
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<rc-tree.rc-tree/es/Tree.TreeState> */
 @js.native

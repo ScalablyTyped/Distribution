@@ -2,7 +2,7 @@ package typings.node.asyncHooksMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("async_hooks", "executionAsyncId")
 @js.native

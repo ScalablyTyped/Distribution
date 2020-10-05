@@ -3,7 +3,7 @@ package typings.rcTextarea.mod
 import typings.rcTextarea.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-textarea", JSImport.Default)
 @js.native

@@ -5,7 +5,7 @@ import typings.node.dnsMod.ResolveOptions
 import typings.node.dnsMod.ResolveWithTtlOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallHostnameOptions extends js.Object {

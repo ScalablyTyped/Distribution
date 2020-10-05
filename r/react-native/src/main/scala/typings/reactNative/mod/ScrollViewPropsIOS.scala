@@ -11,7 +11,7 @@ import typings.reactNative.reactNativeStrings.scrollableAxes
 import typings.reactNative.reactNativeStrings.white
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ScrollViewPropsIOS extends js.Object {

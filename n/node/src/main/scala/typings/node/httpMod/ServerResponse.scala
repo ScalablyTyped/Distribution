@@ -3,7 +3,7 @@ package typings.node.httpMod
 import typings.node.netMod.Socket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/nodejs/node/blob/master/lib/_http_server.js#L108-L256
 @JSImport("http", "ServerResponse")

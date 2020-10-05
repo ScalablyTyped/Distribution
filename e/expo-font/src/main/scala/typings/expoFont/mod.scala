@@ -6,7 +6,7 @@ import typings.expoFont.fontTypesMod.UnloadFontOptions
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("expo-font", JSImport.Namespace)
 @js.native

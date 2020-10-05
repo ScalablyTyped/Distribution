@@ -7,7 +7,7 @@ import typings.reactNavigationStack.vendorTypesMod.StackHeaderMode
 import typings.reactNavigationStack.vendorTypesMod.StackNavigationHelpers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/views/Stack/StackView.Props> */
 @js.native

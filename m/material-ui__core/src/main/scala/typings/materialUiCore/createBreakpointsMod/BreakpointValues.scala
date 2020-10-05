@@ -2,7 +2,7 @@ package typings.materialUiCore.createBreakpointsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ key in @material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoint ]: number} */
 @js.native

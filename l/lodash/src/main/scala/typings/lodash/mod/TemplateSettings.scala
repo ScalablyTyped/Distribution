@@ -3,7 +3,7 @@ package typings.lodash.mod
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * By default, the template delimiters used by Lo-Dash are similar to those in embedded Ruby

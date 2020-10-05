@@ -47,7 +47,7 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.HTMLImageElement> */
 @js.native

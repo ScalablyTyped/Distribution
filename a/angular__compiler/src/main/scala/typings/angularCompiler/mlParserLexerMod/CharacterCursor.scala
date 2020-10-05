@@ -3,7 +3,7 @@ package typings.angularCompiler.mlParserLexerMod
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The _Tokenizer uses objects of this type to move through the input text,

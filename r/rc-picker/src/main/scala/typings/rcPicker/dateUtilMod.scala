@@ -5,7 +5,7 @@ import typings.rcPicker.interfaceMod.NullableDateType
 import typings.rcPicker.interfaceMod.PickerMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-picker/es/utils/dateUtil", JSImport.Namespace)
 @js.native

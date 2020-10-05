@@ -5,7 +5,7 @@ import typings.mobx.observablemapMod.IMapDidChange
 import typings.mobx.observablemapMod.ObservableMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Object[K, V] extends IMapDidChange[K, V] {

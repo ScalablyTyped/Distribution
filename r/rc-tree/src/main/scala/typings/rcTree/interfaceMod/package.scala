@@ -2,7 +2,7 @@ package typings.rcTree
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object interfaceMod {
   type GetCheckDisabled[RecordType] = js.Function1[/* record */ RecordType, scala.Boolean]

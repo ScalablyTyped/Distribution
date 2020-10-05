@@ -3,7 +3,7 @@ package typings.angularCore.timingStrategyMod
 import typings.angularCore.queryDefinitionMod.NgQueryDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TimingStrategy extends js.Object {

@@ -7,7 +7,7 @@ import typings.std.Int16ArrayConstructor
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Int16Array")
 @js.native

@@ -4,7 +4,7 @@ import typings.node.NodeJS.ArrayBufferView
 import typings.node.streamMod.Writable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("crypto", "Verify")
 @js.native

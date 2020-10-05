@@ -5,7 +5,7 @@ import typings.chartJs.chartJsStrings.data
 import typings.chartJs.chartJsStrings.labels
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NestedTickOptions extends js.Object {

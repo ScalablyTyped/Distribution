@@ -3,7 +3,7 @@ package typings.styledComponents.styledComponentsMod
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ThemeProviderProps[T /* <: js.Object */, U /* <: js.Object */] extends js.Object {

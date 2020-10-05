@@ -4,7 +4,7 @@ import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.subjectMod.Subject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators/groupBy", "GroupedObservable")
 @js.native

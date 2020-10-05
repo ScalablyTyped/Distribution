@@ -4,7 +4,7 @@ import typings.electron.Electron.NativeImage_
 import typings.electron.Electron.Tray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("electron", "remote.Tray")
 @js.native

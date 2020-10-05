@@ -3,7 +3,7 @@ package typings.d3Transition.mod
 import typings.d3Selection.mod.BaseType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 @JSImport("d3-selection", JSImport.Namespace)

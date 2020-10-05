@@ -24,7 +24,7 @@ import typings.std.stdStrings.WEBGL_draw_buffers
 import typings.std.stdStrings.WEBGL_lose_context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebGLRenderingContextBase extends js.Object {

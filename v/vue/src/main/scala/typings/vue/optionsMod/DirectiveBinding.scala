@@ -3,7 +3,7 @@ package typings.vue.optionsMod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Readonly<vue.vue/types/vnode.VNodeDirective> */
 @js.native

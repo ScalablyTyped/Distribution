@@ -4,7 +4,7 @@ import typings.moment.mod.Moment
 import typings.rcPicker.generateMod.GenerateConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-picker/es/generate/moment", JSImport.Namespace)
 @js.native

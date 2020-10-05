@@ -3,7 +3,7 @@ package typings.reactNavigationStack
 import typings.reactNavigationStack.vendorTypesMod.TransitionSpec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-navigation-stack/lib/typescript/src/vendor/TransitionConfigs/TransitionSpecs", JSImport.Namespace)
 @js.native

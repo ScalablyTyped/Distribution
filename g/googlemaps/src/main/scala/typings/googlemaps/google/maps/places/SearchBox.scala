@@ -5,7 +5,7 @@ import typings.googlemaps.google.maps.LatLngBoundsLiteral
 import typings.googlemaps.google.maps.MVCObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SearchBox extends MVCObject {

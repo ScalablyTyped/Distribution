@@ -3,7 +3,7 @@ package typings.fortawesomeFontawesomeSvgCore.mod
 import typings.std.HTMLCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Counter_ extends FontawesomeObject {

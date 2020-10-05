@@ -4,7 +4,7 @@ import typings.angularCompiler.mlParserAstMod.Node
 import typings.angularCompiler.mlParserAstMod.Visitor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "visitAll")
 @js.native

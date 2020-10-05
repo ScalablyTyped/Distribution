@@ -4,7 +4,7 @@ import typings.node.NodeJS.ErrnoException
 import typings.node.anon.Hostname
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dns", "lookupService")
 @js.native

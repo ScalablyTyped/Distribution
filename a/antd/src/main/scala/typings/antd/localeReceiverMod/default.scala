@@ -5,7 +5,7 @@ import typings.antd.anon.PartialLocaleexistboolean
 import typings.react.mod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/locale-provider/LocaleReceiver", JSImport.Default)
 @js.native

@@ -3,7 +3,7 @@ package typings.jss.mod
 import typings.jss.anon.PartialJssOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jss", "create")
 @js.native

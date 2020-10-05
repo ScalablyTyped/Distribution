@@ -4,7 +4,7 @@ import typings.node.netMod.Socket
 import typings.node.netMod.SocketConstructorOpts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tty", "ReadStream")
 @js.native

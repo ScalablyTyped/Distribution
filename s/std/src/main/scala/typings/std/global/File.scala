@@ -6,7 +6,7 @@ import typings.std.BlobPart
 import typings.std.FilePropertyBag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("File")
 @js.native

@@ -6,7 +6,7 @@ import typings.csstype.mod.Property._GridTemplateColumns
 import typings.csstype.mod.Property._GridTemplateRows
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _TrackBreadth[TLength]
   extends _GridAutoColumns[TLength]

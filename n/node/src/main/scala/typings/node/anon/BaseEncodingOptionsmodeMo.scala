@@ -5,7 +5,7 @@ import typings.node.fsMod.Mode
 import typings.node.fsMod.OpenMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined node.fs.BaseEncodingOptions & {  mode :node.fs.Mode | undefined,   flag :node.fs.OpenMode | undefined} */
 @js.native

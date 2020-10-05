@@ -9,7 +9,7 @@ import typings.angularCompiler.srcUtilMod.SyncAsync
 import typings.angularCompiler.urlResolverMod.UrlResolver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/directive_normalizer", "DirectiveNormalizer")
 @js.native

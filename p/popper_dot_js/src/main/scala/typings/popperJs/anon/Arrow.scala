@@ -3,7 +3,7 @@ package typings.popperJs.anon
 import typings.popperJs.mod.Popper.Offset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Arrow extends js.Object {

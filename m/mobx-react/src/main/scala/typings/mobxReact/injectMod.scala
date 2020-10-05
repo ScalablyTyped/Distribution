@@ -5,7 +5,7 @@ import typings.mobxReact.istorestopropsMod.IStoresToProps
 import typings.mobxReact.iwrappedcomponentMod.IWrappedComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mobx-react/dist/inject", JSImport.Namespace)
 @js.native

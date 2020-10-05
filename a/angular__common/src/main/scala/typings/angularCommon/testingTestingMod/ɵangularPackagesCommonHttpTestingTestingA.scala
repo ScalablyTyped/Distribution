@@ -7,7 +7,7 @@ import typings.angularCommon.httpMod.HttpRequest
 import typings.rxjs.mod.Observable_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.angularCommon.testingTestingMod.HttpTestingController because Inheritance from two classes. Inlined `match`, `match`, `match`, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectOne, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, expectNone, verify, verify */ @JSImport("@angular/common/http/testing/testing", "\u0275angular_packages_common_http_testing_testing_a")

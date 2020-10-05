@@ -7,7 +7,7 @@ import typings.semanticUiReact.cardCardMod.CardComponent
 import typings.semanticUiReact.cardCardMod.CardProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "Card")
 @js.native

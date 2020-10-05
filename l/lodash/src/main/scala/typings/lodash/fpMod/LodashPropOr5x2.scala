@@ -4,7 +4,7 @@ import typings.lodash.mod.NumericDictionary
 import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LodashPropOr5x2 extends js.Object {

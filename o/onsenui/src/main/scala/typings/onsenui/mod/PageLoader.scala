@@ -3,7 +3,7 @@ package typings.onsenui.mod
 import typings.onsenui.anon.Page
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @description PageLoader class constructor

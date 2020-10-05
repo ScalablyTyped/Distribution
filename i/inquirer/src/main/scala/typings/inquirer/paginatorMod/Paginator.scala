@@ -2,7 +2,7 @@ package typings.inquirer.paginatorMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides the functionality to draw paginated content using a `ScreenManager`.

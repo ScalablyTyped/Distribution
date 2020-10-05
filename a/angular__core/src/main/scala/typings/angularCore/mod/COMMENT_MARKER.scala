@@ -3,7 +3,7 @@ package typings.angularCore.mod
 import typings.angularCore.angularCoreStrings.comment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait COMMENT_MARKER extends js.Object {

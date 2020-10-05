@@ -5,7 +5,7 @@ import typings.semanticUiReact.genericMod.SemanticWIDTHS
 import typings.semanticUiReact.semanticUiReactStrings.equal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StrictFormGroupProps extends js.Object {

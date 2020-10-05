@@ -8,7 +8,7 @@ import typings.reactNativeGestureHandler.drawerLayoutMod.DrawerType
 import typings.reactNativeGestureHandler.swipeableMod.SwipeableExcludes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeGestureHandlerStrings {
   @js.native

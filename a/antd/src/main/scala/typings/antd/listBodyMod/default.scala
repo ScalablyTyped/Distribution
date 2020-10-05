@@ -3,7 +3,7 @@ package typings.antd.listBodyMod
 import typings.antd.anon.Current
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/transfer/ListBody", JSImport.Default)
 @js.native

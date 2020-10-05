@@ -5,7 +5,7 @@ import typings.lodash.mod.NumericDictionary
 import typings.lodash.mod.PartialObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LodashPickBy3x1[T] extends js.Object {

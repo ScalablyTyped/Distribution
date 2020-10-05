@@ -5,7 +5,7 @@ import typings.reactNative.reactNativeStrings.default
 import typings.reactNative.reactNativeStrings.destructive
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AlertButton extends js.Object {

@@ -3,7 +3,7 @@ package typings.expoSqlite
 import typings.expoSqlite.sqliteTypesMod.WebSQLDatabase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("expo-sqlite", JSImport.Namespace)
 @js.native

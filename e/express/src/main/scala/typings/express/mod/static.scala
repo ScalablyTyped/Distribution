@@ -4,7 +4,7 @@ import typings.express.anon.Typeofm
 import typings.serveStatic.mod.ServeStaticOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a built-in middleware function in Express. It serves static files and is based on serve-static.

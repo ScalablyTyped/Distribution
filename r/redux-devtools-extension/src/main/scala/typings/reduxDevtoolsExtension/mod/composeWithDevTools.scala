@@ -4,7 +4,7 @@ import typings.redux.mod.StoreEnhancer
 import typings.reduxDevtoolsExtension.anon.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-devtools-extension", "composeWithDevTools")
 @js.native

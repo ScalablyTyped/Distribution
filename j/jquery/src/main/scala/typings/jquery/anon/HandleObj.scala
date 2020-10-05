@@ -3,7 +3,7 @@ package typings.jquery.anon
 import typings.jquery.JQuery.HandleObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HandleObj[TTarget, TData] extends js.Object {

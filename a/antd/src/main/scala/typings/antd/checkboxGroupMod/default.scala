@@ -4,7 +4,7 @@ import typings.antd.anon.Options
 import typings.antd.anon.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/checkbox/Group", JSImport.Default)
 @js.native

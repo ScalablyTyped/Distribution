@@ -2,7 +2,7 @@ package typings.node
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object replMod {
   type REPLCommandAction = js.ThisFunction1[/* this */ typings.node.replMod.REPLServer, /* text */ java.lang.String, scala.Unit]

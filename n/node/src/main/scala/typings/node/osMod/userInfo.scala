@@ -5,7 +5,7 @@ import typings.node.anon.`2`
 import typings.node.anon.`4`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("os", "userInfo")
 @js.native

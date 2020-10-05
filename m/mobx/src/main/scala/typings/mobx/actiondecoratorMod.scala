@@ -7,7 +7,7 @@ import typings.mobx.anon.Set
 import typings.mobx.decoratorsMod.BabelDescriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mobx/lib/api/actiondecorator", JSImport.Namespace)
 @js.native

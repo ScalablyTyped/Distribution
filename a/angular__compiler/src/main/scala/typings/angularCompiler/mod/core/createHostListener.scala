@@ -5,7 +5,7 @@ import typings.angularCompiler.coreMod.HostListener
 import typings.angularCompiler.coreMod.MetadataFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "core.createHostListener")
 @js.native

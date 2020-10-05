@@ -4,7 +4,7 @@ import typings.angularCommon.httpHttpMod.HttpEventType.DownloadProgress
 import typings.angularCommon.httpHttpMod.HttpEventType.UploadProgress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HttpProgressEvent

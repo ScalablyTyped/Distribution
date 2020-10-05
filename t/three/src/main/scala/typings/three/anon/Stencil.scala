@@ -5,7 +5,7 @@ import typings.three.webGLStateMod.WebGLDepthBuffer
 import typings.three.webGLStateMod.WebGLStencilBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Stencil extends js.Object {

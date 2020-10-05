@@ -2,7 +2,7 @@ package typings.expoLocation
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
   type LocationCallback = js.Function1[/* data */ typings.expoLocation.mod.LocationData, js.Any]

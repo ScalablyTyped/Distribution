@@ -4,7 +4,7 @@ import typings.semanticUiReact.commonjsMod.SemanticWIDTHS
 import typings.semanticUiReact.commonjsMod.SemanticWIDTHSNUMBER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object semanticUiReactNumbers {
   @js.native

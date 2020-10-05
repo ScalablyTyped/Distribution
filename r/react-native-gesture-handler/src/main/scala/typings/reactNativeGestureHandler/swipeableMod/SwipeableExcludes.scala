@@ -2,7 +2,7 @@ package typings.reactNativeGestureHandler.swipeableMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Exclude<keyof react-native-gesture-handler.react-native-gesture-handler.PanGestureHandlerProperties, 'onGestureEvent' | 'onHandlerStateChange'> */
 /* Rewritten from type alias, can be one of: 

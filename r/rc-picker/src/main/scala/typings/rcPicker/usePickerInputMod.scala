@@ -6,7 +6,7 @@ import typings.react.mod.DOMAttributes
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-picker/es/hooks/usePickerInput", JSImport.Namespace)
 @js.native

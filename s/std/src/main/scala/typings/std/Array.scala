@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.std.anon.CopyWithin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Array[T] extends /* n */ NumberDictionary[T] {

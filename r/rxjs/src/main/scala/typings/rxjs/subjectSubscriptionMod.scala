@@ -5,7 +5,7 @@ import typings.rxjs.subscriptionMod.Subscription
 import typings.rxjs.typesMod.Observer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/SubjectSubscription", JSImport.Namespace)
 @js.native

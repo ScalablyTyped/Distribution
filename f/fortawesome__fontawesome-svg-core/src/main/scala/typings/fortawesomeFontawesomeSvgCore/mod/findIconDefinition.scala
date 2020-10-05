@@ -4,7 +4,7 @@ import typings.fortawesomeFontawesomeCommonTypes.mod.IconDefinition
 import typings.fortawesomeFontawesomeCommonTypes.mod.IconLookup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@fortawesome/fontawesome-svg-core", "findIconDefinition")
 @js.native

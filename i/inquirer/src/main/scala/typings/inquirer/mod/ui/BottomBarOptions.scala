@@ -3,7 +3,7 @@ package typings.inquirer.mod.ui
 import typings.inquirer.mod.StreamOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides options for the bottom-bar UI.

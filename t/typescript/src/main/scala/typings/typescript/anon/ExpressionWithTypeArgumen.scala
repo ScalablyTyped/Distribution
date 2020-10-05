@@ -17,7 +17,7 @@ import typings.typescript.mod.SyntaxKind.ExpressionWithTypeArguments
 import typings.typescript.mod.TypeNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined typescript.typescript.ExpressionWithTypeArguments & {  expression :typescript.typescript.Identifier | typescript.typescript.PropertyAccessEntityNameExpression} */
 @js.native

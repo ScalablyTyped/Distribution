@@ -4,7 +4,7 @@ import typings.reactNavigation.mod.NavigationParams
 import typings.reactNavigation.mod.NavigationRoute
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-navigation.react-navigation.NavigationLeafRoute<react-navigation.react-navigation.NavigationParams> & react-navigation.react-navigation.NavigationState & {  isDrawerOpen :any | undefined} */
 @js.native

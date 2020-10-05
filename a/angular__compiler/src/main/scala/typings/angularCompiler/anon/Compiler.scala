@@ -4,7 +4,7 @@ import typings.angularCompiler.aotCompilerMod.AotCompiler
 import typings.angularCompiler.staticReflectorMod.StaticReflector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Compiler extends js.Object {

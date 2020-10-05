@@ -11,7 +11,7 @@ import typings.node.nodeStrings.wantTrailers
 import typings.node.streamMod.Duplex
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Http2Stream extends Duplex {

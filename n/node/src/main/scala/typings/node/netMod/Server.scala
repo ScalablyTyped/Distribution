@@ -10,7 +10,7 @@ import typings.node.nodeStrings.listening
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/nodejs/node/blob/master/lib/net.js
 @JSImport("net", "Server")

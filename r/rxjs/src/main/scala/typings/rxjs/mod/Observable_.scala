@@ -7,7 +7,7 @@ import typings.rxjs.typesMod.SubscribableOrPromise
 import typings.rxjs.typesMod.TeardownLogic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs", "Observable")
 @js.native

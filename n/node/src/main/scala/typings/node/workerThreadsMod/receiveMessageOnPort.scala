@@ -3,7 +3,7 @@ package typings.node.workerThreadsMod
 import typings.node.anon.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("worker_threads", "receiveMessageOnPort")
 @js.native

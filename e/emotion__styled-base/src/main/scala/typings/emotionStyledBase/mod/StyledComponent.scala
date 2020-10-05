@@ -351,7 +351,7 @@ import typings.std.SVGUseElement
 import typings.std.SVGViewElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StyledComponent[InnerProps, StyleProps, Theme /* <: js.Object */]

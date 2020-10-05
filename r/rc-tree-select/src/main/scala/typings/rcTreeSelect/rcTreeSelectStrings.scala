@@ -4,7 +4,7 @@ import typings.rcTreeSelect.interfaceMod.SelectSource
 import typings.rcTreeSelect.useKeyValueMappingMod._SkipType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rcTreeSelectStrings {
   @js.native

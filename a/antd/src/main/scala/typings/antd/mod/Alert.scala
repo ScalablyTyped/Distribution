@@ -5,7 +5,7 @@ import typings.antd.alertMod.AlertInterface
 import typings.antd.errorBoundaryMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd", "Alert")
 @js.native

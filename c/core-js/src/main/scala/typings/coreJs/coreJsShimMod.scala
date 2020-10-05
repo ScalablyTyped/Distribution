@@ -19,7 +19,7 @@ import typings.std.WeakMapConstructor
 import typings.std.WeakSetConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("core-js/shim", JSImport.Namespace)
 @js.native

@@ -8,7 +8,7 @@ import typings.expoWebBrowser.webBrowserTypesMod.WebBrowserResult
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("expo-web-browser/build/ExpoWebBrowser.web", JSImport.Namespace)
 @js.native

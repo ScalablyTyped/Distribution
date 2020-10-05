@@ -3,7 +3,7 @@ package typings.d3Geo.mod
 import typings.d3Geo.d3GeoStrings.Sphere
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GeoSphere extends js.Object {

@@ -5,7 +5,7 @@ import typings.rcNotification.anon.NotificationPropsgetConta
 import typings.rcNotification.notificationMod.NotificationInstance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-notification", JSImport.Namespace)
 @js.native

@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.leaflet.mod.Class
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {new (args : ...any): any} & {extend (props : any): {new (args : ...any): any} & typeof Class, include (props : any): any & typeof Class, mergeOptions (props : any): any & typeof Class, addInitHook (initHookFn : (): void): any & typeof Class, addInitHook (methodName : string, args : ...any): any & typeof Class, new (): leaflet.leaflet.Class} */
 @js.native

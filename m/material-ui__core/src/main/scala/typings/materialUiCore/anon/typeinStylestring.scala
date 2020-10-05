@@ -2,7 +2,7 @@ package typings.materialUiCore.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ type in @material-ui/core.@material-ui/core/Typography/Typography.Style ]: string} */
 @js.native

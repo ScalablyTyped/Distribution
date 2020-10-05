@@ -3,7 +3,7 @@ package typings.d3Array.mod
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3-array", "variance")
 @js.native

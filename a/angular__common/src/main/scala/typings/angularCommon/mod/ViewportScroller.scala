@@ -4,7 +4,7 @@ import typings.angularCommon.angularCommonStrings.auto
 import typings.angularCommon.angularCommonStrings.manual
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common", "ViewportScroller")
 @js.native

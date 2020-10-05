@@ -9,7 +9,7 @@ import typings.reactNative.reactNativeStrings.Small
 import typings.reactNative.reactNativeStrings.SmallInverse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ProgressBarAndroidProps extends ViewProps {

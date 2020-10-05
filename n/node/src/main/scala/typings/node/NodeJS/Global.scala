@@ -54,7 +54,7 @@ import typings.std.global.TypeError
 import typings.std.global.URIError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Global extends js.Object {

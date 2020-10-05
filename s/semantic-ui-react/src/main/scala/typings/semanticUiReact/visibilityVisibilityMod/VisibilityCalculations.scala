@@ -4,7 +4,7 @@ import typings.semanticUiReact.semanticUiReactStrings.down
 import typings.semanticUiReact.semanticUiReactStrings.up
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait VisibilityCalculations extends js.Object {

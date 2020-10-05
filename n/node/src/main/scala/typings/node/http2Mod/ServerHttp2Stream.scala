@@ -5,7 +5,7 @@ import typings.node.promisesMod.FileHandle
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ServerHttp2Stream extends Http2Stream {

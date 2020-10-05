@@ -3,7 +3,7 @@ package typings.angularCore.anon
 import typings.angularCore.providersEvaluatorMod.ProviderLiteral
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Literals extends js.Object {

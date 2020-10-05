@@ -18,7 +18,7 @@ import typings.std.Record
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - js.Function because Inheritance from two classes. Inlined length, call, bind

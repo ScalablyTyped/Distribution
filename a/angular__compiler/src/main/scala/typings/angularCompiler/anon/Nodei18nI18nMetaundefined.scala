@@ -5,7 +5,7 @@ import typings.angularCompiler.r3AstMod.Visitor
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @angular/compiler.@angular/compiler/src/render3/r3_ast.Node & {  i18n :@angular/compiler.@angular/compiler/src/i18n/i18n_ast.I18nMeta | undefined} */
 @js.native

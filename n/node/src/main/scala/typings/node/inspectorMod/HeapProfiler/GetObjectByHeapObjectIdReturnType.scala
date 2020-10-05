@@ -3,7 +3,7 @@ package typings.node.inspectorMod.HeapProfiler
 import typings.node.inspectorMod.Runtime.RemoteObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GetObjectByHeapObjectIdReturnType extends js.Object {

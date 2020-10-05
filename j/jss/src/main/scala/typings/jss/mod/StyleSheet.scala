@@ -4,7 +4,7 @@ import typings.jss.anon.PartialRuleOptions
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StyleSheet[RuleName /* <: String | Double | js.Symbol */] extends js.Object {

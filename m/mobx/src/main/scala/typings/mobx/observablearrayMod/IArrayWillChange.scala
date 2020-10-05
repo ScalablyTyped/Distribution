@@ -3,7 +3,7 @@ package typings.mobx.observablearrayMod
 import typings.mobx.mobxStrings.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IArrayWillChange[T] extends js.Object {

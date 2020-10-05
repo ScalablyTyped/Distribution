@@ -3,7 +3,7 @@ package typings.reactNative.anon
 import typings.reactNative.mod.PermissionStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ key in react-native.react-native.Permission ]: react-native.react-native.PermissionStatus} */
 @js.native

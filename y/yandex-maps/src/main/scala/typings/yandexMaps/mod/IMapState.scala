@@ -5,7 +5,7 @@ import typings.yandexMaps.yandexMapsStrings.yandexNumbersignmap
 import typings.yandexMaps.yandexMapsStrings.yandexNumbersignsatellite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IMapState extends js.Object {

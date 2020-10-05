@@ -3,7 +3,7 @@ package typings.storybookApi.mod
 import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ConsumerProps[S, C] extends js.Object {

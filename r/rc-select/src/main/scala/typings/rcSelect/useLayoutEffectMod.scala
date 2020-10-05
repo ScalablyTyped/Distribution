@@ -4,7 +4,7 @@ import typings.react.mod.DependencyList
 import typings.react.mod.EffectCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-select/lib/hooks/useLayoutEffect", JSImport.Namespace)
 @js.native

@@ -9,7 +9,7 @@ import typings.node.readlineMod.Interface
 import typings.rxjs.mod.Observable_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a prompt.

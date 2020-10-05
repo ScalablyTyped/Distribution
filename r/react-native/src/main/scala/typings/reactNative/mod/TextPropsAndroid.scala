@@ -5,7 +5,7 @@ import typings.reactNative.reactNativeStrings.highQuality
 import typings.reactNative.reactNativeStrings.simple
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TextPropsAndroid extends js.Object {

@@ -3,7 +3,7 @@ package typings.lodash.fpMod
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LodashPropOr1x5[TObject, TDefault] extends js.Object {

@@ -12,7 +12,7 @@ import typings.semanticUiReact.labelLabelMod.LabelProps
 import typings.semanticUiReact.textAreaTextAreaMod.StrictTextAreaProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.semanticUiReact.formFieldMod.StrictFormFieldProps because var conflicts: as, children, className, disabled, id, required. Inlined content, control, error, `inline`, label, `type`, width */ @js.native

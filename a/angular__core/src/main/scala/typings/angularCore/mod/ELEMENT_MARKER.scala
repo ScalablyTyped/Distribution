@@ -3,7 +3,7 @@ package typings.angularCore.mod
 import typings.angularCore.angularCoreStrings.element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ELEMENT_MARKER extends js.Object {

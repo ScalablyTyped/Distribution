@@ -4,7 +4,7 @@ import typings.angularCompiler.astMod.ParserError
 import typings.angularCompiler.astMod.TemplateBinding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/expression_parser/parser", "TemplateBindingParseResult")
 @js.native

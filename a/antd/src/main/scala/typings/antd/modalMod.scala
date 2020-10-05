@@ -11,7 +11,7 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/modal", JSImport.Namespace)
 @js.native

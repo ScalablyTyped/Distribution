@@ -6,7 +6,7 @@ import typings.jquery.jqueryStrings.rejected
 import typings.jquery.jqueryStrings.resolved
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Type parameter guide
 // --------------------

@@ -14,7 +14,7 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<rc-tooltip.rc-tooltip/es/Tooltip.TooltipProps> */
 @js.native

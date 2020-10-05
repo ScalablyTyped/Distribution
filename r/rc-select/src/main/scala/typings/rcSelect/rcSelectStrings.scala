@@ -4,7 +4,7 @@ import typings.rcSelect.generatorMod.SelectSource
 import typings.rcSelect.interfaceMod.Mode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rcSelectStrings {
   @js.native

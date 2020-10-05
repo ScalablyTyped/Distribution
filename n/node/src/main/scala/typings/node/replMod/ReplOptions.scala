@@ -8,7 +8,7 @@ import typings.node.readlineMod.CompleterResult
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ReplOptions extends js.Object {

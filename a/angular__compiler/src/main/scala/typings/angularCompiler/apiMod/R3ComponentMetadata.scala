@@ -13,7 +13,7 @@ import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait R3ComponentMetadata extends R3DirectiveMetadata {

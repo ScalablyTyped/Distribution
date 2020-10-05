@@ -5,7 +5,7 @@ import typings.std.ArrayLike
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Uint16BufferAttribute")
 @js.native

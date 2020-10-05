@@ -7,7 +7,7 @@ import typings.reactBigCalendar.reactBigCalendarStrings.week_
 import typings.reactBigCalendar.reactBigCalendarStrings.work_week_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Views extends js.Object {

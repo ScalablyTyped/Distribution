@@ -6,7 +6,7 @@ import typings.angularRouter.angularRouterStrings.popstate
 import typings.angularRouter.anon.Dictk
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "NavigationStart")
 @js.native

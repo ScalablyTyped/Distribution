@@ -4,7 +4,7 @@ import typings.expoLinking.expoLinkingStrings.url
 import typings.expoLinking.linkingTypesMod.URLListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("expo-linking/build/ExpoLinking.web", JSImport.Namespace)
 @js.native

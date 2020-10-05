@@ -3,7 +3,7 @@ package typings.rcTable.headerRowMod
 import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-table/lib/Header/HeaderRow", JSImport.Default)
 @js.native

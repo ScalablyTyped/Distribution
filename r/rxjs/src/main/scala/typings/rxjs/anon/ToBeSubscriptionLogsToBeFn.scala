@@ -3,7 +3,7 @@ package typings.rxjs.anon
 import typings.rxjs.testSchedulerMod.subscriptionLogsToBeFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ToBeSubscriptionLogsToBeFn extends js.Object {

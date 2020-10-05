@@ -9,7 +9,7 @@ import typings.three.skeletonMod.Skeleton
 import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/objects/SkinnedMesh", JSImport.Namespace)
 @js.native

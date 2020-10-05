@@ -5,7 +5,7 @@ import typings.d3Axis.mod.AxisDomain
 import typings.d3Axis.mod.AxisScale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3", "axisRight")
 @js.native

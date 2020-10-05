@@ -14,7 +14,7 @@ import typings.storybookRouter.utilsMod.Query
 import typings.storybookRouter.utilsMod.StoryData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@storybook/router", JSImport.Namespace)
 @js.native

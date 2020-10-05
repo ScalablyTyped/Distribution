@@ -4,7 +4,7 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ExpandTransitionProps extends Props[ExpandTransition] {

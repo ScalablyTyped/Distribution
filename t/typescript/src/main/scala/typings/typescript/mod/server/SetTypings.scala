@@ -5,7 +5,7 @@ import typings.typescript.mod.SortedReadonlyArray
 import typings.typescript.mod.TypeAcquisition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SetTypings extends ProjectResponse {

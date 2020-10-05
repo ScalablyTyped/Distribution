@@ -4,7 +4,7 @@ import typings.materialUiCore.createBreakpointsMod.Breakpoints
 import typings.materialUiCore.spacingMod.Spacing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material-ui/core/styles/createMixins", JSImport.Default)
 @js.native

@@ -3,7 +3,7 @@ package typings.angularCommon
 import typings.angularCommon.anon.HUF
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/locales/hu", JSImport.Namespace)
 @js.native

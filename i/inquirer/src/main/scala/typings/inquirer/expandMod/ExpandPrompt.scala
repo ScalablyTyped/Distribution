@@ -4,7 +4,7 @@ import typings.inquirer.mod.prompts.FailedPromptStateData
 import typings.inquirer.mod.prompts.SuccessfulPromptStateData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a prompt which forces the user to make a choice by typing a specific key.

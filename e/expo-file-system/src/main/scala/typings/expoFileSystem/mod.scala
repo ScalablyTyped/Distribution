@@ -14,7 +14,7 @@ import typings.expoFileSystem.fileSystemTypesMod.ReadingOptions
 import typings.expoFileSystem.fileSystemTypesMod.WritingOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("expo-file-system", JSImport.Namespace)
 @js.native

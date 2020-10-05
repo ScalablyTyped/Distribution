@@ -16,7 +16,7 @@ import typings.react.mod.WeakValidationMap
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/date-picker", JSImport.Default)
 @js.native

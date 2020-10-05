@@ -5,7 +5,7 @@ import typings.googlemaps.googlemapsStrings.poly
 import typings.googlemaps.googlemapsStrings.rect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This object defines the clickable region of a marker image. The shape

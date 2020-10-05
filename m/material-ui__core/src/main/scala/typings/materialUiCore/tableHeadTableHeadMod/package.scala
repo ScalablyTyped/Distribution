@@ -2,7 +2,7 @@ package typings.materialUiCore
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object tableHeadTableHeadMod {
   type TableHeadBaseProps = typings.react.mod.HTMLAttributes[typings.std.HTMLTableSectionElement]

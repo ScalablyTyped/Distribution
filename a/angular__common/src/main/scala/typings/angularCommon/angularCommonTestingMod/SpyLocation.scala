@@ -3,7 +3,7 @@ package typings.angularCommon.angularCommonTestingMod
 import typings.angularCommon.mod.Location
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/testing/testing", "SpyLocation")
 @js.native

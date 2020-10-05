@@ -6,7 +6,7 @@ import typings.node.nodeStrings.push
 import typings.node.nodeStrings.response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClientHttp2Stream extends Http2Stream {

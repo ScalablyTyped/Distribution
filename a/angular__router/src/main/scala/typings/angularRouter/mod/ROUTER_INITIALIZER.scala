@@ -5,7 +5,7 @@ import typings.angularCore.mod.ComponentRef
 import typings.angularCore.mod.InjectionToken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "ROUTER_INITIALIZER")
 @js.native

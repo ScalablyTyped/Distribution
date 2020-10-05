@@ -4,7 +4,7 @@ import typings.yandexMaps.yandexMapsStrings.yandexNumbersignairPanorama
 import typings.yandexMaps.yandexMapsStrings.yandexNumbersignpanorama
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Direction extends js.Object {

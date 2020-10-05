@@ -5,7 +5,7 @@ import typings.typescript.mod.Expression
 import typings.typescript.mod.ObjectLiteralExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StaticInterpreter * / any */ @JSImport("@angular/core/schematics/migrations/missing-injectable/providers_evaluator", "ProvidersEvaluator")

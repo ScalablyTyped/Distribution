@@ -4,7 +4,7 @@ import typings.std.Node
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material-ui/core/utils/ownerWindow", JSImport.Namespace)
 @js.native

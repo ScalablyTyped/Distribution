@@ -2,7 +2,7 @@ package typings.storybookApi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object storiesMod {
   type GroupsList = js.Array[typings.storybookApi.storiesMod.Group]

@@ -3,7 +3,7 @@ package typings.rcTable.anon
 import typings.rcTable.rcTableBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait X extends js.Object {

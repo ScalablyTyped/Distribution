@@ -10,7 +10,7 @@ import typings.moment.mod.unitOfTime.DurationConstructor
 import typings.moment.mod.unitOfTime.MomentConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object momentStrings {
   @js.native

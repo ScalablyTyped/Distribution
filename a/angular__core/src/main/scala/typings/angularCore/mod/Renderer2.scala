@@ -6,7 +6,7 @@ import typings.angularCore.angularCoreStrings.document
 import typings.angularCore.angularCoreStrings.window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "Renderer2")
 @js.native

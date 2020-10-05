@@ -10,7 +10,7 @@ import typings.std.DOMQuadInit
 import typings.std.DOMRectInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("DOMQuad")
 @js.native

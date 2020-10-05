@@ -5,7 +5,7 @@ import typings.three.sphericalHarmonics3Mod.SphericalHarmonics3
 import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/lights/LightProbe", JSImport.Namespace)
 @js.native

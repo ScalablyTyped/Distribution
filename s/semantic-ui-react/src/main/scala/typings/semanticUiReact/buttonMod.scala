@@ -6,7 +6,7 @@ import typings.semanticUiReact.buttonGroupMod.ButtonGroupProps
 import typings.semanticUiReact.buttonOrMod.ButtonOrProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react/dist/commonjs/elements/Button", JSImport.Namespace)
 @js.native

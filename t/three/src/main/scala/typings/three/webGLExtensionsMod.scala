@@ -3,7 +3,7 @@ package typings.three
 import typings.std.WebGLRenderingContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/renderers/webgl/WebGLExtensions", JSImport.Namespace)
 @js.native

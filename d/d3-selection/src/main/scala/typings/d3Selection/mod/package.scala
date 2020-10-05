@@ -2,7 +2,7 @@ package typings.d3Selection
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
   type BaseType = typings.std.Element | typings.d3Selection.mod.EnterElement | typings.std.Document | typings.std.Window | scala.Null

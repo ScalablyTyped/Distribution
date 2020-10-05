@@ -2,7 +2,7 @@ package typings.csstype.mod.AtRule
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ P in keyof csstype.csstype.AtRule.FontFaceHyphen<TLength, TTime> ]: csstype.csstype.AtRule.FontFaceHyphen<TLength, TTime>[P] | std.Array<csstype.csstype.AtRule.FontFaceHyphen<TLength, TTime>[P]>} */
 @js.native

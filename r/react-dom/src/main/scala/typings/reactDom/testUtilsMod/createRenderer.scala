@@ -2,7 +2,7 @@ package typings.reactDom.testUtilsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-dom/test-utils", "createRenderer")
 @js.native

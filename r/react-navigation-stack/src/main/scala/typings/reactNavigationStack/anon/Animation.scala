@@ -4,7 +4,7 @@ import typings.reactNavigationStack.reactNavigationStackStrings.spring
 import typings.reactNavigationStack.vendorTypesMod.TransitionSpec
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Animation extends TransitionSpec {

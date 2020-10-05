@@ -7,7 +7,7 @@ import typings.dayjs.toObjectMod.DayjsObject
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dayjs", "Dayjs")
 @js.native

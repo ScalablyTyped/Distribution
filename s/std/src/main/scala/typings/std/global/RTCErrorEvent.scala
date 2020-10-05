@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.RTCErrorEventInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("RTCErrorEvent")
 @js.native

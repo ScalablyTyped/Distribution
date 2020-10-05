@@ -5,7 +5,7 @@ import typings.angularCompiler.r3FactoryMod.R3DependencyMetadata
 import typings.angularCompiler.render3UtilMod.R3Reference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait R3InjectableMetadata extends js.Object {

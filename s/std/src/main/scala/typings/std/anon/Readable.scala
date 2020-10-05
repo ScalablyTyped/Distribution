@@ -4,7 +4,7 @@ import typings.std.ReadableStream
 import typings.std.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Readable[R, T] extends js.Object {

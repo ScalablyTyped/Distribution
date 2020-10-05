@@ -3,7 +3,7 @@ package typings.antd
 import typings.antd.anon.GapDegree
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/progress", JSImport.Namespace)
 @js.native

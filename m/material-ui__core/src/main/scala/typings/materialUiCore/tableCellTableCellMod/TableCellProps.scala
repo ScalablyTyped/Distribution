@@ -98,7 +98,7 @@ import typings.std.Event
 import typings.std.HTMLTableHeaderCellElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/TableCell/TableCell.TableCellBaseProps, @material-ui/core.@material-ui/core/TableCell/TableCell.TableCellClassKey, 'align'> */
 @js.native

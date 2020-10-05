@@ -9,7 +9,7 @@ import typings.semanticUiReact.semanticUiReactStrings.top
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StrictDimmerInnerProps extends js.Object {

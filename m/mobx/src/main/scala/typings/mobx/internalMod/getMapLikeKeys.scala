@@ -3,7 +3,7 @@ package typings.mobx.internalMod
 import typings.mobx.observablemapMod.IKeyValueMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mobx/lib/internal", "getMapLikeKeys")
 @js.native

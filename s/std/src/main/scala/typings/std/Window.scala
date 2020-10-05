@@ -35,7 +35,7 @@ import typings.std.stdStrings.vrdisplaypointerunrestricted
 import typings.std.stdStrings.vrdisplaypresentchange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A window containing a DOM document; the document property points to the DOM document loaded in that window. */
 @js.native

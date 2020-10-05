@@ -4,7 +4,7 @@ import typings.node.netMod.Socket
 import typings.node.streamMod.Writable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/nodejs/node/blob/master/lib/_http_outgoing.js
 @JSImport("http", "OutgoingMessage")

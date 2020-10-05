@@ -6,7 +6,7 @@ import typings.rxjs.mod.Subject
 import typings.rxjs.mod.Subscription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EventEmitter[T]

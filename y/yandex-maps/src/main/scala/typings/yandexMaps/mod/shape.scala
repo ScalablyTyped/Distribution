@@ -4,7 +4,7 @@ import typings.yandexMaps.anon.Fill
 import typings.yandexMaps.anon.StrokeWidth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yandex-maps", "shape")
 @js.native

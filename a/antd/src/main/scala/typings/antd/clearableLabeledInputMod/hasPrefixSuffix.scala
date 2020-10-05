@@ -3,7 +3,7 @@ package typings.antd.clearableLabeledInputMod
 import typings.antd.inputInputMod.InputProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/input/ClearableLabeledInput", "hasPrefixSuffix")
 @js.native

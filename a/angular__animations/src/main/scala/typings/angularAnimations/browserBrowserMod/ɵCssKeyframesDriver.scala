@@ -3,7 +3,7 @@ package typings.angularAnimations.browserBrowserMod
 import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/animations/browser/browser", "\u0275CssKeyframesDriver")
 @js.native

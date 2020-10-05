@@ -3,7 +3,7 @@ package typings.rcFieldForm
 import typings.rcFieldForm.interfaceMod.RuleType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rcFieldFormStrings {
   @js.native

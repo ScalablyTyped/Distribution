@@ -3,7 +3,7 @@ package typings.propTypes.mod
 import typings.std.Required
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prop-types", "exact")
 @js.native

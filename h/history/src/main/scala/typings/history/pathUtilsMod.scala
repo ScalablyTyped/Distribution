@@ -6,7 +6,7 @@ import typings.history.mod.LocationState
 import typings.history.mod.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("history/PathUtils", JSImport.Namespace)
 @js.native

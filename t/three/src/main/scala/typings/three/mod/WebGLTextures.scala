@@ -4,7 +4,7 @@ import typings.std.WebGLRenderingContext
 import typings.three.webGLUtilsMod.WebGLUtils
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "WebGLTextures")
 @js.native

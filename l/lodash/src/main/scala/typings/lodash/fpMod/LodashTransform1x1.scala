@@ -4,7 +4,7 @@ import typings.lodash.mod.Dictionary
 import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LodashTransform1x1[T, TResult] extends js.Object {

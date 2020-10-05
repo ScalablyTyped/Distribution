@@ -8,7 +8,7 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNavigationStack.anon.TintColorString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StackHeaderLeftButtonProps extends js.Object {

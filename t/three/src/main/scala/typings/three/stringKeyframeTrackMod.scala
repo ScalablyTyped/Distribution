@@ -4,7 +4,7 @@ import typings.three.constantsMod.InterpolationModes
 import typings.three.keyframeTrackMod.KeyframeTrack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/animation/tracks/StringKeyframeTrack", JSImport.Namespace)
 @js.native

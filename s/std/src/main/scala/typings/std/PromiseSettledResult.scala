@@ -4,7 +4,7 @@ import typings.std.stdStrings.fulfilled
 import typings.std.stdStrings.rejected
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.std.PromiseFulfilledResult[T]

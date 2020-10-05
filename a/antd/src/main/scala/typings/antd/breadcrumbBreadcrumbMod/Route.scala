@@ -3,7 +3,7 @@ package typings.antd.breadcrumbBreadcrumbMod
 import typings.antd.anon.OmitRoutechildren
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Route extends js.Object {

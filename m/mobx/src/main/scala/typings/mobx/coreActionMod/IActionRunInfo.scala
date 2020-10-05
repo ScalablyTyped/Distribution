@@ -3,7 +3,7 @@ package typings.mobx.coreActionMod
 import typings.mobx.derivationMod.IDerivation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IActionRunInfo extends js.Object {

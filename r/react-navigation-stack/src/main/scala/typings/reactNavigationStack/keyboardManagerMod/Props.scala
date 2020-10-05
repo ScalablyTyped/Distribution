@@ -4,7 +4,7 @@ import typings.react.mod.ReactNode
 import typings.reactNavigationStack.anon.OnPageChangeCancel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Props extends js.Object {

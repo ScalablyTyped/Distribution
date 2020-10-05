@@ -4,7 +4,7 @@ import typings.angularCompiler.templateAstMod.QueryMatch
 import typings.angularCompiler.templateAstMod.TemplateAst
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "EmbeddedTemplateAst")
 @js.native

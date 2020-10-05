@@ -7,7 +7,7 @@ import typings.dayjs.mod.UnitType
 import typings.dayjs.mod.UnitTypeShort
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dayjsStrings {
   @js.native

@@ -4,7 +4,7 @@ import typings.three.anon.Instances
 import typings.three.bufferGeometryMod.BufferGeometry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/core/InstancedBufferGeometry", JSImport.Namespace)
 @js.native

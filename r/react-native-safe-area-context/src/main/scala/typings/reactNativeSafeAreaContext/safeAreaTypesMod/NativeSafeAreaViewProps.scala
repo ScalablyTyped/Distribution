@@ -29,7 +29,7 @@ import typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.radi
 import typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.yes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native.react-native.ViewProps & {  children :react.react.ReactNode | undefined,   mode :'padding' | 'margin' | undefined,   edges :std.Array<react-native-safe-area-context.react-native-safe-area-context/lib/typescript/src/SafeArea.types.Edge> | undefined} */
 @js.native

@@ -91,7 +91,7 @@ import typings.std.Event
 import typings.std.HTMLParagraphElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLParagraphElement>, @material-ui/core.@material-ui/core/FormHelperText/FormHelperText.FormHelperTextClassKey, never> */
 @js.native

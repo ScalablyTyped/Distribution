@@ -4,7 +4,7 @@ import typings.angularCore.mod.SanitizerFn
 import typings.angularCore.mod.ɵNOCHANGE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Fn0 extends js.Object {

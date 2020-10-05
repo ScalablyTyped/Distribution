@@ -3,7 +3,7 @@ package typings.angularCompiler
 import typings.angularCompiler.i18nAstMod.Icu
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/render3/view/i18n/icu_serializer", JSImport.Namespace)
 @js.native

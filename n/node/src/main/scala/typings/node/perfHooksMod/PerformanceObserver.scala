@@ -4,7 +4,7 @@ import typings.node.anon.Buffered
 import typings.node.asyncHooksMod.AsyncResource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("perf_hooks", "PerformanceObserver")
 @js.native

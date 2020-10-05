@@ -3,7 +3,7 @@ package typings.angularPlatformBrowser.mod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/platform-browser", "\u0275HAMMER_PROVIDERS__POST_R3__")
 @js.native

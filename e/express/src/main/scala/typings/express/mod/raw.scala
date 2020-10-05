@@ -4,7 +4,7 @@ import typings.bodyParser.mod.Options
 import typings.connect.mod.NextHandleFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a built-in middleware function in Express. It parses incoming requests with Buffer payloads and is based on body-parser.

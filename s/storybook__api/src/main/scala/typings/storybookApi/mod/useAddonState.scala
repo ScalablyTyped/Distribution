@@ -3,7 +3,7 @@ package typings.storybookApi.mod
 import typings.storybookApi.storeMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@storybook/api", "useAddonState")
 @js.native

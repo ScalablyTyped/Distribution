@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.SharedArrayBufferConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SharedArrayBuffer")
 @js.native

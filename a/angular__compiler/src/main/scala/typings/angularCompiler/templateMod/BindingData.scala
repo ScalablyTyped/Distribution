@@ -4,7 +4,7 @@ import typings.angularCompiler.outputAstMod.Expression
 import typings.angularCompiler.outputAstMod.Statement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is used when one refers to variable such as: 'let abc = nextContext(2).$implicit`.

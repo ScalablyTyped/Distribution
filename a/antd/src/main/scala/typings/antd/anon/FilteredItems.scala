@@ -4,7 +4,7 @@ import typings.antd.transferListMod.RenderedItem
 import typings.antd.transferMod.TransferItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FilteredItems extends js.Object {

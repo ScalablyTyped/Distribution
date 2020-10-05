@@ -6,7 +6,7 @@ import typings.angularCompiler.coreMod.SchemaMetadata
 import typings.angularCompiler.coreMod.SecurityContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/schema/element_schema_registry", JSImport.Namespace)
 @js.native

@@ -10,7 +10,7 @@ import typings.node.nodeStrings.latin1
 import typings.node.nodeStrings.uncompressed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("crypto", "ECDH")
 @js.native

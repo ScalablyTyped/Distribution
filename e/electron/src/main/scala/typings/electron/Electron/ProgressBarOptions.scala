@@ -7,7 +7,7 @@ import typings.electron.electronStrings.normal
 import typings.electron.electronStrings.paused
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ProgressBarOptions extends js.Object {

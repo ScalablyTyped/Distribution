@@ -94,7 +94,7 @@ import typings.materialUiCore.touchRippleMod.TouchRippleClassKey
 import typings.materialUiCore.typographyTypographyMod.TypographyClassKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ComponentNameToClassKey extends js.Object {

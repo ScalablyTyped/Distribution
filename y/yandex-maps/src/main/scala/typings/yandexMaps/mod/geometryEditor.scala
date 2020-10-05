@@ -7,7 +7,7 @@ import typings.yandexMaps.mod.geometryEditor.view.Path
 import typings.yandexMaps.mod.vow.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yandex-maps", "geometryEditor")
 @js.native

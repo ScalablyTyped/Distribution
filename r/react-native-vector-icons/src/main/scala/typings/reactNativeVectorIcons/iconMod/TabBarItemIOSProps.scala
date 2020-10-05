@@ -3,7 +3,7 @@ package typings.reactNativeVectorIcons.iconMod
 import typings.reactNative.mod.TabBarIOSItemProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TabBarItemIOSProps extends TabBarIOSItemProps {

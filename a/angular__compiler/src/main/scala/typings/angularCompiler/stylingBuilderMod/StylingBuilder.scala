@@ -8,7 +8,7 @@ import typings.angularCompiler.templateMod.ValueConverter
 import typings.angularCompiler.viewUtilMod.DefinitionMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/render3/view/styling_builder", "StylingBuilder")
 @js.native

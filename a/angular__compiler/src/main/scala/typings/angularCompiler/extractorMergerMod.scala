@@ -9,7 +9,7 @@ import typings.angularCompiler.parseUtilMod.I18nError
 import typings.angularCompiler.translationBundleMod.TranslationBundle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/i18n/extractor_merger", JSImport.Namespace)
 @js.native

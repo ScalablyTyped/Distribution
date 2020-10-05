@@ -3,7 +3,7 @@ package typings.expo.notificationsTypesMod
 import typings.expo.anon.Placeholder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ActionType extends js.Object {

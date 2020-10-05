@@ -3,7 +3,7 @@ package typings.std
 import typings.std.stdBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object providing methods which are not dependent on any particular document. Such an object is returned by the Document.implementation property. */
 @js.native

@@ -8,7 +8,7 @@ import typings.std.Map
 import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/render3/view/i18n/context", JSImport.Namespace)
 @js.native

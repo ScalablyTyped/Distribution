@@ -20,7 +20,7 @@ import typings.semanticUiReact.semanticUiReactStrings.top
 import typings.semanticUiReact.semanticUiReactStrings.value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StrictProgressProps extends js.Object {

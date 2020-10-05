@@ -8,7 +8,7 @@ import typings.materialUiCore.materialUiCoreStrings.up
 import typings.materialUiCore.transitionMod.TransitionProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SlideProps extends TransitionProps {

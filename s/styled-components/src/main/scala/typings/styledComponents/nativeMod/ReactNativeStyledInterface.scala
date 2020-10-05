@@ -17,7 +17,7 @@ import typings.styledComponents.anon.TypeofTouchableNativeFeed
 import typings.styledComponents.anon.TypeofView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemedBaseStyledInterface[AnyIfEmpty[T]] {

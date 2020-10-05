@@ -3,7 +3,7 @@ package typings.fortawesomeFontawesomeSvgCore.mod
 import typings.fortawesomeFontawesomeCommonTypes.mod.IconDefinition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Icon_

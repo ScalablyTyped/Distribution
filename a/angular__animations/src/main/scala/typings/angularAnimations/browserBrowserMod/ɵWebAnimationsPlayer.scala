@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularAnimations.mod.AnimationPlayer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/animations/browser/browser", "\u0275WebAnimationsPlayer")
 @js.native

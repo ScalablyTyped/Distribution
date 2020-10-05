@@ -6,7 +6,7 @@ import typings.typescript.mod.SyntaxKind.TypeOperator
 import typings.typescript.mod.SyntaxKind.UniqueKeyword
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeOperatorNode

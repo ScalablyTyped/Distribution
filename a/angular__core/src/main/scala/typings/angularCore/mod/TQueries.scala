@@ -2,7 +2,7 @@ package typings.angularCore.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TQueries represent a collection of individual TQuery objects tracked in a given view. Most of the

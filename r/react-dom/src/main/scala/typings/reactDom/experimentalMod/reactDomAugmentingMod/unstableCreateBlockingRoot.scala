@@ -6,7 +6,7 @@ import typings.std.DocumentFragment
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-dom", "unstable_createBlockingRoot")
 @js.native

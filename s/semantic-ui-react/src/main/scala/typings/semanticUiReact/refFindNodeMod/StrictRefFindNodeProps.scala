@@ -4,7 +4,7 @@ import typings.react.mod.ReactElement
 import typings.react.mod.Ref
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StrictRefFindNodeProps extends js.Object {

@@ -2,7 +2,7 @@ package typings.node
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // even this is just a forward declaration some properties are added otherwise
 // it would be allowed to pass anything to e.g. Buffer.from()

@@ -2,7 +2,7 @@ package typings.googlemaps.global.google.maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A service for obtaining the highest zoom level at which satellite imagery is available for a given location.

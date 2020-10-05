@@ -5,7 +5,7 @@ import typings.angularCompiler.coreMod.MissingTranslationStrategy
 import typings.angularCompiler.coreMod.ViewEncapsulation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/config", JSImport.Namespace)
 @js.native

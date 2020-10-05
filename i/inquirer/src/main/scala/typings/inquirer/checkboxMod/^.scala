@@ -4,7 +4,7 @@ import typings.inquirer.mod.Answers
 import typings.node.readlineMod.Interface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a prompt which provides a set of choices to check.

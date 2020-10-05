@@ -4,7 +4,7 @@ import typings.three.lightMod.Light
 import typings.three.webGLLightsMod.WebGLLights
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Lights extends js.Object {

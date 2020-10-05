@@ -4,7 +4,7 @@ import typings.three.cylinderGeometryMod.CylinderBufferGeometry
 import typings.three.cylinderGeometryMod.CylinderGeometry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/geometries/ConeGeometry", JSImport.Namespace)
 @js.native

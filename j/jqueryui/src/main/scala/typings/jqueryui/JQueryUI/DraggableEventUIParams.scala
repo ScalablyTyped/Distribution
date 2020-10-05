@@ -4,7 +4,7 @@ import typings.jqueryui.JQuery
 import typings.jqueryui.anon.Left
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Draggable //////////////////////////////////////////////////
 @js.native

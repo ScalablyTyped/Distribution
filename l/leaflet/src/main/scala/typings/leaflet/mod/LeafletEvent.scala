@@ -3,7 +3,7 @@ package typings.leaflet.mod
 import typings.leaflet.mod.DomEvent._PropagableEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LeafletEvent extends _PropagableEvent {

@@ -11,7 +11,7 @@ import typings.three.vector3Mod.Vector3
 import typings.three.vector4Mod.Vector4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/core/DirectGeometry", JSImport.Namespace)
 @js.native

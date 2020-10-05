@@ -7,7 +7,7 @@ import typings.reactNavigation.mod.NavigationRoute
 import typings.reactNavigation.mod.NavigationScreenProp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Descriptors[Options, ScreenProps] extends js.Object {

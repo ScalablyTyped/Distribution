@@ -8,7 +8,7 @@ import typings.semanticUiReact.searchResultMod.SearchResultProps
 import typings.semanticUiReact.searchResultsMod.SearchResultsProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SearchComponent extends ComponentClass[SearchProps, ComponentState] {

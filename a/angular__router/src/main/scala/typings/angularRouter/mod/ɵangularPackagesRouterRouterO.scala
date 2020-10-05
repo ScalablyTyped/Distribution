@@ -5,7 +5,7 @@ import typings.angularCore.mod.OnDestroy
 import typings.angularRouter.anon.AnchorScrolling
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "\u0275angular_packages_router_router_o")
 @js.native

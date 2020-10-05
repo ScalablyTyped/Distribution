@@ -10,7 +10,7 @@ import typings.expressServeStaticCore.expressServeStaticCoreStrings.post
 import typings.expressServeStaticCore.expressServeStaticCoreStrings.put
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IRouterMatcher[T, Method /* <: all | get | post | put | delete | patch | options | head */] extends js.Object {

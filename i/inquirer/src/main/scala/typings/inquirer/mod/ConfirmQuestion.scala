@@ -3,7 +3,7 @@ package typings.inquirer.mod
 import typings.inquirer.inquirerStrings.confirm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides options for a question for the `ConfirmPrompt`.

@@ -3,7 +3,7 @@ package typings.inquirer.choicesMod
 import typings.inquirer.mod.Answers
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A collection of multiple `Choice`-objects.

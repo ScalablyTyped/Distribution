@@ -3,7 +3,7 @@ package typings.d3Selection.mod
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3-selection", "create")
 @js.native

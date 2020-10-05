@@ -2,7 +2,7 @@ package typings.rxjs.ajaxObservableMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/observable/dom/AjaxObservable", "ajaxGet")
 @js.native

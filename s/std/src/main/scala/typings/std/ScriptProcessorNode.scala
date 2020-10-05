@@ -3,7 +3,7 @@ package typings.std
 import typings.std.stdStrings.audioprocess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Allows the generation, processing, or analyzing of audio using JavaScript. */
 @js.native

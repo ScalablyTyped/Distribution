@@ -3,7 +3,7 @@ package typings.rcFieldForm.formContextMod
 import typings.rcFieldForm.interfaceMod.ValidateMessages
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FormProviderProps extends js.Object {

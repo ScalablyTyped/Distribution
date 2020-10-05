@@ -6,7 +6,7 @@ import typings.rxjs.typesMod.ObservedValueOf
 import typings.rxjs.typesMod.OperatorFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators/catchError", JSImport.Namespace)
 @js.native

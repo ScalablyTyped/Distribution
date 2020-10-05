@@ -7,7 +7,7 @@ import typings.react.mod.ComponentState
 import typings.react.mod.ReactInstance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-dom/test-utils", "isCompositeComponentWithType")
 @js.native

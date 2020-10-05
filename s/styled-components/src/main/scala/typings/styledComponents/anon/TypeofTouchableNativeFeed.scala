@@ -7,7 +7,7 @@ import typings.reactNative.mod.ThemeAttributeBackgroundPropType
 import typings.reactNative.mod.TouchableNativeFeedback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofTouchableNativeFeed extends Instantiable0[TouchableNativeFeedback] {

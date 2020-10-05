@@ -85,7 +85,7 @@ import typings.std.Event
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  htmlType :antd.antd/lib/button/button.ButtonHTMLType | undefined,   onClick :react.react.MouseEventHandler<std.HTMLElement> | undefined} & antd.antd/lib/button/button.BaseButtonProps & antd.antd/lib/_util/type.Omit<react.react.ButtonHTMLAttributes<any>, 'type' | 'onClick'> */
 @js.native

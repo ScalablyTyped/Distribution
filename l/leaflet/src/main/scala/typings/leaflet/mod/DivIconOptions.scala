@@ -4,7 +4,7 @@ import typings.leaflet.leafletBooleans.`false`
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DivIconOptions extends BaseIconOptions {

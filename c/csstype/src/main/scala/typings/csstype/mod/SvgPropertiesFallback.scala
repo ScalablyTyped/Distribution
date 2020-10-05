@@ -62,7 +62,7 @@ import typings.csstype.mod.Property.WordSpacing
 import typings.csstype.mod.Property.WritingMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ P in keyof csstype.csstype.SvgProperties<TLength, TTime> ]: csstype.csstype.SvgProperties<TLength, TTime>[P] | std.Array<csstype.csstype.SvgProperties<TLength, TTime>[P]>} */
 @js.native

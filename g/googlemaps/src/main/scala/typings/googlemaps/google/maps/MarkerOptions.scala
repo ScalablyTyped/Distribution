@@ -3,7 +3,7 @@ package typings.googlemaps.google.maps
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `MarkerOptions` object used to define the properties that can be set on a

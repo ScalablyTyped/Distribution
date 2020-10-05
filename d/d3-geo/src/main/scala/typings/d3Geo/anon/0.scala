@@ -4,7 +4,7 @@ import typings.d3Geo.mod.GeoStream_
 import typings.d3Geo.mod.GeoTransformPrototype
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait `0`[T /* <: GeoTransformPrototype */] extends js.Object {

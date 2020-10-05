@@ -4,7 +4,7 @@ import typings.std.ArrayLike
 import typings.three.interleavedBufferMod.InterleavedBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/core/InstancedInterleavedBuffer", JSImport.Namespace)
 @js.native

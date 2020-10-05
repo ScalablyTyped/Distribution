@@ -4,7 +4,7 @@ import typings.fortawesomeFontawesomeCommonTypes.mod.IconPrefix
 import typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.nest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Config_ extends js.Object {

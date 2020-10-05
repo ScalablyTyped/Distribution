@@ -2,7 +2,7 @@ package typings.expoVectorIcons.createMultiStyleIconSetMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@expo/vector-icons/build/createMultiStyleIconSet", JSImport.Default)
 @js.native

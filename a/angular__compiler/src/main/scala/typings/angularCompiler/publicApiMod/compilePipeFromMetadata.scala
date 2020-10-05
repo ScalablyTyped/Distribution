@@ -3,7 +3,7 @@ package typings.angularCompiler.publicApiMod
 import typings.angularCompiler.r3PipeCompilerMod.R3PipeMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/public_api", "compilePipeFromMetadata")
 @js.native

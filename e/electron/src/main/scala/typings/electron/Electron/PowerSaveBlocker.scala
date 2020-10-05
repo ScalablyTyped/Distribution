@@ -4,7 +4,7 @@ import typings.electron.electronStrings.`prevent-app-suspension`
 import typings.electron.electronStrings.`prevent-display-sleep`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PowerSaveBlocker extends js.Object {

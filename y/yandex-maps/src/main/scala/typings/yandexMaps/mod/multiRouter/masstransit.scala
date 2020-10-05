@@ -8,7 +8,7 @@ import typings.yandexMaps.mod.geometry.base.LineString
 import typings.yandexMaps.mod.geometry.base.Point
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yandex-maps", "multiRouter.masstransit")
 @js.native

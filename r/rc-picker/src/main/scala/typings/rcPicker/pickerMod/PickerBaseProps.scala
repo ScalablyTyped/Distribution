@@ -60,7 +60,7 @@ import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent rc-picker.rc-picker/es/Picker.PickerSharedProps<DateType> */
 /* Inlined parent rc-picker.rc-picker/es/Picker.OmitPanelProps<rc-picker.rc-picker/es/PickerPanel.PickerPanelBaseProps<DateType>> */

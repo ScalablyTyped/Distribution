@@ -3,7 +3,7 @@ package typings.chartJs.mod
 import typings.chartJs.chartJsBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TickOptions extends NestedTickOptions {

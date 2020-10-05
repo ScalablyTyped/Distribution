@@ -3,7 +3,7 @@ package typings.angularCompiler.coreMod
 import typings.angularCompiler.angularCompilerStrings.root
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Injectable extends js.Object {

@@ -8,7 +8,7 @@ import typings.three.vector4Mod.Vector4
 import typings.three.webGLRenderListsMod.RenderTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/lights/LightShadow", JSImport.Namespace)
 @js.native

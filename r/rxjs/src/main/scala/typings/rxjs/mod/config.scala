@@ -3,7 +3,7 @@ package typings.rxjs.mod
 import typings.std.PromiseConstructorLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs", "config")
 @js.native

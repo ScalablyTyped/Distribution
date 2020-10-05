@@ -9,7 +9,7 @@ import typings.reactNavigationStack.vendorTypesMod.StackDescriptorMap
 import typings.reactNavigationStack.vendorTypesMod.StackHeaderMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Props extends js.Object {

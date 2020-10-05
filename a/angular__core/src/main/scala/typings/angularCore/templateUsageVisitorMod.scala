@@ -4,7 +4,7 @@ import typings.angularCompiler.r3AstMod.Node
 import typings.angularCompiler.r3AstMod.NullVisitor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core/schematics/migrations/static-queries/strategies/usage_strategy/template_usage_visitor", JSImport.Namespace)
 @js.native

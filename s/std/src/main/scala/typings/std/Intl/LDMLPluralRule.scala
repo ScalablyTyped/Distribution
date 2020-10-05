@@ -2,7 +2,7 @@ package typings.std.Intl
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://cldr.unicode.org/index/cldr-spec/plural-rules#TOC-Determining-Plural-Categories
 /* Rewritten from type alias, can be one of: 

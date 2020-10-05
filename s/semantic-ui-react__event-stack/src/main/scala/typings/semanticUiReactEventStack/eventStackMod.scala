@@ -4,7 +4,7 @@ import typings.semanticUiReactEventStack.typesMod.InputEventListener
 import typings.semanticUiReactEventStack.typesMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@semantic-ui-react/event-stack/lib/types/lib/EventStack", JSImport.Namespace)
 @js.native

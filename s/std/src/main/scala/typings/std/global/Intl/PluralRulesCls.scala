@@ -3,7 +3,7 @@ package typings.std.global.Intl
 import typings.std.Intl.PluralRulesOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Intl.PluralRules")
 @js.native

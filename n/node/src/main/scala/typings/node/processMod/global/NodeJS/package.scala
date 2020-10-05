@@ -2,7 +2,7 @@ package typings.node.processMod.global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object NodeJS {
   type BeforeExitListener = js.Function1[/* code */ scala.Double, scala.Unit]

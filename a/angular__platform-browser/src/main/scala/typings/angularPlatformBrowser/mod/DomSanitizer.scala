@@ -4,7 +4,7 @@ import typings.angularCore.mod.Sanitizer
 import typings.angularCore.mod.SecurityContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/platform-browser", "DomSanitizer")
 @js.native

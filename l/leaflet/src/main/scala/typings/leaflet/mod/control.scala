@@ -9,7 +9,7 @@ import typings.leaflet.mod.Control_.Scale
 import typings.leaflet.mod.Control_.ScaleOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "control")
 @js.native

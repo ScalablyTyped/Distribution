@@ -11,7 +11,7 @@ import typings.webpackEnv.webpackEnvStrings.sync
 import typings.webpackEnv.webpackEnvStrings.weak
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RequireFunction extends js.Object {

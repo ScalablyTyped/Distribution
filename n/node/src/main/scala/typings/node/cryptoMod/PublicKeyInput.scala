@@ -5,7 +5,7 @@ import typings.node.nodeStrings.pkcs1
 import typings.node.nodeStrings.spki
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PublicKeyInput extends js.Object {

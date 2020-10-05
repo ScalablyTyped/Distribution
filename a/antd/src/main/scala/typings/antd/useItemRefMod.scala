@@ -4,7 +4,7 @@ import typings.rcFieldForm.interfaceMod.InternalNamePath
 import typings.react.mod.RefObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/form/hooks/useItemRef", JSImport.Namespace)
 @js.native

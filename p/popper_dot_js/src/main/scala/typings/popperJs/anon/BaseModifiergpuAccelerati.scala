@@ -8,7 +8,7 @@ import typings.popperJs.popperJsStrings.right
 import typings.popperJs.popperJsStrings.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined popper.js.popper.js.Popper.BaseModifier & {  gpuAcceleration :boolean | undefined,   x :'bottom' | 'top' | undefined,   y :'left' | 'right' | undefined} */
 @js.native

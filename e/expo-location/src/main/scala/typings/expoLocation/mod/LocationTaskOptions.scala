@@ -3,7 +3,7 @@ package typings.expoLocation.mod
 import typings.expoLocation.anon.NotificationBody
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LocationTaskOptions extends js.Object {

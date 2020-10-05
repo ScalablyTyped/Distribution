@@ -4,7 +4,7 @@ import typings.std.Blob
 import typings.std.Float32Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SoundFile extends js.Object {

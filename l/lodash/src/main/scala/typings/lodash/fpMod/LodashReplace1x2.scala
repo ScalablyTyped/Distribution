@@ -4,7 +4,7 @@ import typings.lodash.mod.__
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LodashReplace1x2 extends js.Object {

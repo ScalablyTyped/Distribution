@@ -2,7 +2,7 @@ package typings.chartJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // NOTE: This model is generic with a bunch of optional properties to represent all types of chart models.
 // Each chart type defines their own unique model structure so some of these optional properties

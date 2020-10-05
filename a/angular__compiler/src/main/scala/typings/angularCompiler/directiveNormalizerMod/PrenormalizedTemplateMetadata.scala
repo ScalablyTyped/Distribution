@@ -3,7 +3,7 @@ package typings.angularCompiler.directiveNormalizerMod
 import typings.angularCompiler.coreMod.ViewEncapsulation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PrenormalizedTemplateMetadata extends js.Object {

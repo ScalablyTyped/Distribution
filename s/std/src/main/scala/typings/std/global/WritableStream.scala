@@ -7,7 +7,7 @@ import typings.std.QueuingStrategy
 import typings.std.UnderlyingSink
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("WritableStream")
 @js.native

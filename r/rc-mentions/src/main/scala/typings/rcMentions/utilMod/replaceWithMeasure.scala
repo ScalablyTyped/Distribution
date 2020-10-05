@@ -3,7 +3,7 @@ package typings.rcMentions.utilMod
 import typings.rcMentions.anon.SelectionLocation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-mentions/es/util", "replaceWithMeasure")
 @js.native

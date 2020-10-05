@@ -4,7 +4,7 @@ import typings.angularCore.angularCoreStrings.noop
 import typings.angularCore.angularCoreStrings.zoneDotjs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides additional options to the bootstraping process.

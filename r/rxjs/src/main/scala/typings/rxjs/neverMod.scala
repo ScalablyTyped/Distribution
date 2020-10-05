@@ -3,7 +3,7 @@ package typings.rxjs
 import typings.rxjs.internalObservableMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/observable/never", JSImport.Namespace)
 @js.native

@@ -2,7 +2,7 @@ package typings.storybookApi
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
   type API = typings.storybookApi.addonsMod.SubAPI with typings.storybookApi.channelMod.SubAPI with typings.storybookApi.initProviderApiMod.SubAPI with typings.storybookApi.storiesMod.SubAPI with typings.storybookApi.layoutMod.SubAPI with typings.storybookApi.notificationsMod.SubAPI with typings.storybookApi.shortcutsMod.SubAPI with typings.storybookApi.versionsMod.SubAPI with typings.storybookApi.urlMod.SubAPI with typings.storybookApi.mod.OtherAPI

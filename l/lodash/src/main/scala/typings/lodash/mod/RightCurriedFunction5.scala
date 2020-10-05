@@ -2,7 +2,7 @@ package typings.lodash.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RightCurriedFunction5[T1, T2, T3, T4, T5, R] extends js.Object {

@@ -3,7 +3,7 @@ package typings.angularPlatformBrowserDynamic.mod
 import typings.angularCore.mod.CompilerFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/platform-browser-dynamic", "JitCompilerFactory")
 @js.native

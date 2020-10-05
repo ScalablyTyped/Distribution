@@ -4,7 +4,7 @@ import typings.rcMenu.interfaceMod.MenuMode
 import typings.rcMenu.interfaceMod.TriggerSubMenuAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rcMenuStrings {
   @js.native

@@ -3,7 +3,7 @@ package typings.reactNavigationStack.vendorTypesMod
 import typings.reactNavigationStack.anon.Close
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TransitionPreset extends js.Object {

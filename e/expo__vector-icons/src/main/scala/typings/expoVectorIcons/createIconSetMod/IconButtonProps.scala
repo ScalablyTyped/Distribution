@@ -9,7 +9,7 @@ import typings.reactNative.mod.TouchableWithoutFeedbackPropsAndroid
 import typings.reactNative.mod.ViewProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.reactNative.mod.AccessibilityPropsIOS because Already inherited

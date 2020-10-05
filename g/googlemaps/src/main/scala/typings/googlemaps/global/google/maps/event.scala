@@ -4,7 +4,7 @@ import typings.googlemaps.google.maps.MapsEventListener
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("google.maps.event")
 @js.native

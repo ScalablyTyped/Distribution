@@ -5,7 +5,7 @@ import typings.three.lightMod.Light
 import typings.three.pointLightShadowMod.PointLightShadow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/lights/PointLight", JSImport.Namespace)
 @js.native

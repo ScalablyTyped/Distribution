@@ -5,7 +5,7 @@ import typings.lodash.mod.List
 import typings.lodash.mod.NumericDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LodashSampleSize1x1 extends js.Object {

@@ -3,7 +3,7 @@ package typings.rcFieldForm.anon
 import typings.rcFieldForm.interfaceMod.InternalNamePath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Errors extends js.Object {

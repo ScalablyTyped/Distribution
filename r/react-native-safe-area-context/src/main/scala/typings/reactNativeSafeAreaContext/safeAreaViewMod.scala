@@ -4,7 +4,7 @@ import typings.react.mod.global.JSX.Element
 import typings.reactNativeSafeAreaContext.safeAreaTypesMod.NativeSafeAreaViewProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-safe-area-context/lib/typescript/src/SafeAreaView", JSImport.Namespace)
 @js.native

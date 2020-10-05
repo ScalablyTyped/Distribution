@@ -11,7 +11,7 @@ import typings.react.mod.GetDerivedStateFromProps
 import typings.react.mod.ValidationMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.ComponentClass<rc-menu.rc-menu/es/SubPopupMenu.SubPopupMenuProps, any> & {getWrappedInstance (): rc-menu.rc-menu/es/SubPopupMenu.SubPopupMenu} */
 @js.native

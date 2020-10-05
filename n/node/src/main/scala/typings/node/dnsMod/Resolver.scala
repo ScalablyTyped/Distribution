@@ -15,7 +15,7 @@ import typings.node.anon.TypeofresolveSrv
 import typings.node.anon.TypeofresolveTxt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dns", "Resolver")
 @js.native

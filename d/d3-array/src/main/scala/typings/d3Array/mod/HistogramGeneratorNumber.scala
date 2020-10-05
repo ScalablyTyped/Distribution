@@ -4,7 +4,7 @@ import typings.std.ArrayLike
 import typings.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HistogramGeneratorNumber[Datum, Value /* <: js.UndefOr[Double] */] extends HistogramCommon[Datum, Value] {

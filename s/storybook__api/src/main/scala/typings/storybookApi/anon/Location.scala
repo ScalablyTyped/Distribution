@@ -9,7 +9,7 @@ import typings.storybookApi.storybookApiStrings.story
 import typings.storybookApi.urlMod.Additions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Location extends js.Object {

@@ -6,7 +6,7 @@ import typings.angularCompiler.mod.CompileReflector
 import typings.angularCompiler.mod.PipeResolver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/testing/src/pipe_resolver_mock", JSImport.Namespace)
 @js.native

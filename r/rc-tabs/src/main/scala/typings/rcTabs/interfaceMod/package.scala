@@ -2,7 +2,7 @@ package typings.rcTabs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object interfaceMod {
   type OnTabScroll = js.Function1[/* info */ typings.rcTabs.anon.Direction, scala.Unit]

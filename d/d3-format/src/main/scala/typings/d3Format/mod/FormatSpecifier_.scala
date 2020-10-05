@@ -27,7 +27,7 @@ import typings.d3Format.d3FormatStrings.s
 import typings.d3Format.d3FormatStrings.x_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FormatSpecifier_ extends js.Object {

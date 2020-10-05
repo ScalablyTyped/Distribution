@@ -10,7 +10,7 @@ import typings.yandexMaps.mod.map.ZoomRange
 import typings.yandexMaps.mod.map.action.Manager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yandex-maps", "Map")
 @js.native

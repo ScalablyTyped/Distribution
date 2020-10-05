@@ -7,7 +7,7 @@ import typings.std.RTCConfiguration
 import typings.std.RTCIceServer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("RTCPeerConnection")
 @js.native

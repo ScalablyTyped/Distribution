@@ -3,7 +3,7 @@ package typings.angularCompiler
 import typings.angularCompiler.urlResolverMod.UrlResolver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/style_url_resolver", JSImport.Namespace)
 @js.native

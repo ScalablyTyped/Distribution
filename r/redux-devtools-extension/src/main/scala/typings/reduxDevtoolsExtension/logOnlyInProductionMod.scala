@@ -5,7 +5,7 @@ import typings.reduxDevtoolsExtension.anon.FnCall
 import typings.reduxDevtoolsExtension.mod.EnhancerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("redux-devtools-extension/logOnlyInProduction", JSImport.Namespace)
 @js.native

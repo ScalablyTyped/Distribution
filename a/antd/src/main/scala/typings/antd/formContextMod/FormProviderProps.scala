@@ -4,7 +4,7 @@ import typings.rcFieldForm.formContextMod.FormChangeInfo
 import typings.rcFieldForm.formContextMod.FormFinishInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<rc-field-form.rc-field-form/es/FormContext.FormProviderProps, 'validateMessages'> */
 @js.native

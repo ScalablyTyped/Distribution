@@ -3,7 +3,7 @@ package typings.rcMentions.utilMod
 import typings.rcMentions.mentionsMod.MentionsProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-mentions/es/util", "validateSearch")
 @js.native

@@ -3,7 +3,7 @@ package typings.angularCompiler.compilerMod
 import typings.angularCompiler.t2ApiMod.DirectiveMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "R3TargetBinder")
 @js.native

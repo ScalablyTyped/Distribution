@@ -8,7 +8,7 @@ import typings.reactNavigation.reactNavigationStrings.NavigationSlashREPLACE
 import typings.reactNavigation.reactNavigationStrings.NavigationSlashRESET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-navigation", "StackActions")
 @js.native

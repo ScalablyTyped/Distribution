@@ -5,7 +5,7 @@ import typings.std.stdStrings.microphone
 import typings.std.stdStrings.speaker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DevicePermissionDescriptor extends PermissionDescriptor {

@@ -3,7 +3,7 @@ package typings.rcFieldForm.formContextMod
 import typings.rcFieldForm.interfaceMod.Store
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FormFinishInfo extends js.Object {

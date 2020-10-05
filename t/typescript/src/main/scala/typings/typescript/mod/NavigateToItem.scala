@@ -6,7 +6,7 @@ import typings.typescript.typescriptStrings.prefix
 import typings.typescript.typescriptStrings.substring
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NavigateToItem extends js.Object {

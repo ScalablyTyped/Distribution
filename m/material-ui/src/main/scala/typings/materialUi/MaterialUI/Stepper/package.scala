@@ -2,7 +2,7 @@ package typings.materialUi.MaterialUI
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object Stepper {
   type Step = typings.react.mod.Component[typings.materialUi.MaterialUI.Stepper.StepProps, js.Object, js.Any]

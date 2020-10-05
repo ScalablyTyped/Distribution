@@ -11,7 +11,7 @@ import typings.node.anon.WithFileTypes
 import typings.node.fsMod.PathLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("original-fs", "readdir")
 @js.native

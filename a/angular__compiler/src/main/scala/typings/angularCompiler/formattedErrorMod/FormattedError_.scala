@@ -2,7 +2,7 @@ package typings.angularCompiler.formattedErrorMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Error & {  chain :@angular/compiler.@angular/compiler/src/aot/formatted_error.FormattedMessageChain,   position :@angular/compiler.@angular/compiler/src/aot/formatted_error.Position | undefined} */
 @js.native

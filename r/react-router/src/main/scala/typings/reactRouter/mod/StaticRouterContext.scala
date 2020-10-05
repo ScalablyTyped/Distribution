@@ -4,7 +4,7 @@ import typings.reactRouter.reactRouterStrings.PUSH
 import typings.reactRouter.reactRouterStrings.REPLACE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StaticRouterContext extends StaticContext {

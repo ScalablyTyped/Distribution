@@ -3,7 +3,7 @@ package typings.inquirer.mod
 import typings.inquirer.mod.prompts.PromptConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides prompts for answering questions.

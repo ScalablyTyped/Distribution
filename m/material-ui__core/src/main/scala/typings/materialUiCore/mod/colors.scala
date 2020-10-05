@@ -3,7 +3,7 @@ package typings.materialUiCore.mod
 import typings.materialUiCore.commonMod.CommonColors
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material-ui/core", "colors")
 @js.native

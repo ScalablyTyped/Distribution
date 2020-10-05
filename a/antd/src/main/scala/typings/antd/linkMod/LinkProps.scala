@@ -86,7 +86,7 @@ import typings.std.Event
 import typings.std.HTMLAnchorElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent antd.antd/lib/typography/Base.BlockProps */
 /* Inlined parent std.Omit<react.react.AnchorHTMLAttributes<std.HTMLAnchorElement>, 'type'> */

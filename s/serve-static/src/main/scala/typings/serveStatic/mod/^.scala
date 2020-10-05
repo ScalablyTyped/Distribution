@@ -3,7 +3,7 @@ package typings.serveStatic.mod
 import typings.expressServeStaticCore.mod.Handler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("serve-static", JSImport.Namespace)
 @js.native

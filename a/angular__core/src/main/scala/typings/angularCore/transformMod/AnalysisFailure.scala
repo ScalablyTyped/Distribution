@@ -3,7 +3,7 @@ package typings.angularCore.transformMod
 import typings.typescript.mod.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AnalysisFailure extends js.Object {

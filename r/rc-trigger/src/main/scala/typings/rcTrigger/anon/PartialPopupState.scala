@@ -3,7 +3,7 @@ package typings.rcTrigger.anon
 import typings.rcTrigger.popupMod.PopupStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<rc-trigger.rc-trigger/es/Popup.PopupState> */
 @js.native

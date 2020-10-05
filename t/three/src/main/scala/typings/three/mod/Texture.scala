@@ -5,7 +5,7 @@ import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Texture")
 @js.native

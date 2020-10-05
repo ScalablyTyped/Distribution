@@ -3,7 +3,7 @@ package typings.reactNavigationStack.anon
 import typings.reactNative.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<react-native.react-native.Animated.SpringAnimationConfig, 'toValue' | keyof react-native.react-native.Animated.AnimationConfig> */
 @js.native

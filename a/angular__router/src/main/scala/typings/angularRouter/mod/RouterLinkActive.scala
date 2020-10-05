@@ -10,7 +10,7 @@ import typings.angularCore.mod.Renderer2
 import typings.angularRouter.anon.Exact
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "RouterLinkActive")
 @js.native

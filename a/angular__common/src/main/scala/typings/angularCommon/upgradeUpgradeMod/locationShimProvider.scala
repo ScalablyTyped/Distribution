@@ -5,7 +5,7 @@ import typings.angularCommon.mod.LocationStrategy
 import typings.angularCommon.mod.PlatformLocation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/upgrade/upgrade", "$locationShimProvider")
 @js.native

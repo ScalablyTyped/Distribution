@@ -4,7 +4,7 @@ import typings.typescript.mod.Identifier
 import typings.typescript.mod.Symbol
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ResolvedExport extends js.Object {

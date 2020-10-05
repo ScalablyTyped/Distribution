@@ -2,7 +2,7 @@ package typings.node
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object utilMod {
   type CustomInspectFunction = js.Function2[

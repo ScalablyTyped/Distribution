@@ -5,7 +5,7 @@ import typings.typescript.mod.SyntaxKind.ReadonlyKeyword
 import typings.typescript.mod.SyntaxKind.UniqueKeyword
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "createTypeOperatorNode")
 @js.native

@@ -3,7 +3,7 @@ package typings.expressServeStaticCore.mod
 import typings.qs.mod.ParsedQs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IRoute extends js.Object {

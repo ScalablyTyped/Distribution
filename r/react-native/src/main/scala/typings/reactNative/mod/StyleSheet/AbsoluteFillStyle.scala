@@ -4,7 +4,7 @@ import typings.reactNative.reactNativeNumbers.`0`
 import typings.reactNative.reactNativeStrings.absolute
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AbsoluteFillStyle extends js.Object {

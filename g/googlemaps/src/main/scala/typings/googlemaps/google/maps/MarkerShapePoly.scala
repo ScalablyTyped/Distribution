@@ -3,7 +3,7 @@ package typings.googlemaps.google.maps
 import typings.googlemaps.googlemapsStrings.poly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MarkerShapePoly extends MarkerShape {

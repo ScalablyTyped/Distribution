@@ -3,7 +3,7 @@ package typings.antd.transferListMod
 import typings.antd.anon.DataSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/transfer/list", JSImport.Default)
 @js.native

@@ -4,7 +4,7 @@ import typings.reactNative.anon.Key
 import typings.reactNative.anon.UrlString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LinkingStatic extends NativeEventEmitter {

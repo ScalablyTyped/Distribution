@@ -32,7 +32,7 @@ import typings.csstype.mod.Property.TextAnchor
 import typings.csstype.mod.Property.VectorEffect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.csstype.mod.SvgPropertiesHyphenFallback because var conflicts: clip, `clip-path`, color, cursor, direction, display, filter, font, `font-family`, `font-size`, `font-size-adjust`, `font-stretch`, `font-style`, `font-variant`, `font-weight`, `image-rendering`, `letter-spacing`, `line-height`, mask, opacity, overflow, `paint-order`, `pointer-events`, `text-decoration`, `text-rendering`, `unicode-bidi`, visibility, `white-space`, `word-spacing`, `writing-mode`. Inlined `baseline-shift`, `vector-effect`, `stroke-dashoffset`, `marker-end`, `marker-mid`, fill, `alignment-baseline`, `lighting-color`, `stop-color`, `flood-color`, `color-rendering`, `stroke-width`, `shape-rendering`, `fill-rule`, `stroke-dasharray`, `glyph-orientation-vertical`, `stroke-linejoin`, `stop-opacity`, `stroke-miterlimit`, `color-interpolation`, `stroke-opacity`, `stroke-linecap`, `flood-opacity`, `marker-start`, `text-anchor`, stroke, `clip-rule`, `fill-opacity`, `dominant-baseline`, marker */ @js.native

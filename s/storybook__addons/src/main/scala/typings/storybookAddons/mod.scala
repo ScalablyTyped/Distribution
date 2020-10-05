@@ -10,7 +10,7 @@ import typings.storybookAddons.typesMod.StoryGetter
 import typings.storybookAddons.typesMod.Types_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@storybook/addons", JSImport.Namespace)
 @js.native

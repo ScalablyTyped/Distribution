@@ -10,7 +10,7 @@ import typings.angularCore.angularCoreNumbers.`64`
 import typings.angularCore.angularCoreNumbers.`8`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Corresponds to the TNode.flags property.

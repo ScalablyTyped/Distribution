@@ -3,7 +3,7 @@ package typings.reactNavigation.anon
 import typings.reactNavigation.mod.NavigationScreenComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GetScreen[Options, NavigationScreenPropType] extends js.Object {

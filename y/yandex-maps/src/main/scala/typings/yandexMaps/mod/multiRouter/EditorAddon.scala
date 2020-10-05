@@ -4,7 +4,7 @@ import typings.yandexMaps.mod.ICustomizable
 import typings.yandexMaps.mod.data.Manager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yandex-maps", "multiRouter.EditorAddon")
 @js.native

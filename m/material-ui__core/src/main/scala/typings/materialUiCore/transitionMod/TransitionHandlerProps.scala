@@ -2,7 +2,7 @@ package typings.materialUiCore.transitionMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<react-transition-group.react-transition-group/Transition.TransitionProps<undefined>, @material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerKeys> */
 @js.native

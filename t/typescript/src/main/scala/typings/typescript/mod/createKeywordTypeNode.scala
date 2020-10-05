@@ -15,7 +15,7 @@ import typings.typescript.mod.SyntaxKind.UnknownKeyword
 import typings.typescript.mod.SyntaxKind.VoidKeyword
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript", "createKeywordTypeNode")
 @js.native

@@ -8,7 +8,7 @@ import typings.semanticUiReact.semanticUiReactStrings.horizontally
 import typings.semanticUiReact.semanticUiReactStrings.vertically
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StrictIconProps extends js.Object {

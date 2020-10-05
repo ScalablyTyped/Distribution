@@ -6,7 +6,7 @@ import typings.reactNavigationDrawer.reactNavigationDrawerStrings.initialRoute
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NavigationDrawerRouterConfig extends js.Object {

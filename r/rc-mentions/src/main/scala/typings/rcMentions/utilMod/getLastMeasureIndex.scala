@@ -2,7 +2,7 @@ package typings.rcMentions.utilMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-mentions/es/util", "getLastMeasureIndex")
 @js.native

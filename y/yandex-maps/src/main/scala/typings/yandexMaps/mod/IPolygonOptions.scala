@@ -4,7 +4,7 @@ import typings.yandexMaps.yandexMapsStrings.stretch
 import typings.yandexMaps.yandexMapsStrings.tile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IPolygonOptions extends js.Object {

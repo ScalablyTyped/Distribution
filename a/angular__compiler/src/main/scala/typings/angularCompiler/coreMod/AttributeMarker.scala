@@ -9,7 +9,7 @@ import typings.angularCompiler.angularCompilerNumbers.`5`
 import typings.angularCompiler.angularCompilerNumbers.`6`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.angularCompiler.angularCompilerNumbers.`0`

@@ -4,7 +4,7 @@ import typings.storybookApi.mod.API
 import typings.storybookApi.versionsMod.SubAPI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ApiInit extends js.Object {

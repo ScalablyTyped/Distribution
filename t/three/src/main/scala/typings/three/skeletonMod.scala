@@ -6,7 +6,7 @@ import typings.three.dataTextureMod.DataTexture
 import typings.three.matrix4Mod.Matrix4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/objects/Skeleton", JSImport.Namespace)
 @js.native

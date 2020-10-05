@@ -5,7 +5,7 @@ import typings.scrollIntoViewIfNeeded.typesMod.CustomScrollBehaviorCallback
 import typings.scrollIntoViewIfNeeded.typesMod.ScrollBehavior
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Options[T]

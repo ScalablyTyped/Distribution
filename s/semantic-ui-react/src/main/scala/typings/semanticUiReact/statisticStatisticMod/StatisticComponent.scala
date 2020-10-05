@@ -7,7 +7,7 @@ import typings.semanticUiReact.statisticLabelMod.StatisticLabelProps
 import typings.semanticUiReact.statisticValueMod.StatisticValueProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StatisticComponent extends FunctionComponent[StatisticProps] {

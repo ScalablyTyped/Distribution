@@ -30,7 +30,7 @@ import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.tail
 import typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.yes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ K in react-native-vector-icons.react-native-vector-icons/FontAwesome5.FontAwesome5IconVariants ]:? boolean} & react-native-vector-icons.react-native-vector-icons/Icon.IconProps */
 @js.native

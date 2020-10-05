@@ -3,7 +3,7 @@ package typings.angularCompiler.parserMod
 import typings.angularCompiler.astMod.RecursiveAstVisitor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class implements SimpleExpressionChecker used in View Engine and performs more strict checks

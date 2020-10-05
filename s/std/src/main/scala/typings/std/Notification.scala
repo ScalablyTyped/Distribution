@@ -6,7 +6,7 @@ import typings.std.stdStrings.error
 import typings.std.stdStrings.show
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This Notifications API interface is used to configure and display desktop notifications to the user. */
 @js.native

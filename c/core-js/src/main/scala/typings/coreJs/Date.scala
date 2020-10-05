@@ -2,7 +2,7 @@ package typings.coreJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #############################################################################################
 // Date formatting - https://github.com/zloirock/core-js/#date-formatting

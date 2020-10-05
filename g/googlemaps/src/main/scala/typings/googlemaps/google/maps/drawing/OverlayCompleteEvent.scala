@@ -7,7 +7,7 @@ import typings.googlemaps.google.maps.Polyline
 import typings.googlemaps.google.maps.Rectangle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The properties of an overlaycomplete event on a DrawingManager.. */
 @js.native

@@ -7,7 +7,7 @@ import typings.semanticUiReact.ratingRatingMod.RatingComponent
 import typings.semanticUiReact.ratingRatingMod.RatingProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react/dist/commonjs/modules/Rating", JSImport.Namespace)
 @js.native

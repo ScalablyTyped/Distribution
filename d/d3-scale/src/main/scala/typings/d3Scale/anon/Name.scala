@@ -3,7 +3,7 @@ package typings.d3Scale.anon
 import typings.d3Scale.d3ScaleStrings.`implicit`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Name extends js.Object {

@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.std.OfflineAudioContextOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("OfflineAudioContext")
 @js.native

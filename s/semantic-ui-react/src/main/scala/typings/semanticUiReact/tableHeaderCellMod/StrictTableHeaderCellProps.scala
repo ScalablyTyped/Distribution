@@ -5,7 +5,7 @@ import typings.semanticUiReact.semanticUiReactStrings.descending
 import typings.semanticUiReact.tableCellMod.StrictTableCellProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StrictTableHeaderCellProps extends StrictTableCellProps {

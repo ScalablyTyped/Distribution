@@ -3,7 +3,7 @@ package typings.rcMentions.dropdownMenuMod
 import typings.rcMentions.optionMod.OptionProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DropdownMenuProps extends js.Object {

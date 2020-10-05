@@ -12,7 +12,7 @@ import typings.std.HTMLSpanElement
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.Component<rc-tree.rc-tree/es/TreeNode.TreeNodeProps, {}, any> & {  selectHandle :std.HTMLSpanElement | undefined} */
 @js.native

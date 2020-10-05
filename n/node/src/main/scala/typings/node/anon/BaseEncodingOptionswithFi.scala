@@ -4,7 +4,7 @@ import typings.node.BufferEncoding
 import typings.node.nodeBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined node.fs.BaseEncodingOptions & {  withFileTypes :false | undefined} */
 @js.native

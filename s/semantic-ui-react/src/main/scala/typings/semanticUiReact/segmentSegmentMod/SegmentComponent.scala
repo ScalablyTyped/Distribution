@@ -6,7 +6,7 @@ import typings.semanticUiReact.segmentGroupMod.SegmentGroupProps
 import typings.semanticUiReact.segmentInlineMod.SegmentInlineComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SegmentComponent extends FunctionComponent[SegmentProps] {

@@ -118,7 +118,7 @@ import typings.std.Event
 import typings.std.SVGSVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.SVGProps<std.SVGSVGElement>, @material-ui/core.@material-ui/core/SvgIcon/SvgIcon.SvgIconClassKey, never> */
 @js.native

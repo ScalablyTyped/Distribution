@@ -2,7 +2,7 @@ package typings.d3Array
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
   type Primitive = scala.Double | java.lang.String | scala.Boolean | typings.std.Date

@@ -7,7 +7,7 @@ import typings.lodash.mod.ObjectIterator
 import typings.lodash.mod.StringIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallCollectionIteratee extends js.Object {

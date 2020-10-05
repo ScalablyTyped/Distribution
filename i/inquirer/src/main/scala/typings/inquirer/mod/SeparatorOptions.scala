@@ -3,7 +3,7 @@ package typings.inquirer.mod
 import typings.inquirer.inquirerStrings.separator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a separator.

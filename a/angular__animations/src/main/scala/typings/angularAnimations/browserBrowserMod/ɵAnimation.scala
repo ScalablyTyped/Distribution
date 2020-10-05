@@ -5,7 +5,7 @@ import typings.angularAnimations.mod.AnimationOptions
 import typings.angularAnimations.mod.ɵStyleData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/animations/browser/browser", "\u0275Animation")
 @js.native

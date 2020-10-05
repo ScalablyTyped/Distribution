@@ -7,7 +7,7 @@ import typings.std.PaymentMethodData
 import typings.std.PaymentOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PaymentRequest")
 @js.native

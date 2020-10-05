@@ -5,7 +5,7 @@ import typings.scrollIntoViewIfNeeded.typesMod.ScrollLogicalPosition
 import typings.scrollIntoViewIfNeeded.typesMod.ScrollMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollIntoViewIfNeededStrings {
   @js.native

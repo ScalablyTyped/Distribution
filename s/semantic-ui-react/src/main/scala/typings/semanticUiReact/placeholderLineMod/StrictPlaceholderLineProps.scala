@@ -8,7 +8,7 @@ import typings.semanticUiReact.semanticUiReactStrings.medium
 import typings.semanticUiReact.semanticUiReactStrings.short
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StrictPlaceholderLineProps extends js.Object {

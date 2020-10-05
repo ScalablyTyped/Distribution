@@ -4,7 +4,7 @@ import typings.rxjs.operatorMod.Operator
 import typings.rxjs.typesMod.OperatorFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators/map", JSImport.Namespace)
 @js.native

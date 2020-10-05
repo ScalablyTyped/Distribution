@@ -4,7 +4,7 @@ import typings.angularCompiler.compileMetadataMod.CompileTokenMetadata
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/template_parser/template_ast", "ReferenceAst")
 @js.native

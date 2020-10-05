@@ -4,7 +4,7 @@ import typings.angularCompiler.formattedErrorMod.FormattedError_
 import typings.angularCompiler.formattedErrorMod.FormattedMessageChain
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "formattedError")
 @js.native

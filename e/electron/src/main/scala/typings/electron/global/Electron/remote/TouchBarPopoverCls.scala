@@ -4,7 +4,7 @@ import typings.electron.Electron.TouchBarPopover
 import typings.electron.Electron.TouchBarPopoverConstructorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Electron.remote.TouchBarPopover")
 @js.native

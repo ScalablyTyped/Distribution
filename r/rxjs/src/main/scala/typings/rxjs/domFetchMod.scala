@@ -7,7 +7,7 @@ import typings.std.RequestInit
 import typings.std.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/observable/dom/fetch", JSImport.Namespace)
 @js.native

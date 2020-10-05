@@ -3,7 +3,7 @@ package typings.unimodulesCore
 import typings.unimodulesCore.anon.CurrentVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@unimodules/core/build/deprecate", JSImport.Namespace)
 @js.native

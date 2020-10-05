@@ -3,7 +3,7 @@ package typings.angularCore.r3SymbolsMod
 import typings.angularCore.anon.Directives
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the expansion of an `NgModule` into its scopes.

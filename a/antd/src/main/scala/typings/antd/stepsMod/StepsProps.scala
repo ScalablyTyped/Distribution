@@ -3,7 +3,7 @@ package typings.antd.stepsMod
 import typings.antd.progressProgressMod.ProgressProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StepsProps extends ProgressProps {

@@ -13,7 +13,7 @@ import typings.node.nodeStrings.upgrade
 import typings.node.urlMod.URL_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/nodejs/node/blob/master/lib/_http_client.js#L77
 @JSImport("http", "ClientRequest")

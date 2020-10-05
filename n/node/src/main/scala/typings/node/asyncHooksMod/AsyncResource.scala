@@ -2,7 +2,7 @@ package typings.node.asyncHooksMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The class AsyncResource was designed to be extended by the embedder's async resources.

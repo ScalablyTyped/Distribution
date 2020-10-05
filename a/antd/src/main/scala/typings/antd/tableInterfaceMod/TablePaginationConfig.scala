@@ -3,7 +3,7 @@ package typings.antd.tableInterfaceMod
 import typings.antd.paginationPaginationMod.PaginationProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TablePaginationConfig extends PaginationProps {

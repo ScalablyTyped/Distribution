@@ -6,7 +6,7 @@ import typings.storybookApi.storiesMod.StoriesRaw
 import typings.storybookApi.storiesMod.Story
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GetCurrentParameter extends js.Object {

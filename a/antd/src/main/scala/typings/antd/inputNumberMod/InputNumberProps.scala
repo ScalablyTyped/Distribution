@@ -84,7 +84,7 @@ import typings.std.Event
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent antd.antd/lib/_util/type.Omit<react.react.InputHTMLAttributes<std.HTMLInputElement>, antd.antd/lib/input-number.OmitAttrs> */
 @js.native

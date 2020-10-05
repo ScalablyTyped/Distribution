@@ -4,7 +4,7 @@ import typings.mobx.interceptUtilsMod.IInterceptor
 import typings.mobx.utilsMod.Lambda
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IObservableValue[T] extends js.Object {

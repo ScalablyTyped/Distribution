@@ -3,7 +3,7 @@ package typings.fortawesomeFontawesomeSvgCore
 import typings.fortawesomeFontawesomeSvgCore.mod.RotateProp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fortawesomeFontawesomeSvgCoreNumbers {
   @js.native

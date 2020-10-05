@@ -2,7 +2,7 @@ package typings.googlemaps.google.maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes a symbol, which consists of a vector path with styling. A symbol

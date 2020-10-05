@@ -8,7 +8,7 @@ import typings.three.loadingManagerMod.LoadingManager
 import typings.three.textureMod.Texture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/loaders/TextureLoader", JSImport.Namespace)
 @js.native

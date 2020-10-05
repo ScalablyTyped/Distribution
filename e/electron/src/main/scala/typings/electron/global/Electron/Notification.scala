@@ -3,7 +3,7 @@ package typings.electron.global.Electron
 import typings.electron.Electron.NotificationConstructorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Electron.Notification")
 @js.native

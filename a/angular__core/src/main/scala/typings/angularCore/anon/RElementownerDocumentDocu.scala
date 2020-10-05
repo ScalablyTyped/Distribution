@@ -8,7 +8,7 @@ import typings.std.Document
 import typings.std.EventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @angular/core.@angular/core.RElement & {  ownerDocument :std.Document} */
 @js.native

@@ -4,7 +4,7 @@ import typings.angularForms.anon.EmitEvent
 import typings.angularForms.anon.EmitModelToViewChange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "FormControl")
 @js.native

@@ -4,7 +4,7 @@ import typings.googlemaps.google.maps.visualization.HeatmapLayerOptions
 import typings.googlemaps.google.maps.visualization.MapsEngineLayerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("google.maps.visualization")
 @js.native

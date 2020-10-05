@@ -19,7 +19,7 @@ import typings.csstype.mod.Property.WebkitMask
 import typings.csstype.mod.Property.WebkitTextStroke
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ P in keyof csstype.csstype.VendorShorthandPropertiesHyphen<TLength, TTime> ]: csstype.csstype.VendorShorthandPropertiesHyphen<TLength, TTime>[P] | std.Array<csstype.csstype.VendorShorthandPropertiesHyphen<TLength, TTime>[P]>} */
 @js.native

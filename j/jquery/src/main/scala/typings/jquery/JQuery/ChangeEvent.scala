@@ -3,7 +3,7 @@ package typings.jquery.JQuery
 import typings.jquery.jqueryStrings.change
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ChangeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {

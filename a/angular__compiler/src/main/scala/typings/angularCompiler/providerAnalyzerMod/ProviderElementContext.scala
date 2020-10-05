@@ -8,7 +8,7 @@ import typings.angularCompiler.templateAstMod.QueryMatch
 import typings.angularCompiler.templateAstMod.ReferenceAst
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/provider_analyzer", "ProviderElementContext")
 @js.native

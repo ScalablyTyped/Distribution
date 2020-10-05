@@ -13,7 +13,7 @@ import typings.electron.Electron.TouchBarSliderConstructorOptions
 import typings.electron.Electron.TouchBarSpacerConstructorOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Electron.TouchBar")
 @js.native

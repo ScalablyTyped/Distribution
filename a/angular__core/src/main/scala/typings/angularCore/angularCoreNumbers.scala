@@ -25,7 +25,7 @@ import typings.angularCore.mod.ɵRenderFlags
 import typings.angularCore.mod.ɵViewFlags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularCoreNumbers {
   @js.native

@@ -5,7 +5,7 @@ import typings.angularRouter.angularRouterStrings.enabled
 import typings.angularRouter.angularRouterStrings.top
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AnchorScrolling extends js.Object {

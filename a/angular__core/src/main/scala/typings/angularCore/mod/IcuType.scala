@@ -4,7 +4,7 @@ import typings.angularCore.angularCoreNumbers.`0`
 import typings.angularCore.angularCoreNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the ICU type of `select` or `plural`

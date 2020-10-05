@@ -4,7 +4,7 @@ import typings.jquery.jqueryStrings.keypress
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait KeyPressEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {

@@ -6,7 +6,7 @@ import typings.reactNavigationStack.reactNavigationStackStrings.spring
 import typings.reactNavigationStack.reactNavigationStackStrings.timing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactNavigationStack.anon.Animation

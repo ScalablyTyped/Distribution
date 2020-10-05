@@ -3,7 +3,7 @@ package typings.angularCompiler.mod
 import typings.angularCompiler.outputAstMod.TypeModifier
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "Type")
 @js.native

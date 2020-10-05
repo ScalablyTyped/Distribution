@@ -4,7 +4,7 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ScrollNumberProps extends js.Object {

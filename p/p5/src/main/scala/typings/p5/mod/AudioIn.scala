@@ -5,7 +5,7 @@ import typings.std.MediaStream
 import typings.std.MediaStreamAudioSourceNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AudioIn extends js.Object {

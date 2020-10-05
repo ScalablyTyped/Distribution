@@ -9,7 +9,7 @@ import typings.three.webGLAttributesMod.WebGLAttributes
 import typings.three.webGLInfoMod.WebGLInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/renderers/webgl/WebGLGeometries", JSImport.Namespace)
 @js.native

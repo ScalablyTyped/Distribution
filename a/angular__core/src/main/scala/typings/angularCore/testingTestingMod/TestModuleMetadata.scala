@@ -3,7 +3,7 @@ package typings.angularCore.testingTestingMod
 import typings.angularCore.mod.SchemaMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TestModuleMetadata extends js.Object {

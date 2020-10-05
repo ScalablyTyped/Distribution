@@ -3,7 +3,7 @@ package typings.expoVectorIcons
 import typings.expoVectorIcons.createIconSetMod.Icon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@expo/vector-icons/build/createIconSetFromIcoMoon", JSImport.Namespace)
 @js.native

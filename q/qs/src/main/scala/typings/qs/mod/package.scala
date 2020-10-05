@@ -2,7 +2,7 @@ package typings.qs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
   // TODO: The value type here is a "poor man's `unknown`". When these types support TypeScript

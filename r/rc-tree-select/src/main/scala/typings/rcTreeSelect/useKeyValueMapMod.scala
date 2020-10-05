@@ -4,7 +4,7 @@ import typings.rcTreeSelect.interfaceMod.FlattenDataNode
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-tree-select/es/hooks/useKeyValueMap", JSImport.Namespace)
 @js.native

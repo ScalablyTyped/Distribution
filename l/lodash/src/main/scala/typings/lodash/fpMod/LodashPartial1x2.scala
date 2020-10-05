@@ -7,7 +7,7 @@ import typings.lodash.mod.Function3
 import typings.lodash.mod.Function4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LodashPartial1x2[T1] extends js.Object {

@@ -6,7 +6,7 @@ import typings.reactNativeVectorIcons.anon.Brand
 import typings.reactNativeVectorIcons.iconMod.ImageSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-vector-icons/FontAwesome5", JSImport.Default)
 @js.native

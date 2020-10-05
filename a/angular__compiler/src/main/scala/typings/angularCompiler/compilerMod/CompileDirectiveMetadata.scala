@@ -4,7 +4,7 @@ import typings.angularCompiler.anon.ChangeDetection
 import typings.angularCompiler.anon.ComponentFactory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "CompileDirectiveMetadata")
 @js.native

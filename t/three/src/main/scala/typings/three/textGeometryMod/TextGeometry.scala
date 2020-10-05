@@ -4,7 +4,7 @@ import typings.three.anon.BevelEnabled
 import typings.three.extrudeGeometryMod.ExtrudeGeometry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/geometries/TextGeometry", "TextGeometry")
 @js.native

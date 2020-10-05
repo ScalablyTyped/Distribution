@@ -2,7 +2,7 @@ package typings.mobx.interceptUtilsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mobx/lib/types/intercept-utils", "hasInterceptors")
 @js.native

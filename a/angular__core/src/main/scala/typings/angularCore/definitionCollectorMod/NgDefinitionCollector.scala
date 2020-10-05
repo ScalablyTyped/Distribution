@@ -4,7 +4,7 @@ import typings.typescript.mod.Node
 import typings.typescript.mod.TypeChecker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core/schematics/migrations/missing-injectable/definition_collector", "NgDefinitionCollector")
 @js.native

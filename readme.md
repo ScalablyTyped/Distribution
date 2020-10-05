@@ -5,7 +5,7 @@
 [![Join the chat at https://gitter.im/ScalablyTyped/community](https://badges.gitter.im/ScalablyTyped/community.svg)](https://gitter.im/ScalablyTyped/community)
 [![Checkout the demos at https://github.com/ScalablyTyped/ScalablyTypedDemos/](https://img.shields.io/badge/Checkout-Demo-success.svg)](https://github.com/oyvindberg/ScalablyTypedDemos/)
 
-This is the home of pre-built Scala.js typings for **9064** Javascript libraries,
+This is the home of pre-built Scala.js typings for **174** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 ## Warning :collision: :bomb: :sunglasses:
@@ -32,13 +32,13 @@ This is one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala               411383     22315135      1831322      4078483     16405330
- Markdown              9459       336484       111871            0       224613
+ Scala               404260     21851613      1802095      4058170     15991348
+ Markdown              9449       336115       111703            0       224412
  Makefile                 5           89           17            0           72
  HTML                     1            6            0            0            6
  JSON                     1            1            0            0            1
 --------------------------------------------------------------------------------
- Total               420849     22651715      1943210      4078483     16630022
+ Total               413716     22187824      1913815      4058170     16215839
 --------------------------------------------------------------------------------
 
 ```
@@ -57,7 +57,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "202008260726")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "202010061228")
   // If you're still on Scala.js 0.6, this is the last distribution release.
   addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "202004200703")
 ```

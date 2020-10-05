@@ -6,7 +6,7 @@ import typings.angularForms.anon.`0`
 import typings.rxjs.mod.Observable_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "AbstractControl")
 @js.native

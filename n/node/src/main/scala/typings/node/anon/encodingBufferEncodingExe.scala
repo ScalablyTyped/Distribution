@@ -5,7 +5,7 @@ import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.node.processMod.global.NodeJS.Signals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  encoding :node.BufferEncoding} & node.child_process.ExecOptions */
 @js.native

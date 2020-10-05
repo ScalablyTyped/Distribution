@@ -8,7 +8,7 @@ import typings.reactNativeGestureHandler.anon.Offset
 import typings.reactNativeGestureHandler.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-gesture-handler", "FlatList")
 @js.native

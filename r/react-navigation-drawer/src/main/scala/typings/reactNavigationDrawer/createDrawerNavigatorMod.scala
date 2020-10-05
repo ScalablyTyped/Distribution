@@ -13,7 +13,7 @@ import typings.reactNavigationDrawer.typesMod.NavigationDrawerProp
 import typings.reactNavigationDrawer.typesMod.NavigationDrawerRouterConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-navigation-drawer/lib/typescript/src/navigators/createDrawerNavigator", JSImport.Namespace)
 @js.native

@@ -3,7 +3,7 @@ package typings.angularPlatformBrowser.animationsMod
 import typings.angularCore.mod.RendererFactory2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/platform-browser/animations", "\u0275BrowserAnimationBuilder")
 @js.native

@@ -4,7 +4,7 @@ import typings.jquery.anon.HandleObj
 import typings.jquery.jqueryBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _SpecialEventHook[TTarget, TData] extends js.Object
 

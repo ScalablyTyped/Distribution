@@ -8,7 +8,7 @@ import typings.reactNavigationDrawer.anon.Borderless
 import typings.reactNavigationDrawer.anon.PressColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-navigation-drawer/lib/typescript/src/views/TouchableItem", JSImport.Namespace)
 @js.native

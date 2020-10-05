@@ -2,7 +2,7 @@ package typings.stardustUiReactComponentRef
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@stardust-ui/react-component-ref/dist/es/isRefObject", JSImport.Namespace)
 @js.native

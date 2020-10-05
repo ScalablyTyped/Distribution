@@ -6,7 +6,7 @@ import typings.std.stdStrings.number
 import typings.std.stdStrings.string
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables basic storage and retrieval of dates and times. */
 @js.native

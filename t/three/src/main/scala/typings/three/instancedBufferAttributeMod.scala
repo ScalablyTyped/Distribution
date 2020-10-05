@@ -5,7 +5,7 @@ import typings.three.bufferAttributeMod.BufferAttribute
 import typings.three.bufferGeometryMod.BufferGeometry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/core/InstancedBufferAttribute", JSImport.Namespace)
 @js.native

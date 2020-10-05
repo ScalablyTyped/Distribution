@@ -11,7 +11,7 @@ import typings.semanticUiReact.semanticUiReactStrings.left
 import typings.semanticUiReact.semanticUiReactStrings.right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StrictCardGroupProps extends js.Object {

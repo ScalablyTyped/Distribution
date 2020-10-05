@@ -2,7 +2,7 @@ package typings.emotionStyledBase
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
   type CreateStyledComponentExtrinsic[Tag /* <: typings.react.mod.ComponentType[_] */, ExtraProps, Theme /* <: js.Object */] = typings.emotionStyledBase.mod.CreateStyledComponentBase[typings.emotionStyledBase.helperMod.PropsOf[Tag], ExtraProps, Theme]

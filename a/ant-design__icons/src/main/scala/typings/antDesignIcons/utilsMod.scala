@@ -5,7 +5,7 @@ import typings.antDesignIcons.antDesignIconsBooleans.`false`
 import typings.antDesignIconsSvg.typesMod.AbstractNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/icons/es/utils", JSImport.Namespace)
 @js.native

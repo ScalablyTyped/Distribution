@@ -7,7 +7,7 @@ import typings.reactNative.reactNativeStrings.round
 import typings.reactNative.reactNativeStrings.square
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ARTRenderableMixin extends ARTNodeMixin {

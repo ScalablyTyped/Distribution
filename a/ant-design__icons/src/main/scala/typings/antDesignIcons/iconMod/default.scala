@@ -5,7 +5,7 @@ import typings.antDesignIcons.anon.PickIconComponentPropsmax
 import typings.react.mod.ForwardRefExoticComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/icons/es/components/Icon", JSImport.Default)
 @js.native

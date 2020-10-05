@@ -3,7 +3,7 @@ package typings.angularCompiler
 import typings.angularCompiler.anon.Instantiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/ast_path", JSImport.Namespace)
 @js.native

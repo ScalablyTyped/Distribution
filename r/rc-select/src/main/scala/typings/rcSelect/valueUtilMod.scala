@@ -9,7 +9,7 @@ import typings.rcSelect.interfaceMod.OptionData
 import typings.rcSelect.interfaceMod.OptionsType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-select/lib/utils/valueUtil", JSImport.Namespace)
 @js.native

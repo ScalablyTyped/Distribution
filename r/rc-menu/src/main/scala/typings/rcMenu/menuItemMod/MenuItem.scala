@@ -8,7 +8,7 @@ import typings.std.HTMLElement
 import typings.std.HTMLLIElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-menu/es/MenuItem", "MenuItem")
 @js.native

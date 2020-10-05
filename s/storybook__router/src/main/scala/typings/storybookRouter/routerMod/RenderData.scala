@@ -5,7 +5,7 @@ import typings.reachRouter.mod.NavigateFn
 import typings.reachRouter.mod.WindowLocation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @reach/router.@reach/router.RouteComponentProps<{}> & @storybook/router.@storybook/router/dist/router.Other */
 @js.native

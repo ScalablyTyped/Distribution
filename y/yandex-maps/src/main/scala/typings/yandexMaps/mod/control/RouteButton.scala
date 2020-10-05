@@ -6,7 +6,7 @@ import typings.yandexMaps.mod.IOptionManager
 import typings.yandexMaps.mod.IRoutePanel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.yandexMaps.mod.IEventEmitter because Already inherited

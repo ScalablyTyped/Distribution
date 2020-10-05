@@ -6,7 +6,7 @@ import typings.expo.expoStrings.noUpdateAvailable
 import typings.expo.updatesMod.UpdateEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait `0` extends UpdateEvent {

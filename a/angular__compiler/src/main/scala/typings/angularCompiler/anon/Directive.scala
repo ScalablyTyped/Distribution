@@ -5,7 +5,7 @@ import typings.angularCompiler.r3AstMod.Template
 import typings.angularCompiler.t2ApiMod.DirectiveMeta
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Directive[DirectiveT /* <: DirectiveMeta */] extends js.Object {

@@ -4,7 +4,7 @@ import typings.history.createMemoryHistoryMod.MemoryHistory
 import typings.history.createMemoryHistoryMod.MemoryHistoryBuildOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("history", "createMemoryHistory")
 @js.native

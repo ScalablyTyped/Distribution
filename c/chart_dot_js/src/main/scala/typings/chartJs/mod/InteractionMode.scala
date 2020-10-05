@@ -2,7 +2,7 @@ package typings.chartJs.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined chart.js.chart.js.InteractionModeRegistry[keyof chart.js.chart.js.InteractionModeRegistry] */
 /* Rewritten from type alias, can be one of: 

@@ -2,7 +2,7 @@ package typings.rcPicker.rangePickerMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<rc-picker.rc-picker/es/panels/TimePanel.SharedTimeProps<DateType>, 'defaultValue'> & {  defaultValue :std.Array<DateType> | undefined} */
 @js.native

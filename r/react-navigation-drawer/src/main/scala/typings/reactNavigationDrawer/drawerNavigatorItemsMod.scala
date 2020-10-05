@@ -8,7 +8,7 @@ import typings.reactNavigationDrawer.anon.ActiveBackgroundColor
 import typings.reactNavigationDrawer.typesMod.DrawerNavigatorItemsProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-navigation-drawer/lib/typescript/src/views/DrawerNavigatorItems", JSImport.Namespace)
 @js.native

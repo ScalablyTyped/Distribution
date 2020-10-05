@@ -2,7 +2,7 @@ package typings.rxjsCompat.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallThisV2V3V4V5V6ConcurrentScheduler extends js.Object {

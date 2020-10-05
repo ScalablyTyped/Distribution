@@ -4,7 +4,7 @@ import typings.reactNavigationStack.vendorTypesMod.StackCardInterpolatedStyle
 import typings.reactNavigationStack.vendorTypesMod.StackCardInterpolationProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-navigation-stack/lib/typescript/src/vendor/TransitionConfigs/CardStyleInterpolators", JSImport.Namespace)
 @js.native

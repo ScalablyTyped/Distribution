@@ -4,7 +4,7 @@ import typings.csstype.mod.Property._AnimationTimingFunction
 import typings.csstype.mod.Property._TransitionTimingFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _TimingFunction
   extends _SingleAnimation[js.Any]

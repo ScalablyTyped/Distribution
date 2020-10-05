@@ -4,7 +4,7 @@ import typings.d3Zoom.mod.ZoomTransform_
 import typings.d3Zoom.mod.ZoomedElementBaseType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3", "zoomTransform")
 @js.native

@@ -2,7 +2,7 @@ package typings.expoFont.fontTypesMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<expo-font.expo-font/build/Font.types.FontResource, 'display'> */
 @js.native

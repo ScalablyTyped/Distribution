@@ -3,7 +3,7 @@ package typings.mobx.computedvalueMod
 import typings.mobx.comparerMod.IEqualsComparer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IComputedValueOptions[T] extends js.Object {

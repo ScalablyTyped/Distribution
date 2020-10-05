@@ -5,7 +5,7 @@ import typings.expoPermissions.expoPermissionsStrings.fine
 import typings.expoPermissions.expoPermissionsStrings.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PermissionDetailsLocationAndroid extends js.Object {

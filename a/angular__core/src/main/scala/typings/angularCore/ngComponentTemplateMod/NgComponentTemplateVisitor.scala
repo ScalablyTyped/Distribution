@@ -4,7 +4,7 @@ import typings.typescript.mod.Node
 import typings.typescript.mod.TypeChecker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core/schematics/utils/ng_component_template", "NgComponentTemplateVisitor")
 @js.native

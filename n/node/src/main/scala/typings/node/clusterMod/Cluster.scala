@@ -11,7 +11,7 @@ import typings.node.nodeStrings.online
 import typings.node.nodeStrings.setup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Cluster extends EventEmitter {

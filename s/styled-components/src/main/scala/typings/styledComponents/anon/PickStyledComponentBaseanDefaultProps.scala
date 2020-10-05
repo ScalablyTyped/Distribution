@@ -11,7 +11,7 @@ import typings.styledComponents.styledComponentsMod.StyledComponentInterpolation
 import typings.styledComponents.styledComponentsMod.StyledComponentProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<styled-components.styled-components.StyledComponentBase<any, any, any, never>, keyof styled-components.styled-components.StyledComponentBase<any, any, {}, never>> */
 @js.native

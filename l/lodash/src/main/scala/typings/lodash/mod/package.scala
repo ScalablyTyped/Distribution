@@ -2,7 +2,7 @@ package typings.lodash
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
   // Crazy typedef needed get _.omit to work properly with Dictionary and NumericDictionary

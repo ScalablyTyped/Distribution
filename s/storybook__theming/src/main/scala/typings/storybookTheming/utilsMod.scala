@@ -5,7 +5,7 @@ import typings.storybookTheming.storybookThemingStrings.dark
 import typings.storybookTheming.storybookThemingStrings.light
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@storybook/theming/dist/utils", JSImport.Namespace)
 @js.native

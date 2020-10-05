@@ -5,7 +5,7 @@ import typings.three.webGLProgramMod.WebGLProgram
 import typings.three.webGLTexturesMod.WebGLTextures
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/renderers/webgl/WebGLUniforms", JSImport.Namespace)
 @js.native

@@ -5,7 +5,7 @@ import typings.std.stdStrings.finish
 import typings.std.stdStrings.start
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods to manipulate <marquee> elements. */
 @js.native

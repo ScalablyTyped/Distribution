@@ -3,7 +3,7 @@ package typings.node.vmMod
 import typings.node.anon.Strings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CreateContextOptions extends js.Object {

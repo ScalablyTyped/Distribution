@@ -3,7 +3,7 @@ package typings.googlemaps.google.maps.drawing
 import typings.googlemaps.google.maps.ControlPosition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DrawingControlOptions extends js.Object {

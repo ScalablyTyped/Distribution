@@ -12,7 +12,7 @@ import typings.typescript.mod.SourceFile
 import typings.typescript.mod.SourceFileLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined typescript.typescript.Decorator & {  expression :typescript.typescript.CallExpression} */
 @js.native

@@ -3,7 +3,7 @@ package typings.angularCommon.mod
 import typings.angularCore.mod.NgIterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common", "NgForOfContext")
 @js.native

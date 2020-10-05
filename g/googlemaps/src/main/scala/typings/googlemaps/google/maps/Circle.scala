@@ -4,7 +4,7 @@ import typings.googlemaps.google.maps.places._LocationBias
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A circle on the Earth's surface; also known as a "spherical cap". */
 @js.native

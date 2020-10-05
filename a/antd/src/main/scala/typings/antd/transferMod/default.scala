@@ -7,7 +7,7 @@ import typings.antd.operationMod.TransferOperationProps
 import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/transfer", JSImport.Default)
 @js.native

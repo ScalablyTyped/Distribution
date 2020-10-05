@@ -13,7 +13,7 @@ import typings.angularCore.mod.ɵCssSelectorList
 import typings.angularCore.mod.ɵRenderFlags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ContentQueries[T] extends js.Object {

@@ -4,7 +4,7 @@ import typings.antDesignIconsSvg.typesMod.ThemeType
 import typings.antDesignIconsSvg.typesMod.ThemeTypeUpperCase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object antDesignIconsSvgStrings {
   @js.native

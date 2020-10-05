@@ -5,7 +5,7 @@ import typings.std.stdStrings.selectedcandidatepairchange
 import typings.std.stdStrings.statechange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to information about the ICE transport layer over which the data is being sent and received. */
 @js.native

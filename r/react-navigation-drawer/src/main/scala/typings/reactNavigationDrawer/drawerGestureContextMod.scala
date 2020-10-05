@@ -4,7 +4,7 @@ import typings.react.mod.Context
 import typings.react.mod.RefObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-navigation-drawer/lib/typescript/src/utils/DrawerGestureContext", JSImport.Namespace)
 @js.native

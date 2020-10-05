@@ -4,7 +4,7 @@ import typings.antd.antdStrings.ltr
 import typings.antd.antdStrings.rtl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MenuContextProps extends js.Object {

@@ -2,7 +2,7 @@ package typings.coreJs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("core-js/es6/math", JSImport.Namespace)
 @js.native

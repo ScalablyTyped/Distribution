@@ -3,7 +3,7 @@ package typings.rxjsCompat
 import typings.std.EventListenerOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs-compat/observable/FromEventObservable", JSImport.Namespace)
 @js.native

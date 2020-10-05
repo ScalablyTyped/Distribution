@@ -8,7 +8,7 @@ import typings.antd.imageMod.SkeletonImageProps
 import typings.react.mod.global.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/skeleton/Skeleton", JSImport.Default)
 @js.native

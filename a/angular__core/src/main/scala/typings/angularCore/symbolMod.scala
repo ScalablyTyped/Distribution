@@ -5,7 +5,7 @@ import typings.typescript.mod.Symbol
 import typings.typescript.mod.TypeChecker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core/schematics/utils/typescript/symbol", JSImport.Namespace)
 @js.native

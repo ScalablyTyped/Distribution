@@ -9,7 +9,7 @@ import typings.storybookReact.typesMod.IStorybookSection
 import typings.storybookReact.typesMod.StoryFnReactReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@storybook/react", JSImport.Namespace)
 @js.native

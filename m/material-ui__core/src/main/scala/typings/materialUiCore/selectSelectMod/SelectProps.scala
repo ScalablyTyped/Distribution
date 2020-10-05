@@ -99,7 +99,7 @@ import typings.std.HTMLSelectElement
 import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/Input.InputProps, @material-ui/core.@material-ui/core/Select/Select.SelectClassKey, 'value' | 'onChange'> */
 /* Inlined parent std.Pick<@material-ui/core.@material-ui/core/Select/SelectInput.SelectInputProps, 'onChange'> */

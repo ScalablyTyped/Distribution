@@ -3,7 +3,7 @@ package typings.leaflet.mod.Icon_
 import typings.leaflet.mod.BaseIconOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DefaultIconOptions extends BaseIconOptions {

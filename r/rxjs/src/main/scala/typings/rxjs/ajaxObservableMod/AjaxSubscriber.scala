@@ -4,7 +4,7 @@ import typings.rxjs.subscriberMod.Subscriber
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/observable/dom/AjaxObservable", "AjaxSubscriber")
 @js.native

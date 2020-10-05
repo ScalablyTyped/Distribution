@@ -4,7 +4,7 @@ import typings.angularCompiler.mlParserAstMod.Text
 import typings.angularCompiler.mlParserAstMod.Visitor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/ml_parser/html_whitespaces", "WhitespaceVisitor")
 @js.native

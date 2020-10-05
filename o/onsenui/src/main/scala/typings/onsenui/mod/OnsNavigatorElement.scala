@@ -3,7 +3,7 @@ package typings.onsenui.mod
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @description A component that provides page stack management and navigation. This component does not have a visible content

@@ -99,7 +99,7 @@ import typings.std.HTMLLIElement
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<react.react.HTMLAttributes<std.HTMLLIElement>, 'onClick' | 'onMouseEnter' | 'onMouseLeave' | 'onSelect'> */
 @js.native

@@ -9,7 +9,7 @@ import typings.yandexMaps.yandexMapsStrings.right
 import typings.yandexMaps.yandexMapsStrings.small
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AdjustMapMargin extends js.Object {

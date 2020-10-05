@@ -3,7 +3,7 @@ package typings.materialUiCore.muiThemeProviderMod
 import typings.jss.mod.StyleSheet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SheetManagerTheme extends js.Object {

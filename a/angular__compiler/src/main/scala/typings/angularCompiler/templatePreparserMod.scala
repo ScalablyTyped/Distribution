@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.angularCompiler.mlParserAstMod.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/template_parser/template_preparser", JSImport.Namespace)
 @js.native

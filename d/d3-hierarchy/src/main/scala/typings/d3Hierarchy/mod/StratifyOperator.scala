@@ -3,7 +3,7 @@ package typings.d3Hierarchy.mod
 import typings.d3Hierarchy.d3HierarchyStrings._empty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StratifyOperator[Datum] extends js.Object {

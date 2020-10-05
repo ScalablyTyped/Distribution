@@ -4,7 +4,7 @@ import typings.std.stdStrings.`best fit`
 import typings.std.stdStrings.lookup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PluralRulesOptions extends js.Object {

@@ -2,7 +2,7 @@ package typings.node.workerThreadsMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("worker_threads", "MessageChannel")
 @js.native

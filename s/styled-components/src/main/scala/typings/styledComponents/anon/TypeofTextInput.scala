@@ -5,7 +5,7 @@ import typings.reactNative.mod.TextInput
 import typings.reactNative.mod.TextInputState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofTextInput extends Instantiable0[TextInput] {

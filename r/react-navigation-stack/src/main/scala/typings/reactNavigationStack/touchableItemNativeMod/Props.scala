@@ -27,7 +27,7 @@ import typings.reactNavigationStack.reactNavigationStackStrings.radiobutton_unch
 import typings.reactNavigationStack.reactNavigationStackStrings.yes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native.react-native.ViewProps & {  pressColor :string,   disabled :boolean | undefined,   borderless :boolean | undefined,   delayPressIn :number | undefined,   onPress :(): void | undefined,   children :react.react.ReactNode} */
 @js.native

@@ -7,7 +7,7 @@ import typings.styledComponents.styledComponentsMod.StyledComponentInnerOtherPro
 import typings.styledComponents.styledComponentsMod.ThemedStyledFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Copied over from "ThemedBaseStyledInterface" in index.d.ts in order to remove DOM element typings
 @js.native

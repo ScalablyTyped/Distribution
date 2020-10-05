@@ -2,7 +2,7 @@ package typings.node.v8Mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ** Signifies if the --zap_code_space option is enabled or not.  1 == enabled, 0 == disabled. */
 /* Rewritten from type alias, can be one of: 

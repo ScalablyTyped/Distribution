@@ -3,7 +3,7 @@ package typings.angularPlatformBrowser.mod
 import typings.std.HTMLMetaElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/platform-browser", "Meta")
 @js.native

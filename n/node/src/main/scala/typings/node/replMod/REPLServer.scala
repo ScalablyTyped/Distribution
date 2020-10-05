@@ -12,7 +12,7 @@ import typings.node.vmMod.Context
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a customizable Read-Eval-Print-Loop (REPL).

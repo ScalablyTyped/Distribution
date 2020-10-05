@@ -5,7 +5,7 @@ import typings.rxjs.actionMod.Action
 import typings.rxjs.typesMod.SchedulerLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/Scheduler", JSImport.Namespace)
 @js.native

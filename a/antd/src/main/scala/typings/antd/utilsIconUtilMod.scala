@@ -5,7 +5,7 @@ import typings.antd.treeTreeMod.AntTreeNodeProps
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/tree/utils/iconUtil", JSImport.Namespace)
 @js.native

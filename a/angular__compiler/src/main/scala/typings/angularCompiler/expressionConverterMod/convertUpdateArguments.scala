@@ -5,7 +5,7 @@ import typings.angularCompiler.astMod.AST
 import typings.angularCompiler.outputAstMod.Expression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/compiler_util/expression_converter", "convertUpdateArguments")
 @js.native

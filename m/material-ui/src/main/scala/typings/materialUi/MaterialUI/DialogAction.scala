@@ -5,7 +5,7 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DialogAction extends js.Object {

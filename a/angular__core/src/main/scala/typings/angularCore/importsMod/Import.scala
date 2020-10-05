@@ -3,7 +3,7 @@ package typings.angularCore.importsMod
 import typings.typescript.mod.ImportDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Import extends js.Object {

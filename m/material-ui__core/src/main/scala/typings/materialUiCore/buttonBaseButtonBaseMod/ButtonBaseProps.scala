@@ -89,7 +89,7 @@ import typings.std.HTMLElement
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.AnchorHTMLAttributes<std.HTMLElement> & react.react.ButtonHTMLAttributes<std.HTMLElement>, @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseClassKey, never> */
 @js.native

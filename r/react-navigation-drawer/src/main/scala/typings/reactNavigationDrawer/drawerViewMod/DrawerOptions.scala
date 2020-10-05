@@ -17,7 +17,7 @@ import typings.reactNavigationDrawer.reactNavigationDrawerStrings.slide
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.unlocked
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DrawerOptions extends js.Object {

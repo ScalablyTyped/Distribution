@@ -5,7 +5,7 @@ import typings.three.cameraMod.Camera
 import typings.three.lightMod.Light
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebGLRenderState extends js.Object {

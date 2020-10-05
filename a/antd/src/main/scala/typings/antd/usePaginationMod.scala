@@ -4,7 +4,7 @@ import typings.antd.antdBooleans.`false`
 import typings.antd.tableInterfaceMod.TablePaginationConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/table/hooks/usePagination", JSImport.Namespace)
 @js.native

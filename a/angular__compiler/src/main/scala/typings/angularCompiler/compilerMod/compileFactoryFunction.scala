@@ -4,7 +4,7 @@ import typings.angularCompiler.r3FactoryMod.R3FactoryFn
 import typings.angularCompiler.r3FactoryMod.R3FactoryMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "compileFactoryFunction")
 @js.native

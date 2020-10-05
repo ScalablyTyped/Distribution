@@ -10,7 +10,7 @@ import typings.styledComponents.styledComponentsStrings.diskSlashmemory
 import typings.styledComponents.styledComponentsStrings.memory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofImage extends Instantiable0[Image] {

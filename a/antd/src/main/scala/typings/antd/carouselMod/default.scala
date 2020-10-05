@@ -3,7 +3,7 @@ package typings.antd.carouselMod
 import typings.antd.anon.Arrows
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/carousel", JSImport.Default)
 @js.native

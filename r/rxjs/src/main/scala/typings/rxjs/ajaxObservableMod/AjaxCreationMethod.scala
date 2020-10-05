@@ -3,7 +3,7 @@ package typings.rxjs.ajaxObservableMod
 import typings.rxjs.internalObservableMod.Observable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AjaxCreationMethod extends js.Object {

@@ -4,7 +4,7 @@ import typings.angularCore.r3SymbolsMod.SchemaMetadata
 import typings.angularCore.r3SymbolsMod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Exports[T] extends js.Object {

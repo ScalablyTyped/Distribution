@@ -177,7 +177,7 @@ import typings.styledComponents.styledComponentsStrings.wbr
 import typings.styledComponents.styledComponentsStrings.webview
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ TTag in keyof react.react.<global>.JSX.IntrinsicElements ]: styled-components.styled-components.ThemedStyledFunction<TTag, T, {}, never>} */
 @js.native

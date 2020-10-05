@@ -70,7 +70,7 @@ import typings.csstype.mod.Property.TransitionTimingFunction
 import typings.csstype.mod.Property.UserSelect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ P in keyof csstype.csstype.ObsoletePropertiesHyphen<TLength, TTime> ]: csstype.csstype.ObsoletePropertiesHyphen<TLength, TTime>[P] | std.Array<csstype.csstype.ObsoletePropertiesHyphen<TLength, TTime>[P]>} */
 @js.native

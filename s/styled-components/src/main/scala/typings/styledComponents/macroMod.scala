@@ -24,7 +24,7 @@ import typings.styledComponents.styledComponentsMod.ThemedStyledProps
 import typings.styledComponents.styledComponentsMod.WithThemeFnInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("styled-components/macro", JSImport.Namespace)
 @js.native

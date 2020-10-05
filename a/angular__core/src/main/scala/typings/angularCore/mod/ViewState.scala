@@ -18,7 +18,7 @@ import typings.angularCore.angularCoreNumbers.`768`
 import typings.angularCore.angularCoreNumbers.`8`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Bitmask of states

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.angularCompiler.urlResolverMod.UrlResolverCtor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/public_api", "UrlResolver")
 @js.native

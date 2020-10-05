@@ -92,7 +92,7 @@ import typings.materialUiCore.anon.PartialStyleRulesTouchRip
 import typings.materialUiCore.anon.PartialStyleRulesTypograp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ Name in keyof @material-ui/core.@material-ui/core/styles/overrides.ComponentNameToClassKey ]:? std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/styles/overrides.ComponentNameToClassKey[Name]>>} */
 @js.native

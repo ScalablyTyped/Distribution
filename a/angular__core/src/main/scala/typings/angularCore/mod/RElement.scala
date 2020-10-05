@@ -3,7 +3,7 @@ package typings.angularCore.mod
 import typings.std.EventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Subset of API needed for writing attributes, properties, and setting up

@@ -4,7 +4,7 @@ import typings.node.consoleMod.global.NodeJS.ConsoleConstructor
 import typings.node.utilMod.InspectOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // This needs to be global to avoid TS2403 in case lib.dom.d.ts is present in the same build
 @js.native

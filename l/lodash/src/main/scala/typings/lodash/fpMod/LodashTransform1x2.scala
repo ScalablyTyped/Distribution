@@ -5,7 +5,7 @@ import typings.lodash.mod.MemoVoidIteratorCapped
 import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LodashTransform1x2[TResult] extends js.Object {

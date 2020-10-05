@@ -4,7 +4,7 @@ import typings.vue.vnodeMod.VNode
 import typings.vue.vueMod.CreateElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StaticRenderFns extends js.Object {

@@ -4,7 +4,7 @@ import typings.googlemaps.google.maps.GroundOverlayOptions
 import typings.googlemaps.google.maps.LatLngBoundsLiteral
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("google.maps.GroundOverlay")
 @js.native

@@ -6,7 +6,7 @@ import typings.rcFieldForm.anon.Len
 import typings.rcFieldForm.anon.Mismatch
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ValidateMessages extends js.Object {

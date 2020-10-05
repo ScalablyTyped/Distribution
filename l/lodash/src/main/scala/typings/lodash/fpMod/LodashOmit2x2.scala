@@ -5,7 +5,7 @@ import typings.lodash.mod.PartialObject
 import typings.lodash.mod.PropertyName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LodashOmit2x2[T] extends js.Object {

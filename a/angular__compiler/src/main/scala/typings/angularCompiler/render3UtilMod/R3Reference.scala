@@ -3,7 +3,7 @@ package typings.angularCompiler.render3UtilMod
 import typings.angularCompiler.outputAstMod.Expression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait R3Reference extends js.Object {

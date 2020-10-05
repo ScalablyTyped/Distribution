@@ -6,7 +6,7 @@ import typings.three.geometryMod.MorphTarget
 import typings.three.keyframeTrackMod.KeyframeTrack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/animation/AnimationClip", JSImport.Namespace)
 @js.native

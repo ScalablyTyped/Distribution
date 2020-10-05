@@ -7,7 +7,7 @@ import typings.node.anon.Stdout
 import typings.node.fsMod.BaseEncodingOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
 @JSImport("child_process", "execFile")

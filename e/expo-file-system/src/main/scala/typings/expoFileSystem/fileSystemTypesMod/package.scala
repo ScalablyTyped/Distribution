@@ -2,7 +2,7 @@ package typings.expoFileSystem
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object fileSystemTypesMod {
   type DownloadProgressCallback = js.Function1[

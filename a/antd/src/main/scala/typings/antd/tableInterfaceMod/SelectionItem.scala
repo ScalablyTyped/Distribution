@@ -4,7 +4,7 @@ import typings.antd.useSelectionMod.INTERNAL_SELECTION_ITEM
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SelectionItem extends INTERNAL_SELECTION_ITEM {

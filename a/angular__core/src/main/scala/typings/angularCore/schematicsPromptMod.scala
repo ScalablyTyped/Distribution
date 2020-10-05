@@ -9,7 +9,7 @@ import typings.inquirer.mod.StreamOptions
 import typings.inquirer.mod.prompts.PromptConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core/schematics/utils/schematics_prompt", JSImport.Namespace)
 @js.native

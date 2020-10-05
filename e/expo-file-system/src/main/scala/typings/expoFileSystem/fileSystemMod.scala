@@ -17,7 +17,7 @@ import typings.unimodulesCore.mod.EventEmitter
 import typings.unimodulesReactNativeAdapter.eventEmitterMod.Subscription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("expo-file-system/build/FileSystem", JSImport.Namespace)
 @js.native

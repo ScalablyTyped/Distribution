@@ -5,7 +5,7 @@ import typings.rcTabs.interfaceMod.TabPosition
 import typings.react.mod.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TabPanelListProps extends js.Object {

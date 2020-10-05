@@ -65,7 +65,7 @@ import typings.electron.Electron.WebRequest
 import typings.electron.Electron.WebviewTag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofElectron extends js.Object {

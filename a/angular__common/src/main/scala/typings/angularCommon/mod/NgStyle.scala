@@ -7,7 +7,7 @@ import typings.angularCore.mod.KeyValueDiffers
 import typings.angularCore.mod.Renderer2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common", "NgStyle")
 @js.native

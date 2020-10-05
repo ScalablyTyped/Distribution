@@ -3,7 +3,7 @@ package typings.angularCommon
 import typings.angularCommon.anon.MGA
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/locales/mg", JSImport.Namespace)
 @js.native

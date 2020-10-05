@@ -5,7 +5,7 @@ import typings.std.OffscreenCanvas
 import typings.std.WebGLRenderingContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebGLRendererParameters extends js.Object {

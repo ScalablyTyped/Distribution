@@ -3,7 +3,7 @@ package typings.reactNative.anon
 import typings.reactNative.mod.SectionListData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Section[ItemT] extends js.Object {

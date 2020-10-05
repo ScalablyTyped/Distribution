@@ -3,7 +3,7 @@ package typings.three.anon
 import typings.three.uniformsLibMod.IUniform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AlphaMap extends js.Object {

@@ -4,7 +4,7 @@ import typings.materialUiCore.gridGridMod.GridSize
 import typings.materialUiCore.gridGridMod.GridSpacing
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object materialUiCoreNumbers {
   @js.native

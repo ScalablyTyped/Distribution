@@ -3,7 +3,7 @@ package typings.reactNative.anon
 import typings.reactNative.mod.ScaledSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Screen extends js.Object {

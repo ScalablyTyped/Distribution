@@ -6,7 +6,7 @@ import typings.three.lineSegmentsMod.LineSegments
 import typings.three.materialMod.Material
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/helpers/AxesHelper", JSImport.Namespace)
 @js.native

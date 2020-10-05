@@ -4,7 +4,7 @@ import typings.angularAnimations.angularAnimationsNumbers.`0`
 import typings.angularAnimations.angularAnimationsNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.angularAnimations.angularAnimationsNumbers.`0`

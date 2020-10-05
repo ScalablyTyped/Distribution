@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.three.shaderLibMod.Shader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "ShaderLib")
 @js.native

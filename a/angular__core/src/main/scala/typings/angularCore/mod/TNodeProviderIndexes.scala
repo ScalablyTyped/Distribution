@@ -5,7 +5,7 @@ import typings.angularCore.angularCoreNumbers.`1048576`
 import typings.angularCore.angularCoreNumbers.`20`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Corresponds to the TNode.providerIndexes property.

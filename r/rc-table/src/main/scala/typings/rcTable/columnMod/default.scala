@@ -2,7 +2,7 @@ package typings.rcTable.columnMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-table/lib/sugar/Column", JSImport.Default)
 @js.native

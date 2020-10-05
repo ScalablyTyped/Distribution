@@ -3,7 +3,7 @@ package typings.typescript.anon
 import typings.typescript.mod.Diagnostic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Config extends js.Object {

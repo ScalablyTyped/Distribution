@@ -6,7 +6,7 @@ import typings.angularCommon.angularCommonStrings.symbol
 import typings.angularCore.mod.PipeTransform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common", "CurrencyPipe")
 @js.native

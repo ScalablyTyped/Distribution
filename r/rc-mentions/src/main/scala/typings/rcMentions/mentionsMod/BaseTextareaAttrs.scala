@@ -85,7 +85,7 @@ import typings.std.Event
 import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined rc-mentions.rc-mentions/es/util.Omit<rc-textarea.rc-textarea.TextAreaProps, 'prefix' | 'onChange' | 'onSelect'> */
 @js.native

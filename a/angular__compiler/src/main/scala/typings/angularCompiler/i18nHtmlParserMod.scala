@@ -5,7 +5,7 @@ import typings.angularCompiler.htmlParserMod.HtmlParser
 import typings.angularCompiler.srcUtilMod.Console
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/i18n/i18n_html_parser", JSImport.Namespace)
 @js.native

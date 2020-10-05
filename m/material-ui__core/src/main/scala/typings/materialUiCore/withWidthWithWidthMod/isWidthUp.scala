@@ -3,7 +3,7 @@ package typings.materialUiCore.withWidthWithWidthMod
 import typings.materialUiCore.createBreakpointsMod.Breakpoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material-ui/core/withWidth/withWidth", "isWidthUp")
 @js.native

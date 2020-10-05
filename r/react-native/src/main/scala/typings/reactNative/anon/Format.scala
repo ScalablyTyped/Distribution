@@ -4,7 +4,7 @@ import typings.reactNative.reactNativeStrings.jpeg
 import typings.reactNative.reactNativeStrings.png
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Format extends js.Object {

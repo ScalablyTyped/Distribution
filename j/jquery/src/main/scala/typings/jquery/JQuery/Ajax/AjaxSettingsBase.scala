@@ -18,7 +18,7 @@ import typings.std.RegExp
 import typings.std.XMLHttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see \`{@link https://api.jquery.com/jquery.ajax/#jQuery-ajax-settings }\`

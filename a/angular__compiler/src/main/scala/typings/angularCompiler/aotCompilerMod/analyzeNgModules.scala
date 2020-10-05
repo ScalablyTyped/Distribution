@@ -4,7 +4,7 @@ import typings.angularCompiler.metadataResolverMod.CompileMetadataResolver
 import typings.angularCompiler.staticSymbolResolverMod.StaticSymbolResolver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/aot/compiler", "analyzeNgModules")
 @js.native

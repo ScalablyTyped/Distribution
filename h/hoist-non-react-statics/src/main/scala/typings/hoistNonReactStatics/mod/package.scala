@@ -2,7 +2,7 @@ package typings.hoistNonReactStatics
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
   type NonReactStatics[S /* <: typings.react.mod.ComponentType[_] */, C /* <: org.scalablytyped.runtime.StringDictionary[typings.hoistNonReactStatics.hoistNonReactStaticsBooleans.`true`] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 

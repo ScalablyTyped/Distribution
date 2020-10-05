@@ -7,7 +7,7 @@ import typings.reactNativeGestureHandler.mod.PanGestureHandlerProperties
 import typings.reactNativeGestureHandler.mod.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/GestureHandler.native", JSImport.Namespace)
 @js.native

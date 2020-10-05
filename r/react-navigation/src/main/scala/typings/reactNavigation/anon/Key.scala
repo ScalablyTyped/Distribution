@@ -4,7 +4,7 @@ import typings.reactNavigation.mod.NavigationAction
 import typings.reactNavigation.mod.NavigationParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Key[T /* <: NavigationParams */] extends js.Object {

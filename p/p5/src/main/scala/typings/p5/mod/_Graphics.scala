@@ -2,7 +2,7 @@ package typings.p5.mod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Work-around for p5.Graphics inheriting from both p5 and p5.Element
 @js.native

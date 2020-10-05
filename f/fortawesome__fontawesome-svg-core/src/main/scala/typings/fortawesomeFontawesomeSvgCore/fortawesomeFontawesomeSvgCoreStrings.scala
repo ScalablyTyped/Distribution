@@ -5,7 +5,7 @@ import typings.fortawesomeFontawesomeSvgCore.mod.PullProp
 import typings.fortawesomeFontawesomeSvgCore.mod.SizeProp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fortawesomeFontawesomeSvgCoreStrings {
   @js.native

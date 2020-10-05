@@ -3,7 +3,7 @@ package typings.reactNavigationStack.vendorTypesMod
 import typings.reactNative.mod.LayoutChangeEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StackHeaderTitleProps extends js.Object {

@@ -3,7 +3,7 @@ package typings.mobxReact.iwrappedcomponentMod
 import typings.mobxReact.ireactcomponentMod.IReactComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IWrappedComponent[P] extends js.Object {

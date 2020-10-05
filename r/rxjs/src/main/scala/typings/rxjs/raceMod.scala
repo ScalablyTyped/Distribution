@@ -7,7 +7,7 @@ import typings.rxjs.subscriberMod.Subscriber
 import typings.rxjs.typesMod.ObservableInput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/observable/race", JSImport.Namespace)
 @js.native

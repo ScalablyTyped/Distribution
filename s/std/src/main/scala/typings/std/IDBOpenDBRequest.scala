@@ -4,7 +4,7 @@ import typings.std.stdStrings.blocked
 import typings.std.stdStrings.upgradeneeded
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Also inherits methods from its parents IDBRequest and EventTarget. */
 @js.native

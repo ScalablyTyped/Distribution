@@ -6,7 +6,7 @@ import typings.reactNative.anon.Index
 import typings.reactNative.anon.Section
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SectionListProps[ItemT] extends VirtualizedListWithoutRenderItemProps[ItemT] {

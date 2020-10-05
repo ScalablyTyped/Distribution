@@ -19,7 +19,7 @@ import typings.react.mod.ReactInstance
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<rc-menu.rc-menu/es/SubPopupMenu.SubPopupMenuProps> */
 @js.native

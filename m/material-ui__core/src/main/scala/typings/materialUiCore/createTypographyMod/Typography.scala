@@ -4,7 +4,7 @@ import typings.csstype.mod.Property.FontFamily
 import typings.csstype.mod.Property.FontWeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Record<@material-ui/core.@material-ui/core/styles/createTypography.ThemeStyle, @material-ui/core.@material-ui/core/styles/createTypography.TypographyStyle> */
 /* Inlined parent @material-ui/core.@material-ui/core/styles/createTypography.FontStyle */

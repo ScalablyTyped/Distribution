@@ -5,7 +5,7 @@ import typings.std.stdStrings.`timed-out`
 import typings.std.stdStrings.ok
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Atomics extends js.Object {

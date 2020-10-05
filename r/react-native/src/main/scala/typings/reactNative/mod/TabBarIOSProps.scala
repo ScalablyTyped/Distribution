@@ -5,7 +5,7 @@ import typings.reactNative.reactNativeStrings.center
 import typings.reactNative.reactNativeStrings.fill
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TabBarIOSProps extends ViewProps {

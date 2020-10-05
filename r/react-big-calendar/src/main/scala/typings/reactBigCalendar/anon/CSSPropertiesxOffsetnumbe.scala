@@ -525,7 +525,7 @@ import typings.csstype.mod.Property.ZIndex
 import typings.csstype.mod.Property.Zoom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.CSSProperties & {  xOffset :number} */
 @js.native

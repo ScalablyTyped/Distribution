@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.rxjs.coldObservableMod.ColdObservable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FnCallMarblesValuesError extends js.Object {

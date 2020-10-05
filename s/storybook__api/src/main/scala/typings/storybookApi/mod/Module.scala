@@ -8,7 +8,7 @@ import typings.storybookApi.storybookApiStrings.development
 import typings.storybookApi.storybookApiStrings.production
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @storybook/api.@storybook/api.StoreData & @storybook/router.@storybook/router.RenderData & @storybook/api.@storybook/api.ProviderData & {  mode :'production' | 'development' | undefined,   state :@storybook/api.@storybook/api.State} */
 @js.native

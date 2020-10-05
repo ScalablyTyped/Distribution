@@ -5,7 +5,7 @@ import typings.std.Element
 import typings.std.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material-ui/core/ButtonBase/focusVisible", JSImport.Namespace)
 @js.native

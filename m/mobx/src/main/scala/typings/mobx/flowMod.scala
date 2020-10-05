@@ -5,7 +5,7 @@ import typings.std.Error
 import typings.std.Generator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mobx/lib/api/flow", JSImport.Namespace)
 @js.native

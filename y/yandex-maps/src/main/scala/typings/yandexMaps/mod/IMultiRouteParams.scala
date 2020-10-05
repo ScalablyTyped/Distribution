@@ -5,7 +5,7 @@ import typings.yandexMaps.yandexMapsStrings.masstransit
 import typings.yandexMaps.yandexMapsStrings.pedestrian
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IMultiRouteParams extends js.Object {

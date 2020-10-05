@@ -177,7 +177,7 @@ import typings.styledComponents.styledComponentsStrings.wbr
 import typings.styledComponents.styledComponentsStrings.webview
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ThemedBaseStyledInterface[T /* <: js.Object */] extends ThemedStyledComponentFactories[T] {

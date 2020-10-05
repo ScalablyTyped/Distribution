@@ -5,7 +5,7 @@ import typings.yandexMaps.yandexMapsStrings.evenOdd
 import typings.yandexMaps.yandexMapsStrings.nonZero
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yandex-maps", "geometry")
 @js.native

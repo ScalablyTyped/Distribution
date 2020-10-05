@@ -90,7 +90,7 @@ import typings.std.Event
 import typings.std.HTMLHRElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLHRElement>, @material-ui/core.@material-ui/core/Divider/Divider.DividerClassKey, never> */
 @js.native

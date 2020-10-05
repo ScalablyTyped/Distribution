@@ -22,7 +22,7 @@ import typings.semanticUiReact.statisticStatisticMod.StatisticSizeProp
 import typings.semanticUiReact.transitionTransitionMod.TRANSITION_STATUSES
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object semanticUiReactStrings {
   @js.native

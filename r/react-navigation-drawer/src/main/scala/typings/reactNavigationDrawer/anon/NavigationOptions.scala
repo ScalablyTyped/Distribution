@@ -9,7 +9,7 @@ import typings.reactNavigationDrawer.typesMod.NavigationDrawerOptions
 import typings.reactNavigationDrawer.typesMod.NavigationDrawerProp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NavigationOptions[Params, ScreenProps] extends js.Object {

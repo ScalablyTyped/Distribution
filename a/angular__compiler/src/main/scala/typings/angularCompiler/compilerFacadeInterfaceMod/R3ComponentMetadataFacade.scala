@@ -6,7 +6,7 @@ import typings.angularCompiler.anon.UsesOnChanges
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait R3ComponentMetadataFacade extends R3DirectiveMetadataFacade {

@@ -5,7 +5,7 @@ import typings.rcTable.interfaceMod.ExpandableConfig
 import typings.rcTable.interfaceMod.LegacyExpandableProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-table/lib/utils/legacyUtil", JSImport.Namespace)
 @js.native

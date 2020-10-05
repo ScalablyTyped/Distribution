@@ -5,7 +5,7 @@ import typings.d3Chord.mod.RibbonSubgroup
 import typings.d3Chord.mod.Ribbon_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3", "ribbon")
 @js.native

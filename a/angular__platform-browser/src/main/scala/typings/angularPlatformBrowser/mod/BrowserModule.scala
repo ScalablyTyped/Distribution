@@ -4,7 +4,7 @@ import typings.angularCore.mod.ModuleWithProviders
 import typings.angularPlatformBrowser.anon.AppId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/platform-browser", "BrowserModule")
 @js.native

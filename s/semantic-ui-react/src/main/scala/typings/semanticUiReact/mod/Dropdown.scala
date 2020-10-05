@@ -7,7 +7,7 @@ import typings.semanticUiReact.dropdownDropdownMod.DropdownComponent
 import typings.semanticUiReact.dropdownDropdownMod.DropdownProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "Dropdown")
 @js.native

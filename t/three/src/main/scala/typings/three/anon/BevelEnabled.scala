@@ -3,7 +3,7 @@ package typings.three.anon
 import typings.three.fontMod.Font
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BevelEnabled extends js.Object {

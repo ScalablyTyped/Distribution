@@ -4,7 +4,7 @@ import typings.angularCompiler.coreMod.SecurityContext
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/expression_parser/ast", "BoundElementProperty")
 @js.native

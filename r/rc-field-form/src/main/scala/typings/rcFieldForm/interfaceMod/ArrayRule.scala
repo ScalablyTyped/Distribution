@@ -5,7 +5,7 @@ import typings.react.mod.ReactElement
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<rc-field-form.rc-field-form/es/interface.BaseRule, 'type'> */
 @js.native

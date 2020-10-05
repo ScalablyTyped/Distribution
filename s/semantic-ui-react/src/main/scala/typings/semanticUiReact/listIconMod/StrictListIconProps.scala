@@ -4,7 +4,7 @@ import typings.semanticUiReact.genericMod.SemanticVERTICALALIGNMENTS
 import typings.semanticUiReact.iconIconMod.StrictIconProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StrictListIconProps extends StrictIconProps {

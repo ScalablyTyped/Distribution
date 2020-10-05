@@ -3,7 +3,7 @@ package typings.moment.momentMod
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StandaloneFormatSpec extends js.Object {

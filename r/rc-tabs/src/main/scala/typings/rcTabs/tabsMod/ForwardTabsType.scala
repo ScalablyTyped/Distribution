@@ -9,7 +9,7 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.ForwardRefExoticComponent<rc-tabs.rc-tabs/es/Tabs.TabsProps & react.react.RefAttributes<std.HTMLDivElement>> & {  TabPane :(hasPrefixClsForceRenderClassNameStyleIdActiveAnimatedDestroyInactiveTabPaneTabKeyChildren : rc-tabs.rc-tabs/es/TabPanelList/TabPane.TabPaneProps): react.react.<global>.JSX.Element} */
 @js.native

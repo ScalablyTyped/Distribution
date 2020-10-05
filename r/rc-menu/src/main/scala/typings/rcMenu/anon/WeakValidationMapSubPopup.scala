@@ -18,7 +18,7 @@ import typings.react.mod.ReactNode
 import typings.react.mod.Validator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<rc-menu.rc-menu/es/SubPopupMenu.SubPopupMenuProps> */
 @js.native

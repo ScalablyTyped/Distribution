@@ -46,7 +46,7 @@ import typings.csstype.mod.Property.TextEmphasis
 import typings.csstype.mod.Property.Transition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StandardShorthandProperties[TLength, TTime] extends js.Object {

@@ -7,7 +7,7 @@ import typings.jss.mod.InsertionPoint
 import typings.jss.mod.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<jss.jss.JssOptions> */
 @js.native

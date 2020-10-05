@@ -32,7 +32,7 @@ import typings.csstype.mod.Property.TextAnchor
 import typings.csstype.mod.Property.VectorEffect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.csstype.mod.SvgPropertiesFallback because var conflicts: clip, clipPath, color, cursor, direction, display, filter, font, fontFamily, fontSize, fontSizeAdjust, fontStretch, fontStyle, fontVariant, fontWeight, imageRendering, letterSpacing, lineHeight, mask, opacity, overflow, paintOrder, pointerEvents, textDecoration, textRendering, unicodeBidi, visibility, whiteSpace, wordSpacing, writingMode. Inlined floodOpacity, fillOpacity, shapeRendering, vectorEffect, strokeMiterlimit, fill, clipRule, lightingColor, baselineShift, strokeLinecap, alignmentBaseline, textAnchor, strokeOpacity, glyphOrientationVertical, strokeWidth, strokeLinejoin, strokeDashoffset, dominantBaseline, colorInterpolation, markerEnd, stopOpacity, stroke, fillRule, stopColor, colorRendering, markerMid, floodColor, marker, strokeDasharray, markerStart */ @js.native

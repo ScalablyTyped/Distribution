@@ -6,7 +6,7 @@ import typings.reactNavigationStack.anon.ReadonlyProps
 import typings.reactNavigationStack.anon.ReadonlyState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/Stack/StackView", JSImport.Default)
 @js.native

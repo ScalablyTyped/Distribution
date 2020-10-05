@@ -5,7 +5,7 @@ import typings.rcTree.interfaceMod.DataNode
 import typings.rcTree.interfaceMod.GetKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-tree/es/utils/treeUtil", "traverseDataNodes")
 @js.native

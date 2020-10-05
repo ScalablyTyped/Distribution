@@ -7,7 +7,7 @@ import typings.react.mod.ReactElement
 import typings.react.mod.RefAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.ForwardRefExoticComponent<antd.antd/lib/time-picker.TimePickerProps & react.react.RefAttributes<any>> & {  RangePicker :react.react.ForwardRefExoticComponent<antd.antd/lib/time-picker.TimeRangePickerProps & react.react.RefAttributes<any>>} */
 @js.native

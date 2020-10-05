@@ -4,7 +4,7 @@ import typings.three.shapeMod.Shape
 import typings.three.vector2Mod.Vector2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/extras/core/ShapePath", JSImport.Namespace)
 @js.native

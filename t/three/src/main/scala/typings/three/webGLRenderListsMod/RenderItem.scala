@@ -7,7 +7,7 @@ import typings.three.object3DMod.Object3D
 import typings.three.webGLProgramMod.WebGLProgram
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RenderItem extends js.Object {

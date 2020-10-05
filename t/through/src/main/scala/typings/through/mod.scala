@@ -4,7 +4,7 @@ import typings.node.streamMod.Transform
 import typings.through.anon.AutoDestroy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("through", JSImport.Namespace)
 @js.native

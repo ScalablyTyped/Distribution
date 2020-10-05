@@ -3,7 +3,7 @@ package typings.antd.layoutLayoutMod
 import typings.antd.anon.AddSider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LayoutContextProps extends js.Object {

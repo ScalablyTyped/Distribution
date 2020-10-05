@@ -10,7 +10,7 @@ import typings.rxjs.typesMod.OperatorFunction
 import typings.rxjs.typesMod.UnaryFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators/multicast", JSImport.Namespace)
 @js.native

@@ -3,7 +3,7 @@ package typings.propTypes
 import typings.propTypes.mod.IsOptional
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propTypesBooleans {
   @js.native

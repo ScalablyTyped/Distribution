@@ -6,7 +6,7 @@ import typings.react.mod.ComponentState
 import typings.semanticUiReact.dimmerDimmableMod.DimmerDimmableProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DimmerComponent extends ComponentClass[DimmerProps, ComponentState] {

@@ -5,7 +5,7 @@ import typings.react.mod.Ref
 import typings.reactNavigation.mod.NavigationInjectedProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait `3`[T, P] extends js.Object {

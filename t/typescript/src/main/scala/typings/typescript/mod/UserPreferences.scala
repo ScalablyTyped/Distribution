@@ -10,7 +10,7 @@ import typings.typescript.typescriptStrings.relative
 import typings.typescript.typescriptStrings.single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UserPreferences extends js.Object {

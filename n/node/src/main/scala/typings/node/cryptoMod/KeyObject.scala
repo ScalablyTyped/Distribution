@@ -5,7 +5,7 @@ import typings.node.nodeStrings.der
 import typings.node.nodeStrings.pem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("crypto", "KeyObject")
 @js.native

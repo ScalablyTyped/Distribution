@@ -6,7 +6,7 @@ import typings.angularCommon.mod.PlatformLocation
 import typings.angularCommon.upgradeUpgradeMod.LocationUpgradeConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/upgrade", "\u0275angular_packages_common_upgrade_upgrade_c")
 @js.native

@@ -5,7 +5,7 @@ import typings.rcPicker.interfaceMod.NullableDateType
 import typings.rcPicker.interfaceMod.RangeValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CellPrefixCls[DateType] extends js.Object {

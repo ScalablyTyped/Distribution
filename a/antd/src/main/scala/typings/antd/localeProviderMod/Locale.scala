@@ -11,7 +11,7 @@ import typings.antd.tableInterfaceMod.TableLocale
 import typings.antd.uploadInterfaceMod.UploadLocale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Locale extends js.Object {

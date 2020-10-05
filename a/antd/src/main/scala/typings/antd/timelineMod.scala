@@ -3,7 +3,7 @@ package typings.antd
 import typings.antd.timelineTimelineMod.TimelineType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/timeline", JSImport.Namespace)
 @js.native

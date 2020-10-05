@@ -6,7 +6,7 @@ import typings.electron.electronStrings.none
 import typings.electron.electronStrings.printableArea
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Margins extends js.Object {

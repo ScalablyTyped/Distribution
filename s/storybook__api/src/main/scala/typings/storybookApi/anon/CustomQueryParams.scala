@@ -13,7 +13,7 @@ import typings.storybookApi.versionsMod.Versions
 import typings.storybookTheming.typesMod.ThemeVars
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CustomQueryParams extends js.Object {

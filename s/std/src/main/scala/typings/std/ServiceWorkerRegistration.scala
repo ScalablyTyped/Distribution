@@ -3,7 +3,7 @@ package typings.std
 import typings.std.stdStrings.updatefound
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This ServiceWorker API interface represents the service worker registration. You register a service worker to control one or more pages that share the same origin. */
 @js.native

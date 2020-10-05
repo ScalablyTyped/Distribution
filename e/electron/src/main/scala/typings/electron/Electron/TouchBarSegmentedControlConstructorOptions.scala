@@ -13,7 +13,7 @@ import typings.electron.electronStrings.separated
 import typings.electron.electronStrings.single
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TouchBarSegmentedControlConstructorOptions extends js.Object {

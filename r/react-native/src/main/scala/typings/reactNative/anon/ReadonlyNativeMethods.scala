@@ -7,7 +7,7 @@ import typings.reactNative.mod.MeasureLayoutOnSuccessCallback
 import typings.reactNative.mod.MeasureOnSuccessCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<react-native.react-native.NativeMethods> */
 @js.native

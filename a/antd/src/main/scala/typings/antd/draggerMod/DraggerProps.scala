@@ -24,7 +24,7 @@ import typings.std.Blob
 import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined antd.antd/lib/upload/interface.UploadProps<any> & {  height :number | undefined} */
 @js.native

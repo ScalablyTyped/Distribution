@@ -2,7 +2,7 @@ package typings.node.inspectorMod.Runtime
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Object internal property descriptor. This property isn't normally visible in JavaScript code.

@@ -7,7 +7,7 @@ import typings.antd.uploadInterfaceMod.UploadProps
 import typings.antd.uploadMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd", "Upload")
 @js.native

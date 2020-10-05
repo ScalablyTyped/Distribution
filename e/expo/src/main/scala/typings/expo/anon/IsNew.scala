@@ -4,7 +4,7 @@ import typings.expo.expoBooleans.`false`
 import typings.expo.updatesMod.UpdateFetchResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IsNew extends UpdateFetchResult {

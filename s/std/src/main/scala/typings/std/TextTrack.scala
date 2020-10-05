@@ -3,7 +3,7 @@ package typings.std
 import typings.std.stdStrings.cuechange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface also inherits properties from EventTarget. */
 @js.native

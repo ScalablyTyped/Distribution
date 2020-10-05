@@ -30,7 +30,7 @@ import typings.csstype.mod.Property._WebkitBorderBefore
 import typings.csstype.mod.Property._WebkitBorderBeforeWidth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _LineWidth[TLength]
   extends _Border[TLength]

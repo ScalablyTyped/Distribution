@@ -11,7 +11,7 @@ import typings.angularCommon.angularCommonStrings.PUT
 import typings.angularCommon.anon.Params
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/http", "HttpRequest")
 @js.native

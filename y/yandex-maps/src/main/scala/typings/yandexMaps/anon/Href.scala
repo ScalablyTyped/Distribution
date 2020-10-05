@@ -4,7 +4,7 @@ import typings.yandexMaps.mod.IGeometryJson
 import typings.yandexMaps.mod.IShape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Href extends js.Object {

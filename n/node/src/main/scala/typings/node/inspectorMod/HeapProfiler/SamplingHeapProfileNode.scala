@@ -3,7 +3,7 @@ package typings.node.inspectorMod.HeapProfiler
 import typings.node.inspectorMod.Runtime.CallFrame
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Sampling Heap Profile node. Holds callsite information, allocation statistics and child nodes.

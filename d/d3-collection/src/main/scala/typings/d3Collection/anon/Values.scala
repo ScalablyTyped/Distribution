@@ -3,7 +3,7 @@ package typings.d3Collection.anon
 import typings.d3Collection.mod.NestedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Values[Datum, RollupType] extends js.Object {

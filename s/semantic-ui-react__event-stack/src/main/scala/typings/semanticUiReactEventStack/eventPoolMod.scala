@@ -6,7 +6,7 @@ import typings.std.Event
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@semantic-ui-react/event-stack/lib/types/lib/EventPool", JSImport.Namespace)
 @js.native

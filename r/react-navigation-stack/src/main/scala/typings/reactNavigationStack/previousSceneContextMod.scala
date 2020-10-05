@@ -6,7 +6,7 @@ import typings.reactNavigation.mod.NavigationRoute
 import typings.reactNavigationStack.vendorTypesMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-navigation-stack/lib/typescript/src/vendor/utils/PreviousSceneContext", JSImport.Namespace)
 @js.native

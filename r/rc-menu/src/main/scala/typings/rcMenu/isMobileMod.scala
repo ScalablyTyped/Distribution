@@ -6,7 +6,7 @@ import typings.rcMenu.anon.Device
 import typings.rcMenu.anon.Phone
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-menu/es/utils/isMobile", JSImport.Namespace)
 @js.native

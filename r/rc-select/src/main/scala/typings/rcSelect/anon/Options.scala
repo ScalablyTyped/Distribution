@@ -2,7 +2,7 @@ package typings.rcSelect.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Options[OptionsType /* <: js.Array[js.Object] */] extends js.Object {

@@ -3,7 +3,7 @@ package typings.angularCompiler
 import typings.angularCompiler.elementSchemaRegistryMod.ElementSchemaRegistry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/schema/dom_element_schema_registry", JSImport.Namespace)
 @js.native

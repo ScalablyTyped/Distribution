@@ -8,7 +8,7 @@ import typings.typescript.mod.WatchOptions
 import typings.typescript.typescriptStrings.discover
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DiscoverTypings extends TypingInstallerRequestWithProjectName {

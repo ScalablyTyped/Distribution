@@ -7,7 +7,7 @@ import typings.yandexMaps.mod._InteractivityModelKey
 import typings.yandexMaps.mod._OverlayKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object yandexMapsStrings {
   @js.native

@@ -10,7 +10,7 @@ import typings.semanticUiReact.semanticUiReactStrings.right
 import typings.semanticUiReact.tableCellMod.TableCellProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StrictTableRowProps extends js.Object {

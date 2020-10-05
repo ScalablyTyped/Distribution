@@ -6,7 +6,7 @@ import typings.std.DeviceOrientationEventInit
 import typings.std.PermissionState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("DeviceOrientationEvent")
 @js.native

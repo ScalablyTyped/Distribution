@@ -3,7 +3,7 @@ package typings.node.anon
 import typings.std.Uint16Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BufferUint16Array extends js.Object {

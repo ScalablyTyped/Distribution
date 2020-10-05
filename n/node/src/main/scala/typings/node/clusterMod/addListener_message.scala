@@ -5,7 +5,7 @@ import typings.node.netMod.Socket
 import typings.node.nodeStrings.message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cluster", "addListener")
 @js.native

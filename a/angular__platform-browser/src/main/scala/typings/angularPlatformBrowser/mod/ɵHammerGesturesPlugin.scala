@@ -3,7 +3,7 @@ package typings.angularPlatformBrowser.mod
 import typings.angularCore.mod.ɵConsole
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/platform-browser", "\u0275HammerGesturesPlugin")
 @js.native

@@ -7,7 +7,7 @@ import typings.semanticUiReact.menuMenuMod.MenuComponent
 import typings.semanticUiReact.menuMenuMod.MenuProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react/dist/commonjs/collections/Menu", JSImport.Namespace)
 @js.native

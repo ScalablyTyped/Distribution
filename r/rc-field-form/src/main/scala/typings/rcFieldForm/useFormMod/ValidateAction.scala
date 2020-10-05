@@ -4,7 +4,7 @@ import typings.rcFieldForm.interfaceMod.InternalNamePath
 import typings.rcFieldForm.rcFieldFormStrings.validateField
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ValidateAction extends ReducerAction {

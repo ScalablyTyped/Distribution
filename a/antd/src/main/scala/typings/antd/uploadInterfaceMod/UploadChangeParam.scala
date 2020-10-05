@@ -3,7 +3,7 @@ package typings.antd.uploadInterfaceMod
 import typings.antd.anon.Percent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UploadChangeParam[T /* <: js.Object */] extends js.Object {

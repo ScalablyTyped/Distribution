@@ -3,7 +3,7 @@ package typings.materialUiCore.transitionMod
 import typings.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent react-transition-group.react-transition-group/Transition.TransitionActions */
 /* Inlined parent std.Partial<std.Pick<react-transition-group.react-transition-group/Transition.TransitionProps<undefined>, @material-ui/core.@material-ui/core/transitions/transition.TransitionKeys>> */

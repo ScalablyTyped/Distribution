@@ -15,7 +15,7 @@ import typings.reactRouterDom.reactRouterDomStrings.location
 import typings.reactRouterDom.reactRouterDomStrings.staticContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-router-dom", "withRouter")
 @js.native

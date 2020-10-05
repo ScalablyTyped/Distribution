@@ -8,7 +8,7 @@ import typings.reactNative.mod.StatusBarProps
 import typings.reactNative.mod.StatusBarStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofStatusBar extends Instantiable0[StatusBar] {

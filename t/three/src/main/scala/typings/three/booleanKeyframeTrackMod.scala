@@ -3,7 +3,7 @@ package typings.three
 import typings.three.keyframeTrackMod.KeyframeTrack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/animation/tracks/BooleanKeyframeTrack", JSImport.Namespace)
 @js.native

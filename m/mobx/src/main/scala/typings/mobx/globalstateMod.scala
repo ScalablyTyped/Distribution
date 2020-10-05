@@ -6,7 +6,7 @@ import typings.mobx.internalMod.Reaction_
 import typings.mobx.mobxStrings.strict
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mobx/lib/core/globalstate", JSImport.Namespace)
 @js.native

@@ -3,7 +3,7 @@ package typings.googlemaps.google.maps.places
 import typings.googlemaps.google.maps.GeocoderAddressComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PlaceResult extends js.Object {

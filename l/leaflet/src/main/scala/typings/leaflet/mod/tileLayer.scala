@@ -3,7 +3,7 @@ package typings.leaflet.mod
 import typings.leaflet.mod.TileLayer_.WMS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "tileLayer")
 @js.native

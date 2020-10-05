@@ -6,7 +6,7 @@ import typings.three.geometryMod.Geometry
 import typings.three.sphereMod.Sphere
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/geometries/PolyhedronGeometry", JSImport.Namespace)
 @js.native

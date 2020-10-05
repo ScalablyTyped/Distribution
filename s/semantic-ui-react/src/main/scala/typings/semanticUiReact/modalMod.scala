@@ -7,7 +7,7 @@ import typings.semanticUiReact.modalModalMod.ModalComponent
 import typings.semanticUiReact.modalModalMod.ModalProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react/dist/commonjs/modules/Modal", JSImport.Namespace)
 @js.native

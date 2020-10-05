@@ -6,7 +6,7 @@ import typings.angularCore.angularCoreStrings.platform
 import typings.angularCore.angularCoreStrings.root
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Injectable extends js.Object {

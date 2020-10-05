@@ -6,7 +6,7 @@ import typings.std.WeakSet
 import typings.std.WeakSetConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("core-js/es6/weak-set", JSImport.Namespace)
 @js.native

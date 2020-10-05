@@ -3,7 +3,7 @@ package typings.antd.directoryTreeMod
 import typings.antd.treeTreeMod.TreeProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DirectoryTreeProps extends TreeProps {

@@ -11,7 +11,7 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<antd.antd/lib/modal/Modal.ModalProps> */
 @js.native

@@ -5,7 +5,7 @@ import typings.storybookTheming.anon.Colors
 import typings.storybookTheming.anon.Languagejsontokenboolean
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@storybook/theming/dist/modules/syntax", JSImport.Namespace)
 @js.native

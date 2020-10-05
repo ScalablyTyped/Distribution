@@ -3,7 +3,7 @@ package typings.antd.countdownMod
 import typings.antd.anon.PartialCountdownProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/statistic/Countdown", JSImport.Default)
 @js.native

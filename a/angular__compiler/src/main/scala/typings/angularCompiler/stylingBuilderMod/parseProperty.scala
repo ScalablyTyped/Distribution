@@ -3,7 +3,7 @@ package typings.angularCompiler.stylingBuilderMod
 import typings.angularCompiler.anon.HasOverrideFlag
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/render3/view/styling_builder", "parseProperty")
 @js.native

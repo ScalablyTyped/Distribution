@@ -4,7 +4,7 @@ import typings.mobx.modifiersMod.IEnhancer
 import typings.std.PropertyDescriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mobx/lib/api/observabledecorator", JSImport.Namespace)
 @js.native

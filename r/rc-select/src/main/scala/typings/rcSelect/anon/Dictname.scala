@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.rcSelect.generatorMod.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Dictname[OptionsType /* <: js.Array[js.Object] */]

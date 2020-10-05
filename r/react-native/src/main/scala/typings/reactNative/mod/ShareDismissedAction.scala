@@ -3,7 +3,7 @@ package typings.reactNative.mod
 import typings.reactNative.reactNativeStrings.dismissedAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ShareDismissedAction extends ShareAction {

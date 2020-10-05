@@ -87,7 +87,7 @@ import typings.materialUiCore.touchRippleMod.TouchRippleProps
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ Name in keyof @material-ui/core.@material-ui/core/styles/props.ComponentsPropsList ]:? std.Partial<@material-ui/core.@material-ui/core/styles/props.ComponentsPropsList[Name]>} */
 @js.native

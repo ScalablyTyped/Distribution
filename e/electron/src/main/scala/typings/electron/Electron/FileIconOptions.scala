@@ -5,7 +5,7 @@ import typings.electron.electronStrings.normal
 import typings.electron.electronStrings.small
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FileIconOptions extends js.Object {

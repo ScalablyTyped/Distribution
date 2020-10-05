@@ -3,7 +3,7 @@ package typings.googlemaps.global.google.maps
 import typings.googlemaps.google.maps.InfoWindowOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An overlay that looks like a bubble and is often connected to a marker.

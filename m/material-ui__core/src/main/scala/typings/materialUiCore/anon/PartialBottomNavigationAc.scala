@@ -92,7 +92,7 @@ import typings.std.HTMLElement
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/BottomNavigationAction.BottomNavigationActionProps> */
 @js.native

@@ -3,7 +3,7 @@ package typings.rcPicker
 import typings.rcPicker.useValueTextsMod.ValueTextConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-picker/es/hooks/useHoverValue", JSImport.Namespace)
 @js.native

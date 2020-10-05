@@ -4,7 +4,7 @@ import typings.std.Event
 import typings.std.XMLHttpRequestResponseType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // Writable properties on XMLHttpRequest

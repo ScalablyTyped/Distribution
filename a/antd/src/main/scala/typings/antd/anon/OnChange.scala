@@ -3,7 +3,7 @@ package typings.antd.anon
 import typings.antd.generateCalendarMod.CalendarMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OnChange[DateType] extends js.Object {

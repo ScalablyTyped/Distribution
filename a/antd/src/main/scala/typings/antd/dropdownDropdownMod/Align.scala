@@ -3,7 +3,7 @@ package typings.antd.dropdownDropdownMod
 import typings.antd.anon.AdjustX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Align extends js.Object {

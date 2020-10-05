@@ -5,7 +5,7 @@ import typings.reactRouter.mod.RouteProps
 import typings.reactRouter.mod.`match`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-router-native", "matchPath")
 @js.native

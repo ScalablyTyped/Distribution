@@ -3,7 +3,7 @@ package typings.angularCommon
 import typings.angularCommon.anon.BWPJPY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/locales/en-BW", JSImport.Namespace)
 @js.native

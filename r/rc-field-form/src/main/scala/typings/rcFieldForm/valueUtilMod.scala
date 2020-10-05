@@ -7,7 +7,7 @@ import typings.rcFieldForm.interfaceMod.Store
 import typings.rcFieldForm.interfaceMod.StoreValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-field-form/es/utils/valueUtil", JSImport.Namespace)
 @js.native

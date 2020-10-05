@@ -12,7 +12,7 @@ import typings.rcFieldForm.interfaceMod.StoreValue
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<rc-field-form.rc-field-form/es/Field.FieldProps, 'children'> */
 @js.native

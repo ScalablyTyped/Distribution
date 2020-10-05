@@ -3,7 +3,7 @@ package typings.angularCommon
 import typings.angularCommon.anon.ETBJPY
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/locales/ti", JSImport.Namespace)
 @js.native

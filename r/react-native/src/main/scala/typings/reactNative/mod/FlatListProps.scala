@@ -4,7 +4,7 @@ import typings.react.mod.ComponentType
 import typings.reactNative.anon.Index
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FlatListProps[ItemT] extends VirtualizedListProps[ItemT] {

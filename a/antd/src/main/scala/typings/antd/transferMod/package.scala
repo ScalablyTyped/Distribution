@@ -2,7 +2,7 @@ package typings.antd
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object transferMod {
   type RenderResult = typings.react.mod.ReactElement | typings.antd.transferMod.RenderResultObject | java.lang.String | scala.Null

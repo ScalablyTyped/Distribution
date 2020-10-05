@@ -6,7 +6,7 @@ import typings.rcPicker.pickerTriggerMod.Placement
 import typings.rcPicker.rangePickerMod.RangeType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rcPickerStrings {
   @js.native

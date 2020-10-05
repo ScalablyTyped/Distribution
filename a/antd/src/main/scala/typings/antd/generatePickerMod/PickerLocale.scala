@@ -4,7 +4,7 @@ import typings.antd.timePickerMod.TimePickerLocale
 import typings.rcPicker.interfaceMod.Locale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  lang :rc-picker.rc-picker/es/interface.Locale & antd.antd/lib/date-picker/generatePicker.AdditionalPickerLocaleLangProps,   timePickerLocale :antd.antd/lib/time-picker.TimePickerLocale} & antd.antd/lib/date-picker/generatePicker.AdditionalPickerLocaleProps */
 @js.native

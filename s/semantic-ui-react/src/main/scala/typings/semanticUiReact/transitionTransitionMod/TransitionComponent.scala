@@ -5,7 +5,7 @@ import typings.react.mod.ComponentState
 import typings.semanticUiReact.transitionGroupMod.TransitionGroupComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TransitionComponent extends ComponentClass[TransitionProps, ComponentState] {

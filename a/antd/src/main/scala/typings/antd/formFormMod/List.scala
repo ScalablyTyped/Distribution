@@ -5,7 +5,7 @@ import typings.rcFieldForm.listMod.ListProps
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/form/Form", "List")
 @js.native

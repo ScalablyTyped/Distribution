@@ -8,7 +8,7 @@ import typings.node.nodeStrings.stream
 import typings.node.tlsMod.TLSSocket
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ClientHttp2Session extends Http2Session {

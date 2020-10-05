@@ -3,7 +3,7 @@ package typings.std.anon
 import typings.std.stdStrings.byob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Mode extends js.Object {

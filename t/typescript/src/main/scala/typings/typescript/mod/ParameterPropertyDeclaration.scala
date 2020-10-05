@@ -3,7 +3,7 @@ package typings.typescript.mod
 import typings.typescript.mod.SyntaxKind.Parameter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined typescript.typescript.ParameterDeclaration & {  parent :typescript.typescript.ConstructorDeclaration,   name :typescript.typescript.Identifier} */
 @js.native

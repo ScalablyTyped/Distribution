@@ -3,7 +3,7 @@ package typings.reactNavigationDrawer.anon
 import typings.reactNavigationDrawer.reactNavigationDrawerStrings.CHILD_ACTION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Key extends js.Object {

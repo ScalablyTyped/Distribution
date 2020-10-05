@@ -6,7 +6,7 @@ import typings.std.Uint8Array
 import typings.three.audioMod.Audio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/audio/AudioAnalyser", JSImport.Namespace)
 @js.native

@@ -7,7 +7,7 @@ import typings.semanticUiReact.searchSearchMod.SearchComponent
 import typings.semanticUiReact.searchSearchMod.SearchProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "Search")
 @js.native

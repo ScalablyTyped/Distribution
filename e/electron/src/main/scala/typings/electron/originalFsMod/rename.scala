@@ -4,7 +4,7 @@ import typings.node.fsMod.NoParamCallback
 import typings.node.fsMod.PathLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("original-fs", "rename")
 @js.native

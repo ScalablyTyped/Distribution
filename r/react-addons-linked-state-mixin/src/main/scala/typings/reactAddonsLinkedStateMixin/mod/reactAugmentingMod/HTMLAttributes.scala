@@ -3,7 +3,7 @@ package typings.reactAddonsLinkedStateMixin.mod.reactAugmentingMod
 import typings.reactAddonsLinkedStateMixin.mod.ReactLink
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HTMLAttributes[T] extends js.Object {

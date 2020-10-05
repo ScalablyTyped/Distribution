@@ -11,7 +11,7 @@ import typings.chartJs.mod.TextAlignment
 import typings.chartJs.mod.TimeUnit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chartJsStrings {
   @js.native

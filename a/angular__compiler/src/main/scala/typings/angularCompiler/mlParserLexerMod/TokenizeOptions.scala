@@ -3,7 +3,7 @@ package typings.angularCompiler.mlParserLexerMod
 import typings.angularCompiler.interpolationConfigMod.InterpolationConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TokenizeOptions extends js.Object {

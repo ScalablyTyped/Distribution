@@ -3,7 +3,7 @@ package typings.rcSelect.generatorMod
 import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-select/lib/interface/generator", "INTERNAL_PROPS_MARK")
 @js.native

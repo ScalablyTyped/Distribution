@@ -56,7 +56,7 @@ import typings.csstype.mod.Property._WebkitTextStroke
 import typings.csstype.mod.Property._WebkitTextStrokeColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _Color
   extends _Paint

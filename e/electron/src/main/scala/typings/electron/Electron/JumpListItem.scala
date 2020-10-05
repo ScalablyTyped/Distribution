@@ -5,7 +5,7 @@ import typings.electron.electronStrings.separator
 import typings.electron.electronStrings.task
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JumpListItem extends js.Object {

@@ -7,7 +7,7 @@ import typings.mobx.utilsMod.Lambda
 import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mobx/lib/types/observablemap", "ObservableMap")
 @js.native

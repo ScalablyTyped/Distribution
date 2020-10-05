@@ -5,7 +5,7 @@ import typings.std.TextStreamWriter
 import typings.std.anon.Length
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * WSH is an alias for WScript under Windows Script Host

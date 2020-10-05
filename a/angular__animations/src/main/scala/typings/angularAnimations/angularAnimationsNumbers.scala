@@ -4,7 +4,7 @@ import typings.angularAnimations.browserBrowserMod.AnimationTransitionInstructio
 import typings.angularAnimations.mod.AnimationMetadataType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularAnimationsNumbers {
   @js.native

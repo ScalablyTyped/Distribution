@@ -6,7 +6,7 @@ import typings.semanticUiReact.semanticUiReactStrings.equal
 import typings.std.HTMLFormElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StrictFormProps extends FormHTMLAttributes[HTMLFormElement] {

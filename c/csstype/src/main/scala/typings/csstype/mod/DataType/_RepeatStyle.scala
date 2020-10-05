@@ -6,7 +6,7 @@ import typings.csstype.mod.Property._WebkitMask
 import typings.csstype.mod.Property._WebkitMaskRepeat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _RepeatStyle
   extends _FinalBgLayer[js.Any]

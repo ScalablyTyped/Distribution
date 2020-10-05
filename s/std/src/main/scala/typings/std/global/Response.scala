@@ -7,7 +7,7 @@ import typings.std.BodyInit
 import typings.std.ResponseInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Response")
 @js.native

@@ -12,7 +12,7 @@ import typings.rcSelect.generatorMod.RawValueType
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GenerateConfig[OptionsType /* <: js.Array[js.Object] */] extends js.Object {

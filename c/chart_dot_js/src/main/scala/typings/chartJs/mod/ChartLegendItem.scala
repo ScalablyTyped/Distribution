@@ -7,7 +7,7 @@ import typings.chartJs.chartJsStrings.round
 import typings.chartJs.chartJsStrings.square
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ChartLegendItem extends js.Object {

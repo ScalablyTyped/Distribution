@@ -6,7 +6,7 @@ import typings.materialUi.MaterialUI.propTypes.direction
 import typings.materialUi.MaterialUI.propTypes.tooltipHorizontal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object materialUiStrings {
   @js.native

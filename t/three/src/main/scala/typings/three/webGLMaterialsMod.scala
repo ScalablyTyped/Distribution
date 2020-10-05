@@ -6,7 +6,7 @@ import typings.three.textureMod.Texture
 import typings.three.webGLPropertiesMod.WebGLProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/renderers/webgl/WebGLMaterials", JSImport.Namespace)
 @js.native

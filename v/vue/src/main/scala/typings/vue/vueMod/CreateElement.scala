@@ -11,7 +11,7 @@ import typings.vue.vnodeMod.VNodeChildren
 import typings.vue.vnodeMod.VNodeData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CreateElement extends js.Object {

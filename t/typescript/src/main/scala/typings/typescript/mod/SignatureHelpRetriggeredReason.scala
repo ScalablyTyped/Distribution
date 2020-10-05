@@ -3,7 +3,7 @@ package typings.typescript.mod
 import typings.typescript.typescriptStrings.retrigger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Signals that this signature help request came from typing a character or moving the cursor.

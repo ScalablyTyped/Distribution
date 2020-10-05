@@ -5,7 +5,7 @@ import typings.react.mod.Ref
 import typings.reactNavigation.mod.NavigationFocusInjectedProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait `5`[T, P] extends js.Object {

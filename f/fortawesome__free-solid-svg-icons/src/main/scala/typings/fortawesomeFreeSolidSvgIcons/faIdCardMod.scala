@@ -5,7 +5,7 @@ import typings.fortawesomeFontawesomeCommonTypes.mod.IconName
 import typings.fortawesomeFontawesomeCommonTypes.mod.IconPrefix
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@fortawesome/free-solid-svg-icons/faIdCard", JSImport.Namespace)
 @js.native

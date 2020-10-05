@@ -2,7 +2,7 @@ package typings.antd.menuItemMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/menu/MenuItem", JSImport.Default)
 @js.native

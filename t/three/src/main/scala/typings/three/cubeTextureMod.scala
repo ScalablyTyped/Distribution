@@ -9,7 +9,7 @@ import typings.three.constantsMod.Wrapping
 import typings.three.textureMod.Texture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/textures/CubeTexture", JSImport.Namespace)
 @js.native

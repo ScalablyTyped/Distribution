@@ -3,7 +3,7 @@ package typings.d3Geo.anon
 import typings.d3Geo.mod.GeoStream_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Stream extends js.Object {

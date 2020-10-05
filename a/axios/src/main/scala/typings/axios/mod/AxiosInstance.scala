@@ -3,7 +3,7 @@ package typings.axios.mod
 import typings.axios.anon.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AxiosInstance extends js.Object {

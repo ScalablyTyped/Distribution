@@ -29,7 +29,7 @@ import typings.reactNative.reactNativeStrings.underline
 import typings.reactNative.reactNativeStrings.uppercase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.reactNative.mod.TransformsStyle because Already inherited

@@ -67,7 +67,7 @@ import typings.react.mod.WheelEventHandler
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<antd.antd/lib/layout/layout.BasicProps> */
 @js.native

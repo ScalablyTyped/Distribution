@@ -3,7 +3,7 @@ package typings.three.eventDispatcherMod
 import typings.three.anon.Dictattachment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/core/EventDispatcher", "EventDispatcher")
 @js.native

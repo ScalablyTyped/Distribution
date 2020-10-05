@@ -8,7 +8,7 @@ import typings.typescript.mod.SourceFile
 import typings.typescript.mod.TypeChecker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core/schematics/migrations/renderer-to-renderer2/util", JSImport.Namespace)
 @js.native

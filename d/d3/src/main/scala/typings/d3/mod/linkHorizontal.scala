@@ -4,7 +4,7 @@ import typings.d3Shape.mod.DefaultLinkObject
 import typings.d3Shape.mod.Link
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3", "linkHorizontal")
 @js.native

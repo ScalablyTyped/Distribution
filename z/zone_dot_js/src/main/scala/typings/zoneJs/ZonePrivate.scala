@@ -8,7 +8,7 @@ import typings.std.ThisType
 import typings.zoneJs.anon.ADDEVENTLISTENERSTR
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _ZonePrivate interface to provide helper method to help user implement

@@ -15,7 +15,7 @@ import typings.reactNative.reactNativeStrings.scale
 import typings.reactNative.reactNativeStrings.yes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native", "ImagePropTypes")
 @js.native

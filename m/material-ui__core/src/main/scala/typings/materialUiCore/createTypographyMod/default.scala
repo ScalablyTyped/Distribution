@@ -3,7 +3,7 @@ package typings.materialUiCore.createTypographyMod
 import typings.materialUiCore.createPaletteMod.Palette
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@material-ui/core/styles/createTypography", JSImport.Default)
 @js.native

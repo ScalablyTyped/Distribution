@@ -4,7 +4,7 @@ import typings.d3Collection.mod.Set_
 import typings.d3Collection.mod.Stringifiable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("d3", "set")
 @js.native

@@ -3,7 +3,7 @@ package typings.node.fsMod
 import typings.node.anon.Interval
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs", "watchFile")
 @js.native

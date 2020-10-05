@@ -19,7 +19,7 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.rcPicker.pickerPanelMod.PickerPanelSharedProps because var conflicts: defaultValue. Inlined prefixCls, className, style, mode, tabIndex, locale, generateConfig, value, pickerValue, defaultPickerValue, disabledDate, dateRender, monthCellRender, renderExtraFooter, onSelect, onChange, onPanelChange, onMouseDown, onOk, direction, hideHeader, onPickerValueChange, components */ @js.native

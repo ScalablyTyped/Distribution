@@ -3,7 +3,7 @@ package typings.mobx.observablearrayMod
 import typings.mobx.modifiersMod.IEnhancer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mobx/lib/types/observablearray", "createObservableArray")
 @js.native

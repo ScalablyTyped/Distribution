@@ -6,7 +6,7 @@ import typings.react.mod.ComponentProps
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("expo-linear-gradient/build/NativeLinearGradient.web", JSImport.Namespace)
 @js.native

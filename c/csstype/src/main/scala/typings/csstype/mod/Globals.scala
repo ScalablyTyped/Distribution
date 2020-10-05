@@ -296,7 +296,7 @@ import typings.csstype.mod.Property._ZIndex
 import typings.csstype.mod.Property._Zoom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.csstype.csstypeStrings.`-moz-initial`

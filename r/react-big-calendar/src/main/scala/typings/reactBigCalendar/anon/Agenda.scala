@@ -4,7 +4,7 @@ import typings.react.mod.ComponentType
 import typings.reactBigCalendar.mod.ViewStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Agenda extends js.Object {

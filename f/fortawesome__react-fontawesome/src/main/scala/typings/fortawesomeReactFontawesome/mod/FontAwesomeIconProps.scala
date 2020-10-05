@@ -113,7 +113,7 @@ import typings.std.Event
 import typings.std.SVGSVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent @fortawesome/react-fontawesome.@fortawesome/react-fontawesome.BackwardCompatibleOmit<react.react.SVGAttributes<std.SVGSVGElement>, 'children' | 'mask' | 'transform'> */
 @js.native

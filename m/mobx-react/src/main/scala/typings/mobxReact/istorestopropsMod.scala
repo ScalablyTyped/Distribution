@@ -3,7 +3,7 @@ package typings.mobxReact
 import typings.mobxReact.ivaluemapMod.IValueMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mobx-react/dist/types/IStoresToProps", JSImport.Namespace)
 @js.native

@@ -3,7 +3,7 @@ package typings.materialUi.global.MaterialUI
 import typings.materialUi.MaterialUI.Utils.ColorManipulator.MuiColorObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__MaterialUI.Utils")
 @js.native

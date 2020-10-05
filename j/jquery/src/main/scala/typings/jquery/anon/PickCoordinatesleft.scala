@@ -3,7 +3,7 @@ package typings.jquery.anon
 import typings.jquery.JQuery._CoordinatesPartial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<jquery.JQuery.Coordinates, 'left'> */
 @js.native

@@ -28,7 +28,7 @@ import typings.reactNavigationStack.reactNavigationStackStrings.radiobutton_unch
 import typings.reactNavigationStack.reactNavigationStackStrings.yes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native.react-native.ViewProps & {  style :react-native.react-native.Animated.WithAnimatedValue<react-native.react-native.StyleProp<react-native.react-native.ViewStyle>> | undefined,   children :react.react.ReactNode | undefined} */
 @js.native

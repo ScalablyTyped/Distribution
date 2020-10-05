@@ -4,7 +4,7 @@ import typings.expoFileSystem.expoFileSystemBooleans.`true`
 import typings.expoFileSystem.fileSystemTypesMod.FileInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Exists extends FileInfo {

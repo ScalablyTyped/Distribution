@@ -6,7 +6,7 @@ import typings.rxjs.subscriptionMod.Subscription
 import typings.std.PropertyDescriptorMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/observable/ConnectableObservable", JSImport.Namespace)
 @js.native

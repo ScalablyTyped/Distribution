@@ -3,7 +3,7 @@ package typings.history.createHashHistoryMod
 import typings.history.mod.History
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("history/createHashHistory", JSImport.Default)
 @js.native

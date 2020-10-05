@@ -43,7 +43,7 @@ import typings.materialUi.anon.`1`
 import typings.materialUi.anon.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MuiTheme extends js.Object {

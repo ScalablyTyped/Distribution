@@ -7,7 +7,7 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This basic props required for input and textarea.

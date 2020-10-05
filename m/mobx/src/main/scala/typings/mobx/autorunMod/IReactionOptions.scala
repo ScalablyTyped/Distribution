@@ -3,7 +3,7 @@ package typings.mobx.autorunMod
 import typings.mobx.comparerMod.IEqualsComparer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined mobx.mobx/lib/api/autorun.IAutorunOptions & {  fireImmediately :boolean | undefined,   equals :mobx.mobx/lib/internal.IEqualsComparer<any> | undefined} */
 @js.native

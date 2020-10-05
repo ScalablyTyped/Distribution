@@ -2,7 +2,7 @@ package typings.node.inspectorMod.Profiler
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Source offset and types for a parameter or return value.

@@ -3,7 +3,7 @@ package typings.rcMenu.anon
 import typings.rcTrigger.interfaceMod.MotionType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{[ key in rc-menu.rc-menu/es/interface.MenuMode | 'other' ]: rc-menu.rc-menu/es/interface.MotionType}> */
 @js.native

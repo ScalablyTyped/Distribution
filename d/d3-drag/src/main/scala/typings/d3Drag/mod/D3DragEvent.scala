@@ -7,7 +7,7 @@ import typings.d3Selection.mod.Selection_
 import typings.d3Selection.mod.ValueFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait D3DragEvent[GElement /* <: DraggedElementBaseType */, Datum, Subject] extends js.Object {

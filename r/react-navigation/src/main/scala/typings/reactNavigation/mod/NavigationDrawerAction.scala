@@ -7,7 +7,7 @@ import typings.reactNavigation.reactNavigationStrings.NavigationSlashOPEN_DRAWER
 import typings.reactNavigation.reactNavigationStrings.NavigationSlashTOGGLE_DRAWER
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactNavigation.mod.NavigationDrawerOpenedAction

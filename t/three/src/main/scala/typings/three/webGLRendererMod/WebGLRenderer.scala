@@ -29,7 +29,7 @@ import typings.three.webGLStateMod.WebGLState
 import typings.three.webXRManagerMod.WebXRManager
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/renderers/WebGLRenderer", "WebGLRenderer")
 @js.native

@@ -3,7 +3,7 @@ package typings.reactNavigation.mod
 import typings.reactNavigation.reactNavigationStrings.`no-preference`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NavigationNavigatorProps[Options, State, ScreenProps] extends js.Object {

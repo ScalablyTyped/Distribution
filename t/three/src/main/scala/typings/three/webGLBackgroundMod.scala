@@ -9,7 +9,7 @@ import typings.three.webGLRendererMod.WebGLRenderer
 import typings.three.webGLStateMod.WebGLState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/renderers/webgl/WebGLBackground", JSImport.Namespace)
 @js.native

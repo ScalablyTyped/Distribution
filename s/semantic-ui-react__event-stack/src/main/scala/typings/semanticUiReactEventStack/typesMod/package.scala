@@ -2,7 +2,7 @@ package typings.semanticUiReactEventStack
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object typesMod {
   type CallableEventListener = typings.std.EventListener with typings.semanticUiReactEventStack.anon.Called

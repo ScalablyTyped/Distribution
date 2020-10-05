@@ -4,7 +4,7 @@ import typings.rxjs.webSocketSubjectMod.WebSocketSubject
 import typings.rxjs.webSocketSubjectMod.WebSocketSubjectConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/observable/dom/webSocket", JSImport.Namespace)
 @js.native

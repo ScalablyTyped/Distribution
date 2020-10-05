@@ -2,7 +2,7 @@ package typings.dayjs.anon
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  LT :string,   LTS :string,   L :string,   LL :string,   LLL :string,   LLLL :string}> */
 @js.native

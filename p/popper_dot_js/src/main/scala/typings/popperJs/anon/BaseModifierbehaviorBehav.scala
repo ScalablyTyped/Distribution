@@ -9,7 +9,7 @@ import typings.popperJs.mod.Popper.Position
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined popper.js.popper.js.Popper.BaseModifier & {  behavior :popper.js.popper.js.Popper.Behavior | std.Array<popper.js.popper.js.Popper.Position> | undefined,   padding :number | popper.js.popper.js.Popper.Padding | undefined,   boundariesElement :popper.js.popper.js.Popper.Boundary | std.Element | undefined,   flipVariations :boolean | undefined,   flipVariationsByContent :boolean | undefined} */
 @js.native

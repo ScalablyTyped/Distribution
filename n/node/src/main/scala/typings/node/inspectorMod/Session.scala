@@ -205,7 +205,7 @@ import typings.node.nodeStrings.inspectorNotification
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The inspector.Session is used for dispatching messages to the V8 inspector back-end and receiving message responses and notifications.

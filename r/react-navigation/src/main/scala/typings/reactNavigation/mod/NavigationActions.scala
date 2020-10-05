@@ -6,7 +6,7 @@ import typings.reactNavigation.reactNavigationStrings.NavigationSlashNAVIGATE
 import typings.reactNavigation.reactNavigationStrings.NavigationSlashSET_PARAMS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-navigation", "NavigationActions")
 @js.native

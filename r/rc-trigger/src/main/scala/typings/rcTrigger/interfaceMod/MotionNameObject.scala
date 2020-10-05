@@ -2,7 +2,7 @@ package typings.rcTrigger.interfaceMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ key in rc-trigger.rc-trigger/es/interface.MotionStatus | rc-trigger.rc-trigger/es/interface.MotionActiveStatus ]:? string} */
 @js.native

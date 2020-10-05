@@ -17,7 +17,7 @@ import typings.std.NonNullable
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-navigation.react-navigation.NavigationScreenProp<State, Params> & {push (routeName : string, params : react-navigation.react-navigation.NavigationParams | undefined, action : react-navigation.react-navigation.NavigationNavigateAction | undefined): boolean, replace (routeName : string, params : react-navigation.react-navigation.NavigationParams | undefined, action : react-navigation.react-navigation.NavigationNavigateAction | undefined): boolean, reset (actions : std.Array<react-navigation.react-navigation.NavigationAction>, index : number): boolean, pop (n : number | undefined, params : {  immediate :boolean | undefined} | undefined): boolean, popToTop (params : {  immediate :boolean | undefined} | undefined): boolean, addListener (event : react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.NavigationStackEventName, callback : react-navigation.react-navigation.NavigationEventCallback): react-navigation.react-navigation.NavigationEventSubscription} */
 @js.native

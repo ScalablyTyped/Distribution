@@ -5,7 +5,7 @@ import typings.typescript.mod.ClassDeclaration
 import typings.typescript.mod.TypeChecker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core/schematics/utils/typescript/find_base_classes", JSImport.Namespace)
 @js.native

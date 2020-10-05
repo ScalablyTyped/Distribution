@@ -6,7 +6,7 @@ import typings.popperJs.mod.Popper.Placement
 import typings.popperJs.mod.Popper.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popperJsStrings {
   @js.native

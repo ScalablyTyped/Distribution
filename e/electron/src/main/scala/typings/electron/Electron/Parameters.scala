@@ -4,7 +4,7 @@ import typings.electron.electronStrings.desktop
 import typings.electron.electronStrings.mobile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Parameters extends js.Object {

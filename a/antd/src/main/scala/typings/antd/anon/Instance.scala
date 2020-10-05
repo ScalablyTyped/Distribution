@@ -3,7 +3,7 @@ package typings.antd.anon
 import typings.rcNotification.notificationMod.NotificationInstance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Instance extends js.Object {

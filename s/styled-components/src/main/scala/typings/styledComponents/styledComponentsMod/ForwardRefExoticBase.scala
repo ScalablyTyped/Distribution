@@ -6,7 +6,7 @@ import typings.styledComponents.styledComponentsStrings.defaultProps
 import typings.styledComponents.styledComponentsStrings.propTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // abuse Pick to strip the call signature from ForwardRefExoticComponent
 /* Inlined std.Pick<react.react.ForwardRefExoticComponent<P>, keyof react.react.ForwardRefExoticComponent<any>> */

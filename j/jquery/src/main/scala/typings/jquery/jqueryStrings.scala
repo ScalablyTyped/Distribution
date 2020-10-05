@@ -7,7 +7,7 @@ import typings.jquery.JQuery._Duration
 import typings.jquery.JQuery._Falsy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jqueryStrings {
   @js.native

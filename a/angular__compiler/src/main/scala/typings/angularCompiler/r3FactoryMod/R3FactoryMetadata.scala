@@ -8,7 +8,7 @@ import typings.angularCompiler.r3FactoryMod.R3FactoryDelegateType.Function
 import typings.angularCompiler.render3UtilMod.R3Reference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.angularCompiler.r3FactoryMod.R3ConstructorFactoryMetadata

@@ -3,7 +3,7 @@ package typings.jqueryui.JQueryUI
 import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Button //////////////////////////////////////////////////
 @js.native

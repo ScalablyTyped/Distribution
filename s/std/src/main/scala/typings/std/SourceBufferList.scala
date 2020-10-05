@@ -5,7 +5,7 @@ import typings.std.stdStrings.addsourcebuffer
 import typings.std.stdStrings.removesourcebuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A simple container list for multiple SourceBuffer objects. */
 @js.native

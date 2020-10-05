@@ -5,7 +5,7 @@ import typings.std.EventListenerObject
 import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("history/DOMUtils", "removeEventListener")
 @js.native

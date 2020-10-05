@@ -95,7 +95,7 @@ import typings.std.Event
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<react.react.HTMLAttributes<std.HTMLDivElement>, 'onChange'> */
 @js.native

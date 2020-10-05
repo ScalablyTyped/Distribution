@@ -6,7 +6,7 @@ import typings.angularCommon.anon.Status
 import typings.angularCommon.httpHttpMod.HttpEventType.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/http/http", "HttpResponse")
 @js.native

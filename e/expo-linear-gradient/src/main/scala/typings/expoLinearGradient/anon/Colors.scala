@@ -3,7 +3,7 @@ package typings.expoLinearGradient.anon
 import typings.expoLinearGradient.linearGradientMod.LinearGradienPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Colors extends js.Object {

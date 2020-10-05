@@ -4,7 +4,7 @@ import typings.reactNavigation.mod._NavigationAction
 import typings.reactNavigation.reactNavigationStrings.CHILD_ACTION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Type extends _NavigationAction {

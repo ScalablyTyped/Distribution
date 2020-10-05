@@ -8,7 +8,7 @@ import typings.inquirer.mod.prompts.PromptCollection
 import typings.inquirer.mod.ui.BottomBarOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BottomBar extends js.Object {

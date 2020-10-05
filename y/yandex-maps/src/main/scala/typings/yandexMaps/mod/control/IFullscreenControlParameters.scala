@@ -5,7 +5,7 @@ import typings.yandexMaps.anon.IBaseButtonParametersOptiAdjustMapMargin
 import typings.yandexMaps.anon.Title
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IFullscreenControlParameters extends js.Object {

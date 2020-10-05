@@ -4,7 +4,7 @@ import typings.angularCompiler.anon.I18nNodesByMsgId
 import typings.angularCompiler.i18nAstMod.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/i18n/serializers/serializer", "Serializer")
 @js.native

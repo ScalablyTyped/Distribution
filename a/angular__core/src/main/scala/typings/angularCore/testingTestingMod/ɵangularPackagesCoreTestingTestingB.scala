@@ -14,7 +14,7 @@ import typings.angularCore.mod.PlatformRef
 import typings.angularCore.mod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b")
 @js.native

@@ -66,7 +66,7 @@ import typings.std.HTMLInputElement
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined antd.antd/lib/date-picker/generatePicker.InjectDefaultProps<rc-picker.rc-picker/es/RangePicker.RangePickerTimeProps<DateType>> */
 @js.native

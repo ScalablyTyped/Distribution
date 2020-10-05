@@ -3,7 +3,7 @@ package typings.rxjs
 import typings.rxjs.subjectMod.Subject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/AsyncSubject", JSImport.Namespace)
 @js.native

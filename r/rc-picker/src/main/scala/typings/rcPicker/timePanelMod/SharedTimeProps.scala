@@ -3,7 +3,7 @@ package typings.rcPicker.timePanelMod
 import typings.rcPicker.interfaceMod.DisabledTimes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SharedTimeProps[DateType] extends DisabledTimes {

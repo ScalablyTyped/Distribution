@@ -3,7 +3,7 @@ package typings.enzyme.anon
 import typings.enzyme.mod.EnzymeAdapter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Adapter extends js.Object {

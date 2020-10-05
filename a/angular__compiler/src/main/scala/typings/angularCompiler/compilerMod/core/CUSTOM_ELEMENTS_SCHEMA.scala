@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.angularCompiler.coreMod.SchemaMetadata
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "core.CUSTOM_ELEMENTS_SCHEMA")
 @js.native

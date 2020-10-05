@@ -59,7 +59,7 @@ import typings.antd.uploadInterfaceMod.UploadType
 import typings.antd.useSelectionMod.INTERNAL_SELECTION_ITEM
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object antdStrings {
   @js.native

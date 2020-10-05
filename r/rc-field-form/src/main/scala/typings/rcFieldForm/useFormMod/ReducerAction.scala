@@ -6,7 +6,7 @@ import typings.rcFieldForm.rcFieldFormStrings.updateValue
 import typings.rcFieldForm.rcFieldFormStrings.validateField
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.rcFieldForm.useFormMod.UpdateAction

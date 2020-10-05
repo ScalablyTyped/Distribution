@@ -5,7 +5,7 @@ import typings.expoConstants.constantsTypesMod.AppManifest
 import typings.fbemitter.mod.EventSubscription
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("expo/build/Updates/Updates", JSImport.Namespace)
 @js.native

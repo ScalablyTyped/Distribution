@@ -25,7 +25,7 @@ import typings.electron.electronStrings.tooltip
 import typings.electron.electronStrings.window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BrowserWindowConstructorOptions extends js.Object {

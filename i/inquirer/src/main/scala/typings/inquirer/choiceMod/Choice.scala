@@ -4,7 +4,7 @@ import typings.inquirer.mod.Answers
 import typings.inquirer.mod.CheckboxChoiceOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a choice for several question-types.

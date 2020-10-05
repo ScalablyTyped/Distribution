@@ -2,7 +2,7 @@ package typings.googlemaps.global.google.maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The status returned by the {@link MaxZoomService} on the completion of a call to

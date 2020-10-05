@@ -4,7 +4,7 @@ import typings.jquery.JQuery.Tween
 import typings.jquery.JQuery._PropHook
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Get[TElement] extends _PropHook[TElement] {

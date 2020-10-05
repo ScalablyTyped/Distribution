@@ -11,7 +11,7 @@ import typings.semanticUiReact.semanticUiReactStrings.small
 import typings.semanticUiReact.semanticUiReactStrings.tiny
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StrictCommentGroupProps extends js.Object {

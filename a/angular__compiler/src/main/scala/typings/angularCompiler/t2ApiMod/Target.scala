@@ -3,7 +3,7 @@ package typings.angularCompiler.t2ApiMod
 import typings.angularCompiler.r3AstMod.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Target extends js.Object {

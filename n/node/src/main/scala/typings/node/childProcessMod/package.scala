@@ -2,7 +2,7 @@ package typings.node
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object childProcessMod {
   type Serializable = java.lang.String | js.Object | scala.Double | scala.Boolean

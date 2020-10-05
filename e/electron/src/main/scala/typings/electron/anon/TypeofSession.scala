@@ -5,7 +5,7 @@ import typings.electron.Electron.FromPartitionOptions
 import typings.electron.Electron.Session_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofSession extends Instantiable0[Session_] {

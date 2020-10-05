@@ -4,7 +4,7 @@ import typings.storybookAddons.typesMod.StoryContext
 import typings.storybookAddons.typesMod.StoryGetter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@storybook/addons/dist/hooks", "applyHooks")
 @js.native

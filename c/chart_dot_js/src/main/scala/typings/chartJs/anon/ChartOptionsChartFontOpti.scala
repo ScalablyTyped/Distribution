@@ -18,7 +18,7 @@ import typings.chartJs.mod.TimeScale
 import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined chart.js.chart.js.ChartOptions & chart.js.chart.js.ChartFontOptions & {  tooltips :chart.js.chart.js.ChartTooltipOptions} */
 @js.native

@@ -6,7 +6,7 @@ import typings.storybookAddons.typesMod.StoryWrapper
 import typings.storybookAddons.typesMod.WrapperSettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MakeDecoratorOptions extends js.Object {

@@ -6,7 +6,7 @@ import typings.angularCompiler.staticSymbolMod.StaticSymbol
 import typings.angularCompiler.staticSymbolMod.StaticSymbolCache
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/aot/static_symbol_resolver", JSImport.Namespace)
 @js.native

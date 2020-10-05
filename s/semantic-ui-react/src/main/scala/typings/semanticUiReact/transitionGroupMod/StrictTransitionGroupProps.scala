@@ -5,7 +5,7 @@ import typings.semanticUiReact.genericMod.SemanticTRANSITIONS
 import typings.semanticUiReact.transitionTransitionMod.TransitionPropDuration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StrictTransitionGroupProps extends js.Object {

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.d3Collection.anon.KeyValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Nest_[Datum, RollupType] extends js.Object {

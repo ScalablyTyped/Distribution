@@ -2,7 +2,7 @@ package typings.googlemaps.google.maps
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO: replace to interface https://developers.google.com/maps/documentation/javascript/reference/overlay-view#MapCanvasProjection
 @js.native

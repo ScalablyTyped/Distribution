@@ -4,7 +4,7 @@ import typings.rcTree.anon.IsTreeNode
 import typings.std.HTMLSpanElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.ReactElement & {  selectHandle :std.HTMLSpanElement | undefined,   type :{  isTreeNode :boolean}} */
 @js.native

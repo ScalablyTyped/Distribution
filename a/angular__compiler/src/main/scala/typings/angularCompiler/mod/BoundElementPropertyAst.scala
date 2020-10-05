@@ -4,7 +4,7 @@ import typings.angularCompiler.coreMod.SecurityContext
 import typings.angularCompiler.templateAstMod.PropertyBindingType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "BoundElementPropertyAst")
 @js.native

@@ -3,7 +3,7 @@ package typings.react.mod
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Unfortunately, we have no way of declaring that the component constructor must implement this
 @js.native

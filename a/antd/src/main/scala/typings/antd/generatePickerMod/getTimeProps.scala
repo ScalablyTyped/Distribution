@@ -5,7 +5,7 @@ import typings.antd.anon.ShowTime
 import typings.rcPicker.timePanelMod.SharedTimeProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/date-picker/generatePicker", "getTimeProps")
 @js.native

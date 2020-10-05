@@ -3,7 +3,7 @@ package typings.semanticUiReact.accordionAccordionMod
 import typings.semanticUiReact.accordionAccordionAccordionMod.StrictAccordionAccordionProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StrictAccordionProps extends StrictAccordionAccordionProps {

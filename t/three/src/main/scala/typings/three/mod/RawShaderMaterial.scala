@@ -3,7 +3,7 @@ package typings.three.mod
 import typings.three.shaderMaterialMod.ShaderMaterialParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "RawShaderMaterial")
 @js.native

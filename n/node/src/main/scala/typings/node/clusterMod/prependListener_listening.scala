@@ -3,7 +3,7 @@ package typings.node.clusterMod
 import typings.node.nodeStrings.listening
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cluster", "prependListener")
 @js.native

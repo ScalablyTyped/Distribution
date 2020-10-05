@@ -7,7 +7,7 @@ import typings.three.quaternionMod.Quaternion
 import typings.three.vector3Mod.Vector3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/math/Matrix4", JSImport.Namespace)
 @js.native

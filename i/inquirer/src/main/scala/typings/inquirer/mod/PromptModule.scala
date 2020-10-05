@@ -4,7 +4,7 @@ import typings.inquirer.anon.Ui
 import typings.inquirer.mod.prompts.PromptCollection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides the functionality to prompt questions to the user.

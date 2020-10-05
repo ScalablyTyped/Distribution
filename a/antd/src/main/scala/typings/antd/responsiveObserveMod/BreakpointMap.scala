@@ -2,7 +2,7 @@ package typings.antd.responsiveObserveMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Record<antd.antd/lib/_util/responsiveObserve.Breakpoint, string>> */
 @js.native

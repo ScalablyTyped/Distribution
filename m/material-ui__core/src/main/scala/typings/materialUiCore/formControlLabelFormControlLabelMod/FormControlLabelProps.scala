@@ -92,7 +92,7 @@ import typings.std.Event
 import typings.std.HTMLLabelElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.LabelHTMLAttributes<std.HTMLLabelElement>, @material-ui/core.@material-ui/core/FormControlLabel/FormControlLabel.FormControlLabelClassKey, 'onChange'> */
 @js.native

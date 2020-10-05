@@ -14,7 +14,7 @@ import typings.reactNative.reactNativeStrings.recents
 import typings.reactNative.reactNativeStrings.search
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TabBarIOSItemProps extends ViewProps {

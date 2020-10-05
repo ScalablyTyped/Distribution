@@ -4,7 +4,7 @@ import typings.typescript.mod.CallExpression
 import typings.typescript.mod.ObjectLiteralExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RemoveParameter extends js.Object {

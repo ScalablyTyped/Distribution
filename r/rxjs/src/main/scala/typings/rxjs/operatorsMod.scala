@@ -21,7 +21,7 @@ import typings.rxjs.typesMod.UnaryFunction
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/internal/operators", JSImport.Namespace)
 @js.native

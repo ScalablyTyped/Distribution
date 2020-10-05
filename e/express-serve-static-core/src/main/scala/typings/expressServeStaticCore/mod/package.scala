@@ -2,7 +2,7 @@ package typings.expressServeStaticCore
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
   type ApplicationRequestHandler[T] = typings.expressServeStaticCore.mod.IRouterHandler[T] with (typings.expressServeStaticCore.mod.IRouterMatcher[T, _]) with (js.Function1[

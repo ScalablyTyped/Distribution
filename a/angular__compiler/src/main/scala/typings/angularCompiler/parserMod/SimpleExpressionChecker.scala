@@ -23,7 +23,7 @@ import typings.angularCompiler.astMod.SafeMethodCall
 import typings.angularCompiler.astMod.SafePropertyRead
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SimpleExpressionChecker extends AstVisitor {

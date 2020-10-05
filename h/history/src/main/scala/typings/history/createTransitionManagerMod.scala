@@ -6,7 +6,7 @@ import typings.history.mod.LocationListener
 import typings.history.mod.UnregisterCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("history/createTransitionManager", JSImport.Namespace)
 @js.native

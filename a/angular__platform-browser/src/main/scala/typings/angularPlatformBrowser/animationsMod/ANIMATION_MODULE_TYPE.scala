@@ -6,7 +6,7 @@ import typings.angularPlatformBrowser.angularPlatformBrowserStrings.BrowserAnima
 import typings.angularPlatformBrowser.angularPlatformBrowserStrings.NoopAnimations
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/platform-browser/animations", "ANIMATION_MODULE_TYPE")
 @js.native

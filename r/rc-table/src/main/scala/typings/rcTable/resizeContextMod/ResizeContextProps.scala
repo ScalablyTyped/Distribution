@@ -3,7 +3,7 @@ package typings.rcTable.resizeContextMod
 import typings.react.mod.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ResizeContextProps extends js.Object {

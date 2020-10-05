@@ -16,7 +16,7 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<rc-tree.rc-tree/es/TreeNode.TreeNodeProps, 'domRef'> */
 @js.native

@@ -6,7 +6,7 @@ import typings.std.stdStrings.mute
 import typings.std.stdStrings.unmute
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A single media track within a stream; typically, these are audio or video tracks, but other track types may exist as well. */
 @js.native

@@ -5,7 +5,7 @@ import typings.rcSelect.generatorMod.RawValueType
 import typings.rcSelect.generatorMod.SelectSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Mark[OptionsType /* <: js.Array[js.Object] */] extends js.Object {

@@ -2,7 +2,7 @@ package typings.expoSqlite
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object sqliteTypesMod {
   type DatabaseCallback = js.Function1[/* database */ typings.expoSqlite.sqliteTypesMod.Database, scala.Unit]

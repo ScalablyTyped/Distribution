@@ -4,7 +4,7 @@ import typings.node.inspectorMod.Runtime.ExceptionDetails
 import typings.node.inspectorMod.Runtime.RemoteObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait EvaluateOnCallFrameReturnType extends js.Object {

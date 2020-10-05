@@ -7,7 +7,7 @@ import typings.yandexMaps.mod.data.Manager
 import typings.yandexMaps.mod.multiRouter.driving.RouteModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yandex-maps", "multiRouter.MultiRouteModel")
 @js.native

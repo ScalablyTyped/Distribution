@@ -3,7 +3,7 @@ package typings.rcMenu.domwrapMod
 import typings.rcMenu.anon.ClassName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-menu/es/DOMWrap", JSImport.Default)
 @js.native

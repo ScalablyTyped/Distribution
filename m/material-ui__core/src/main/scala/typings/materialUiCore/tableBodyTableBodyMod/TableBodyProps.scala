@@ -87,7 +87,7 @@ import typings.std.Event
 import typings.std.HTMLTableSectionElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/TableBody/TableBody.TableBodyBaseProps, @material-ui/core.@material-ui/core/TableBody/TableBody.TableBodyClassKey, never> */
 @js.native

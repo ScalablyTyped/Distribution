@@ -5,7 +5,7 @@ import typings.rcFieldForm.interfaceMod.NamePath
 import typings.scrollIntoViewIfNeeded.mod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd/lib/form/hooks/useForm", JSImport.Namespace)
 @js.native

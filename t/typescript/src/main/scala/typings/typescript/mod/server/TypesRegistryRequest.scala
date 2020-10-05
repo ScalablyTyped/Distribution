@@ -3,7 +3,7 @@ package typings.typescript.mod.server
 import typings.typescript.typescriptStrings.typesRegistry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypesRegistryRequest extends js.Object {

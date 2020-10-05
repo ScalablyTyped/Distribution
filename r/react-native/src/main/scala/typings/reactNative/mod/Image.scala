@@ -7,7 +7,7 @@ import typings.reactNative.reactNativeStrings.diskSlashmemory
 import typings.reactNative.reactNativeStrings.memory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixinType */ @JSImport("react-native", "Image")

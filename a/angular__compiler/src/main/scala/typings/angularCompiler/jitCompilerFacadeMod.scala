@@ -6,7 +6,7 @@ import typings.angularCompiler.outputJitMod.JitEvaluator
 import typings.angularCompiler.resourceLoaderMod.ResourceLoader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/jit_compiler_facade", JSImport.Namespace)
 @js.native

@@ -179,7 +179,7 @@ import typings.csstype.mod.Property.WordBreak
 import typings.csstype.mod.Property.WritingMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ P in keyof csstype.csstype.VendorLonghandProperties<TLength, TTime> ]: csstype.csstype.VendorLonghandProperties<TLength, TTime>[P] | std.Array<csstype.csstype.VendorLonghandProperties<TLength, TTime>[P]>} */
 @js.native

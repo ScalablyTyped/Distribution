@@ -4,7 +4,7 @@ import typings.three.anon.NeedsUpdate
 import typings.three.cameraMod.Camera
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/renderers/webgl/WebGLClipping", JSImport.Namespace)
 @js.native

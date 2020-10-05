@@ -4,7 +4,7 @@ import typings.angularCore.mod.EventEmitter
 import typings.angularCore.mod.OnChanges
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "FormControlDirective")
 @js.native

@@ -6,7 +6,7 @@ import typings.angularRouter.angularRouterStrings.hash
 import typings.angularRouter.angularRouterStrings.path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router/upgrade/upgrade", JSImport.Namespace)
 @js.native

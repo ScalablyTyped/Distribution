@@ -3,7 +3,7 @@ package typings.angularCompiler
 import typings.angularCompiler.outputAstMod.ExternalReference
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/render3/r3_identifiers", JSImport.Namespace)
 @js.native

@@ -30,7 +30,7 @@ import typings.reactNavigationStack.reactNavigationStackStrings.radiobutton_unch
 import typings.reactNavigationStack.reactNavigationStackStrings.yes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native.react-native.ViewProps & {  enabled :boolean,   active :0 | 1 | react-native.react-native.Animated.AnimatedInterpolation,   children :react.react.ReactNode} */
 @js.native

@@ -11,7 +11,7 @@ import typings.csstype.mod.Property._WebkitMask
 import typings.csstype.mod.Property._WebkitMaskPosition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _Position[TLength]
   extends _MaskLayer[TLength]

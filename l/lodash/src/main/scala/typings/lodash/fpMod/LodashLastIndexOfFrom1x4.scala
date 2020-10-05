@@ -4,7 +4,7 @@ import typings.lodash.lodashBooleans.`true`
 import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LodashLastIndexOfFrom1x4[T] extends js.Object {

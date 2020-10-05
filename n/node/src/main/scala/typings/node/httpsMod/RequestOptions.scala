@@ -10,7 +10,7 @@ import typings.node.tlsMod.SecureVersion
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined node.http.RequestOptions & node.tls.SecureContextOptions & {  rejectUnauthorized :boolean | undefined,   servername :string | undefined} */
 @js.native

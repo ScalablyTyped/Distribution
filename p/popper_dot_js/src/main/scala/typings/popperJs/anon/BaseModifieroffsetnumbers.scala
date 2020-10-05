@@ -4,7 +4,7 @@ import typings.popperJs.mod.Popper.Data
 import typings.popperJs.mod.Popper.ModifierFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined popper.js.popper.js.Popper.BaseModifier & {  offset :number | string | undefined} */
 @js.native

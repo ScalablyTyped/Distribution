@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.Intl.DateTimeFormatOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Intl.DateTimeFormat")
 @js.native

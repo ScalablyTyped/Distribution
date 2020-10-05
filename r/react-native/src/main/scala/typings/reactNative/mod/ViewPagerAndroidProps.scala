@@ -7,7 +7,7 @@ import typings.reactNative.reactNativeStrings.`on-drag`
 import typings.reactNative.reactNativeStrings.none
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ViewPagerAndroidProps extends ViewProps {

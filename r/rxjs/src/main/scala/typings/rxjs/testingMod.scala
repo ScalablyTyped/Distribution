@@ -4,7 +4,7 @@ import typings.rxjs.subscriptionLogMod.SubscriptionLog
 import typings.rxjs.testMessageMod.TestMessage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rxjs/testing", JSImport.Namespace)
 @js.native

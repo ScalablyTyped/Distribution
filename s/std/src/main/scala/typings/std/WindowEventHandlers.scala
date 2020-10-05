@@ -18,7 +18,7 @@ import typings.std.stdStrings.unhandledrejection
 import typings.std.stdStrings.unload
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WindowEventHandlers extends js.Object {

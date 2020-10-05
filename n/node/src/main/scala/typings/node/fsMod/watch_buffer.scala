@@ -4,7 +4,7 @@ import typings.node.Buffer
 import typings.node.nodeStrings.buffer_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs", "watch")
 @js.native

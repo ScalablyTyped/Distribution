@@ -10,7 +10,7 @@ import typings.rcTreeSelect.useKeyValueMappingMod.SkipType
 import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-tree-select/es/utils/valueUtil", JSImport.Namespace)
 @js.native

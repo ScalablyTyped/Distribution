@@ -7,7 +7,7 @@ import typings.node.anon.EncodingBufferEncoding
 import typings.node.anon.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs", "readFile")
 @js.native

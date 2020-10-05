@@ -3,7 +3,7 @@ package typings.onsenui.mod
 import typings.std.DocumentFragment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("onsenui", "preload")
 @js.native

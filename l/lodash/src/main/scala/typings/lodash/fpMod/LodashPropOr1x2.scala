@@ -4,7 +4,7 @@ import typings.lodash.mod.__
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LodashPropOr1x2[TObject, TKey /* <: /* keyof TObject */ String */] extends js.Object {

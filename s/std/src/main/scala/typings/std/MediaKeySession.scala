@@ -4,7 +4,7 @@ import typings.std.stdStrings.keystatuseschange
 import typings.std.stdStrings.message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This EncryptedMediaExtensions API interface represents a context for message exchange with a content decryption module (CDM). */
 @js.native

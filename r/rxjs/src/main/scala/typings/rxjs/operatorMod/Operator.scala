@@ -4,7 +4,7 @@ import typings.rxjs.subscriberMod.Subscriber
 import typings.rxjs.typesMod.TeardownLogic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Operator[T, R] extends js.Object {

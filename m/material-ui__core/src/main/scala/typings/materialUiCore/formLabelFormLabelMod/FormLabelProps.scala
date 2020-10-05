@@ -87,7 +87,7 @@ import typings.std.Event
 import typings.std.HTMLLabelElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/FormLabel/FormLabel.FormLabelBaseProps, @material-ui/core.@material-ui/core/FormLabel/FormLabel.FormLabelClassKey, never> */
 @js.native

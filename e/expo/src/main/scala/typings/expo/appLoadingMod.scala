@@ -4,7 +4,7 @@ import typings.fbemitter.mod.EventEmitter
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("expo/build/launch/AppLoading", JSImport.Namespace)
 @js.native

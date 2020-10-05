@@ -7,7 +7,7 @@ import typings.rcPicker.rcPickerStrings.left
 import typings.rcPicker.rcPickerStrings.right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RangeContextProps extends js.Object {

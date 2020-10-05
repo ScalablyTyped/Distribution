@@ -3,7 +3,7 @@ package typings.yandexMaps.mod
 import typings.yandexMaps.anon.AddViaPoints
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yandex-maps", "router")
 @js.native

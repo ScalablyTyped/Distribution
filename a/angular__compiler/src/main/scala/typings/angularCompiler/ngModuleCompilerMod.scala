@@ -6,7 +6,7 @@ import typings.angularCompiler.compileReflectorMod.CompileReflector
 import typings.angularCompiler.srcUtilMod.OutputContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/ng_module_compiler", JSImport.Namespace)
 @js.native

@@ -5,7 +5,7 @@ import typings.storybookApi.shortcutsMod.Action
 import typings.storybookApi.storiesMod._ViewMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storybookApiStrings {
   @js.native

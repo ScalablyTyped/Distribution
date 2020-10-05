@@ -7,7 +7,7 @@ import typings.vue.vnodeMod.VNodeData
 import typings.vue.vueMod.Vue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RenderContext[Props] extends js.Object {
