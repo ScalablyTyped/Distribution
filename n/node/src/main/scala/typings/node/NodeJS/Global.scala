@@ -5,12 +5,16 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.node.anon.FnCallSRadix
 import typings.node.anon.FnCallUriComponent
 import typings.node.anon.TypeofBuffer
+import typings.std.Array
 import typings.std.ArrayBufferConstructor
 import typings.std.ArrayBufferLike
 import typings.std.ArrayConstructor
+import typings.std.Boolean
 import typings.std.BooleanConstructor
 import typings.std.DataViewConstructor
+import typings.std.Date
 import typings.std.DateConstructor
+import typings.std.Error
 import typings.std.ErrorConstructor
 import typings.std.EvalErrorConstructor
 import typings.std.Float32ArrayConstructor
@@ -21,7 +25,9 @@ import typings.std.Int32ArrayConstructor
 import typings.std.Int8ArrayConstructor
 import typings.std.Iterable
 import typings.std.MapConstructor
+import typings.std.Number
 import typings.std.NumberConstructor
+import typings.std.Object
 import typings.std.ObjectConstructor
 import typings.std.PromiseConstructor
 import typings.std.RangeErrorConstructor
@@ -39,14 +45,7 @@ import typings.std.Uint8ArrayConstructor
 import typings.std.Uint8ClampedArrayConstructor
 import typings.std.WeakMapConstructor
 import typings.std.WeakSetConstructor
-import typings.std.global.Array
-import typings.std.global.Boolean
-import typings.std.global.Date
-import typings.std.global.Error
 import typings.std.global.EvalError
-import typings.std.global.Function
-import typings.std.global.Number
-import typings.std.global.Object
 import typings.std.global.RangeError
 import typings.std.global.ReferenceError
 import typings.std.global.SyntaxError
@@ -58,27 +57,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait Global extends js.Object {
-  var ArrayBuffer: ArrayBufferConstructor with (Instantiable1[/* byteLength */ Double, typings.std.global.ArrayBuffer]) = js.native
+  var ArrayBuffer: ArrayBufferConstructor with (Instantiable1[/* byteLength */ Double, typings.std.ArrayBuffer]) = js.native
   @JSName("Array")
   var Array_Original: ArrayConstructor with (Instantiable1[/* arrayLength */ Double, Array[js.Object]]) = js.native
   @JSName("Boolean")
   var Boolean_Original: BooleanConstructor with Instantiable0[Boolean] = js.native
   var Buffer: TypeofBuffer = js.native
-  var DataView: DataViewConstructor with (Instantiable1[/* buffer */ ArrayBufferLike, typings.std.global.DataView]) = js.native
+  var DataView: DataViewConstructor with (Instantiable1[/* buffer */ ArrayBufferLike, typings.std.DataView]) = js.native
   @JSName("Date")
   var Date_Original: DateConstructor with (Instantiable1[/* value */ Double, Date]) = js.native
   @JSName("Error")
   var Error_Original: ErrorConstructor with Instantiable0[Error] = js.native
   @JSName("EvalError")
   var EvalError_Original: EvalErrorConstructor with Instantiable0[EvalError] = js.native
-  var Float32Array: Float32ArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], typings.std.global.Float32Array]) = js.native
-  var Float64Array: Float64ArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], typings.std.global.Float64Array]) = js.native
+  var Float32Array: Float32ArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], typings.std.Float32Array]) = js.native
+  var Float64Array: Float64ArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], typings.std.Float64Array]) = js.native
   @JSName("Function")
-  var Function_Original: FunctionConstructor with (Instantiable1[/* args (repeated) */ String, Function]) = js.native
+  var Function_Original: FunctionConstructor with (Instantiable1[/* args (repeated) */ String, js.Function]) = js.native
   var Infinity: Double = js.native
-  var Int16Array: Int16ArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], typings.std.global.Int16Array]) = js.native
-  var Int32Array: Int32ArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], typings.std.global.Int32Array]) = js.native
-  var Int8Array: Int8ArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], typings.std.global.Int8Array]) = js.native
+  var Int16Array: Int16ArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], typings.std.Int16Array]) = js.native
+  var Int32Array: Int32ArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], typings.std.Int32Array]) = js.native
+  var Int8Array: Int8ArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], typings.std.Int8Array]) = js.native
   var Intl: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Intl */ js.Any = js.native
   var JSON: typings.std.JSON = js.native
   var Map: MapConstructor = js.native
@@ -99,17 +98,17 @@ trait Global extends js.Object {
       /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
       Unit
     ], 
-    typings.std.global.Promise[js.Object]
+    typings.std.Promise[js.Object]
   ]) = js.native
   @JSName("RangeError")
   var RangeError_Original: RangeErrorConstructor with Instantiable0[RangeError] = js.native
   @JSName("ReferenceError")
   var ReferenceError_Original: ReferenceErrorConstructor with Instantiable0[ReferenceError] = js.native
   @JSName("RegExp")
-  var RegExp_Original: RegExpConstructor with (Instantiable1[/* pattern */ RegExp, typings.std.global.RegExp]) = js.native
+  var RegExp_Original: RegExpConstructor with (Instantiable1[/* pattern */ RegExp, RegExp]) = js.native
   var Set: SetConstructor = js.native
   @JSName("String")
-  var String_Original: StringConstructor with Instantiable0[typings.std.global.String] = js.native
+  var String_Original: StringConstructor with Instantiable0[typings.std.String] = js.native
   var Symbol: js.Function = js.native
   @JSName("SyntaxError")
   var SyntaxError_Original: SyntaxErrorConstructor with Instantiable0[SyntaxError] = js.native
@@ -117,10 +116,10 @@ trait Global extends js.Object {
   var TypeError_Original: TypeErrorConstructor with Instantiable0[TypeError] = js.native
   @JSName("URIError")
   var URIError_Original: URIErrorConstructor with Instantiable0[URIError] = js.native
-  var Uint16Array: Uint16ArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], typings.std.global.Uint16Array]) = js.native
-  var Uint32Array: Uint32ArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], typings.std.global.Uint32Array]) = js.native
-  var Uint8Array: Uint8ArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], typings.std.global.Uint8Array]) = js.native
-  var Uint8ClampedArray: Uint8ClampedArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], typings.std.global.Uint8ClampedArray]) = js.native
+  var Uint16Array: Uint16ArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], typings.std.Uint16Array]) = js.native
+  var Uint32Array: Uint32ArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], typings.std.Uint32Array]) = js.native
+  var Uint8Array: Uint8ArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], typings.std.Uint8Array]) = js.native
+  var Uint8ClampedArray: Uint8ClampedArrayConstructor with (Instantiable1[/* elements */ Iterable[Double], typings.std.Uint8ClampedArray]) = js.native
   var WeakMap: WeakMapConstructor = js.native
   var WeakSet: WeakSetConstructor = js.native
   @JSName("decodeURIComponent")
@@ -156,8 +155,8 @@ trait Global extends js.Object {
   def Date(): String = js.native
   def Error(): typings.std.Error = js.native
   def Error(message: String): typings.std.Error = js.native
-  def EvalError(): typings.std.Error = js.native
-  def EvalError(message: String): typings.std.Error = js.native
+  def EvalError(): Error = js.native
+  def EvalError(message: String): Error = js.native
   @JSName("EvalError")
   def EvalError_EvalError(): typings.std.EvalError = js.native
   @JSName("EvalError")
@@ -170,11 +169,11 @@ trait Global extends js.Object {
   def RangeError(): typings.std.RangeError = js.native
   def RangeError(message: String): typings.std.RangeError = js.native
   @JSName("RangeError")
-  def RangeError_Error(): typings.std.Error = js.native
+  def RangeError_Error(): Error = js.native
   @JSName("RangeError")
-  def RangeError_Error(message: String): typings.std.Error = js.native
-  def ReferenceError(): typings.std.Error = js.native
-  def ReferenceError(message: String): typings.std.Error = js.native
+  def RangeError_Error(message: String): Error = js.native
+  def ReferenceError(): Error = js.native
+  def ReferenceError(message: String): Error = js.native
   @JSName("ReferenceError")
   def ReferenceError_ReferenceError(): typings.std.ReferenceError = js.native
   @JSName("ReferenceError")
@@ -188,17 +187,17 @@ trait Global extends js.Object {
   def SyntaxError(): typings.std.SyntaxError = js.native
   def SyntaxError(message: String): typings.std.SyntaxError = js.native
   @JSName("SyntaxError")
-  def SyntaxError_Error(): typings.std.Error = js.native
+  def SyntaxError_Error(): Error = js.native
   @JSName("SyntaxError")
-  def SyntaxError_Error(message: String): typings.std.Error = js.native
-  def TypeError(): typings.std.Error = js.native
-  def TypeError(message: String): typings.std.Error = js.native
+  def SyntaxError_Error(message: String): Error = js.native
+  def TypeError(): Error = js.native
+  def TypeError(message: String): Error = js.native
   @JSName("TypeError")
   def TypeError_TypeError(): typings.std.TypeError = js.native
   @JSName("TypeError")
   def TypeError_TypeError(message: String): typings.std.TypeError = js.native
-  def URIError(): typings.std.Error = js.native
-  def URIError(message: String): typings.std.Error = js.native
+  def URIError(): Error = js.native
+  def URIError(message: String): Error = js.native
   @JSName("URIError")
   def URIError_URIError(): typings.std.URIError = js.native
   @JSName("URIError")

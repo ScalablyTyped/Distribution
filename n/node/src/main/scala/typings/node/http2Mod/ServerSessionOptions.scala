@@ -17,7 +17,7 @@ trait ServerSessionOptions extends SessionOptions {
   var Http2ServerRequest: js.UndefOr[
     Instantiable4[
       /* stream */ ServerHttp2Stream, 
-      /* headers */ IncomingHttpHeaders, 
+      /* headers */ typings.node.httpMod.IncomingHttpHeaders, 
       /* options */ ReadableOptions, 
       /* rawHeaders */ js.Array[String], 
       typings.node.http2Mod.Http2ServerRequest
@@ -57,7 +57,7 @@ object ServerSessionOptions {
     def setHttp2ServerRequest(
       value: Instantiable4[
           /* stream */ ServerHttp2Stream, 
-          /* headers */ IncomingHttpHeaders, 
+          /* headers */ typings.node.httpMod.IncomingHttpHeaders, 
           /* options */ ReadableOptions, 
           /* rawHeaders */ js.Array[String], 
           Http2ServerRequest

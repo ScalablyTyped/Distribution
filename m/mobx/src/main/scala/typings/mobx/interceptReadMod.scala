@@ -1,8 +1,8 @@
 package typings.mobx
 
-import typings.mobx.internalMod.ObservableMap
-import typings.mobx.internalMod.ObservableSet
 import typings.mobx.observablearrayMod.IObservableArray
+import typings.mobx.observablemapMod.ObservableMap
+import typings.mobx.observablesetMod.ObservableSet
 import typings.mobx.observablevalueMod.IObservableValue
 import typings.mobx.utilsMod.Lambda
 import scala.scalajs.js

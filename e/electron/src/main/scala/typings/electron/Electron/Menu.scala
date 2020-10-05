@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Menu extends js.Object {
   var items: js.Array[MenuItem] = js.native
   @JSName("addListener")
-  def addListener_menuwillclose(event: `menu-will-close`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addListener_menuwillclose(event: `menu-will-close`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_menuwillshow(event: `menu-will-show`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addListener_menuwillshow(event: `menu-will-show`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   /**
     * Appends the `menuItem` to the menu.
     */
@@ -35,24 +35,24 @@ trait Menu extends js.Object {
     * Emitted when a popup is closed either manually or with `menu.closePopup()`.
     */
   @JSName("on")
-  def on_menuwillclose(event: `menu-will-close`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def on_menuwillclose(event: `menu-will-close`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   /**
     * Emitted when `menu.popup()` is called.
     */
   @JSName("on")
-  def on_menuwillshow(event: `menu-will-show`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def on_menuwillshow(event: `menu-will-show`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("once")
-  def once_menuwillclose(event: `menu-will-close`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def once_menuwillclose(event: `menu-will-close`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("once")
-  def once_menuwillshow(event: `menu-will-show`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def once_menuwillshow(event: `menu-will-show`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   /**
     * Pops up this menu as a context menu in the `BrowserWindow`.
     */
   def popup(): Unit = js.native
   def popup(options: PopupOptions): Unit = js.native
   @JSName("removeListener")
-  def removeListener_menuwillclose(event: `menu-will-close`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeListener_menuwillclose(event: `menu-will-close`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_menuwillshow(event: `menu-will-show`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeListener_menuwillshow(event: `menu-will-show`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
 }
 

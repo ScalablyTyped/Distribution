@@ -11,16 +11,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Screen extends EventEmitter {
   @JSName("addListener")
-  def addListener_displayadded(event: `display-added`, listener: js.Function2[/* event */ Event, /* newDisplay */ Display, Unit]): this.type = js.native
+  def addListener_displayadded(
+    event: `display-added`,
+    listener: js.Function2[/* event */ typings.std.Event, /* newDisplay */ Display, Unit]
+  ): this.type = js.native
   @JSName("addListener")
   def addListener_displaymetricschanged(
     event: `display-metrics-changed`,
-    listener: js.Function3[/* event */ Event, /* display */ Display, /* changedMetrics */ js.Array[String], Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* display */ Display, 
+      /* changedMetrics */ js.Array[String], 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_displayremoved(
     event: `display-removed`,
-    listener: js.Function2[/* event */ Event, /* oldDisplay */ Display, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* oldDisplay */ Display, Unit]
   ): this.type = js.native
   /**
     * Converts a screen DIP point to a screen physical point. The DPI scale is
@@ -63,7 +71,10 @@ trait Screen extends EventEmitter {
     * Emitted when `newDisplay` has been added.
     */
   @JSName("on")
-  def on_displayadded(event: `display-added`, listener: js.Function2[/* event */ Event, /* newDisplay */ Display, Unit]): this.type = js.native
+  def on_displayadded(
+    event: `display-added`,
+    listener: js.Function2[/* event */ typings.std.Event, /* newDisplay */ Display, Unit]
+  ): this.type = js.native
   /**
     * Emitted when one or more metrics change in a `display`. The `changedMetrics` is
     * an array of strings that describe the changes. Possible changes are `bounds`,
@@ -72,7 +83,12 @@ trait Screen extends EventEmitter {
   @JSName("on")
   def on_displaymetricschanged(
     event: `display-metrics-changed`,
-    listener: js.Function3[/* event */ Event, /* display */ Display, /* changedMetrics */ js.Array[String], Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* display */ Display, 
+      /* changedMetrics */ js.Array[String], 
+      Unit
+    ]
   ): this.type = js.native
   /**
     * Emitted when `oldDisplay` has been removed.
@@ -80,31 +96,47 @@ trait Screen extends EventEmitter {
   @JSName("on")
   def on_displayremoved(
     event: `display-removed`,
-    listener: js.Function2[/* event */ Event, /* oldDisplay */ Display, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* oldDisplay */ Display, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_displayadded(event: `display-added`, listener: js.Function2[/* event */ Event, /* newDisplay */ Display, Unit]): this.type = js.native
+  def once_displayadded(
+    event: `display-added`,
+    listener: js.Function2[/* event */ typings.std.Event, /* newDisplay */ Display, Unit]
+  ): this.type = js.native
   @JSName("once")
   def once_displaymetricschanged(
     event: `display-metrics-changed`,
-    listener: js.Function3[/* event */ Event, /* display */ Display, /* changedMetrics */ js.Array[String], Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* display */ Display, 
+      /* changedMetrics */ js.Array[String], 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("once")
   def once_displayremoved(
     event: `display-removed`,
-    listener: js.Function2[/* event */ Event, /* oldDisplay */ Display, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* oldDisplay */ Display, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_displayadded(event: `display-added`, listener: js.Function2[/* event */ Event, /* newDisplay */ Display, Unit]): this.type = js.native
+  def removeListener_displayadded(
+    event: `display-added`,
+    listener: js.Function2[/* event */ typings.std.Event, /* newDisplay */ Display, Unit]
+  ): this.type = js.native
   @JSName("removeListener")
   def removeListener_displaymetricschanged(
     event: `display-metrics-changed`,
-    listener: js.Function3[/* event */ Event, /* display */ Display, /* changedMetrics */ js.Array[String], Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* display */ Display, 
+      /* changedMetrics */ js.Array[String], 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_displayremoved(
     event: `display-removed`,
-    listener: js.Function2[/* event */ Event, /* oldDisplay */ Display, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* oldDisplay */ Display, Unit]
   ): this.type = js.native
   /**
     * Converts a screen physical point to a screen DIP point. The DPI scale is

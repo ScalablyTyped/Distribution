@@ -99,14 +99,17 @@ trait BrowserWindow extends EventEmitter {
   @JSName("addListener")
   def addListener_alwaysontopchanged(
     event: `always-on-top-changed`,
-    listener: js.Function2[/* event */ Event, /* isAlwaysOnTop */ Boolean, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* isAlwaysOnTop */ Boolean, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_appcommand(event: `app-command`, listener: js.Function2[/* event */ Event, /* command */ String, Unit]): this.type = js.native
+  def addListener_appcommand(
+    event: `app-command`,
+    listener: js.Function2[/* event */ typings.std.Event, /* command */ String, Unit]
+  ): this.type = js.native
   @JSName("addListener")
   def addListener_blur(event: blur, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_close(event: close, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addListener_close(event: close, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_closed(event: closed, listener: js.Function): this.type = js.native
   @JSName("addListener")
@@ -134,7 +137,7 @@ trait BrowserWindow extends EventEmitter {
   @JSName("addListener")
   def addListener_pagetitleupdated(
     event: `page-title-updated`,
-    listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* title */ String, /* explicitSet */ Boolean, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_readytoshow(event: `ready-to-show`, listener: js.Function): this.type = js.native
@@ -145,7 +148,10 @@ trait BrowserWindow extends EventEmitter {
   @JSName("addListener")
   def addListener_restore(event: restore, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_rotategesture(event: `rotate-gesture`, listener: js.Function2[/* event */ Event, /* rotation */ Double, Unit]): this.type = js.native
+  def addListener_rotategesture(
+    event: `rotate-gesture`,
+    listener: js.Function2[/* event */ typings.std.Event, /* rotation */ Double, Unit]
+  ): this.type = js.native
   @JSName("addListener")
   def addListener_scrolltouchbegin(event: `scroll-touch-begin`, listener: js.Function): this.type = js.native
   @JSName("addListener")
@@ -161,15 +167,21 @@ trait BrowserWindow extends EventEmitter {
   @JSName("addListener")
   def addListener_show(event: show, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_swipe(event: swipe, listener: js.Function2[/* event */ Event, /* direction */ String, Unit]): this.type = js.native
+  def addListener_swipe(event: swipe, listener: js.Function2[/* event */ typings.std.Event, /* direction */ String, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_unmaximize(event: unmaximize, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_unresponsive(event: unresponsive, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_willmove(event: `will-move`, listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, Unit]): this.type = js.native
+  def addListener_willmove(
+    event: `will-move`,
+    listener: js.Function2[/* event */ typings.std.Event, /* newBounds */ Rectangle, Unit]
+  ): this.type = js.native
   @JSName("addListener")
-  def addListener_willresize(event: `will-resize`, listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, Unit]): this.type = js.native
+  def addListener_willresize(
+    event: `will-resize`,
+    listener: js.Function2[/* event */ typings.std.Event, /* newBounds */ Rectangle, Unit]
+  ): this.type = js.native
   /**
     * Adds a window as a tab on this window, after the tab for the window instance.
     *
@@ -528,7 +540,7 @@ trait BrowserWindow extends EventEmitter {
   @JSName("on")
   def on_alwaysontopchanged(
     event: `always-on-top-changed`,
-    listener: js.Function2[/* event */ Event, /* isAlwaysOnTop */ Boolean, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* isAlwaysOnTop */ Boolean, Unit]
   ): this.type = js.native
   /**
     * Emitted when an App Command is invoked. These are typically related to keyboard
@@ -547,7 +559,10 @@ trait BrowserWindow extends EventEmitter {
     * @platform win32,linux
     */
   @JSName("on")
-  def on_appcommand(event: `app-command`, listener: js.Function2[/* event */ Event, /* command */ String, Unit]): this.type = js.native
+  def on_appcommand(
+    event: `app-command`,
+    listener: js.Function2[/* event */ typings.std.Event, /* command */ String, Unit]
+  ): this.type = js.native
   /**
     * Emitted when the window loses focus.
     */
@@ -570,7 +585,7 @@ trait BrowserWindow extends EventEmitter {
     * Electron._
     */
   @JSName("on")
-  def on_close(event: close, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def on_close(event: close, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   /**
     * Emitted when the window is closed. After you have received this event you should
     * remove the reference to the window and avoid using it any more.
@@ -646,7 +661,7 @@ trait BrowserWindow extends EventEmitter {
   @JSName("on")
   def on_pagetitleupdated(
     event: `page-title-updated`,
-    listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* title */ String, /* explicitSet */ Boolean, Unit]
   ): this.type = js.native
   /**
     * Emitted when the web page has been rendered (while not being shown) and window
@@ -683,7 +698,10 @@ trait BrowserWindow extends EventEmitter {
     * @platform darwin
     */
   @JSName("on")
-  def on_rotategesture(event: `rotate-gesture`, listener: js.Function2[/* event */ Event, /* rotation */ Double, Unit]): this.type = js.native
+  def on_rotategesture(
+    event: `rotate-gesture`,
+    listener: js.Function2[/* event */ typings.std.Event, /* rotation */ Double, Unit]
+  ): this.type = js.native
   /**
     * Emitted when scroll wheel event phase has begun.
     *
@@ -746,7 +764,7 @@ trait BrowserWindow extends EventEmitter {
     * @platform darwin
     */
   @JSName("on")
-  def on_swipe(event: swipe, listener: js.Function2[/* event */ Event, /* direction */ String, Unit]): this.type = js.native
+  def on_swipe(event: swipe, listener: js.Function2[/* event */ typings.std.Event, /* direction */ String, Unit]): this.type = js.native
   /**
     * Emitted when the window exits from a maximized state.
     */
@@ -767,7 +785,10 @@ trait BrowserWindow extends EventEmitter {
     * @platform darwin,win32
     */
   @JSName("on")
-  def on_willmove(event: `will-move`, listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, Unit]): this.type = js.native
+  def on_willmove(
+    event: `will-move`,
+    listener: js.Function2[/* event */ typings.std.Event, /* newBounds */ Rectangle, Unit]
+  ): this.type = js.native
   /**
     * Emitted before the window is resized. Calling `event.preventDefault()` will
     * prevent the window from being resized.
@@ -778,18 +799,24 @@ trait BrowserWindow extends EventEmitter {
     * @platform darwin,win32
     */
   @JSName("on")
-  def on_willresize(event: `will-resize`, listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, Unit]): this.type = js.native
+  def on_willresize(
+    event: `will-resize`,
+    listener: js.Function2[/* event */ typings.std.Event, /* newBounds */ Rectangle, Unit]
+  ): this.type = js.native
   @JSName("once")
   def once_alwaysontopchanged(
     event: `always-on-top-changed`,
-    listener: js.Function2[/* event */ Event, /* isAlwaysOnTop */ Boolean, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* isAlwaysOnTop */ Boolean, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_appcommand(event: `app-command`, listener: js.Function2[/* event */ Event, /* command */ String, Unit]): this.type = js.native
+  def once_appcommand(
+    event: `app-command`,
+    listener: js.Function2[/* event */ typings.std.Event, /* command */ String, Unit]
+  ): this.type = js.native
   @JSName("once")
   def once_blur(event: blur, listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_close(event: close, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def once_close(event: close, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("once")
   def once_closed(event: closed, listener: js.Function): this.type = js.native
   @JSName("once")
@@ -817,7 +844,7 @@ trait BrowserWindow extends EventEmitter {
   @JSName("once")
   def once_pagetitleupdated(
     event: `page-title-updated`,
-    listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* title */ String, /* explicitSet */ Boolean, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_readytoshow(event: `ready-to-show`, listener: js.Function): this.type = js.native
@@ -828,7 +855,10 @@ trait BrowserWindow extends EventEmitter {
   @JSName("once")
   def once_restore(event: restore, listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_rotategesture(event: `rotate-gesture`, listener: js.Function2[/* event */ Event, /* rotation */ Double, Unit]): this.type = js.native
+  def once_rotategesture(
+    event: `rotate-gesture`,
+    listener: js.Function2[/* event */ typings.std.Event, /* rotation */ Double, Unit]
+  ): this.type = js.native
   @JSName("once")
   def once_scrolltouchbegin(event: `scroll-touch-begin`, listener: js.Function): this.type = js.native
   @JSName("once")
@@ -844,15 +874,21 @@ trait BrowserWindow extends EventEmitter {
   @JSName("once")
   def once_show(event: show, listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_swipe(event: swipe, listener: js.Function2[/* event */ Event, /* direction */ String, Unit]): this.type = js.native
+  def once_swipe(event: swipe, listener: js.Function2[/* event */ typings.std.Event, /* direction */ String, Unit]): this.type = js.native
   @JSName("once")
   def once_unmaximize(event: unmaximize, listener: js.Function): this.type = js.native
   @JSName("once")
   def once_unresponsive(event: unresponsive, listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_willmove(event: `will-move`, listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, Unit]): this.type = js.native
+  def once_willmove(
+    event: `will-move`,
+    listener: js.Function2[/* event */ typings.std.Event, /* newBounds */ Rectangle, Unit]
+  ): this.type = js.native
   @JSName("once")
-  def once_willresize(event: `will-resize`, listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, Unit]): this.type = js.native
+  def once_willresize(
+    event: `will-resize`,
+    listener: js.Function2[/* event */ typings.std.Event, /* newBounds */ Rectangle, Unit]
+  ): this.type = js.native
   /**
     * Uses Quick Look to preview a file at a given path.
     *
@@ -868,14 +904,17 @@ trait BrowserWindow extends EventEmitter {
   @JSName("removeListener")
   def removeListener_alwaysontopchanged(
     event: `always-on-top-changed`,
-    listener: js.Function2[/* event */ Event, /* isAlwaysOnTop */ Boolean, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* isAlwaysOnTop */ Boolean, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_appcommand(event: `app-command`, listener: js.Function2[/* event */ Event, /* command */ String, Unit]): this.type = js.native
+  def removeListener_appcommand(
+    event: `app-command`,
+    listener: js.Function2[/* event */ typings.std.Event, /* command */ String, Unit]
+  ): this.type = js.native
   @JSName("removeListener")
   def removeListener_blur(event: blur, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_close(event: close, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeListener_close(event: close, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_closed(event: closed, listener: js.Function): this.type = js.native
   @JSName("removeListener")
@@ -903,7 +942,7 @@ trait BrowserWindow extends EventEmitter {
   @JSName("removeListener")
   def removeListener_pagetitleupdated(
     event: `page-title-updated`,
-    listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* title */ String, /* explicitSet */ Boolean, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_readytoshow(event: `ready-to-show`, listener: js.Function): this.type = js.native
@@ -914,7 +953,10 @@ trait BrowserWindow extends EventEmitter {
   @JSName("removeListener")
   def removeListener_restore(event: restore, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_rotategesture(event: `rotate-gesture`, listener: js.Function2[/* event */ Event, /* rotation */ Double, Unit]): this.type = js.native
+  def removeListener_rotategesture(
+    event: `rotate-gesture`,
+    listener: js.Function2[/* event */ typings.std.Event, /* rotation */ Double, Unit]
+  ): this.type = js.native
   @JSName("removeListener")
   def removeListener_scrolltouchbegin(event: `scroll-touch-begin`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
@@ -930,15 +972,21 @@ trait BrowserWindow extends EventEmitter {
   @JSName("removeListener")
   def removeListener_show(event: show, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_swipe(event: swipe, listener: js.Function2[/* event */ Event, /* direction */ String, Unit]): this.type = js.native
+  def removeListener_swipe(event: swipe, listener: js.Function2[/* event */ typings.std.Event, /* direction */ String, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_unmaximize(event: unmaximize, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def removeListener_unresponsive(event: unresponsive, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_willmove(event: `will-move`, listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, Unit]): this.type = js.native
+  def removeListener_willmove(
+    event: `will-move`,
+    listener: js.Function2[/* event */ typings.std.Event, /* newBounds */ Rectangle, Unit]
+  ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_willresize(event: `will-resize`, listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, Unit]): this.type = js.native
+  def removeListener_willresize(
+    event: `will-resize`,
+    listener: js.Function2[/* event */ typings.std.Event, /* newBounds */ Rectangle, Unit]
+  ): this.type = js.native
   /**
     * Remove the window's menu bar.
     *

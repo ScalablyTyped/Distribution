@@ -1,7 +1,7 @@
 package typings.angularPlatformBrowser.animationsMod
 
-import typings.angularAnimations.browserMod.AnimationDriver
-import typings.angularAnimations.browserMod.ɵAnimationStyleNormalizer
+import typings.angularAnimations.browserBrowserMod.AnimationDriver
+import typings.angularAnimations.browserBrowserMod.ɵAnimationStyleNormalizer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

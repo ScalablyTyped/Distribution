@@ -1,6 +1,6 @@
 package typings.angularPlatformBrowser.animationsAnimationsMod
 
-import typings.angularAnimations.browserMod.ɵAnimationEngine
+import typings.angularAnimations.browserBrowserMod.ɵAnimationEngine
 import typings.angularCore.mod.Renderer2
 import typings.angularPlatformBrowser.angularPlatformBrowserStrings.body
 import typings.angularPlatformBrowser.angularPlatformBrowserStrings.document

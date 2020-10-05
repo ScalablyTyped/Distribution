@@ -27,7 +27,7 @@ trait AutoUpdater extends EventEmitter {
   def addListener_updatedownloaded(
     event: `update-downloaded`,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* releaseNotes */ String, 
       /* releaseName */ String, 
       /* releaseDate */ Date, 
@@ -85,7 +85,7 @@ trait AutoUpdater extends EventEmitter {
   def on_updatedownloaded(
     event: `update-downloaded`,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* releaseNotes */ String, 
       /* releaseName */ String, 
       /* releaseDate */ Date, 
@@ -110,7 +110,7 @@ trait AutoUpdater extends EventEmitter {
   def once_updatedownloaded(
     event: `update-downloaded`,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* releaseNotes */ String, 
       /* releaseName */ String, 
       /* releaseDate */ Date, 
@@ -145,7 +145,7 @@ trait AutoUpdater extends EventEmitter {
   def removeListener_updatedownloaded(
     event: `update-downloaded`,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* releaseNotes */ String, 
       /* releaseName */ String, 
       /* releaseDate */ Date, 

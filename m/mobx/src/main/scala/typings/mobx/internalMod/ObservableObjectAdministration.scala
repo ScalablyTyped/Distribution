@@ -12,7 +12,10 @@ class ObservableObjectAdministration protected ()
   extends typings.mobx.observableobjectMod.ObservableObjectAdministration {
   def this(
     target: js.Any,
-    values: Map[String | Double | js.Symbol, ObservableValue[_] | ComputedValue[_]],
+    values: Map[
+        String | Double | js.Symbol, 
+        typings.mobx.observablevalueMod.ObservableValue[_] | typings.mobx.computedvalueMod.ComputedValue[_]
+      ],
     name: String,
     defaultEnhancer: IEnhancer[_]
   ) = this()

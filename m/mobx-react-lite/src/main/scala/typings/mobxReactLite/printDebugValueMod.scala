@@ -1,7 +1,7 @@
 package typings.mobxReactLite
 
 import typings.mobx.extrasMod.IDependencyTree
-import typings.mobx.mod.Reaction_
+import typings.mobx.internalMod.Reaction_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

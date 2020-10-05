@@ -16,11 +16,11 @@ trait DownloadItem extends EventEmitter {
   var savePath: String = js.native
   def addListener(
     event: done,
-    listener: js.Function2[/* event */ Event, /* state */ completed | cancelled | interrupted, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* state */ completed | cancelled | interrupted, Unit]
   ): this.type = js.native
   def addListener(
     event: updated,
-    listener: js.Function2[/* event */ Event, /* state */ progressing | interrupted, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* state */ progressing | interrupted, Unit]
   ): this.type = js.native
   /**
     * Whether the download can resume.
@@ -117,7 +117,7 @@ trait DownloadItem extends EventEmitter {
     */
   def on(
     event: done,
-    listener: js.Function2[/* event */ Event, /* state */ completed | cancelled | interrupted, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* state */ completed | cancelled | interrupted, Unit]
   ): this.type = js.native
   /**
     * Emitted when the download has been updated and is not done.
@@ -129,15 +129,15 @@ trait DownloadItem extends EventEmitter {
     */
   def on(
     event: updated,
-    listener: js.Function2[/* event */ Event, /* state */ progressing | interrupted, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* state */ progressing | interrupted, Unit]
   ): this.type = js.native
   def once(
     event: done,
-    listener: js.Function2[/* event */ Event, /* state */ completed | cancelled | interrupted, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* state */ completed | cancelled | interrupted, Unit]
   ): this.type = js.native
   def once(
     event: updated,
-    listener: js.Function2[/* event */ Event, /* state */ progressing | interrupted, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* state */ progressing | interrupted, Unit]
   ): this.type = js.native
   /**
     * Pauses the download.
@@ -145,11 +145,11 @@ trait DownloadItem extends EventEmitter {
   def pause(): Unit = js.native
   def removeListener(
     event: done,
-    listener: js.Function2[/* event */ Event, /* state */ completed | cancelled | interrupted, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* state */ completed | cancelled | interrupted, Unit]
   ): this.type = js.native
   def removeListener(
     event: updated,
-    listener: js.Function2[/* event */ Event, /* state */ progressing | interrupted, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* state */ progressing | interrupted, Unit]
   ): this.type = js.native
   /**
     * Resumes the download that has been paused.

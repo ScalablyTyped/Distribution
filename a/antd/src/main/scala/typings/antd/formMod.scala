@@ -21,12 +21,15 @@ object formMod extends js.Object {
     var Item: js.Function1[/* props */ FormItemProps, ReactElement] = js.native
     var List: FC[FormListProps] = js.native
     var Provider: FC[FormProviderProps] = js.native
-    var useForm: js.Function1[/* form */ js.UndefOr[FormInstance], js.Array[FormInstance]] = js.native
+    var useForm: js.Function1[
+        /* form */ js.UndefOr[typings.rcFieldForm.interfaceMod.FormInstance], 
+        js.Array[typings.rcFieldForm.interfaceMod.FormInstance]
+      ] = js.native
     /** @deprecated Only for warning usage. Do not use. */
     def create(): Unit = js.native
   }
   
   val default: Form = js.native
-  type InternalForm = ForwardRefExoticComponent[FormProps with RefAttributes[FormInstance]]
+  type InternalForm = ForwardRefExoticComponent[FormProps with RefAttributes[typings.rcFieldForm.interfaceMod.FormInstance]]
 }
 

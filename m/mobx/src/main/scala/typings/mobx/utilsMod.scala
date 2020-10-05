@@ -1,10 +1,10 @@
 package typings.mobx
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.mobx.internalMod.ObservableMap
 import typings.mobx.mobxBooleans.`false`
 import typings.mobx.mobxBooleans.`true`
 import typings.mobx.observablemapMod.IKeyValueMap
+import typings.mobx.observablemapMod.ObservableMap
 import typings.std.PropertyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`

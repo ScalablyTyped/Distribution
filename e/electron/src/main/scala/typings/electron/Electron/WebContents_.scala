@@ -113,15 +113,18 @@ trait WebContents_ extends EventEmitter {
   ): this.type = js.native
   def addListener(
     event: `zoom-changed`,
-    listener: js.Function2[/* event */ Event, /* zoomDirection */ in | out, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* zoomDirection */ in | out, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_beforeinputevent(event: `before-input-event`, listener: js.Function2[/* event */ Event, /* input */ Input, Unit]): this.type = js.native
+  def addListener_beforeinputevent(
+    event: `before-input-event`,
+    listener: js.Function2[/* event */ typings.std.Event, /* input */ Input, Unit]
+  ): this.type = js.native
   @JSName("addListener")
   def addListener_certificateerror(
     event: `certificate-error`,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* error */ String, 
       /* certificate */ Certificate, 
@@ -133,7 +136,7 @@ trait WebContents_ extends EventEmitter {
   def addListener_consolemessage(
     event: `console-message`,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* level */ Double, 
       /* message */ String, 
       /* line */ Double, 
@@ -144,15 +147,15 @@ trait WebContents_ extends EventEmitter {
   @JSName("addListener")
   def addListener_contextmenu(
     event: `context-menu`,
-    listener: js.Function2[/* event */ Event, /* params */ ContextMenuParams, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* params */ ContextMenuParams, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_crashed(event: crashed, listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]): this.type = js.native
+  def addListener_crashed(event: crashed, listener: js.Function2[/* event */ typings.std.Event, /* killed */ Boolean, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_cursorchanged(
     event: `cursor-changed`,
     listener: js.Function6[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* type */ String, 
       /* image */ NativeImage_, 
       /* scale */ Double, 
@@ -162,7 +165,7 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_desktopcapturergetsources(event: `desktop-capturer-get-sources`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addListener_desktopcapturergetsources(event: `desktop-capturer-get-sources`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_destroyed(event: destroyed, listener: js.Function): this.type = js.native
   @JSName("addListener")
@@ -176,18 +179,18 @@ trait WebContents_ extends EventEmitter {
   @JSName("addListener")
   def addListener_didattachwebview(
     event: `did-attach-webview`,
-    listener: js.Function2[/* event */ Event, /* webContents */ this.type, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* webContents */ this.type, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_didchangethemecolor(
     event: `did-change-theme-color`,
-    listener: js.Function2[/* event */ Event, /* color */ String | Null, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* color */ String | Null, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_didfailload(
     event: `did-fail-load`,
     listener: js.Function7[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* errorCode */ Double, 
       /* errorDescription */ String, 
       /* validatedURL */ String, 
@@ -201,7 +204,7 @@ trait WebContents_ extends EventEmitter {
   def addListener_didfailprovisionalload(
     event: `did-fail-provisional-load`,
     listener: js.Function7[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* errorCode */ Double, 
       /* errorDescription */ String, 
       /* validatedURL */ String, 
@@ -217,7 +220,7 @@ trait WebContents_ extends EventEmitter {
   def addListener_didframefinishload(
     event: `did-frame-finish-load`,
     listener: js.Function4[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* isMainFrame */ Boolean, 
       /* frameProcessId */ Double, 
       /* frameRoutingId */ Double, 
@@ -228,7 +231,7 @@ trait WebContents_ extends EventEmitter {
   def addListener_didframenavigate(
     event: `did-frame-navigate`,
     listener: js.Function7[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* httpResponseCode */ Double, 
       /* httpStatusText */ String, 
@@ -242,7 +245,7 @@ trait WebContents_ extends EventEmitter {
   def addListener_didnavigate(
     event: `did-navigate`,
     listener: js.Function4[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* httpResponseCode */ Double, 
       /* httpStatusText */ String, 
@@ -253,7 +256,7 @@ trait WebContents_ extends EventEmitter {
   def addListener_didnavigateinpage(
     event: `did-navigate-in-page`,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* isMainFrame */ Boolean, 
       /* frameProcessId */ Double, 
@@ -265,7 +268,7 @@ trait WebContents_ extends EventEmitter {
   def addListener_didredirectnavigation(
     event: `did-redirect-navigation`,
     listener: js.Function6[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* isInPlace */ Boolean, 
       /* isMainFrame */ Boolean, 
@@ -280,7 +283,7 @@ trait WebContents_ extends EventEmitter {
   def addListener_didstartnavigation(
     event: `did-start-navigation`,
     listener: js.Function6[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* isInPlace */ Boolean, 
       /* isMainFrame */ Boolean, 
@@ -292,20 +295,23 @@ trait WebContents_ extends EventEmitter {
   @JSName("addListener")
   def addListener_didstoploading(event: `did-stop-loading`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_domready(event: `dom-ready`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addListener_domready(event: `dom-ready`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_foundinpage(event: `found-in-page`, listener: js.Function2[/* event */ Event, /* result */ Result, Unit]): this.type = js.native
+  def addListener_foundinpage(
+    event: `found-in-page`,
+    listener: js.Function2[/* event */ typings.std.Event, /* result */ Result, Unit]
+  ): this.type = js.native
   @JSName("addListener")
   def addListener_ipcmessage(
     event: `ipc-message`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ js.Any, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* channel */ String, /* repeated */ js.Any, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_ipcmessagesync(
     event: `ipc-message-sync`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ js.Any, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* channel */ String, /* repeated */ js.Any, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function): this.type = js.native
@@ -313,7 +319,7 @@ trait WebContents_ extends EventEmitter {
   def addListener_login(
     event: login,
     listener: js.Function4[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* authenticationResponseDetails */ AuthenticationResponseDetails, 
       /* authInfo */ AuthInfo, 
       /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
@@ -327,27 +333,32 @@ trait WebContents_ extends EventEmitter {
   @JSName("addListener")
   def addListener_pagefaviconupdated(
     event: `page-favicon-updated`,
-    listener: js.Function2[/* event */ Event, /* favicons */ js.Array[String], Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* favicons */ js.Array[String], Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_pagetitleupdated(
     event: `page-title-updated`,
-    listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* title */ String, /* explicitSet */ Boolean, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_paint(
     event: paint,
-    listener: js.Function3[/* event */ Event, /* dirtyRect */ Rectangle, /* image */ NativeImage_, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* dirtyRect */ Rectangle, 
+      /* image */ NativeImage_, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_plugincrashed(
     event: `plugin-crashed`,
-    listener: js.Function3[/* event */ Event, /* name */ String, /* version */ String, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* name */ String, /* version */ String, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_preloaderror(
     event: `preload-error`,
-    listener: js.Function3[/* event */ Event, /* preloadPath */ String, /* error */ Error, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* preloadPath */ String, /* error */ Error, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_remotegetbuiltin(
@@ -371,7 +382,7 @@ trait WebContents_ extends EventEmitter {
   @JSName("addListener")
   def addListener_renderprocessgone(
     event: `render-process-gone`,
-    listener: js.Function2[/* event */ Event, /* details */ Details, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* details */ Details, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_responsive(event: responsive, listener: js.Function): this.type = js.native
@@ -379,7 +390,7 @@ trait WebContents_ extends EventEmitter {
   def addListener_selectbluetoothdevice(
     event: `select-bluetooth-device`,
     listener: js.Function3[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* devices */ js.Array[BluetoothDevice], 
       /* callback */ js.Function1[/* deviceId */ String, Unit], 
       Unit
@@ -389,7 +400,7 @@ trait WebContents_ extends EventEmitter {
   def addListener_selectclientcertificate(
     event: `select-client-certificate`,
     listener: js.Function4[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* certificateList */ js.Array[Certificate], 
       /* callback */ js.Function1[/* certificate */ Certificate, Unit], 
@@ -399,26 +410,32 @@ trait WebContents_ extends EventEmitter {
   @JSName("addListener")
   def addListener_unresponsive(event: unresponsive, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_updatetargeturl(event: `update-target-url`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  def addListener_updatetargeturl(
+    event: `update-target-url`,
+    listener: js.Function2[/* event */ typings.std.Event, /* url */ String, Unit]
+  ): this.type = js.native
   @JSName("addListener")
   def addListener_willattachwebview(
     event: `will-attach-webview`,
     listener: js.Function3[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* webPreferences */ WebPreferences, 
       /* params */ Record[String, String], 
       Unit
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_willnavigate(event: `will-navigate`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  def addListener_willnavigate(
+    event: `will-navigate`,
+    listener: js.Function2[/* event */ typings.std.Event, /* url */ String, Unit]
+  ): this.type = js.native
   @JSName("addListener")
-  def addListener_willpreventunload(event: `will-prevent-unload`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addListener_willpreventunload(event: `will-prevent-unload`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_willredirect(
     event: `will-redirect`,
     listener: js.Function6[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* isInPlace */ Boolean, 
       /* isMainFrame */ Boolean, 
@@ -784,7 +801,7 @@ trait WebContents_ extends EventEmitter {
     */
   def on(
     event: `zoom-changed`,
-    listener: js.Function2[/* event */ Event, /* zoomDirection */ in | out, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* zoomDirection */ in | out, Unit]
   ): this.type = js.native
   /**
     * Emitted before dispatching the `keydown` and `keyup` events in the page. Calling
@@ -794,7 +811,10 @@ trait WebContents_ extends EventEmitter {
   To only prevent the menu shortcuts, use `setIgnoreMenuShortcuts`:
     */
   @JSName("on")
-  def on_beforeinputevent(event: `before-input-event`, listener: js.Function2[/* event */ Event, /* input */ Input, Unit]): this.type = js.native
+  def on_beforeinputevent(
+    event: `before-input-event`,
+    listener: js.Function2[/* event */ typings.std.Event, /* input */ Input, Unit]
+  ): this.type = js.native
   /**
     * Emitted when failed to verify the `certificate` for `url`.
     * 
@@ -804,7 +824,7 @@ trait WebContents_ extends EventEmitter {
   def on_certificateerror(
     event: `certificate-error`,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* error */ String, 
       /* certificate */ Certificate, 
@@ -819,7 +839,7 @@ trait WebContents_ extends EventEmitter {
   def on_consolemessage(
     event: `console-message`,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* level */ Double, 
       /* message */ String, 
       /* line */ Double, 
@@ -833,7 +853,7 @@ trait WebContents_ extends EventEmitter {
   @JSName("on")
   def on_contextmenu(
     event: `context-menu`,
-    listener: js.Function2[/* event */ Event, /* params */ ContextMenuParams, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* params */ ContextMenuParams, Unit]
   ): this.type = js.native
   /**
     * Emitted when the renderer process crashes or is killed.
@@ -846,7 +866,7 @@ trait WebContents_ extends EventEmitter {
     * @deprecated
     */
   @JSName("on")
-  def on_crashed(event: crashed, listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]): this.type = js.native
+  def on_crashed(event: crashed, listener: js.Function2[/* event */ typings.std.Event, /* killed */ Boolean, Unit]): this.type = js.native
   /**
     * Emitted when the cursor's type changes. The `type` parameter can be `default`,
     * `crosshair`, `pointer`, `text`, `wait`, `help`, `e-resize`, `n-resize`,
@@ -865,7 +885,7 @@ trait WebContents_ extends EventEmitter {
   def on_cursorchanged(
     event: `cursor-changed`,
     listener: js.Function6[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* type */ String, 
       /* image */ NativeImage_, 
       /* scale */ Double, 
@@ -879,7 +899,7 @@ trait WebContents_ extends EventEmitter {
     * Calling `event.preventDefault()` will make it return empty sources.
     */
   @JSName("on")
-  def on_desktopcapturergetsources(event: `desktop-capturer-get-sources`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def on_desktopcapturergetsources(event: `desktop-capturer-get-sources`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   /**
     * Emitted when `webContents` is destroyed.
     */
@@ -911,7 +931,7 @@ trait WebContents_ extends EventEmitter {
   @JSName("on")
   def on_didattachwebview(
     event: `did-attach-webview`,
-    listener: js.Function2[/* event */ Event, /* webContents */ this.type, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* webContents */ this.type, Unit]
   ): this.type = js.native
   /**
     * Emitted when a page's theme color changes. This is usually due to encountering a
@@ -920,7 +940,7 @@ trait WebContents_ extends EventEmitter {
   @JSName("on")
   def on_didchangethemecolor(
     event: `did-change-theme-color`,
-    listener: js.Function2[/* event */ Event, /* color */ String | Null, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* color */ String | Null, Unit]
   ): this.type = js.native
   /**
     * This event is like `did-finish-load` but emitted when the load failed. The full
@@ -930,7 +950,7 @@ trait WebContents_ extends EventEmitter {
   def on_didfailload(
     event: `did-fail-load`,
     listener: js.Function7[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* errorCode */ Double, 
       /* errorDescription */ String, 
       /* validatedURL */ String, 
@@ -948,7 +968,7 @@ trait WebContents_ extends EventEmitter {
   def on_didfailprovisionalload(
     event: `did-fail-provisional-load`,
     listener: js.Function7[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* errorCode */ Double, 
       /* errorDescription */ String, 
       /* validatedURL */ String, 
@@ -971,7 +991,7 @@ trait WebContents_ extends EventEmitter {
   def on_didframefinishload(
     event: `did-frame-finish-load`,
     listener: js.Function4[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* isMainFrame */ Boolean, 
       /* frameProcessId */ Double, 
       /* frameRoutingId */ Double, 
@@ -989,7 +1009,7 @@ trait WebContents_ extends EventEmitter {
   def on_didframenavigate(
     event: `did-frame-navigate`,
     listener: js.Function7[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* httpResponseCode */ Double, 
       /* httpStatusText */ String, 
@@ -1010,7 +1030,7 @@ trait WebContents_ extends EventEmitter {
   def on_didnavigate(
     event: `did-navigate`,
     listener: js.Function4[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* httpResponseCode */ Double, 
       /* httpStatusText */ String, 
@@ -1028,7 +1048,7 @@ trait WebContents_ extends EventEmitter {
   def on_didnavigateinpage(
     event: `did-navigate-in-page`,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* isMainFrame */ Boolean, 
       /* frameProcessId */ Double, 
@@ -1047,7 +1067,7 @@ trait WebContents_ extends EventEmitter {
   def on_didredirectnavigation(
     event: `did-redirect-navigation`,
     listener: js.Function6[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* isInPlace */ Boolean, 
       /* isMainFrame */ Boolean, 
@@ -1069,7 +1089,7 @@ trait WebContents_ extends EventEmitter {
   def on_didstartnavigation(
     event: `did-start-navigation`,
     listener: js.Function6[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* isInPlace */ Boolean, 
       /* isMainFrame */ Boolean, 
@@ -1087,7 +1107,7 @@ trait WebContents_ extends EventEmitter {
     * Emitted when the document in the given frame is loaded.
     */
   @JSName("on")
-  def on_domready(event: `dom-ready`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def on_domready(event: `dom-ready`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   /**
     * Emitted when the window enters a full-screen state triggered by HTML API.
     */
@@ -1097,7 +1117,10 @@ trait WebContents_ extends EventEmitter {
     * Emitted when a result is available for [`webContents.findInPage`] request.
     */
   @JSName("on")
-  def on_foundinpage(event: `found-in-page`, listener: js.Function2[/* event */ Event, /* result */ Result, Unit]): this.type = js.native
+  def on_foundinpage(
+    event: `found-in-page`,
+    listener: js.Function2[/* event */ typings.std.Event, /* result */ Result, Unit]
+  ): this.type = js.native
   /**
     * Emitted when the renderer process sends an asynchronous message via
     * `ipcRenderer.send()`.
@@ -1105,7 +1128,7 @@ trait WebContents_ extends EventEmitter {
   @JSName("on")
   def on_ipcmessage(
     event: `ipc-message`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ js.Any, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* channel */ String, /* repeated */ js.Any, Unit]
   ): this.type = js.native
   /**
     * Emitted when the renderer process sends a synchronous message via
@@ -1114,7 +1137,7 @@ trait WebContents_ extends EventEmitter {
   @JSName("on")
   def on_ipcmessagesync(
     event: `ipc-message-sync`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ js.Any, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* channel */ String, /* repeated */ js.Any, Unit]
   ): this.type = js.native
   /**
     * Emitted when the window leaves a full-screen state triggered by HTML API.
@@ -1130,7 +1153,7 @@ trait WebContents_ extends EventEmitter {
   def on_login(
     event: login,
     listener: js.Function4[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* authenticationResponseDetails */ AuthenticationResponseDetails, 
       /* authInfo */ AuthInfo, 
       /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
@@ -1153,7 +1176,7 @@ trait WebContents_ extends EventEmitter {
   @JSName("on")
   def on_pagefaviconupdated(
     event: `page-favicon-updated`,
-    listener: js.Function2[/* event */ Event, /* favicons */ js.Array[String], Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* favicons */ js.Array[String], Unit]
   ): this.type = js.native
   /**
     * Fired when page title is set during navigation. `explicitSet` is false when
@@ -1162,7 +1185,7 @@ trait WebContents_ extends EventEmitter {
   @JSName("on")
   def on_pagetitleupdated(
     event: `page-title-updated`,
-    listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* title */ String, /* explicitSet */ Boolean, Unit]
   ): this.type = js.native
   /**
     * Emitted when a new frame is generated. Only the dirty area is passed in the
@@ -1171,7 +1194,12 @@ trait WebContents_ extends EventEmitter {
   @JSName("on")
   def on_paint(
     event: paint,
-    listener: js.Function3[/* event */ Event, /* dirtyRect */ Rectangle, /* image */ NativeImage_, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* dirtyRect */ Rectangle, 
+      /* image */ NativeImage_, 
+      Unit
+    ]
   ): this.type = js.native
   /**
     * Emitted when a plugin process has crashed.
@@ -1179,7 +1207,7 @@ trait WebContents_ extends EventEmitter {
   @JSName("on")
   def on_plugincrashed(
     event: `plugin-crashed`,
-    listener: js.Function3[/* event */ Event, /* name */ String, /* version */ String, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* name */ String, /* version */ String, Unit]
   ): this.type = js.native
   /**
     * Emitted when the preload script `preloadPath` throws an unhandled exception
@@ -1188,7 +1216,7 @@ trait WebContents_ extends EventEmitter {
   @JSName("on")
   def on_preloaderror(
     event: `preload-error`,
-    listener: js.Function3[/* event */ Event, /* preloadPath */ String, /* error */ Error, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* preloadPath */ String, /* error */ Error, Unit]
   ): this.type = js.native
   /**
     * Emitted when `remote.getBuiltin()` is called in the renderer process. Calling
@@ -1241,7 +1269,7 @@ trait WebContents_ extends EventEmitter {
   @JSName("on")
   def on_renderprocessgone(
     event: `render-process-gone`,
-    listener: js.Function2[/* event */ Event, /* details */ Details, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* details */ Details, Unit]
   ): this.type = js.native
   /**
     * Emitted when the unresponsive web page becomes responsive again.
@@ -1259,7 +1287,7 @@ trait WebContents_ extends EventEmitter {
   def on_selectbluetoothdevice(
     event: `select-bluetooth-device`,
     listener: js.Function3[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* devices */ js.Array[BluetoothDevice], 
       /* callback */ js.Function1[/* deviceId */ String, Unit], 
       Unit
@@ -1274,7 +1302,7 @@ trait WebContents_ extends EventEmitter {
   def on_selectclientcertificate(
     event: `select-client-certificate`,
     listener: js.Function4[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* certificateList */ js.Array[Certificate], 
       /* callback */ js.Function1[/* certificate */ Certificate, Unit], 
@@ -1290,7 +1318,10 @@ trait WebContents_ extends EventEmitter {
     * Emitted when mouse moves over a link or the keyboard moves the focus to a link.
     */
   @JSName("on")
-  def on_updatetargeturl(event: `update-target-url`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  def on_updatetargeturl(
+    event: `update-target-url`,
+    listener: js.Function2[/* event */ typings.std.Event, /* url */ String, Unit]
+  ): this.type = js.native
   /**
     * Emitted when a `<webview>`'s web contents is being attached to this web
     * contents. Calling `event.preventDefault()` will destroy the guest page.
@@ -1306,7 +1337,7 @@ trait WebContents_ extends EventEmitter {
   def on_willattachwebview(
     event: `will-attach-webview`,
     listener: js.Function3[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* webPreferences */ WebPreferences, 
       /* params */ Record[String, String], 
       Unit
@@ -1325,7 +1356,10 @@ trait WebContents_ extends EventEmitter {
   Calling `event.preventDefault()` will prevent the navigation.
     */
   @JSName("on")
-  def on_willnavigate(event: `will-navigate`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  def on_willnavigate(
+    event: `will-navigate`,
+    listener: js.Function2[/* event */ typings.std.Event, /* url */ String, Unit]
+  ): this.type = js.native
   /**
     * Emitted when a `beforeunload` event handler is attempting to cancel a page
     * unload.
@@ -1334,7 +1368,7 @@ trait WebContents_ extends EventEmitter {
     * and allow the page to be unloaded.
     */
   @JSName("on")
-  def on_willpreventunload(event: `will-prevent-unload`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def on_willpreventunload(event: `will-prevent-unload`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   /**
     * Emitted as a server side redirect occurs during navigation.  For example a 302
     * redirect.
@@ -1349,7 +1383,7 @@ trait WebContents_ extends EventEmitter {
   def on_willredirect(
     event: `will-redirect`,
     listener: js.Function6[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* isInPlace */ Boolean, 
       /* isMainFrame */ Boolean, 
@@ -1373,15 +1407,18 @@ trait WebContents_ extends EventEmitter {
   ): this.type = js.native
   def once(
     event: `zoom-changed`,
-    listener: js.Function2[/* event */ Event, /* zoomDirection */ in | out, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* zoomDirection */ in | out, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_beforeinputevent(event: `before-input-event`, listener: js.Function2[/* event */ Event, /* input */ Input, Unit]): this.type = js.native
+  def once_beforeinputevent(
+    event: `before-input-event`,
+    listener: js.Function2[/* event */ typings.std.Event, /* input */ Input, Unit]
+  ): this.type = js.native
   @JSName("once")
   def once_certificateerror(
     event: `certificate-error`,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* error */ String, 
       /* certificate */ Certificate, 
@@ -1393,7 +1430,7 @@ trait WebContents_ extends EventEmitter {
   def once_consolemessage(
     event: `console-message`,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* level */ Double, 
       /* message */ String, 
       /* line */ Double, 
@@ -1404,15 +1441,15 @@ trait WebContents_ extends EventEmitter {
   @JSName("once")
   def once_contextmenu(
     event: `context-menu`,
-    listener: js.Function2[/* event */ Event, /* params */ ContextMenuParams, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* params */ ContextMenuParams, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_crashed(event: crashed, listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]): this.type = js.native
+  def once_crashed(event: crashed, listener: js.Function2[/* event */ typings.std.Event, /* killed */ Boolean, Unit]): this.type = js.native
   @JSName("once")
   def once_cursorchanged(
     event: `cursor-changed`,
     listener: js.Function6[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* type */ String, 
       /* image */ NativeImage_, 
       /* scale */ Double, 
@@ -1422,7 +1459,7 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def once_desktopcapturergetsources(event: `desktop-capturer-get-sources`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def once_desktopcapturergetsources(event: `desktop-capturer-get-sources`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("once")
   def once_destroyed(event: destroyed, listener: js.Function): this.type = js.native
   @JSName("once")
@@ -1436,18 +1473,18 @@ trait WebContents_ extends EventEmitter {
   @JSName("once")
   def once_didattachwebview(
     event: `did-attach-webview`,
-    listener: js.Function2[/* event */ Event, /* webContents */ this.type, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* webContents */ this.type, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_didchangethemecolor(
     event: `did-change-theme-color`,
-    listener: js.Function2[/* event */ Event, /* color */ String | Null, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* color */ String | Null, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_didfailload(
     event: `did-fail-load`,
     listener: js.Function7[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* errorCode */ Double, 
       /* errorDescription */ String, 
       /* validatedURL */ String, 
@@ -1461,7 +1498,7 @@ trait WebContents_ extends EventEmitter {
   def once_didfailprovisionalload(
     event: `did-fail-provisional-load`,
     listener: js.Function7[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* errorCode */ Double, 
       /* errorDescription */ String, 
       /* validatedURL */ String, 
@@ -1477,7 +1514,7 @@ trait WebContents_ extends EventEmitter {
   def once_didframefinishload(
     event: `did-frame-finish-load`,
     listener: js.Function4[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* isMainFrame */ Boolean, 
       /* frameProcessId */ Double, 
       /* frameRoutingId */ Double, 
@@ -1488,7 +1525,7 @@ trait WebContents_ extends EventEmitter {
   def once_didframenavigate(
     event: `did-frame-navigate`,
     listener: js.Function7[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* httpResponseCode */ Double, 
       /* httpStatusText */ String, 
@@ -1502,7 +1539,7 @@ trait WebContents_ extends EventEmitter {
   def once_didnavigate(
     event: `did-navigate`,
     listener: js.Function4[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* httpResponseCode */ Double, 
       /* httpStatusText */ String, 
@@ -1513,7 +1550,7 @@ trait WebContents_ extends EventEmitter {
   def once_didnavigateinpage(
     event: `did-navigate-in-page`,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* isMainFrame */ Boolean, 
       /* frameProcessId */ Double, 
@@ -1525,7 +1562,7 @@ trait WebContents_ extends EventEmitter {
   def once_didredirectnavigation(
     event: `did-redirect-navigation`,
     listener: js.Function6[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* isInPlace */ Boolean, 
       /* isMainFrame */ Boolean, 
@@ -1540,7 +1577,7 @@ trait WebContents_ extends EventEmitter {
   def once_didstartnavigation(
     event: `did-start-navigation`,
     listener: js.Function6[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* isInPlace */ Boolean, 
       /* isMainFrame */ Boolean, 
@@ -1552,20 +1589,23 @@ trait WebContents_ extends EventEmitter {
   @JSName("once")
   def once_didstoploading(event: `did-stop-loading`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_domready(event: `dom-ready`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def once_domready(event: `dom-ready`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("once")
   def once_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_foundinpage(event: `found-in-page`, listener: js.Function2[/* event */ Event, /* result */ Result, Unit]): this.type = js.native
+  def once_foundinpage(
+    event: `found-in-page`,
+    listener: js.Function2[/* event */ typings.std.Event, /* result */ Result, Unit]
+  ): this.type = js.native
   @JSName("once")
   def once_ipcmessage(
     event: `ipc-message`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ js.Any, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* channel */ String, /* repeated */ js.Any, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_ipcmessagesync(
     event: `ipc-message-sync`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ js.Any, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* channel */ String, /* repeated */ js.Any, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function): this.type = js.native
@@ -1573,7 +1613,7 @@ trait WebContents_ extends EventEmitter {
   def once_login(
     event: login,
     listener: js.Function4[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* authenticationResponseDetails */ AuthenticationResponseDetails, 
       /* authInfo */ AuthInfo, 
       /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
@@ -1587,27 +1627,32 @@ trait WebContents_ extends EventEmitter {
   @JSName("once")
   def once_pagefaviconupdated(
     event: `page-favicon-updated`,
-    listener: js.Function2[/* event */ Event, /* favicons */ js.Array[String], Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* favicons */ js.Array[String], Unit]
   ): this.type = js.native
   @JSName("once")
   def once_pagetitleupdated(
     event: `page-title-updated`,
-    listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* title */ String, /* explicitSet */ Boolean, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_paint(
     event: paint,
-    listener: js.Function3[/* event */ Event, /* dirtyRect */ Rectangle, /* image */ NativeImage_, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* dirtyRect */ Rectangle, 
+      /* image */ NativeImage_, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("once")
   def once_plugincrashed(
     event: `plugin-crashed`,
-    listener: js.Function3[/* event */ Event, /* name */ String, /* version */ String, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* name */ String, /* version */ String, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_preloaderror(
     event: `preload-error`,
-    listener: js.Function3[/* event */ Event, /* preloadPath */ String, /* error */ Error, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* preloadPath */ String, /* error */ Error, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_remotegetbuiltin(
@@ -1631,7 +1676,7 @@ trait WebContents_ extends EventEmitter {
   @JSName("once")
   def once_renderprocessgone(
     event: `render-process-gone`,
-    listener: js.Function2[/* event */ Event, /* details */ Details, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* details */ Details, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_responsive(event: responsive, listener: js.Function): this.type = js.native
@@ -1639,7 +1684,7 @@ trait WebContents_ extends EventEmitter {
   def once_selectbluetoothdevice(
     event: `select-bluetooth-device`,
     listener: js.Function3[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* devices */ js.Array[BluetoothDevice], 
       /* callback */ js.Function1[/* deviceId */ String, Unit], 
       Unit
@@ -1649,7 +1694,7 @@ trait WebContents_ extends EventEmitter {
   def once_selectclientcertificate(
     event: `select-client-certificate`,
     listener: js.Function4[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* certificateList */ js.Array[Certificate], 
       /* callback */ js.Function1[/* certificate */ Certificate, Unit], 
@@ -1659,26 +1704,32 @@ trait WebContents_ extends EventEmitter {
   @JSName("once")
   def once_unresponsive(event: unresponsive, listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_updatetargeturl(event: `update-target-url`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  def once_updatetargeturl(
+    event: `update-target-url`,
+    listener: js.Function2[/* event */ typings.std.Event, /* url */ String, Unit]
+  ): this.type = js.native
   @JSName("once")
   def once_willattachwebview(
     event: `will-attach-webview`,
     listener: js.Function3[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* webPreferences */ WebPreferences, 
       /* params */ Record[String, String], 
       Unit
     ]
   ): this.type = js.native
   @JSName("once")
-  def once_willnavigate(event: `will-navigate`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  def once_willnavigate(
+    event: `will-navigate`,
+    listener: js.Function2[/* event */ typings.std.Event, /* url */ String, Unit]
+  ): this.type = js.native
   @JSName("once")
-  def once_willpreventunload(event: `will-prevent-unload`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def once_willpreventunload(event: `will-prevent-unload`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("once")
   def once_willredirect(
     event: `will-redirect`,
     listener: js.Function6[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* isInPlace */ Boolean, 
       /* isMainFrame */ Boolean, 
@@ -1787,15 +1838,18 @@ trait WebContents_ extends EventEmitter {
   ): this.type = js.native
   def removeListener(
     event: `zoom-changed`,
-    listener: js.Function2[/* event */ Event, /* zoomDirection */ in | out, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* zoomDirection */ in | out, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_beforeinputevent(event: `before-input-event`, listener: js.Function2[/* event */ Event, /* input */ Input, Unit]): this.type = js.native
+  def removeListener_beforeinputevent(
+    event: `before-input-event`,
+    listener: js.Function2[/* event */ typings.std.Event, /* input */ Input, Unit]
+  ): this.type = js.native
   @JSName("removeListener")
   def removeListener_certificateerror(
     event: `certificate-error`,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* error */ String, 
       /* certificate */ Certificate, 
@@ -1807,7 +1861,7 @@ trait WebContents_ extends EventEmitter {
   def removeListener_consolemessage(
     event: `console-message`,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* level */ Double, 
       /* message */ String, 
       /* line */ Double, 
@@ -1818,15 +1872,15 @@ trait WebContents_ extends EventEmitter {
   @JSName("removeListener")
   def removeListener_contextmenu(
     event: `context-menu`,
-    listener: js.Function2[/* event */ Event, /* params */ ContextMenuParams, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* params */ ContextMenuParams, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_crashed(event: crashed, listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]): this.type = js.native
+  def removeListener_crashed(event: crashed, listener: js.Function2[/* event */ typings.std.Event, /* killed */ Boolean, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_cursorchanged(
     event: `cursor-changed`,
     listener: js.Function6[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* type */ String, 
       /* image */ NativeImage_, 
       /* scale */ Double, 
@@ -1836,7 +1890,7 @@ trait WebContents_ extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_desktopcapturergetsources(event: `desktop-capturer-get-sources`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeListener_desktopcapturergetsources(event: `desktop-capturer-get-sources`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_destroyed(event: destroyed, listener: js.Function): this.type = js.native
   @JSName("removeListener")
@@ -1850,18 +1904,18 @@ trait WebContents_ extends EventEmitter {
   @JSName("removeListener")
   def removeListener_didattachwebview(
     event: `did-attach-webview`,
-    listener: js.Function2[/* event */ Event, /* webContents */ this.type, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* webContents */ this.type, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_didchangethemecolor(
     event: `did-change-theme-color`,
-    listener: js.Function2[/* event */ Event, /* color */ String | Null, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* color */ String | Null, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_didfailload(
     event: `did-fail-load`,
     listener: js.Function7[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* errorCode */ Double, 
       /* errorDescription */ String, 
       /* validatedURL */ String, 
@@ -1875,7 +1929,7 @@ trait WebContents_ extends EventEmitter {
   def removeListener_didfailprovisionalload(
     event: `did-fail-provisional-load`,
     listener: js.Function7[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* errorCode */ Double, 
       /* errorDescription */ String, 
       /* validatedURL */ String, 
@@ -1891,7 +1945,7 @@ trait WebContents_ extends EventEmitter {
   def removeListener_didframefinishload(
     event: `did-frame-finish-load`,
     listener: js.Function4[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* isMainFrame */ Boolean, 
       /* frameProcessId */ Double, 
       /* frameRoutingId */ Double, 
@@ -1902,7 +1956,7 @@ trait WebContents_ extends EventEmitter {
   def removeListener_didframenavigate(
     event: `did-frame-navigate`,
     listener: js.Function7[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* httpResponseCode */ Double, 
       /* httpStatusText */ String, 
@@ -1916,7 +1970,7 @@ trait WebContents_ extends EventEmitter {
   def removeListener_didnavigate(
     event: `did-navigate`,
     listener: js.Function4[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* httpResponseCode */ Double, 
       /* httpStatusText */ String, 
@@ -1927,7 +1981,7 @@ trait WebContents_ extends EventEmitter {
   def removeListener_didnavigateinpage(
     event: `did-navigate-in-page`,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* isMainFrame */ Boolean, 
       /* frameProcessId */ Double, 
@@ -1939,7 +1993,7 @@ trait WebContents_ extends EventEmitter {
   def removeListener_didredirectnavigation(
     event: `did-redirect-navigation`,
     listener: js.Function6[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* isInPlace */ Boolean, 
       /* isMainFrame */ Boolean, 
@@ -1954,7 +2008,7 @@ trait WebContents_ extends EventEmitter {
   def removeListener_didstartnavigation(
     event: `did-start-navigation`,
     listener: js.Function6[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* isInPlace */ Boolean, 
       /* isMainFrame */ Boolean, 
@@ -1966,20 +2020,23 @@ trait WebContents_ extends EventEmitter {
   @JSName("removeListener")
   def removeListener_didstoploading(event: `did-stop-loading`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_domready(event: `dom-ready`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeListener_domready(event: `dom-ready`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_foundinpage(event: `found-in-page`, listener: js.Function2[/* event */ Event, /* result */ Result, Unit]): this.type = js.native
+  def removeListener_foundinpage(
+    event: `found-in-page`,
+    listener: js.Function2[/* event */ typings.std.Event, /* result */ Result, Unit]
+  ): this.type = js.native
   @JSName("removeListener")
   def removeListener_ipcmessage(
     event: `ipc-message`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ js.Any, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* channel */ String, /* repeated */ js.Any, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_ipcmessagesync(
     event: `ipc-message-sync`,
-    listener: js.Function3[/* event */ Event, /* channel */ String, /* repeated */ js.Any, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* channel */ String, /* repeated */ js.Any, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function): this.type = js.native
@@ -1987,7 +2044,7 @@ trait WebContents_ extends EventEmitter {
   def removeListener_login(
     event: login,
     listener: js.Function4[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* authenticationResponseDetails */ AuthenticationResponseDetails, 
       /* authInfo */ AuthInfo, 
       /* callback */ js.Function2[/* username */ js.UndefOr[String], /* password */ js.UndefOr[String], Unit], 
@@ -2001,27 +2058,32 @@ trait WebContents_ extends EventEmitter {
   @JSName("removeListener")
   def removeListener_pagefaviconupdated(
     event: `page-favicon-updated`,
-    listener: js.Function2[/* event */ Event, /* favicons */ js.Array[String], Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* favicons */ js.Array[String], Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_pagetitleupdated(
     event: `page-title-updated`,
-    listener: js.Function3[/* event */ Event, /* title */ String, /* explicitSet */ Boolean, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* title */ String, /* explicitSet */ Boolean, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_paint(
     event: paint,
-    listener: js.Function3[/* event */ Event, /* dirtyRect */ Rectangle, /* image */ NativeImage_, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* dirtyRect */ Rectangle, 
+      /* image */ NativeImage_, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_plugincrashed(
     event: `plugin-crashed`,
-    listener: js.Function3[/* event */ Event, /* name */ String, /* version */ String, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* name */ String, /* version */ String, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_preloaderror(
     event: `preload-error`,
-    listener: js.Function3[/* event */ Event, /* preloadPath */ String, /* error */ Error, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* preloadPath */ String, /* error */ Error, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_remotegetbuiltin(
@@ -2045,7 +2107,7 @@ trait WebContents_ extends EventEmitter {
   @JSName("removeListener")
   def removeListener_renderprocessgone(
     event: `render-process-gone`,
-    listener: js.Function2[/* event */ Event, /* details */ Details, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* details */ Details, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_responsive(event: responsive, listener: js.Function): this.type = js.native
@@ -2053,7 +2115,7 @@ trait WebContents_ extends EventEmitter {
   def removeListener_selectbluetoothdevice(
     event: `select-bluetooth-device`,
     listener: js.Function3[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* devices */ js.Array[BluetoothDevice], 
       /* callback */ js.Function1[/* deviceId */ String, Unit], 
       Unit
@@ -2063,7 +2125,7 @@ trait WebContents_ extends EventEmitter {
   def removeListener_selectclientcertificate(
     event: `select-client-certificate`,
     listener: js.Function4[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* certificateList */ js.Array[Certificate], 
       /* callback */ js.Function1[/* certificate */ Certificate, Unit], 
@@ -2073,26 +2135,32 @@ trait WebContents_ extends EventEmitter {
   @JSName("removeListener")
   def removeListener_unresponsive(event: unresponsive, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_updatetargeturl(event: `update-target-url`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  def removeListener_updatetargeturl(
+    event: `update-target-url`,
+    listener: js.Function2[/* event */ typings.std.Event, /* url */ String, Unit]
+  ): this.type = js.native
   @JSName("removeListener")
   def removeListener_willattachwebview(
     event: `will-attach-webview`,
     listener: js.Function3[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* webPreferences */ WebPreferences, 
       /* params */ Record[String, String], 
       Unit
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_willnavigate(event: `will-navigate`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  def removeListener_willnavigate(
+    event: `will-navigate`,
+    listener: js.Function2[/* event */ typings.std.Event, /* url */ String, Unit]
+  ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_willpreventunload(event: `will-prevent-unload`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeListener_willpreventunload(event: `will-prevent-unload`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_willredirect(
     event: `will-redirect`,
     listener: js.Function6[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* url */ String, 
       /* isInPlace */ Boolean, 
       /* isMainFrame */ Boolean, 

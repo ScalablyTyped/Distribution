@@ -1,9 +1,9 @@
 package typings.mobx.computedvalueMod
 
 import typings.mobx.coreObservableMod.IObservable
+import typings.mobx.derivationMod.CaughtException
 import typings.mobx.derivationMod.IDerivationState
 import typings.mobx.derivationMod.TraceMode
-import typings.mobx.internalMod.CaughtException
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,7 +53,7 @@ class ComputedValue[T] protected ()
   var triggeredBy: js.UndefOr[String] = js.native
   var unboundDepsCount: Double = js.native
   var value: js.UndefOr[T | CaughtException] = js.native
-  def computeValue(track: Boolean): T | CaughtException = js.native
+  def computeValue(track: Boolean): T | typings.mobx.internalMod.CaughtException = js.native
   def derivation(): T = js.native
   def onBecomeStale(): Unit = js.native
   def peek(): T = js.native

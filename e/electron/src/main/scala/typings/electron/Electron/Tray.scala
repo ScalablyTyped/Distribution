@@ -49,9 +49,12 @@ trait Tray extends EventEmitter {
   @JSName("addListener")
   def addListener_drop(event: drop, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_dropfiles(event: `drop-files`, listener: js.Function2[/* event */ Event, /* files */ js.Array[String], Unit]): this.type = js.native
+  def addListener_dropfiles(
+    event: `drop-files`,
+    listener: js.Function2[/* event */ typings.std.Event, /* files */ js.Array[String], Unit]
+  ): this.type = js.native
   @JSName("addListener")
-  def addListener_droptext(event: `drop-text`, listener: js.Function2[/* event */ Event, /* text */ String, Unit]): this.type = js.native
+  def addListener_droptext(event: `drop-text`, listener: js.Function2[/* event */ typings.std.Event, /* text */ String, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_mousedown(event: `mouse-down`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
   @JSName("addListener")
@@ -195,14 +198,17 @@ trait Tray extends EventEmitter {
     * @platform darwin
     */
   @JSName("on")
-  def on_dropfiles(event: `drop-files`, listener: js.Function2[/* event */ Event, /* files */ js.Array[String], Unit]): this.type = js.native
+  def on_dropfiles(
+    event: `drop-files`,
+    listener: js.Function2[/* event */ typings.std.Event, /* files */ js.Array[String], Unit]
+  ): this.type = js.native
   /**
     * Emitted when dragged text is dropped in the tray icon.
     *
     * @platform darwin
     */
   @JSName("on")
-  def on_droptext(event: `drop-text`, listener: js.Function2[/* event */ Event, /* text */ String, Unit]): this.type = js.native
+  def on_droptext(event: `drop-text`, listener: js.Function2[/* event */ typings.std.Event, /* text */ String, Unit]): this.type = js.native
   /**
     * Emitted when the mouse clicks the tray icon.
     *
@@ -282,9 +288,12 @@ trait Tray extends EventEmitter {
   @JSName("once")
   def once_drop(event: drop, listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_dropfiles(event: `drop-files`, listener: js.Function2[/* event */ Event, /* files */ js.Array[String], Unit]): this.type = js.native
+  def once_dropfiles(
+    event: `drop-files`,
+    listener: js.Function2[/* event */ typings.std.Event, /* files */ js.Array[String], Unit]
+  ): this.type = js.native
   @JSName("once")
-  def once_droptext(event: `drop-text`, listener: js.Function2[/* event */ Event, /* text */ String, Unit]): this.type = js.native
+  def once_droptext(event: `drop-text`, listener: js.Function2[/* event */ typings.std.Event, /* text */ String, Unit]): this.type = js.native
   @JSName("once")
   def once_mousedown(event: `mouse-down`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
   @JSName("once")
@@ -349,9 +358,12 @@ trait Tray extends EventEmitter {
   @JSName("removeListener")
   def removeListener_drop(event: drop, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_dropfiles(event: `drop-files`, listener: js.Function2[/* event */ Event, /* files */ js.Array[String], Unit]): this.type = js.native
+  def removeListener_dropfiles(
+    event: `drop-files`,
+    listener: js.Function2[/* event */ typings.std.Event, /* files */ js.Array[String], Unit]
+  ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_droptext(event: `drop-text`, listener: js.Function2[/* event */ Event, /* text */ String, Unit]): this.type = js.native
+  def removeListener_droptext(event: `drop-text`, listener: js.Function2[/* event */ typings.std.Event, /* text */ String, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_mousedown(event: `mouse-down`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
   @JSName("removeListener")

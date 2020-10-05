@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColumnTitleProps[RecordType] extends js.Object {
   var filters: js.UndefOr[Record[String, js.Array[String]]] = js.native
   /** @deprecated Please use `sorterColumns` instead. */
-  var sortColumn: js.UndefOr[ColumnType[RecordType]] = js.native
+  var sortColumn: js.UndefOr[typings.rcTable.interfaceMod.ColumnType[RecordType]] = js.native
   var sortColumns: js.UndefOr[js.Array[Column[RecordType]]] = js.native
   /** @deprecated Please use `sorterColumns` instead. */
   var sortOrder: js.UndefOr[SortOrder] = js.native
@@ -38,7 +38,7 @@ object ColumnTitleProps {
     @scala.inline
     def deleteFilters: Self = this.set("filters", js.undefined)
     @scala.inline
-    def setSortColumn(value: ColumnType[RecordType]): Self = this.set("sortColumn", value.asInstanceOf[js.Any])
+    def setSortColumn(value: typings.rcTable.interfaceMod.ColumnType[RecordType]): Self = this.set("sortColumn", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteSortColumn: Self = this.set("sortColumn", js.undefined)
     @scala.inline

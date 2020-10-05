@@ -1,8 +1,8 @@
 package typings.three
 
 import typings.three.bufferGeometryMod.BufferGeometry
-import typings.three.materialsMod.SpriteMaterial
 import typings.three.object3DMod.Object3D
+import typings.three.spriteMaterialMod.SpriteMaterial
 import typings.three.threeBooleans.`true`
 import typings.three.vector2Mod.Vector2
 import scala.scalajs.js

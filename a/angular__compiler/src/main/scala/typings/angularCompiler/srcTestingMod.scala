@@ -1,7 +1,7 @@
 package typings.angularCompiler
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCompiler.mod.CompileReflector
+import typings.angularCompiler.compileReflectorMod.CompileReflector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

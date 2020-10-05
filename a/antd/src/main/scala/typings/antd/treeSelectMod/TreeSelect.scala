@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TreeSelect[T]
   extends Component[TreeSelectProps[T], js.Object, js.Any] {
-  var selectRef: RefObject[typings.rcTreeSelect.mod.default[DefaultValueType]] = js.native
+  var selectRef: RefObject[typings.rcTreeSelect.treeSelectMod.default[DefaultValueType]] = js.native
   def blur(): Unit = js.native
   def focus(): Unit = js.native
   def renderTreeSelect(

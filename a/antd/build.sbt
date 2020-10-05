@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "antd"
-version := "4.5.1-26c6d7"
+version := "4.5.1-223440"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -26,7 +26,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "rc-tree-select" % "4.1.0-b756f5",
   "org.scalablytyped" %%% "rc-trigger" % "4.3.4-c2bbb4",
   "org.scalablytyped" %%% "react" % "16.9-dt-20200711Z-695c73",
-  "org.scalablytyped" %%% "scroll-into-view-if-needed" % "2.2.25-d2d5b5",
+  "org.scalablytyped" %%% "scroll-into-view-if-needed" % "2.2.25-2de588",
   "org.scalablytyped" %%% "std" % "3.9-7c0472")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")

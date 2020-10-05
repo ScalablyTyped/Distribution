@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Domain ()
   extends EventEmitter
      with typings.node.domainMod.global.NodeJS.Domain {
-  var members: js.Array[EventEmitter | Timer] = js.native
+  var members: js.Array[typings.node.eventsMod.global.NodeJS.EventEmitter | Timer] = js.native
   def enter(): Unit = js.native
   def exit(): Unit = js.native
 }

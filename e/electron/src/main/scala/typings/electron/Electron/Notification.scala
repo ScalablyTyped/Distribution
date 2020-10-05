@@ -29,27 +29,27 @@ trait Notification extends EventEmitter {
   var title: String = js.native
   var urgency: normal | critical | low = js.native
   @JSName("addListener")
-  def addListener_action(event: action, listener: js.Function2[/* event */ Event, /* index */ Double, Unit]): this.type = js.native
+  def addListener_action(event: action, listener: js.Function2[/* event */ typings.std.Event, /* index */ Double, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_click(event: click, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addListener_click(event: click, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_close(event: close, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addListener_close(event: close, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_reply(event: reply, listener: js.Function2[/* event */ Event, /* reply */ String, Unit]): this.type = js.native
+  def addListener_reply(event: reply, listener: js.Function2[/* event */ typings.std.Event, /* reply */ String, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_show(event: show, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addListener_show(event: show, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   /**
     * Dismisses the notification.
     */
   def close(): Unit = js.native
   // Docs: http://electronjs.org/docs/api/notification
   @JSName("on")
-  def on_action(event: action, listener: js.Function2[/* event */ Event, /* index */ Double, Unit]): this.type = js.native
+  def on_action(event: action, listener: js.Function2[/* event */ typings.std.Event, /* index */ Double, Unit]): this.type = js.native
   /**
     * Emitted when the notification is clicked by the user.
     */
   @JSName("on")
-  def on_click(event: click, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def on_click(event: click, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   /**
     * Emitted when the notification is closed by manual intervention from the user.
     *
@@ -57,7 +57,7 @@ trait Notification extends EventEmitter {
     * is closed.
     */
   @JSName("on")
-  def on_close(event: close, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def on_close(event: close, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   /**
     * Emitted when the user clicks the "Reply" button on a notification with
     * `hasReply: true`.
@@ -65,34 +65,34 @@ trait Notification extends EventEmitter {
     * @platform darwin
     */
   @JSName("on")
-  def on_reply(event: reply, listener: js.Function2[/* event */ Event, /* reply */ String, Unit]): this.type = js.native
+  def on_reply(event: reply, listener: js.Function2[/* event */ typings.std.Event, /* reply */ String, Unit]): this.type = js.native
   /**
     * Emitted when the notification is shown to the user, note this could be fired
     * multiple times as a notification can be shown multiple times through the
     * `show()` method.
     */
   @JSName("on")
-  def on_show(event: show, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def on_show(event: show, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("once")
-  def once_action(event: action, listener: js.Function2[/* event */ Event, /* index */ Double, Unit]): this.type = js.native
+  def once_action(event: action, listener: js.Function2[/* event */ typings.std.Event, /* index */ Double, Unit]): this.type = js.native
   @JSName("once")
-  def once_click(event: click, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def once_click(event: click, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("once")
-  def once_close(event: close, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def once_close(event: close, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("once")
-  def once_reply(event: reply, listener: js.Function2[/* event */ Event, /* reply */ String, Unit]): this.type = js.native
+  def once_reply(event: reply, listener: js.Function2[/* event */ typings.std.Event, /* reply */ String, Unit]): this.type = js.native
   @JSName("once")
-  def once_show(event: show, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def once_show(event: show, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_action(event: action, listener: js.Function2[/* event */ Event, /* index */ Double, Unit]): this.type = js.native
+  def removeListener_action(event: action, listener: js.Function2[/* event */ typings.std.Event, /* index */ Double, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_click(event: click, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeListener_click(event: click, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_close(event: close, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeListener_close(event: close, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_reply(event: reply, listener: js.Function2[/* event */ Event, /* reply */ String, Unit]): this.type = js.native
+  def removeListener_reply(event: reply, listener: js.Function2[/* event */ typings.std.Event, /* reply */ String, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_show(event: show, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeListener_show(event: show, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   /**
     * Immediately shows the notification to the user, please note this means unlike
     * the HTML5 Notification implementation, instantiating a `new Notification` does

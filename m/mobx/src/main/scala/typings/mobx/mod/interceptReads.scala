@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object interceptReads extends js.Object {
   def apply(`object`: js.Object, property: String, handler: ReadInterceptor[_]): Lambda = js.native
   def apply[T](observableArray: IObservableArray[T], handler: ReadInterceptor[T]): Lambda = js.native
-  def apply[V](observableSet: typings.mobx.internalMod.ObservableSet[V], handler: ReadInterceptor[V]): Lambda = js.native
+  def apply[V](observableSet: typings.mobx.observablesetMod.ObservableSet[V], handler: ReadInterceptor[V]): Lambda = js.native
   def apply[T](value: IObservableValue[T], handler: ReadInterceptor[T]): Lambda = js.native
-  def apply[K, V](observableMap: typings.mobx.internalMod.ObservableMap[K, V], handler: ReadInterceptor[V]): Lambda = js.native
+  def apply[K, V](observableMap: typings.mobx.observablemapMod.ObservableMap[K, V], handler: ReadInterceptor[V]): Lambda = js.native
 }
 

@@ -22,10 +22,20 @@ object intercept extends js.Object {
     observableArray: IObservableArray[T],
     handler: IInterceptor[IArrayWillChange[T] | IArrayWillSplice[T]]
   ): Lambda = js.native
-  def apply[V](observableMap: ObservableSet[V], handler: IInterceptor[ISetWillChange[V]]): Lambda = js.native
+  def apply[V](
+    observableMap: typings.mobx.observablesetMod.ObservableSet[V],
+    handler: IInterceptor[ISetWillChange[V]]
+  ): Lambda = js.native
   def apply[T](value: IObservableValue[T], handler: IInterceptor[IValueWillChange[T]]): Lambda = js.native
   def apply[T /* <: js.Object */, K /* <: /* keyof T */ String */](`object`: T, property: K, handler: IInterceptor[IValueWillChange[_]]): Lambda = js.native
-  def apply[K, V](observableMap: ObservableMap[K, V], handler: IInterceptor[IMapWillChange[K, V]]): Lambda = js.native
-  def apply[K, V](observableMap: ObservableMap[K, V], property: K, handler: IInterceptor[IValueWillChange[V]]): Lambda = js.native
+  def apply[K, V](
+    observableMap: typings.mobx.observablemapMod.ObservableMap[K, V],
+    handler: IInterceptor[IMapWillChange[K, V]]
+  ): Lambda = js.native
+  def apply[K, V](
+    observableMap: typings.mobx.observablemapMod.ObservableMap[K, V],
+    property: K,
+    handler: IInterceptor[IValueWillChange[V]]
+  ): Lambda = js.native
 }
 

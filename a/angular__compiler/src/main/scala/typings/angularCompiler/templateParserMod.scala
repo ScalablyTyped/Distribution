@@ -11,8 +11,8 @@ import typings.angularCompiler.configMod.CompilerConfig
 import typings.angularCompiler.coreMod.SchemaMetadata
 import typings.angularCompiler.elementSchemaRegistryMod.ElementSchemaRegistry
 import typings.angularCompiler.htmlParserMod.HtmlParser
-import typings.angularCompiler.htmlParserMod.ParseTreeResult
 import typings.angularCompiler.interpolationConfigMod.InterpolationConfig
+import typings.angularCompiler.mlParserParserMod.ParseTreeResult
 import typings.angularCompiler.parserMod.Parser
 import typings.angularCompiler.selectorMod.CssSelector
 import typings.angularCompiler.srcParseUtilMod.ParseError
@@ -90,8 +90,8 @@ object templateParserMod extends js.Object {
     var _reflector: js.Any = js.native
     var _schemaRegistry: js.Any = js.native
     var transforms: js.Array[TemplateAstVisitor] = js.native
-    def expandHtml(htmlAstWithErrors: ParseTreeResult): ParseTreeResult = js.native
-    def expandHtml(htmlAstWithErrors: ParseTreeResult, forced: Boolean): ParseTreeResult = js.native
+    def expandHtml(htmlAstWithErrors: ParseTreeResult): typings.angularCompiler.htmlParserMod.ParseTreeResult = js.native
+    def expandHtml(htmlAstWithErrors: ParseTreeResult, forced: Boolean): typings.angularCompiler.htmlParserMod.ParseTreeResult = js.native
     def expressionParser: Parser = js.native
     def getInterpolationConfig(component: CompileDirectiveMetadata): js.UndefOr[InterpolationConfig] = js.native
     def parse(

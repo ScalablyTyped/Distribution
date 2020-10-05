@@ -12,7 +12,7 @@ trait ServiceWorkers extends EventEmitter {
   @JSName("addListener")
   def addListener_consolemessage(
     event: `console-message`,
-    listener: js.Function2[/* event */ Event, /* messageDetails */ MessageDetails, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* messageDetails */ MessageDetails, Unit]
   ): this.type = js.native
   /**
     * A ServiceWorkerInfo object where the keys are the service worker version ID and
@@ -33,17 +33,17 @@ trait ServiceWorkers extends EventEmitter {
   @JSName("on")
   def on_consolemessage(
     event: `console-message`,
-    listener: js.Function2[/* event */ Event, /* messageDetails */ MessageDetails, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* messageDetails */ MessageDetails, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_consolemessage(
     event: `console-message`,
-    listener: js.Function2[/* event */ Event, /* messageDetails */ MessageDetails, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* messageDetails */ MessageDetails, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_consolemessage(
     event: `console-message`,
-    listener: js.Function2[/* event */ Event, /* messageDetails */ MessageDetails, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* messageDetails */ MessageDetails, Unit]
   ): this.type = js.native
 }
 

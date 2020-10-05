@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait TypeofTextArea extends Instantiable1[/* props */ TextAreaProps, default] {
-  def getDerivedStateFromProps(nextProps: TextAreaProps): `0` | Null = js.native
+  def getDerivedStateFromProps(nextProps: typings.rcTextarea.mod.TextAreaProps): `0` | Null = js.native
 }
 

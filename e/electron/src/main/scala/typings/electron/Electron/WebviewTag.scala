@@ -367,9 +367,9 @@ trait WebviewTag extends HTMLElement {
     * guest attempts to close itself.
     */
   @JSName("addEventListener")
-  def addEventListener_close(event: close, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addEventListener_close(event: close, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addEventListener")
-  def addEventListener_close(event: close, listener: js.Function1[/* event */ Event, Unit], useCapture: Boolean): this.type = js.native
+  def addEventListener_close(event: close, listener: js.Function1[/* event */ typings.std.Event, Unit], useCapture: Boolean): this.type = js.native
   @JSName("addEventListener")
   def addEventListener_close(`type`: close, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.Event, _]): Unit = js.native
   @JSName("addEventListener")
@@ -412,9 +412,9 @@ trait WebviewTag extends HTMLElement {
     * Fired when the renderer process is crashed.
     */
   @JSName("addEventListener")
-  def addEventListener_crashed(event: crashed, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addEventListener_crashed(event: crashed, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addEventListener")
-  def addEventListener_crashed(event: crashed, listener: js.Function1[/* event */ Event, Unit], useCapture: Boolean): this.type = js.native
+  def addEventListener_crashed(event: crashed, listener: js.Function1[/* event */ typings.std.Event, Unit], useCapture: Boolean): this.type = js.native
   @JSName("addEventListener")
   def addEventListener_cuechange(
     `type`: cuechange,
@@ -446,30 +446,42 @@ trait WebviewTag extends HTMLElement {
     * Fired when the WebContents is destroyed.
     */
   @JSName("addEventListener")
-  def addEventListener_destroyed(event: destroyed, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addEventListener_destroyed(event: destroyed, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addEventListener")
-  def addEventListener_destroyed(event: destroyed, listener: js.Function1[/* event */ Event, Unit], useCapture: Boolean): this.type = js.native
+  def addEventListener_destroyed(event: destroyed, listener: js.Function1[/* event */ typings.std.Event, Unit], useCapture: Boolean): this.type = js.native
   /**
     * Emitted when DevTools is closed.
     */
   @JSName("addEventListener")
-  def addEventListener_devtoolsclosed(event: `devtools-closed`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addEventListener_devtoolsclosed(event: `devtools-closed`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addEventListener")
-  def addEventListener_devtoolsclosed(event: `devtools-closed`, listener: js.Function1[/* event */ Event, Unit], useCapture: Boolean): this.type = js.native
+  def addEventListener_devtoolsclosed(
+    event: `devtools-closed`,
+    listener: js.Function1[/* event */ typings.std.Event, Unit],
+    useCapture: Boolean
+  ): this.type = js.native
   /**
     * Emitted when DevTools is focused / opened.
     */
   @JSName("addEventListener")
-  def addEventListener_devtoolsfocused(event: `devtools-focused`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addEventListener_devtoolsfocused(event: `devtools-focused`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addEventListener")
-  def addEventListener_devtoolsfocused(event: `devtools-focused`, listener: js.Function1[/* event */ Event, Unit], useCapture: Boolean): this.type = js.native
+  def addEventListener_devtoolsfocused(
+    event: `devtools-focused`,
+    listener: js.Function1[/* event */ typings.std.Event, Unit],
+    useCapture: Boolean
+  ): this.type = js.native
   /**
     * Emitted when DevTools is opened.
     */
   @JSName("addEventListener")
-  def addEventListener_devtoolsopened(event: `devtools-opened`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addEventListener_devtoolsopened(event: `devtools-opened`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addEventListener")
-  def addEventListener_devtoolsopened(event: `devtools-opened`, listener: js.Function1[/* event */ Event, Unit], useCapture: Boolean): this.type = js.native
+  def addEventListener_devtoolsopened(
+    event: `devtools-opened`,
+    listener: js.Function1[/* event */ typings.std.Event, Unit],
+    useCapture: Boolean
+  ): this.type = js.native
   /**
     * Emitted when a page's theme color changes. This is usually due to encountering a
     * meta tag:
@@ -502,9 +514,13 @@ trait WebviewTag extends HTMLElement {
     * spinning, and the `onload` event is dispatched.
     */
   @JSName("addEventListener")
-  def addEventListener_didfinishload(event: `did-finish-load`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addEventListener_didfinishload(event: `did-finish-load`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addEventListener")
-  def addEventListener_didfinishload(event: `did-finish-load`, listener: js.Function1[/* event */ Event, Unit], useCapture: Boolean): this.type = js.native
+  def addEventListener_didfinishload(
+    event: `did-finish-load`,
+    listener: js.Function1[/* event */ typings.std.Event, Unit],
+    useCapture: Boolean
+  ): this.type = js.native
   /**
     * Fired when a frame has done navigation.
     */
@@ -550,23 +566,35 @@ trait WebviewTag extends HTMLElement {
     * Corresponds to the points in time when the spinner of the tab starts spinning.
     */
   @JSName("addEventListener")
-  def addEventListener_didstartloading(event: `did-start-loading`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addEventListener_didstartloading(event: `did-start-loading`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addEventListener")
-  def addEventListener_didstartloading(event: `did-start-loading`, listener: js.Function1[/* event */ Event, Unit], useCapture: Boolean): this.type = js.native
+  def addEventListener_didstartloading(
+    event: `did-start-loading`,
+    listener: js.Function1[/* event */ typings.std.Event, Unit],
+    useCapture: Boolean
+  ): this.type = js.native
   /**
     * Corresponds to the points in time when the spinner of the tab stops spinning.
     */
   @JSName("addEventListener")
-  def addEventListener_didstoploading(event: `did-stop-loading`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addEventListener_didstoploading(event: `did-stop-loading`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addEventListener")
-  def addEventListener_didstoploading(event: `did-stop-loading`, listener: js.Function1[/* event */ Event, Unit], useCapture: Boolean): this.type = js.native
+  def addEventListener_didstoploading(
+    event: `did-stop-loading`,
+    listener: js.Function1[/* event */ typings.std.Event, Unit],
+    useCapture: Boolean
+  ): this.type = js.native
   /**
     * Fired when document in the given frame is loaded.
     */
   @JSName("addEventListener")
-  def addEventListener_domready(event: `dom-ready`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addEventListener_domready(event: `dom-ready`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addEventListener")
-  def addEventListener_domready(event: `dom-ready`, listener: js.Function1[/* event */ Event, Unit], useCapture: Boolean): this.type = js.native
+  def addEventListener_domready(
+    event: `dom-ready`,
+    listener: js.Function1[/* event */ typings.std.Event, Unit],
+    useCapture: Boolean
+  ): this.type = js.native
   @JSName("addEventListener")
   def addEventListener_drag(`type`: drag, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, _]): Unit = js.native
   @JSName("addEventListener")
@@ -665,11 +693,11 @@ trait WebviewTag extends HTMLElement {
     * Fired when page enters fullscreen triggered by HTML API.
     */
   @JSName("addEventListener")
-  def addEventListener_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addEventListener_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addEventListener")
   def addEventListener_enterhtmlfullscreen(
     event: `enter-html-full-screen`,
-    listener: js.Function1[/* event */ Event, Unit],
+    listener: js.Function1[/* event */ typings.std.Event, Unit],
     useCapture: Boolean
   ): this.type = js.native
   @JSName("addEventListener")
@@ -815,11 +843,11 @@ trait WebviewTag extends HTMLElement {
     * Fired when page leaves fullscreen triggered by HTML API.
     */
   @JSName("addEventListener")
-  def addEventListener_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addEventListener_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addEventListener")
   def addEventListener_leavehtmlfullscreen(
     event: `leave-html-full-screen`,
-    listener: js.Function1[/* event */ Event, Unit],
+    listener: js.Function1[/* event */ typings.std.Event, Unit],
     useCapture: Boolean
   ): this.type = js.native
   @JSName("addEventListener")
@@ -892,18 +920,22 @@ trait WebviewTag extends HTMLElement {
     * Emitted when media is paused or done playing.
     */
   @JSName("addEventListener")
-  def addEventListener_mediapaused(event: `media-paused`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addEventListener_mediapaused(event: `media-paused`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addEventListener")
-  def addEventListener_mediapaused(event: `media-paused`, listener: js.Function1[/* event */ Event, Unit], useCapture: Boolean): this.type = js.native
+  def addEventListener_mediapaused(
+    event: `media-paused`,
+    listener: js.Function1[/* event */ typings.std.Event, Unit],
+    useCapture: Boolean
+  ): this.type = js.native
   /**
     * Emitted when media starts playing.
     */
   @JSName("addEventListener")
-  def addEventListener_mediastartedplaying(event: `media-started-playing`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addEventListener_mediastartedplaying(event: `media-started-playing`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addEventListener")
   def addEventListener_mediastartedplaying(
     event: `media-started-playing`,
-    listener: js.Function1[/* event */ Event, Unit],
+    listener: js.Function1[/* event */ typings.std.Event, Unit],
     useCapture: Boolean
   ): this.type = js.native
   @JSName("addEventListener")
@@ -1700,7 +1732,7 @@ trait WebviewTag extends HTMLElement {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_close(event: close, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeEventListener_close(event: close, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeEventListener")
   def removeEventListener_close(`type`: close, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.Event, _]): Unit = js.native
   @JSName("removeEventListener")
@@ -1728,7 +1760,7 @@ trait WebviewTag extends HTMLElement {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_crashed(event: crashed, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeEventListener_crashed(event: crashed, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeEventListener")
   def removeEventListener_cuechange(
     `type`: cuechange,
@@ -1757,13 +1789,13 @@ trait WebviewTag extends HTMLElement {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_destroyed(event: destroyed, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeEventListener_destroyed(event: destroyed, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeEventListener")
-  def removeEventListener_devtoolsclosed(event: `devtools-closed`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeEventListener_devtoolsclosed(event: `devtools-closed`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeEventListener")
-  def removeEventListener_devtoolsfocused(event: `devtools-focused`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeEventListener_devtoolsfocused(event: `devtools-focused`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeEventListener")
-  def removeEventListener_devtoolsopened(event: `devtools-opened`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeEventListener_devtoolsopened(event: `devtools-opened`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeEventListener")
   def removeEventListener_didchangethemecolor(
     event: `did-change-theme-color`,
@@ -1772,7 +1804,7 @@ trait WebviewTag extends HTMLElement {
   @JSName("removeEventListener")
   def removeEventListener_didfailload(event: `did-fail-load`, listener: js.Function1[/* event */ DidFailLoadEvent, Unit]): this.type = js.native
   @JSName("removeEventListener")
-  def removeEventListener_didfinishload(event: `did-finish-load`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeEventListener_didfinishload(event: `did-finish-load`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeEventListener")
   def removeEventListener_didframefinishload(event: `did-frame-finish-load`, listener: js.Function1[/* event */ DidFrameFinishLoadEvent, Unit]): this.type = js.native
   @JSName("removeEventListener")
@@ -1780,11 +1812,11 @@ trait WebviewTag extends HTMLElement {
   @JSName("removeEventListener")
   def removeEventListener_didnavigateinpage(event: `did-navigate-in-page`, listener: js.Function1[/* event */ DidNavigateInPageEvent, Unit]): this.type = js.native
   @JSName("removeEventListener")
-  def removeEventListener_didstartloading(event: `did-start-loading`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeEventListener_didstartloading(event: `did-start-loading`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeEventListener")
-  def removeEventListener_didstoploading(event: `did-stop-loading`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeEventListener_didstoploading(event: `did-stop-loading`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeEventListener")
-  def removeEventListener_domready(event: `dom-ready`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeEventListener_domready(event: `dom-ready`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeEventListener")
   def removeEventListener_drag(`type`: drag, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ DragEvent, _]): Unit = js.native
   @JSName("removeEventListener")
@@ -1880,7 +1912,7 @@ trait WebviewTag extends HTMLElement {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeEventListener_enterhtmlfullscreen(event: `enter-html-full-screen`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ ErrorEvent, _]): Unit = js.native
   @JSName("removeEventListener")
@@ -2000,7 +2032,7 @@ trait WebviewTag extends HTMLElement {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeEventListener_leavehtmlfullscreen(event: `leave-html-full-screen`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeEventListener")
   def removeEventListener_load(`type`: load, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ typings.std.Event, _]): Unit = js.native
   @JSName("removeEventListener")
@@ -2056,9 +2088,9 @@ trait WebviewTag extends HTMLElement {
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_mediapaused(event: `media-paused`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeEventListener_mediapaused(event: `media-paused`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeEventListener")
-  def removeEventListener_mediastartedplaying(event: `media-started-playing`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeEventListener_mediastartedplaying(event: `media-started-playing`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeEventListener")
   def removeEventListener_mousedown(`type`: mousedown_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ MouseEvent, _]): Unit = js.native
   @JSName("removeEventListener")

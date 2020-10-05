@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Select[ValueType /* <: SelectValue */]
   extends Component[SelectProps[ValueType], js.Object, js.Any] {
-  var selectRef: RefObject[typings.rcSelect.mod.default[ValueType]] = js.native
+  var selectRef: RefObject[typings.rcSelect.selectMod.default[ValueType]] = js.native
   def blur(): Unit = js.native
   def focus(): Unit = js.native
   def getMode(): js.UndefOr[multiple | tags | SECRET_COMBOBOX_MODE_DO_NOT_USE | combobox] = js.native

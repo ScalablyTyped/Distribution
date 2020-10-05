@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object getMapLikeKeys extends js.Object {
   def apply[V](map: js.Any): js.Array[String] = js.native
   def apply[V](map: IKeyValueMap[V]): js.Array[String] = js.native
-  def apply[K, V](map: ObservableMap[K, V]): js.Array[K] = js.native
+  def apply[K, V](map: typings.mobx.observablemapMod.ObservableMap[K, V]): js.Array[K] = js.native
 }
 

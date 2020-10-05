@@ -13,7 +13,7 @@ import typings.expoFileSystem.fileSystemTypesMod.FileSystemUploadOptions
 import typings.expoFileSystem.fileSystemTypesMod.FileSystemUploadResult
 import typings.expoFileSystem.fileSystemTypesMod.ReadingOptions
 import typings.expoFileSystem.fileSystemTypesMod.WritingOptions
-import typings.unimodulesCore.mod.EventEmitter
+import typings.unimodulesReactNativeAdapter.eventEmitterMod.EventEmitter
 import typings.unimodulesReactNativeAdapter.eventEmitterMod.Subscription
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("expo-location", "EventEmitter")
 @js.native
 object EventEmitter
-  extends TopLevel[typings.unimodulesCore.mod.EventEmitter]
+  extends TopLevel[typings.unimodulesReactNativeAdapter.eventEmitterMod.EventEmitter]
 

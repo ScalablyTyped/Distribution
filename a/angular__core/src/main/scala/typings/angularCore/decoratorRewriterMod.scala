@@ -1,6 +1,6 @@
 package typings.angularCore
 
-import typings.angularCompiler.mod.AotCompiler
+import typings.angularCompiler.aotCompilerMod.AotCompiler
 import typings.angularCore.importManagerMod.ImportManager
 import typings.angularCore.ngDecoratorsMod.NgDecorator
 import typings.typescript.mod.Decorator

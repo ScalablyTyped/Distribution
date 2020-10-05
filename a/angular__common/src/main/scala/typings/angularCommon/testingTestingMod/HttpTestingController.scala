@@ -1,7 +1,7 @@
 package typings.angularCommon.testingTestingMod
 
 import typings.angularCommon.anon.IgnoreCancelled
-import typings.angularCommon.httpMod.HttpRequest
+import typings.angularCommon.httpHttpMod.HttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,11 @@
 package typings.antd.useFilterMod
 
 import typings.antd.tableInterfaceMod.ColumnGroupType
-import typings.antd.tableInterfaceMod.ColumnType
 import typings.antd.tableInterfaceMod.ColumnsType
 import typings.antd.tableInterfaceMod.GetPopupContainer
 import typings.antd.tableInterfaceMod.Key
 import typings.antd.tableInterfaceMod.TableLocale
+import typings.rcTable.interfaceMod.ColumnType
 import typings.std.HTMLElement
 import typings.std.Record
 import scala.scalajs.js

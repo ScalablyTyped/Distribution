@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expo-font"
-version := "8.2.2-8dd788"
+version := "8.2.2-05ece3"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

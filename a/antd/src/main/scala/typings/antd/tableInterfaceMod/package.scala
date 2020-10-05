@@ -10,7 +10,7 @@ package object tableInterfaceMod {
     typings.react.mod.ReactNode
   ])
   type ColumnsType[RecordType] = js.Array[
-    typings.antd.tableInterfaceMod.ColumnGroupType[RecordType] | typings.antd.tableInterfaceMod.ColumnType[RecordType]
+    typings.antd.tableInterfaceMod.ColumnGroupType[RecordType] | typings.rcTable.interfaceMod.ColumnType[RecordType]
   ]
   type CompareFn[T] = js.Function3[
     /* a */ T, 

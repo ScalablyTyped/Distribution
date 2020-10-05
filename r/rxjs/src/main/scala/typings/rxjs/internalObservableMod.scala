@@ -9,9 +9,9 @@ import typings.rxjs.typesMod.SchedulerLike
 import typings.rxjs.typesMod.Subscribable
 import typings.rxjs.typesMod.SubscribableOrPromise
 import typings.rxjs.typesMod.TeardownLogic
+import typings.std.Promise
 import typings.std.PromiseConstructor
 import typings.std.PromiseConstructorLike
-import typings.std.global.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

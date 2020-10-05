@@ -2,9 +2,7 @@ package typings.angularCommon.testingTestingMod
 
 import typings.angularCommon.anon.IgnoreCancelled
 import typings.angularCommon.httpHttpMod.HttpBackend
-import typings.angularCommon.httpHttpMod.HttpEvent
-import typings.angularCommon.httpMod.HttpRequest
-import typings.rxjs.mod.Observable_
+import typings.angularCommon.httpHttpMod.HttpRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -97,10 +95,6 @@ class ɵangularPackagesCommonHttpTestingTestingA () extends HttpBackend {
     */
   def expectOne(`match`: RequestMatch): TestRequest = js.native
   def expectOne(`match`: RequestMatch, description: String): TestRequest = js.native
-  /**
-    * Handle an incoming request by queueing it in the list of open requests.
-    */
-  def handle(req: HttpRequest[_]): Observable_[HttpEvent[_]] = js.native
   /**
     * Search for requests in the list of open requests, and return all that match
     * without asserting anything about the number of matches.

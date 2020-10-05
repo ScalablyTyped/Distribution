@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Http2ServerRequest protected () extends Readable {
   def this(
     stream: ServerHttp2Stream,
-    headers: IncomingHttpHeaders,
+    headers: typings.node.httpMod.IncomingHttpHeaders,
     options: ReadableOptions,
     rawHeaders: js.Array[String]
   ) = this()
@@ -23,7 +23,7 @@ class Http2ServerRequest protected () extends Readable {
   val authority: String = js.native
   val complete: Boolean = js.native
   val connection: Socket | TLSSocket = js.native
-  val headers: IncomingHttpHeaders = js.native
+  val headers: typings.node.httpMod.IncomingHttpHeaders = js.native
   val httpVersion: String = js.native
   val httpVersionMajor: Double = js.native
   val httpVersionMinor: Double = js.native
@@ -33,7 +33,7 @@ class Http2ServerRequest protected () extends Readable {
   val scheme: String = js.native
   val socket: Socket | TLSSocket = js.native
   val stream: ServerHttp2Stream = js.native
-  val trailers: IncomingHttpHeaders = js.native
+  val trailers: typings.node.httpMod.IncomingHttpHeaders = js.native
   val url: String = js.native
   @JSName("addListener")
   def addListener_aborted(

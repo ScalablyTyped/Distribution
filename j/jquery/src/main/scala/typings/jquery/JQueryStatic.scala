@@ -18,7 +18,6 @@ import typings.jquery.JQuery.Promise3
 import typings.jquery.JQuery.Queue
 import typings.jquery.JQuery.QueueFunction
 import typings.jquery.JQuery.Selector
-import typings.jquery.JQuery.Selectors
 import typings.jquery.JQuery.SpeedSettings
 import typings.jquery.JQuery.Thenable
 import typings.jquery.JQuery.TickFunction
@@ -43,6 +42,7 @@ import typings.jquery.jqueryStrings.regexp
 import typings.jquery.jqueryStrings.string
 import typings.jquery.jqueryStrings.symbol
 import typings.jquery.jqueryStrings.undefined
+import typings.sizzle.mod.Selectors
 import typings.std.ArrayLike
 import typings.std.Document
 import typings.std.Element

@@ -1,8 +1,8 @@
 package typings.angularCompiler
 
+import typings.angularCompiler.compileReflectorMod.CompileReflector
 import typings.angularCompiler.coreMod.NgModule
 import typings.angularCompiler.coreMod.Type
-import typings.angularCompiler.mod.CompileReflector
 import typings.angularCompiler.mod.NgModuleResolver
 import scala.scalajs.js
 import scala.scalajs.js.`|`

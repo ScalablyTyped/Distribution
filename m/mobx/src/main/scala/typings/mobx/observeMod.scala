@@ -1,14 +1,14 @@
 package typings.mobx
 
 import typings.mobx.computedvalueMod.IComputedValue
-import typings.mobx.internalMod.ObservableMap
-import typings.mobx.internalMod.ObservableSet
 import typings.mobx.observablearrayMod.IArrayChange
 import typings.mobx.observablearrayMod.IArraySplice
 import typings.mobx.observablearrayMod.IObservableArray
 import typings.mobx.observablemapMod.IMapDidChange
+import typings.mobx.observablemapMod.ObservableMap
 import typings.mobx.observableobjectMod.IObjectDidChange
 import typings.mobx.observablesetMod.ISetDidChange
+import typings.mobx.observablesetMod.ObservableSet
 import typings.mobx.observablevalueMod.IObservableValue
 import typings.mobx.observablevalueMod.IValueDidChange
 import typings.mobx.utilsMod.Lambda

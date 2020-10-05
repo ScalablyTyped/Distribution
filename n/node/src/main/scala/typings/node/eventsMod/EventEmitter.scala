@@ -27,7 +27,7 @@ object EventEmitter extends js.Object {
     */
   val errorMonitor: js.Symbol = js.native
   /** @deprecated since v4.0.0 */
-  def listenerCount(emitter: EventEmitter, event: String): Double = js.native
-  def listenerCount(emitter: EventEmitter, event: js.Symbol): Double = js.native
+  def listenerCount(emitter: typings.node.eventsMod.global.NodeJS.EventEmitter, event: String): Double = js.native
+  def listenerCount(emitter: typings.node.eventsMod.global.NodeJS.EventEmitter, event: js.Symbol): Double = js.native
 }
 

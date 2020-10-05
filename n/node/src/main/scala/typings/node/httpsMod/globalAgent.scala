@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("https", "globalAgent")
 @js.native
-object globalAgent extends TopLevel[Agent]
+object globalAgent
+  extends TopLevel[typings.node.httpMod.Agent]
 

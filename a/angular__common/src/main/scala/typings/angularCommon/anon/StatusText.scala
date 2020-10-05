@@ -1,7 +1,7 @@
 package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCommon.httpMod.HttpHeaders
+import typings.angularCommon.httpHttpMod.HttpHeaders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

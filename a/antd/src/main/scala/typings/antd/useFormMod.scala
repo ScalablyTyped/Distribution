@@ -2,7 +2,7 @@ package typings.antd
 
 import typings.antd.anon.ItemRef
 import typings.rcFieldForm.interfaceMod.NamePath
-import typings.scrollIntoViewIfNeeded.mod.Options
+import typings.scrollIntoViewIfNeeded.typesMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,10 +17,10 @@ object useFormMod extends js.Object {
     var __INTERNAL__ : ItemRef = js.native
     def getFieldInstance(name: NamePath): js.Any = js.native
     def scrollToField(name: NamePath): Unit = js.native
-    def scrollToField(name: NamePath, options: Options[_]): Unit = js.native
+    def scrollToField(name: NamePath, options: Options): Unit = js.native
   }
   
   def default(): js.Array[FormInstance] = js.native
-  def default(form: FormInstance): js.Array[FormInstance] = js.native
+  def default(form: typings.rcFieldForm.interfaceMod.FormInstance): js.Array[FormInstance] = js.native
 }
 

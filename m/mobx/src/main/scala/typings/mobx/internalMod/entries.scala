@@ -15,7 +15,7 @@ object entries extends js.Object {
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
-  def apply[T](set: ObservableSet[T]): js.Array[js.Tuple2[T, T]] = js.native
-  def apply[K, T](map: ObservableMap[K, T]): js.Array[js.Tuple2[K, T]] = js.native
+  def apply[T](set: typings.mobx.observablesetMod.ObservableSet[T]): js.Array[js.Tuple2[T, T]] = js.native
+  def apply[K, T](map: typings.mobx.observablemapMod.ObservableMap[K, T]): js.Array[js.Tuple2[K, T]] = js.native
 }
 

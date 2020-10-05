@@ -12,7 +12,7 @@ object values extends js.Object {
   def apply[T](obj: T): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ] = js.native
-  def apply[T](set: typings.mobx.internalMod.ObservableSet[T]): js.Array[T] = js.native
-  def apply[K, T](map: typings.mobx.internalMod.ObservableMap[K, T]): js.Array[T] = js.native
+  def apply[T](set: typings.mobx.observablesetMod.ObservableSet[T]): js.Array[T] = js.native
+  def apply[K, T](map: typings.mobx.observablemapMod.ObservableMap[K, T]): js.Array[T] = js.native
 }
 

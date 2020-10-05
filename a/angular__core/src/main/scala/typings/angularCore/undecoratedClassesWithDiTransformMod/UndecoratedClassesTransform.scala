@@ -1,6 +1,6 @@
 package typings.angularCore.undecoratedClassesWithDiTransformMod
 
-import typings.angularCompiler.mod.AotCompiler
+import typings.angularCompiler.aotCompilerMod.AotCompiler
 import typings.angularCore.undecoratedClassesWithDiUpdateRecorderMod.UpdateRecorder
 import typings.typescript.mod.ClassDeclaration
 import typings.typescript.mod.SourceFile

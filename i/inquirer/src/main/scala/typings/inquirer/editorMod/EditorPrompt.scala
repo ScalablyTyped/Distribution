@@ -2,8 +2,8 @@ package typings.inquirer.editorMod
 
 import typings.inquirer.mod.prompts.FailedPromptStateData
 import typings.inquirer.mod.prompts.SuccessfulPromptStateData
-import typings.rxjs.mod.Subject
-import typings.rxjs.mod.Subscription
+import typings.rxjs.subjectMod.Subject
+import typings.rxjs.subscriptionMod.Subscription
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -29,13 +29,15 @@ object ServerStackItem {
         x
     }
     @scala.inline
-    def setHandleFunction2(value: (/* req */ IncomingMessage, /* res */ ServerResponse) => Unit): Self = this.set("handle", js.Any.fromFunction2(value))
+    def setHandleFunction2(value: (/* req */ typings.node.httpMod.IncomingMessage, /* res */ ServerResponse) => Unit): Self = this.set("handle", js.Any.fromFunction2(value))
     @scala.inline
     def setHandleFunction4(
-      value: (/* err */ js.Any, /* req */ IncomingMessage, /* res */ ServerResponse, /* next */ NextFunction) => Unit
+      value: (/* err */ js.Any, /* req */ typings.node.httpMod.IncomingMessage, /* res */ ServerResponse, /* next */ NextFunction) => Unit
     ): Self = this.set("handle", js.Any.fromFunction4(value))
     @scala.inline
-    def setHandleFunction3(value: (/* req */ IncomingMessage, /* res */ ServerResponse, /* next */ NextFunction) => Unit): Self = this.set("handle", js.Any.fromFunction3(value))
+    def setHandleFunction3(
+      value: (/* req */ typings.node.httpMod.IncomingMessage, /* res */ ServerResponse, /* next */ NextFunction) => Unit
+    ): Self = this.set("handle", js.Any.fromFunction3(value))
     @scala.inline
     def setHandle(value: ServerHandle): Self = this.set("handle", value.asInstanceOf[js.Any])
     @scala.inline

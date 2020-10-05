@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Debugger extends EventEmitter {
   @JSName("addListener")
-  def addListener_detach(event: detach, listener: js.Function2[/* event */ Event, /* reason */ String, Unit]): this.type = js.native
+  def addListener_detach(event: detach, listener: js.Function2[/* event */ typings.std.Event, /* reason */ String, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_message(
     event: message,
     listener: js.Function4[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* method */ String, 
       /* params */ js.Any, 
       /* sessionId */ String, 
@@ -41,7 +41,7 @@ trait Debugger extends EventEmitter {
     * `webContents` is closed or devtools is invoked for the attached `webContents`.
     */
   @JSName("on")
-  def on_detach(event: detach, listener: js.Function2[/* event */ Event, /* reason */ String, Unit]): this.type = js.native
+  def on_detach(event: detach, listener: js.Function2[/* event */ typings.std.Event, /* reason */ String, Unit]): this.type = js.native
   /**
     * Emitted whenever the debugging target issues an instrumentation event.
     */
@@ -49,7 +49,7 @@ trait Debugger extends EventEmitter {
   def on_message(
     event: message,
     listener: js.Function4[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* method */ String, 
       /* params */ js.Any, 
       /* sessionId */ String, 
@@ -57,12 +57,12 @@ trait Debugger extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def once_detach(event: detach, listener: js.Function2[/* event */ Event, /* reason */ String, Unit]): this.type = js.native
+  def once_detach(event: detach, listener: js.Function2[/* event */ typings.std.Event, /* reason */ String, Unit]): this.type = js.native
   @JSName("once")
   def once_message(
     event: message,
     listener: js.Function4[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* method */ String, 
       /* params */ js.Any, 
       /* sessionId */ String, 
@@ -70,12 +70,12 @@ trait Debugger extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_detach(event: detach, listener: js.Function2[/* event */ Event, /* reason */ String, Unit]): this.type = js.native
+  def removeListener_detach(event: detach, listener: js.Function2[/* event */ typings.std.Event, /* reason */ String, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_message(
     event: message,
     listener: js.Function4[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* method */ String, 
       /* params */ js.Any, 
       /* sessionId */ String, 

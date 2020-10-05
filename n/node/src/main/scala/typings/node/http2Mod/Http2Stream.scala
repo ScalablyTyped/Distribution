@@ -42,7 +42,7 @@ trait Http2Stream extends Duplex {
   @JSName("addListener")
   def addListener_trailers(
     event: trailers,
-    listener: js.Function2[/* trailers */ IncomingHttpHeaders, /* flags */ Double, Unit]
+    listener: js.Function2[/* trailers */ typings.node.httpMod.IncomingHttpHeaders, /* flags */ Double, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_wantTrailers(event: wantTrailers, listener: js.Function0[Unit]): this.type = js.native
@@ -63,7 +63,7 @@ trait Http2Stream extends Duplex {
   @JSName("emit")
   def emit_timeout(event: timeout): Boolean = js.native
   @JSName("emit")
-  def emit_trailers(event: trailers, trailers: IncomingHttpHeaders, flags: Double): Boolean = js.native
+  def emit_trailers(event: trailers, trailers: typings.node.httpMod.IncomingHttpHeaders, flags: Double): Boolean = js.native
   @JSName("emit")
   def emit_wantTrailers(event: wantTrailers): Boolean = js.native
   @JSName("on")
@@ -77,7 +77,7 @@ trait Http2Stream extends Duplex {
   @JSName("on")
   def on_trailers(
     event: trailers,
-    listener: js.Function2[/* trailers */ IncomingHttpHeaders, /* flags */ Double, Unit]
+    listener: js.Function2[/* trailers */ typings.node.httpMod.IncomingHttpHeaders, /* flags */ Double, Unit]
   ): this.type = js.native
   @JSName("on")
   def on_wantTrailers(event: wantTrailers, listener: js.Function0[Unit]): this.type = js.native
@@ -92,7 +92,7 @@ trait Http2Stream extends Duplex {
   @JSName("once")
   def once_trailers(
     event: trailers,
-    listener: js.Function2[/* trailers */ IncomingHttpHeaders, /* flags */ Double, Unit]
+    listener: js.Function2[/* trailers */ typings.node.httpMod.IncomingHttpHeaders, /* flags */ Double, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_wantTrailers(event: wantTrailers, listener: js.Function0[Unit]): this.type = js.native
@@ -107,7 +107,7 @@ trait Http2Stream extends Duplex {
   @JSName("prependListener")
   def prependListener_trailers(
     event: trailers,
-    listener: js.Function2[/* trailers */ IncomingHttpHeaders, /* flags */ Double, Unit]
+    listener: js.Function2[/* trailers */ typings.node.httpMod.IncomingHttpHeaders, /* flags */ Double, Unit]
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_wantTrailers(event: wantTrailers, listener: js.Function0[Unit]): this.type = js.native
@@ -122,7 +122,7 @@ trait Http2Stream extends Duplex {
   @JSName("prependOnceListener")
   def prependOnceListener_trailers(
     event: trailers,
-    listener: js.Function2[/* trailers */ IncomingHttpHeaders, /* flags */ Double, Unit]
+    listener: js.Function2[/* trailers */ typings.node.httpMod.IncomingHttpHeaders, /* flags */ Double, Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_wantTrailers(event: wantTrailers, listener: js.Function0[Unit]): this.type = js.native

@@ -1,12 +1,12 @@
 package typings.mobx.observableobjectMod
 
 import typings.mobx.atomMod.IAtom
+import typings.mobx.computedvalueMod.ComputedValue
 import typings.mobx.computedvalueMod.IComputedValueOptions
 import typings.mobx.interceptUtilsMod.IInterceptable
-import typings.mobx.internalMod.ComputedValue
-import typings.mobx.internalMod.ObservableValue
 import typings.mobx.listenUtilsMod.IListenable
 import typings.mobx.modifiersMod.IEnhancer
+import typings.mobx.observablevalueMod.ObservableValue
 import typings.mobx.utilsMod.Lambda
 import typings.std.Map
 import typings.std.PropertyKey

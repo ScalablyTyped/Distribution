@@ -1,6 +1,6 @@
 package typings.angularCore.analyzeTemplateMod
 
-import typings.angularCompiler.mod.PropertyWrite
+import typings.angularCompiler.astMod.PropertyWrite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

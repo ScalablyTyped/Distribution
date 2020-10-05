@@ -1,6 +1,6 @@
 package typings.angularPlatformBrowser.animationsMod
 
-import typings.angularAnimations.browserMod.ɵAnimationEngine
+import typings.angularAnimations.browserBrowserMod.ɵAnimationEngine
 import typings.angularCore.mod.Renderer2
 import scala.scalajs.js
 import scala.scalajs.js.`|`

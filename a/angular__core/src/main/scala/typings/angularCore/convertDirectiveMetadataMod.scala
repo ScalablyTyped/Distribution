@@ -1,6 +1,6 @@
 package typings.angularCore
 
-import typings.angularCompiler.mod.StaticSymbol
+import typings.angularCompiler.staticSymbolMod.StaticSymbol
 import typings.std.Error
 import typings.typescript.mod.Expression
 import scala.scalajs.js

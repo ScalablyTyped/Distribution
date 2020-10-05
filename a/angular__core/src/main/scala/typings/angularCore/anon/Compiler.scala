@@ -1,6 +1,6 @@
 package typings.angularCore.anon
 
-import typings.angularCompiler.mod.AotCompiler
+import typings.angularCompiler.aotCompilerMod.AotCompiler
 import typings.typescript.mod.Program
 import scala.scalajs.js
 import scala.scalajs.js.`|`

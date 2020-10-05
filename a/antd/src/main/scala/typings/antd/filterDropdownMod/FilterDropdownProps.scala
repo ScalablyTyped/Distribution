@@ -1,10 +1,10 @@
 package typings.antd.filterDropdownMod
 
-import typings.antd.tableInterfaceMod.ColumnType
 import typings.antd.tableInterfaceMod.GetPopupContainer
 import typings.antd.tableInterfaceMod.Key
 import typings.antd.tableInterfaceMod.TableLocale
 import typings.antd.useFilterMod.FilterState
+import typings.rcTable.interfaceMod.ColumnType
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import scala.scalajs.js

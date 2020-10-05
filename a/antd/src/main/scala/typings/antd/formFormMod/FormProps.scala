@@ -49,9 +49,9 @@ import typings.antd.antdStrings.yes
 import typings.antd.gridColMod.ColProps
 import typings.antd.interfaceMod.FormLabelAlign
 import typings.antd.sizeContextMod.SizeType
-import typings.antd.useFormMod.FormInstance
 import typings.rcFieldForm.formMod.RenderProps
 import typings.rcFieldForm.interfaceMod.FieldData
+import typings.rcFieldForm.interfaceMod.FormInstance
 import typings.rcFieldForm.interfaceMod.Store
 import typings.rcFieldForm.interfaceMod.ValidateErrorEntity
 import typings.rcFieldForm.interfaceMod.ValidateMessages
@@ -548,9 +548,7 @@ object FormProps {
     @scala.inline
     def deleteAutoSave: Self = this.set("autoSave", js.undefined)
     @scala.inline
-    def setChildrenFunction2(
-      value: (/* values */ Store, /* form */ typings.rcFieldForm.interfaceMod.FormInstance) => Element | ReactNode
-    ): Self = this.set("children", js.Any.fromFunction2(value))
+    def setChildrenFunction2(value: (/* values */ Store, /* form */ FormInstance) => Element | ReactNode): Self = this.set("children", js.Any.fromFunction2(value))
     @scala.inline
     def setChildren(value: RenderProps | ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
     @scala.inline

@@ -13,10 +13,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object onBecomeUnobserved extends js.Object {
   def apply(value: IComputedValue[_], listener: Lambda): Lambda = js.native
   def apply(value: IObservable, listener: Lambda): Lambda = js.native
-  def apply(value: ObservableMap[_, _], listener: Lambda): Lambda = js.native
-  def apply(value: ObservableSet[_], listener: Lambda): Lambda = js.native
   def apply(value: IObservableArray[_], listener: Lambda): Lambda = js.native
+  def apply(value: typings.mobx.observablemapMod.ObservableMap[_, _], listener: Lambda): Lambda = js.native
+  def apply(value: typings.mobx.observablesetMod.ObservableSet[_], listener: Lambda): Lambda = js.native
   def apply[K, V](value: js.Object, property: K, listener: Lambda): Lambda = js.native
-  def apply[K, V](value: ObservableMap[K, V], property: K, listener: Lambda): Lambda = js.native
+  def apply[K, V](value: typings.mobx.observablemapMod.ObservableMap[K, V], property: K, listener: Lambda): Lambda = js.native
 }
 

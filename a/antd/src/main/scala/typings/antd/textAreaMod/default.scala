@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("antd/lib/input/TextArea", JSImport.Default)
 @js.native
 class default protected () extends TextArea {
-  def this(props: TextAreaProps) = this()
+  def this(props: typings.rcTextarea.mod.TextAreaProps) = this()
 }
 
 /* static members */
 @JSImport("antd/lib/input/TextArea", JSImport.Default)
 @js.native
 object default extends js.Object {
-  def getDerivedStateFromProps(nextProps: TextAreaProps): `0` | Null = js.native
+  def getDerivedStateFromProps(nextProps: typings.rcTextarea.mod.TextAreaProps): `0` | Null = js.native
 }
 

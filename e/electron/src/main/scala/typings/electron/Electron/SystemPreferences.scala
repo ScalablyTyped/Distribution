@@ -65,19 +65,19 @@ trait SystemPreferences extends EventEmitter {
   @JSName("addListener")
   def addListener_accentcolorchanged(
     event: `accent-color-changed`,
-    listener: js.Function2[/* event */ Event, /* newColor */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* newColor */ String, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_colorchanged(event: `color-changed`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addListener_colorchanged(event: `color-changed`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_highcontrastcolorschemechanged(
     event: `high-contrast-color-scheme-changed`,
-    listener: js.Function2[/* event */ Event, /* highContrastColorScheme */ Boolean, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* highContrastColorScheme */ Boolean, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_invertedcolorschemechanged(
     event: `inverted-color-scheme-changed`,
-    listener: js.Function2[/* event */ Event, /* invertedColorScheme */ Boolean, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* invertedColorScheme */ Boolean, Unit]
   ): this.type = js.native
   @JSName("askForMediaAccess")
   def askForMediaAccess_camera(mediaType: camera): js.Promise[Boolean] = js.native
@@ -304,10 +304,10 @@ trait SystemPreferences extends EventEmitter {
   @JSName("on")
   def on_accentcolorchanged(
     event: `accent-color-changed`,
-    listener: js.Function2[/* event */ Event, /* newColor */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* newColor */ String, Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_colorchanged(event: `color-changed`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def on_colorchanged(event: `color-changed`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   /**
     * **Deprecated:** Should use the new `updated` event on the `nativeTheme` module.
     *
@@ -317,7 +317,7 @@ trait SystemPreferences extends EventEmitter {
   @JSName("on")
   def on_highcontrastcolorschemechanged(
     event: `high-contrast-color-scheme-changed`,
-    listener: js.Function2[/* event */ Event, /* highContrastColorScheme */ Boolean, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* highContrastColorScheme */ Boolean, Unit]
   ): this.type = js.native
   /**
     * **Deprecated:** Should use the new `updated` event on the `nativeTheme` module.
@@ -328,24 +328,24 @@ trait SystemPreferences extends EventEmitter {
   @JSName("on")
   def on_invertedcolorschemechanged(
     event: `inverted-color-scheme-changed`,
-    listener: js.Function2[/* event */ Event, /* invertedColorScheme */ Boolean, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* invertedColorScheme */ Boolean, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_accentcolorchanged(
     event: `accent-color-changed`,
-    listener: js.Function2[/* event */ Event, /* newColor */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* newColor */ String, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_colorchanged(event: `color-changed`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def once_colorchanged(event: `color-changed`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("once")
   def once_highcontrastcolorschemechanged(
     event: `high-contrast-color-scheme-changed`,
-    listener: js.Function2[/* event */ Event, /* highContrastColorScheme */ Boolean, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* highContrastColorScheme */ Boolean, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_invertedcolorschemechanged(
     event: `inverted-color-scheme-changed`,
-    listener: js.Function2[/* event */ Event, /* invertedColorScheme */ Boolean, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* invertedColorScheme */ Boolean, Unit]
   ): this.type = js.native
   /**
     * Posts `event` as native notifications of macOS. The `userInfo` is an Object that
@@ -394,19 +394,19 @@ trait SystemPreferences extends EventEmitter {
   @JSName("removeListener")
   def removeListener_accentcolorchanged(
     event: `accent-color-changed`,
-    listener: js.Function2[/* event */ Event, /* newColor */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* newColor */ String, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_colorchanged(event: `color-changed`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeListener_colorchanged(event: `color-changed`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_highcontrastcolorschemechanged(
     event: `high-contrast-color-scheme-changed`,
-    listener: js.Function2[/* event */ Event, /* highContrastColorScheme */ Boolean, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* highContrastColorScheme */ Boolean, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_invertedcolorschemechanged(
     event: `inverted-color-scheme-changed`,
-    listener: js.Function2[/* event */ Event, /* invertedColorScheme */ Boolean, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* invertedColorScheme */ Boolean, Unit]
   ): this.type = js.native
   /**
     * Removes the `key` in `NSUserDefaults`. This can be used to restore the default

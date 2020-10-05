@@ -33,11 +33,11 @@ object observe extends js.Object {
     fireImmediately: Boolean
   ): Lambda = js.native
   def apply[V](
-    observableMap: typings.mobx.internalMod.ObservableSet[V],
+    observableMap: typings.mobx.observablesetMod.ObservableSet[V],
     listener: js.Function1[/* change */ ISetDidChange[V], Unit]
   ): Lambda = js.native
   def apply[V](
-    observableMap: typings.mobx.internalMod.ObservableSet[V],
+    observableMap: typings.mobx.observablesetMod.ObservableSet[V],
     listener: js.Function1[/* change */ ISetDidChange[V], Unit],
     fireImmediately: Boolean
   ): Lambda = js.native
@@ -75,21 +75,21 @@ object observe extends js.Object {
     fireImmediately: Boolean
   ): Lambda = js.native
   def apply[K, V](
-    observableMap: typings.mobx.internalMod.ObservableMap[K, V],
+    observableMap: typings.mobx.observablemapMod.ObservableMap[K, V],
     listener: js.Function1[/* change */ IMapDidChange[K, V], Unit]
   ): Lambda = js.native
   def apply[K, V](
-    observableMap: typings.mobx.internalMod.ObservableMap[K, V],
+    observableMap: typings.mobx.observablemapMod.ObservableMap[K, V],
     listener: js.Function1[/* change */ IMapDidChange[K, V], Unit],
     fireImmediately: Boolean
   ): Lambda = js.native
   def apply[K, V](
-    observableMap: typings.mobx.internalMod.ObservableMap[K, V],
+    observableMap: typings.mobx.observablemapMod.ObservableMap[K, V],
     property: K,
     listener: js.Function1[/* change */ IValueDidChange[V], Unit]
   ): Lambda = js.native
   def apply[K, V](
-    observableMap: typings.mobx.internalMod.ObservableMap[K, V],
+    observableMap: typings.mobx.observablemapMod.ObservableMap[K, V],
     property: K,
     listener: js.Function1[/* change */ IValueDidChange[V], Unit],
     fireImmediately: Boolean

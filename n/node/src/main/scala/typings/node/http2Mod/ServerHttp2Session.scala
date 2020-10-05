@@ -22,7 +22,7 @@ trait ServerHttp2Session extends Http2Session {
     event: stream,
     listener: js.Function3[
       /* stream */ ServerHttp2Stream, 
-      /* headers */ IncomingHttpHeaders, 
+      /* headers */ typings.node.httpMod.IncomingHttpHeaders, 
       /* flags */ Double, 
       Unit
     ]
@@ -36,7 +36,12 @@ trait ServerHttp2Session extends Http2Session {
   @JSName("emit")
   def emit_connect(event: typings.node.nodeStrings.connect, session: ServerHttp2Session, socket: TLSSocket): Boolean = js.native
   @JSName("emit")
-  def emit_stream(event: stream, stream: ServerHttp2Stream, headers: IncomingHttpHeaders, flags: Double): Boolean = js.native
+  def emit_stream(
+    event: stream,
+    stream: ServerHttp2Stream,
+    headers: typings.node.httpMod.IncomingHttpHeaders,
+    flags: Double
+  ): Boolean = js.native
   @JSName("on")
   def on_connect(
     event: typings.node.nodeStrings.connect,
@@ -47,7 +52,7 @@ trait ServerHttp2Session extends Http2Session {
     event: stream,
     listener: js.Function3[
       /* stream */ ServerHttp2Stream, 
-      /* headers */ IncomingHttpHeaders, 
+      /* headers */ typings.node.httpMod.IncomingHttpHeaders, 
       /* flags */ Double, 
       Unit
     ]
@@ -62,7 +67,7 @@ trait ServerHttp2Session extends Http2Session {
     event: stream,
     listener: js.Function3[
       /* stream */ ServerHttp2Stream, 
-      /* headers */ IncomingHttpHeaders, 
+      /* headers */ typings.node.httpMod.IncomingHttpHeaders, 
       /* flags */ Double, 
       Unit
     ]
@@ -78,7 +83,7 @@ trait ServerHttp2Session extends Http2Session {
     event: stream,
     listener: js.Function3[
       /* stream */ ServerHttp2Stream, 
-      /* headers */ IncomingHttpHeaders, 
+      /* headers */ typings.node.httpMod.IncomingHttpHeaders, 
       /* flags */ Double, 
       Unit
     ]
@@ -93,7 +98,7 @@ trait ServerHttp2Session extends Http2Session {
     event: stream,
     listener: js.Function3[
       /* stream */ ServerHttp2Stream, 
-      /* headers */ IncomingHttpHeaders, 
+      /* headers */ typings.node.httpMod.IncomingHttpHeaders, 
       /* flags */ Double, 
       Unit
     ]

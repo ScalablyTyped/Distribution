@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "jqueryui"
-version := "1.12-dt-20200515Z-149a77"
+version := "1.12-dt-20200515Z-617184"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jquery" % "3.5-dt-20200621Z-d3b41a",
+  "org.scalablytyped" %%% "jquery" % "3.5-dt-20200621Z-eba646",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20200515Z-a620e4",
   "org.scalablytyped" %%% "std" % "3.9-7c0472")
 publishArtifact in packageDoc := false

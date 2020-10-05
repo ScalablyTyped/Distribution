@@ -1,14 +1,14 @@
 package typings.angularPlatformBrowserDynamic.mod
 
-import typings.angularCompiler.mod.CompileMetadataResolver
-import typings.angularCompiler.mod.CompileReflector
-import typings.angularCompiler.mod.CompilerConfig
-import typings.angularCompiler.mod.JitEvaluator
-import typings.angularCompiler.mod.NgModuleCompiler
-import typings.angularCompiler.mod.StyleCompiler
-import typings.angularCompiler.mod.SummaryResolver
-import typings.angularCompiler.mod.TemplateParser
-import typings.angularCompiler.mod.ViewCompiler
+import typings.angularCompiler.compileReflectorMod.CompileReflector
+import typings.angularCompiler.configMod.CompilerConfig
+import typings.angularCompiler.metadataResolverMod.CompileMetadataResolver
+import typings.angularCompiler.ngModuleCompilerMod.NgModuleCompiler
+import typings.angularCompiler.outputJitMod.JitEvaluator
+import typings.angularCompiler.srcSummaryResolverMod.SummaryResolver
+import typings.angularCompiler.styleCompilerMod.StyleCompiler
+import typings.angularCompiler.templateParserMod.TemplateParser
+import typings.angularCompiler.viewCompilerViewCompilerMod.ViewCompiler
 import typings.angularCore.mod.Compiler
 import typings.angularCore.mod.ComponentFactory
 import typings.angularCore.mod.Injector

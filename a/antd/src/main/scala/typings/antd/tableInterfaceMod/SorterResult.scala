@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait SorterResult[RecordType] extends js.Object {
-  var column: js.UndefOr[ColumnType[RecordType]] = js.native
+  var column: js.UndefOr[typings.rcTable.interfaceMod.ColumnType[RecordType]] = js.native
   var columnKey: js.UndefOr[Key] = js.native
   var field: js.UndefOr[Key | js.Array[Key]] = js.native
   var order: js.UndefOr[SortOrder] = js.native
@@ -30,7 +30,7 @@ object SorterResult {
         x
     }
     @scala.inline
-    def setColumn(value: ColumnType[RecordType]): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setColumn(value: typings.rcTable.interfaceMod.ColumnType[RecordType]): Self = this.set("column", value.asInstanceOf[js.Any])
     @scala.inline
     def deleteColumn: Self = this.set("column", js.undefined)
     @scala.inline

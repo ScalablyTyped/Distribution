@@ -2,8 +2,8 @@ package typings.antd
 
 import typings.antd.tableInterfaceMod.ColumnTitle
 import typings.antd.tableInterfaceMod.ColumnTitleProps
-import typings.antd.tableInterfaceMod.ColumnType
 import typings.antd.tableInterfaceMod.Key
+import typings.rcTable.interfaceMod.ColumnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

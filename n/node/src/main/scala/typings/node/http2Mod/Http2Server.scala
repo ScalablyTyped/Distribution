@@ -33,7 +33,7 @@ trait Http2Server extends Server {
     event: stream,
     listener: js.Function3[
       /* stream */ ServerHttp2Stream, 
-      /* headers */ IncomingHttpHeaders, 
+      /* headers */ typings.node.httpMod.IncomingHttpHeaders, 
       /* flags */ Double, 
       Unit
     ]
@@ -49,7 +49,12 @@ trait Http2Server extends Server {
   @JSName("emit")
   def emit_sessionError(event: sessionError, err: Error): Boolean = js.native
   @JSName("emit")
-  def emit_stream(event: stream, stream: ServerHttp2Stream, headers: IncomingHttpHeaders, flags: Double): Boolean = js.native
+  def emit_stream(
+    event: stream,
+    stream: ServerHttp2Stream,
+    headers: typings.node.httpMod.IncomingHttpHeaders,
+    flags: Double
+  ): Boolean = js.native
   @JSName("emit")
   def emit_timeout(event: timeout): Boolean = js.native
   @JSName("on")
@@ -71,7 +76,7 @@ trait Http2Server extends Server {
     event: stream,
     listener: js.Function3[
       /* stream */ ServerHttp2Stream, 
-      /* headers */ IncomingHttpHeaders, 
+      /* headers */ typings.node.httpMod.IncomingHttpHeaders, 
       /* flags */ Double, 
       Unit
     ]
@@ -97,7 +102,7 @@ trait Http2Server extends Server {
     event: stream,
     listener: js.Function3[
       /* stream */ ServerHttp2Stream, 
-      /* headers */ IncomingHttpHeaders, 
+      /* headers */ typings.node.httpMod.IncomingHttpHeaders, 
       /* flags */ Double, 
       Unit
     ]
@@ -123,7 +128,7 @@ trait Http2Server extends Server {
     event: stream,
     listener: js.Function3[
       /* stream */ ServerHttp2Stream, 
-      /* headers */ IncomingHttpHeaders, 
+      /* headers */ typings.node.httpMod.IncomingHttpHeaders, 
       /* flags */ Double, 
       Unit
     ]
@@ -149,7 +154,7 @@ trait Http2Server extends Server {
     event: stream,
     listener: js.Function3[
       /* stream */ ServerHttp2Stream, 
-      /* headers */ IncomingHttpHeaders, 
+      /* headers */ typings.node.httpMod.IncomingHttpHeaders, 
       /* flags */ Double, 
       Unit
     ]

@@ -13,7 +13,7 @@ object fontLoaderMod extends js.Object {
   def fontFamilyNeedsScoping(name: String): Boolean = js.native
   def getAssetForSource(source: FontSource): Asset | FontResource = js.native
   def getNativeFontName(name: String): String = js.native
-  def loadSingleFontAsync(name: String, input: Asset): js.Promise[Unit] = js.native
+  def loadSingleFontAsync(name: String, input: typings.expoAsset.assetMod.Asset): js.Promise[Unit] = js.native
   def loadSingleFontAsync(name: String, input: FontResource): js.Promise[Unit] = js.native
 }
 

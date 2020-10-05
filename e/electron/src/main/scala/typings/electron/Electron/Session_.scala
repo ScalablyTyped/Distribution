@@ -23,32 +23,42 @@ trait Session_ extends EventEmitter {
   @JSName("addListener")
   def addListener_preconnect(
     event: preconnect,
-    listener: js.Function3[/* event */ Event, /* preconnectUrl */ String, /* allowCredentials */ Boolean, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* preconnectUrl */ String, 
+      /* allowCredentials */ Boolean, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_spellcheckdictionarydownloadbegin(
     event: `spellcheck-dictionary-download-begin`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_spellcheckdictionarydownloadfailure(
     event: `spellcheck-dictionary-download-failure`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_spellcheckdictionarydownloadsuccess(
     event: `spellcheck-dictionary-download-success`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_spellcheckdictionaryinitialized(
     event: `spellcheck-dictionary-initialized`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_willdownload(
     event: `will-download`,
-    listener: js.Function3[/* event */ Event, /* item */ DownloadItem, /* webContents */ WebContents_, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* item */ DownloadItem, 
+      /* webContents */ WebContents_, 
+      Unit
+    ]
   ): this.type = js.native
   /**
     * Whether the word was successfully written to the custom dictionary. This API
@@ -185,7 +195,12 @@ trait Session_ extends EventEmitter {
   @JSName("on")
   def on_preconnect(
     event: preconnect,
-    listener: js.Function3[/* event */ Event, /* preconnectUrl */ String, /* allowCredentials */ Boolean, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* preconnectUrl */ String, 
+      /* allowCredentials */ Boolean, 
+      Unit
+    ]
   ): this.type = js.native
   /**
     * Emitted when a hunspell dictionary file starts downloading
@@ -193,7 +208,7 @@ trait Session_ extends EventEmitter {
   @JSName("on")
   def on_spellcheckdictionarydownloadbegin(
     event: `spellcheck-dictionary-download-begin`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   /**
     * Emitted when a hunspell dictionary file download fails.  For details on the
@@ -202,7 +217,7 @@ trait Session_ extends EventEmitter {
   @JSName("on")
   def on_spellcheckdictionarydownloadfailure(
     event: `spellcheck-dictionary-download-failure`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   /**
     * Emitted when a hunspell dictionary file has been successfully downloaded
@@ -210,7 +225,7 @@ trait Session_ extends EventEmitter {
   @JSName("on")
   def on_spellcheckdictionarydownloadsuccess(
     event: `spellcheck-dictionary-download-success`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   /**
     * Emitted when a hunspell dictionary file has been successfully initialized. This
@@ -219,7 +234,7 @@ trait Session_ extends EventEmitter {
   @JSName("on")
   def on_spellcheckdictionaryinitialized(
     event: `spellcheck-dictionary-initialized`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   /**
     * Emitted when Electron is about to download `item` in `webContents`.
@@ -230,37 +245,52 @@ trait Session_ extends EventEmitter {
   @JSName("on")
   def on_willdownload(
     event: `will-download`,
-    listener: js.Function3[/* event */ Event, /* item */ DownloadItem, /* webContents */ WebContents_, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* item */ DownloadItem, 
+      /* webContents */ WebContents_, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("once")
   def once_preconnect(
     event: preconnect,
-    listener: js.Function3[/* event */ Event, /* preconnectUrl */ String, /* allowCredentials */ Boolean, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* preconnectUrl */ String, 
+      /* allowCredentials */ Boolean, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("once")
   def once_spellcheckdictionarydownloadbegin(
     event: `spellcheck-dictionary-download-begin`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_spellcheckdictionarydownloadfailure(
     event: `spellcheck-dictionary-download-failure`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_spellcheckdictionarydownloadsuccess(
     event: `spellcheck-dictionary-download-success`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_spellcheckdictionaryinitialized(
     event: `spellcheck-dictionary-initialized`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_willdownload(
     event: `will-download`,
-    listener: js.Function3[/* event */ Event, /* item */ DownloadItem, /* webContents */ WebContents_, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* item */ DownloadItem, 
+      /* webContents */ WebContents_, 
+      Unit
+    ]
   ): this.type = js.native
   /**
     * Preconnects the given number of sockets to an origin.
@@ -276,32 +306,42 @@ trait Session_ extends EventEmitter {
   @JSName("removeListener")
   def removeListener_preconnect(
     event: preconnect,
-    listener: js.Function3[/* event */ Event, /* preconnectUrl */ String, /* allowCredentials */ Boolean, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* preconnectUrl */ String, 
+      /* allowCredentials */ Boolean, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_spellcheckdictionarydownloadbegin(
     event: `spellcheck-dictionary-download-begin`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_spellcheckdictionarydownloadfailure(
     event: `spellcheck-dictionary-download-failure`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_spellcheckdictionarydownloadsuccess(
     event: `spellcheck-dictionary-download-success`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_spellcheckdictionaryinitialized(
     event: `spellcheck-dictionary-initialized`,
-    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_willdownload(
     event: `will-download`,
-    listener: js.Function3[/* event */ Event, /* item */ DownloadItem, /* webContents */ WebContents_, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* item */ DownloadItem, 
+      /* webContents */ WebContents_, 
+      Unit
+    ]
   ): this.type = js.native
   /**
     * Whether the word was successfully removed from the custom dictionary. This API

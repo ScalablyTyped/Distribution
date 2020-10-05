@@ -153,37 +153,40 @@ trait App extends EventEmitter {
   @JSName("addListener")
   def addListener_accessibilitysupportchanged(
     event: `accessibility-support-changed`,
-    listener: js.Function2[/* event */ Event, /* accessibilitySupportEnabled */ Boolean, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* accessibilitySupportEnabled */ Boolean, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_activate(event: activate, listener: js.Function2[/* event */ Event, /* hasVisibleWindows */ Boolean, Unit]): this.type = js.native
+  def addListener_activate(
+    event: activate,
+    listener: js.Function2[/* event */ typings.std.Event, /* hasVisibleWindows */ Boolean, Unit]
+  ): this.type = js.native
   @JSName("addListener")
   def addListener_activitywascontinued(
     event: `activity-was-continued`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* type */ String, /* userInfo */ js.Any, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_beforequit(event: `before-quit`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addListener_beforequit(event: `before-quit`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_browserwindowblur(
     event: `browser-window-blur`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* window */ BrowserWindow, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_browserwindowcreated(
     event: `browser-window-created`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* window */ BrowserWindow, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_browserwindowfocus(
     event: `browser-window-focus`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* window */ BrowserWindow, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_certificateerror(
     event: `certificate-error`,
     listener: js.Function6[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* webContents */ WebContents_, 
       /* url */ String, 
       /* error */ String, 
@@ -195,30 +198,30 @@ trait App extends EventEmitter {
   @JSName("addListener")
   def addListener_continueactivity(
     event: `continue-activity`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* type */ String, /* userInfo */ js.Any, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_continueactivityerror(
     event: `continue-activity-error`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* error */ String, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* type */ String, /* error */ String, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_desktopcapturergetsources(
     event: `desktop-capturer-get-sources`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_gpuinfoupdate(event: `gpu-info-update`, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_gpuprocesscrashed(
     event: `gpu-process-crashed`,
-    listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* killed */ Boolean, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_login(
     event: login,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* webContents */ WebContents_, 
       /* authenticationResponseDetails */ AuthenticationResponseDetails, 
       /* authInfo */ AuthInfo, 
@@ -227,60 +230,90 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_newwindowfortab(event: `new-window-for-tab`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addListener_newwindowfortab(event: `new-window-for-tab`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_openfile(event: `open-file`, listener: js.Function2[/* event */ Event, /* path */ String, Unit]): this.type = js.native
+  def addListener_openfile(event: `open-file`, listener: js.Function2[/* event */ typings.std.Event, /* path */ String, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_openurl(event: `open-url`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  def addListener_openurl(event: `open-url`, listener: js.Function2[/* event */ typings.std.Event, /* url */ String, Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_quit(event: quit, listener: js.Function2[/* event */ Event, /* exitCode */ Double, Unit]): this.type = js.native
+  def addListener_quit(event: quit, listener: js.Function2[/* event */ typings.std.Event, /* exitCode */ Double, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_ready(event: ready, listener: js.Function1[/* launchInfo */ js.Any, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_remotegetbuiltin(
     event: `remote-get-builtin`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* moduleName */ String, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* webContents */ WebContents_, 
+      /* moduleName */ String, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_remotegetcurrentwebcontents(
     event: `remote-get-current-web-contents`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_remotegetcurrentwindow(
     event: `remote-get-current-window`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_remotegetglobal(
     event: `remote-get-global`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* globalName */ String, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* webContents */ WebContents_, 
+      /* globalName */ String, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_remoterequire(
     event: `remote-require`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* moduleName */ String, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* webContents */ WebContents_, 
+      /* moduleName */ String, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_rendererprocesscrashed(
     event: `renderer-process-crashed`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* killed */ Boolean, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* webContents */ WebContents_, 
+      /* killed */ Boolean, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_renderprocessgone(
     event: `render-process-gone`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* details */ Details, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* webContents */ WebContents_, 
+      /* details */ Details, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_secondinstance(
     event: `second-instance`,
-    listener: js.Function3[/* event */ Event, /* argv */ js.Array[String], /* workingDirectory */ String, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* argv */ js.Array[String], 
+      /* workingDirectory */ String, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_selectclientcertificate(
     event: `select-client-certificate`,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* webContents */ WebContents_, 
       /* url */ String, 
       /* certificateList */ js.Array[Certificate], 
@@ -293,22 +326,22 @@ trait App extends EventEmitter {
   @JSName("addListener")
   def addListener_updateactivitystate(
     event: `update-activity-state`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* type */ String, /* userInfo */ js.Any, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_webcontentscreated(
     event: `web-contents-created`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_willcontinueactivity(
     event: `will-continue-activity`,
-    listener: js.Function2[/* event */ Event, /* type */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* type */ String, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_willfinishlaunching(event: `will-finish-launching`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def addListener_willquit(event: `will-quit`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def addListener_willquit(event: `will-quit`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_windowallclosed(event: `window-all-closed`, listener: js.Function): this.type = js.native
   /**
@@ -664,7 +697,7 @@ trait App extends EventEmitter {
   @JSName("on")
   def on_accessibilitysupportchanged(
     event: `accessibility-support-changed`,
-    listener: js.Function2[/* event */ Event, /* accessibilitySupportEnabled */ Boolean, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* accessibilitySupportEnabled */ Boolean, Unit]
   ): this.type = js.native
   /**
     * Emitted when the application is activated. Various actions can trigger this
@@ -675,7 +708,10 @@ trait App extends EventEmitter {
     * @platform darwin
     */
   @JSName("on")
-  def on_activate(event: activate, listener: js.Function2[/* event */ Event, /* hasVisibleWindows */ Boolean, Unit]): this.type = js.native
+  def on_activate(
+    event: activate,
+    listener: js.Function2[/* event */ typings.std.Event, /* hasVisibleWindows */ Boolean, Unit]
+  ): this.type = js.native
   /**
     * Emitted during Handoff after an activity from this device was successfully
     * resumed on another one.
@@ -685,7 +721,7 @@ trait App extends EventEmitter {
   @JSName("on")
   def on_activitywascontinued(
     event: `activity-was-continued`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* type */ String, /* userInfo */ js.Any, Unit]
   ): this.type = js.native
   /**
     * Emitted before the application starts closing its windows. Calling
@@ -700,14 +736,14 @@ trait App extends EventEmitter {
     * a shutdown/restart of the system or a user logout.
     */
   @JSName("on")
-  def on_beforequit(event: `before-quit`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def on_beforequit(event: `before-quit`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   /**
     * Emitted when a browserWindow gets blurred.
     */
   @JSName("on")
   def on_browserwindowblur(
     event: `browser-window-blur`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* window */ BrowserWindow, Unit]
   ): this.type = js.native
   /**
     * Emitted when a new browserWindow is created.
@@ -715,7 +751,7 @@ trait App extends EventEmitter {
   @JSName("on")
   def on_browserwindowcreated(
     event: `browser-window-created`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* window */ BrowserWindow, Unit]
   ): this.type = js.native
   /**
     * Emitted when a browserWindow gets focused.
@@ -723,7 +759,7 @@ trait App extends EventEmitter {
   @JSName("on")
   def on_browserwindowfocus(
     event: `browser-window-focus`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* window */ BrowserWindow, Unit]
   ): this.type = js.native
   /**
     * Emitted when failed to verify the `certificate` for `url`, to trust the
@@ -734,7 +770,7 @@ trait App extends EventEmitter {
   def on_certificateerror(
     event: `certificate-error`,
     listener: js.Function6[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* webContents */ WebContents_, 
       /* url */ String, 
       /* error */ String, 
@@ -758,7 +794,7 @@ trait App extends EventEmitter {
   @JSName("on")
   def on_continueactivity(
     event: `continue-activity`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* type */ String, /* userInfo */ js.Any, Unit]
   ): this.type = js.native
   /**
     * Emitted during Handoff when an activity from a different device fails to be
@@ -769,7 +805,7 @@ trait App extends EventEmitter {
   @JSName("on")
   def on_continueactivityerror(
     event: `continue-activity-error`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* error */ String, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* type */ String, /* error */ String, Unit]
   ): this.type = js.native
   /**
     * Emitted when `desktopCapturer.getSources()` is called in the renderer process of
@@ -779,7 +815,7 @@ trait App extends EventEmitter {
   @JSName("on")
   def on_desktopcapturergetsources(
     event: `desktop-capturer-get-sources`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   /**
     * Emitted whenever there is a GPU info update.
@@ -792,7 +828,7 @@ trait App extends EventEmitter {
   @JSName("on")
   def on_gpuprocesscrashed(
     event: `gpu-process-crashed`,
-    listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* killed */ Boolean, Unit]
   ): this.type = js.native
   /**
     * Emitted when `webContents` wants to do basic auth.
@@ -809,7 +845,7 @@ trait App extends EventEmitter {
   def on_login(
     event: login,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* webContents */ WebContents_, 
       /* authenticationResponseDetails */ AuthenticationResponseDetails, 
       /* authInfo */ AuthInfo, 
@@ -824,7 +860,7 @@ trait App extends EventEmitter {
     * @platform darwin
     */
   @JSName("on")
-  def on_newwindowfortab(event: `new-window-for-tab`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def on_newwindowfortab(event: `new-window-for-tab`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   /**
     * Emitted when the user wants to open a file with the application. The `open-file`
     * event is usually emitted when the application is already open and the OS wants
@@ -841,7 +877,7 @@ trait App extends EventEmitter {
     * @platform darwin
     */
   @JSName("on")
-  def on_openfile(event: `open-file`, listener: js.Function2[/* event */ Event, /* path */ String, Unit]): this.type = js.native
+  def on_openfile(event: `open-file`, listener: js.Function2[/* event */ typings.std.Event, /* path */ String, Unit]): this.type = js.native
   /**
     * Emitted when the user wants to open a URL with the application. Your
     * application's `Info.plist` file must define the URL scheme within the
@@ -852,7 +888,7 @@ trait App extends EventEmitter {
     * @platform darwin
     */
   @JSName("on")
-  def on_openurl(event: `open-url`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  def on_openurl(event: `open-url`, listener: js.Function2[/* event */ typings.std.Event, /* url */ String, Unit]): this.type = js.native
   /**
     * Emitted when the application is quitting.
     *
@@ -860,7 +896,7 @@ trait App extends EventEmitter {
     * a shutdown/restart of the system or a user logout.
     */
   @JSName("on")
-  def on_quit(event: quit, listener: js.Function2[/* event */ Event, /* exitCode */ Double, Unit]): this.type = js.native
+  def on_quit(event: quit, listener: js.Function2[/* event */ typings.std.Event, /* exitCode */ Double, Unit]): this.type = js.native
   /**
     * Emitted once, when Electron has finished initializing. On macOS, `launchInfo`
     * holds the `userInfo` of the `NSUserNotification` that was used to open the
@@ -878,7 +914,12 @@ trait App extends EventEmitter {
   @JSName("on")
   def on_remotegetbuiltin(
     event: `remote-get-builtin`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* moduleName */ String, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* webContents */ WebContents_, 
+      /* moduleName */ String, 
+      Unit
+    ]
   ): this.type = js.native
   /**
     * Emitted when `remote.getCurrentWebContents()` is called in the renderer process
@@ -888,7 +929,7 @@ trait App extends EventEmitter {
   @JSName("on")
   def on_remotegetcurrentwebcontents(
     event: `remote-get-current-web-contents`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   /**
     * Emitted when `remote.getCurrentWindow()` is called in the renderer process of
@@ -898,7 +939,7 @@ trait App extends EventEmitter {
   @JSName("on")
   def on_remotegetcurrentwindow(
     event: `remote-get-current-window`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   /**
     * Emitted when `remote.getGlobal()` is called in the renderer process of
@@ -908,7 +949,12 @@ trait App extends EventEmitter {
   @JSName("on")
   def on_remotegetglobal(
     event: `remote-get-global`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* globalName */ String, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* webContents */ WebContents_, 
+      /* globalName */ String, 
+      Unit
+    ]
   ): this.type = js.native
   /**
     * Emitted when `remote.require()` is called in the renderer process of
@@ -918,12 +964,22 @@ trait App extends EventEmitter {
   @JSName("on")
   def on_remoterequire(
     event: `remote-require`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* moduleName */ String, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* webContents */ WebContents_, 
+      /* moduleName */ String, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("on")
   def on_rendererprocesscrashed(
     event: `renderer-process-crashed`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* killed */ Boolean, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* webContents */ WebContents_, 
+      /* killed */ Boolean, 
+      Unit
+    ]
   ): this.type = js.native
   /**
     * Emitted when the renderer process unexpectedly dissapears.  This is normally
@@ -932,7 +988,12 @@ trait App extends EventEmitter {
   @JSName("on")
   def on_renderprocessgone(
     event: `render-process-gone`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* details */ Details, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* webContents */ WebContents_, 
+      /* details */ Details, 
+      Unit
+    ]
   ): this.type = js.native
   /**
     * This event will be emitted inside the primary instance of your application when
@@ -951,7 +1012,12 @@ trait App extends EventEmitter {
   @JSName("on")
   def on_secondinstance(
     event: `second-instance`,
-    listener: js.Function3[/* event */ Event, /* argv */ js.Array[String], /* workingDirectory */ String, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* argv */ js.Array[String], 
+      /* workingDirectory */ String, 
+      Unit
+    ]
   ): this.type = js.native
   /**
     * Emitted when a client certificate is requested.
@@ -965,7 +1031,7 @@ trait App extends EventEmitter {
   def on_selectclientcertificate(
     event: `select-client-certificate`,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* webContents */ WebContents_, 
       /* url */ String, 
       /* certificateList */ js.Array[Certificate], 
@@ -990,7 +1056,7 @@ trait App extends EventEmitter {
   @JSName("on")
   def on_updateactivitystate(
     event: `update-activity-state`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* type */ String, /* userInfo */ js.Any, Unit]
   ): this.type = js.native
   /**
     * Emitted when a new webContents is created.
@@ -998,7 +1064,7 @@ trait App extends EventEmitter {
   @JSName("on")
   def on_webcontentscreated(
     event: `web-contents-created`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   /**
     * Emitted during Handoff before an activity from a different device wants to be
@@ -1010,7 +1076,7 @@ trait App extends EventEmitter {
   @JSName("on")
   def on_willcontinueactivity(
     event: `will-continue-activity`,
-    listener: js.Function2[/* event */ Event, /* type */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* type */ String, Unit]
   ): this.type = js.native
   /**
     * Emitted when the application has finished basic startup. On Windows and Linux,
@@ -1035,7 +1101,7 @@ trait App extends EventEmitter {
     * a shutdown/restart of the system or a user logout.
     */
   @JSName("on")
-  def on_willquit(event: `will-quit`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def on_willquit(event: `will-quit`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   /**
     * Emitted when all windows have been closed.
     *
@@ -1051,37 +1117,40 @@ trait App extends EventEmitter {
   @JSName("once")
   def once_accessibilitysupportchanged(
     event: `accessibility-support-changed`,
-    listener: js.Function2[/* event */ Event, /* accessibilitySupportEnabled */ Boolean, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* accessibilitySupportEnabled */ Boolean, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_activate(event: activate, listener: js.Function2[/* event */ Event, /* hasVisibleWindows */ Boolean, Unit]): this.type = js.native
+  def once_activate(
+    event: activate,
+    listener: js.Function2[/* event */ typings.std.Event, /* hasVisibleWindows */ Boolean, Unit]
+  ): this.type = js.native
   @JSName("once")
   def once_activitywascontinued(
     event: `activity-was-continued`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* type */ String, /* userInfo */ js.Any, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_beforequit(event: `before-quit`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def once_beforequit(event: `before-quit`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("once")
   def once_browserwindowblur(
     event: `browser-window-blur`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* window */ BrowserWindow, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_browserwindowcreated(
     event: `browser-window-created`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* window */ BrowserWindow, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_browserwindowfocus(
     event: `browser-window-focus`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* window */ BrowserWindow, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_certificateerror(
     event: `certificate-error`,
     listener: js.Function6[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* webContents */ WebContents_, 
       /* url */ String, 
       /* error */ String, 
@@ -1093,30 +1162,30 @@ trait App extends EventEmitter {
   @JSName("once")
   def once_continueactivity(
     event: `continue-activity`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* type */ String, /* userInfo */ js.Any, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_continueactivityerror(
     event: `continue-activity-error`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* error */ String, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* type */ String, /* error */ String, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_desktopcapturergetsources(
     event: `desktop-capturer-get-sources`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_gpuinfoupdate(event: `gpu-info-update`, listener: js.Function): this.type = js.native
   @JSName("once")
   def once_gpuprocesscrashed(
     event: `gpu-process-crashed`,
-    listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* killed */ Boolean, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_login(
     event: login,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* webContents */ WebContents_, 
       /* authenticationResponseDetails */ AuthenticationResponseDetails, 
       /* authInfo */ AuthInfo, 
@@ -1125,60 +1194,90 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def once_newwindowfortab(event: `new-window-for-tab`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def once_newwindowfortab(event: `new-window-for-tab`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("once")
-  def once_openfile(event: `open-file`, listener: js.Function2[/* event */ Event, /* path */ String, Unit]): this.type = js.native
+  def once_openfile(event: `open-file`, listener: js.Function2[/* event */ typings.std.Event, /* path */ String, Unit]): this.type = js.native
   @JSName("once")
-  def once_openurl(event: `open-url`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  def once_openurl(event: `open-url`, listener: js.Function2[/* event */ typings.std.Event, /* url */ String, Unit]): this.type = js.native
   @JSName("once")
-  def once_quit(event: quit, listener: js.Function2[/* event */ Event, /* exitCode */ Double, Unit]): this.type = js.native
+  def once_quit(event: quit, listener: js.Function2[/* event */ typings.std.Event, /* exitCode */ Double, Unit]): this.type = js.native
   @JSName("once")
   def once_ready(event: ready, listener: js.Function1[/* launchInfo */ js.Any, Unit]): this.type = js.native
   @JSName("once")
   def once_remotegetbuiltin(
     event: `remote-get-builtin`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* moduleName */ String, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* webContents */ WebContents_, 
+      /* moduleName */ String, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("once")
   def once_remotegetcurrentwebcontents(
     event: `remote-get-current-web-contents`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_remotegetcurrentwindow(
     event: `remote-get-current-window`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_remotegetglobal(
     event: `remote-get-global`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* globalName */ String, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* webContents */ WebContents_, 
+      /* globalName */ String, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("once")
   def once_remoterequire(
     event: `remote-require`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* moduleName */ String, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* webContents */ WebContents_, 
+      /* moduleName */ String, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("once")
   def once_rendererprocesscrashed(
     event: `renderer-process-crashed`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* killed */ Boolean, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* webContents */ WebContents_, 
+      /* killed */ Boolean, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("once")
   def once_renderprocessgone(
     event: `render-process-gone`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* details */ Details, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* webContents */ WebContents_, 
+      /* details */ Details, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("once")
   def once_secondinstance(
     event: `second-instance`,
-    listener: js.Function3[/* event */ Event, /* argv */ js.Array[String], /* workingDirectory */ String, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* argv */ js.Array[String], 
+      /* workingDirectory */ String, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("once")
   def once_selectclientcertificate(
     event: `select-client-certificate`,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* webContents */ WebContents_, 
       /* url */ String, 
       /* certificateList */ js.Array[Certificate], 
@@ -1191,22 +1290,22 @@ trait App extends EventEmitter {
   @JSName("once")
   def once_updateactivitystate(
     event: `update-activity-state`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* type */ String, /* userInfo */ js.Any, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_webcontentscreated(
     event: `web-contents-created`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_willcontinueactivity(
     event: `will-continue-activity`,
-    listener: js.Function2[/* event */ Event, /* type */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* type */ String, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_willfinishlaunching(event: `will-finish-launching`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def once_willquit(event: `will-quit`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def once_willquit(event: `will-quit`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("once")
   def once_windowallclosed(event: `window-all-closed`, listener: js.Function): this.type = js.native
   /**
@@ -1258,37 +1357,40 @@ trait App extends EventEmitter {
   @JSName("removeListener")
   def removeListener_accessibilitysupportchanged(
     event: `accessibility-support-changed`,
-    listener: js.Function2[/* event */ Event, /* accessibilitySupportEnabled */ Boolean, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* accessibilitySupportEnabled */ Boolean, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_activate(event: activate, listener: js.Function2[/* event */ Event, /* hasVisibleWindows */ Boolean, Unit]): this.type = js.native
+  def removeListener_activate(
+    event: activate,
+    listener: js.Function2[/* event */ typings.std.Event, /* hasVisibleWindows */ Boolean, Unit]
+  ): this.type = js.native
   @JSName("removeListener")
   def removeListener_activitywascontinued(
     event: `activity-was-continued`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* type */ String, /* userInfo */ js.Any, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_beforequit(event: `before-quit`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeListener_beforequit(event: `before-quit`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_browserwindowblur(
     event: `browser-window-blur`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* window */ BrowserWindow, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_browserwindowcreated(
     event: `browser-window-created`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* window */ BrowserWindow, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_browserwindowfocus(
     event: `browser-window-focus`,
-    listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* window */ BrowserWindow, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_certificateerror(
     event: `certificate-error`,
     listener: js.Function6[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* webContents */ WebContents_, 
       /* url */ String, 
       /* error */ String, 
@@ -1300,30 +1402,30 @@ trait App extends EventEmitter {
   @JSName("removeListener")
   def removeListener_continueactivity(
     event: `continue-activity`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* type */ String, /* userInfo */ js.Any, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_continueactivityerror(
     event: `continue-activity-error`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* error */ String, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* type */ String, /* error */ String, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_desktopcapturergetsources(
     event: `desktop-capturer-get-sources`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_gpuinfoupdate(event: `gpu-info-update`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def removeListener_gpuprocesscrashed(
     event: `gpu-process-crashed`,
-    listener: js.Function2[/* event */ Event, /* killed */ Boolean, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* killed */ Boolean, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_login(
     event: login,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* webContents */ WebContents_, 
       /* authenticationResponseDetails */ AuthenticationResponseDetails, 
       /* authInfo */ AuthInfo, 
@@ -1332,60 +1434,90 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_newwindowfortab(event: `new-window-for-tab`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeListener_newwindowfortab(event: `new-window-for-tab`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_openfile(event: `open-file`, listener: js.Function2[/* event */ Event, /* path */ String, Unit]): this.type = js.native
+  def removeListener_openfile(event: `open-file`, listener: js.Function2[/* event */ typings.std.Event, /* path */ String, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_openurl(event: `open-url`, listener: js.Function2[/* event */ Event, /* url */ String, Unit]): this.type = js.native
+  def removeListener_openurl(event: `open-url`, listener: js.Function2[/* event */ typings.std.Event, /* url */ String, Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_quit(event: quit, listener: js.Function2[/* event */ Event, /* exitCode */ Double, Unit]): this.type = js.native
+  def removeListener_quit(event: quit, listener: js.Function2[/* event */ typings.std.Event, /* exitCode */ Double, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_ready(event: ready, listener: js.Function1[/* launchInfo */ js.Any, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_remotegetbuiltin(
     event: `remote-get-builtin`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* moduleName */ String, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* webContents */ WebContents_, 
+      /* moduleName */ String, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_remotegetcurrentwebcontents(
     event: `remote-get-current-web-contents`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_remotegetcurrentwindow(
     event: `remote-get-current-window`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_remotegetglobal(
     event: `remote-get-global`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* globalName */ String, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* webContents */ WebContents_, 
+      /* globalName */ String, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_remoterequire(
     event: `remote-require`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* moduleName */ String, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* webContents */ WebContents_, 
+      /* moduleName */ String, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_rendererprocesscrashed(
     event: `renderer-process-crashed`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* killed */ Boolean, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* webContents */ WebContents_, 
+      /* killed */ Boolean, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_renderprocessgone(
     event: `render-process-gone`,
-    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* details */ Details, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* webContents */ WebContents_, 
+      /* details */ Details, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_secondinstance(
     event: `second-instance`,
-    listener: js.Function3[/* event */ Event, /* argv */ js.Array[String], /* workingDirectory */ String, Unit]
+    listener: js.Function3[
+      /* event */ typings.std.Event, 
+      /* argv */ js.Array[String], 
+      /* workingDirectory */ String, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_selectclientcertificate(
     event: `select-client-certificate`,
     listener: js.Function5[
-      /* event */ Event, 
+      /* event */ typings.std.Event, 
       /* webContents */ WebContents_, 
       /* url */ String, 
       /* certificateList */ js.Array[Certificate], 
@@ -1398,22 +1530,22 @@ trait App extends EventEmitter {
   @JSName("removeListener")
   def removeListener_updateactivitystate(
     event: `update-activity-state`,
-    listener: js.Function3[/* event */ Event, /* type */ String, /* userInfo */ js.Any, Unit]
+    listener: js.Function3[/* event */ typings.std.Event, /* type */ String, /* userInfo */ js.Any, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_webcontentscreated(
     event: `web-contents-created`,
-    listener: js.Function2[/* event */ Event, /* webContents */ WebContents_, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_willcontinueactivity(
     event: `will-continue-activity`,
-    listener: js.Function2[/* event */ Event, /* type */ String, Unit]
+    listener: js.Function2[/* event */ typings.std.Event, /* type */ String, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_willfinishlaunching(event: `will-finish-launching`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def removeListener_willquit(event: `will-quit`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
+  def removeListener_willquit(event: `will-quit`, listener: js.Function1[/* event */ typings.std.Event, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_windowallclosed(event: `window-all-closed`, listener: js.Function): this.type = js.native
   /**

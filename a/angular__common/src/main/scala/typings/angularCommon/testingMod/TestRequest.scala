@@ -1,7 +1,7 @@
 package typings.angularCommon.testingMod
 
 import typings.angularCommon.httpHttpMod.HttpEvent
-import typings.angularCommon.httpMod.HttpRequest
+import typings.angularCommon.httpHttpMod.HttpRequest
 import typings.rxjs.typesMod.Observer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

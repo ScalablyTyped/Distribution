@@ -34,7 +34,7 @@ trait Cascader
   def handleKeyDown(e: KeyboardEvent[HTMLInputElement]): Unit = js.native
   def handlePopupVisibleChange(popupVisible: Boolean): Unit = js.native
   def renderCascader(hasGetPopupContainerGetPrefixClsRenderEmptyDirection: ConfigConsumerProps, locale: CascaderLocale): Element = js.native
-  def saveInput(node: typings.antd.inputMod.default): Unit = js.native
+  def saveInput(node: typings.antd.inputInputMod.default): Unit = js.native
   def setValue(value: CascaderValueType): Unit = js.native
   def setValue(value: CascaderValueType, selectedOptions: js.Array[CascaderOptionType]): Unit = js.native
 }

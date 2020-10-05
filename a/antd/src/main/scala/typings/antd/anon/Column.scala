@@ -1,7 +1,7 @@
 package typings.antd.anon
 
-import typings.antd.tableInterfaceMod.ColumnType
 import typings.antd.tableInterfaceMod.SortOrder
+import typings.rcTable.interfaceMod.ColumnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

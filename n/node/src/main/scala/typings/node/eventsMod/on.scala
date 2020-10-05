@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("events", "on")
 @js.native
 object on extends js.Object {
-  def apply(emitter: EventEmitter, event: String): AsyncIterableIterator[_] = js.native
+  def apply(emitter: typings.node.eventsMod.global.NodeJS.EventEmitter, event: String): AsyncIterableIterator[_] = js.native
 }
 

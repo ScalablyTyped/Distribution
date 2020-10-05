@@ -127,7 +127,7 @@ object TableProps {
     @scala.inline
     def deleteClassName: Self = this.set("className", js.undefined)
     @scala.inline
-    def setColumnsVarargs(value: (ColumnGroupType[RecordType] | typings.antd.tableInterfaceMod.ColumnType[RecordType])*): Self = this.set("columns", js.Array(value :_*))
+    def setColumnsVarargs(value: (ColumnGroupType[RecordType] | ColumnType[RecordType])*): Self = this.set("columns", js.Array(value :_*))
     @scala.inline
     def setColumns(value: ColumnsType[RecordType]): Self = this.set("columns", value.asInstanceOf[js.Any])
     @scala.inline
